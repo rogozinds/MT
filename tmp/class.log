@@ -1,44 +1,22 @@
-This is MetaPost, version 1.803 (kpathsea version 6.1.1)  6 OCT 2015 21:58
-**class.mp
-(mpost.mp (/usr/share/texlive/texmf-dist/metapost/base/plain.mp
-Preloading the plain mem file, version 1.004) ) (./class.mp
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml.mp
-(/usr/share/texlive/texmf-dist/metapost/metauml/util_infrastructure.mp
-(/usr/share/texlive/texmf-dist/metapost/metauml/util_log.mp))
-(/usr/share/texlive/texmf-dist/metapost/metauml/util_object.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/util_commons.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/util_margins.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/util_picture.mp
-(/usr/share/texlive/texmf-dist/metapost/base/boxes.mp))
-(/usr/share/texlive/texmf-dist/metapost/metauml/util_group.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/util_picture_stack.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/util_positioning.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/util_shade.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_base.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_links.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_paths.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_note.mp
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_defaults.mp))
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_stereotype.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_class_clipart.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_class.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_instance.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_class_relations.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_class_assoc.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_package.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_package_relations.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_behavioral_common.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_activity.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_state.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_usecase_clipart.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_usecase.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_behavioral_common.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_activity.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_state.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_usecase_clipart.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_usecase.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_component.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_component_relations.mp)
-(/usr/share/texlive/texmf-dist/metapost/metauml/metauml_templates.mp)) [1] )
-1 output file written: class.1
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=mptopdf 2014.12.22)  6 OCT 2015 22:51
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\relax class.1
+ (./class.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map})
+[1] 
+Here is how much of TeX's memory you used:
+ 45 strings out of 496721
+ 385 string characters out of 6201337
+ 4020091 words of memory out of 9005298
+ 1693 multiletter control sequences out of 15000+600000
+ 1085 words of font info for 1 font, out of 8000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 10i,3n,7p,109b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on class.pdf (1 page, 14076 bytes).
+PDF statistics:
+ 13 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 7 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.6)  6 OCT 2015 22:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.6)  6 OCT 2015 23:00
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -398,9 +398,10 @@ File: images/gerrit1.png Graphic file (type png)
  <use images/gerrit1.png>
 Package pdftex.def Info: images/gerrit1.png used on input line 843.
 (pdftex.def)             Requested size: 258.75pt x 194.06194pt.
-File: class.1 Graphic file (type mps)
 
-[MP to PDF] (./class.1) [15 <./images/gerrit1.png>]
+[15 <./images/gerrit1.png>]
+File: class.1 Graphic file (type mps)
+ [MP to PDF] (./class.1)
 Missing character: There is no â in font cmr9!
 Missing character: There is no € in font cmr9!
 Missing character: There is no ™ in font cmr9!
@@ -408,6 +409,11 @@ Missing character: There is no ™ in font cmr9!
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
+Overfull \hbox (7.39104pt too wide) in paragraph at lines 864--873
+[][]\OT1/cmr/m/n/9 AbstractHasTestBenchCommandExecutor class pro-vides `$(Class
+ clazz)'
+ []
+
 Missing character: There is no â in font cmr5!
 Missing character: There is no € in font cmr5!
 Missing character: There is no  in font cmr5!
@@ -430,7 +436,7 @@ Missing character: There is no â in font cmr5!
 Missing character: There is no € in font cmr5!
 Missing character: There is no  in font cmr5!
 
-Overfull \hbox (23.5068pt too wide) in paragraph at lines 896--897
+Overfull \hbox (23.5068pt too wide) in paragraph at lines 898--899
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -447,12 +453,12 @@ Missing character: There is no â in font cmr9!
 Missing character: There is no € in font cmr9!
 Missing character: There is no ™ in font cmr9!
 [16]
-Overfull \hbox (31.67365pt too wide) in paragraph at lines 914--915
+Overfull \hbox (31.67365pt too wide) in paragraph at lines 916--917
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [17] [18]
-Overfull \hbox (5.00848pt too wide) in paragraph at lines 1064--1065
+Overfull \hbox (5.00848pt too wide) in paragraph at lines 1067--1068
 [][]\OT1/cmr/m/n/9 http://www.tiobe.com/index.php/content/paperinfo/tpci/index.
 html 
  []
@@ -463,10 +469,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3245 strings out of 493304
- 45763 string characters out of 6139871
- 151765 words of memory out of 5000000
- 6673 multiletter control sequences out of 15000+600000
+ 3248 strings out of 493304
+ 45792 string characters out of 6139871
+ 151964 words of memory out of 5000000
+ 6676 multiletter control sequences out of 15000+600000
  11005 words of font info for 36 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  37i,6n,49p,757b,1448s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -486,7 +492,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmr8a.pfb>
-Output written on document.pdf (20 pages, 276059 bytes).
+Output written on document.pdf (20 pages, 277464 bytes).
 PDF statistics:
  137 PDF objects out of 1000 (max. 8388607)
  96 compressed objects within 1 object stream

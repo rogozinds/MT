@@ -854,13 +854,15 @@ expensive to write but easier to evolve than C\&R ones, with an advantage after
   \subsection{Testbench class diagram}
   
   \section{Example}
-  \includegraphics{class.1}
+
   
   The hierarchy of classes in testbench consists of many tens of classes and each class has tens of methods.
   Here we will describe the most important classes and the basic principles.
 
-AbstractHasTestBenchCommandExecutor class provides  `\$(Class<T> clazz)' and
-`\$\$(Class<T> clazz)' methods which create a query for searching elements of
+    \includegraphics{class.1}
+    
+AbstractHasTestBenchCommandExecutor class provides  `\$(Class clazz)' and
+`\$\$(Class clazz)' methods which create a query for searching elements of
 the given type.
  `\$' method builds a recursive search query and `\$\$' a non-recursive one.
  Non-recursive search query looks only for direct children of the element, while it’s recursive analog looks
@@ -956,6 +958,7 @@ Because Vaadin is a statefull framework this brings additional complexity in tes
           //Step 3
           TextFieldElement field1 =
             $(TextFieldElement.class).caption("field1).first();
+            
           TextFieldElement field2 =
             $(TextFieldElement.class).caption("field2).first();  
           field1.setValue("bar");
