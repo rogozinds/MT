@@ -877,6 +877,7 @@ the given type.
       </div>
   \end{lstlisting}
   
+  
 ElementQuery<T> used for locating web elements(vaadin buttons, text fields, labels, etc.) on the web-page.
  Generic parameter T specifies the type of a searched element. 
  ElementQuery class provides methods for searching the element based on element’s id,class,
@@ -921,11 +922,96 @@ or use a more generic class to utilize method of a parent class, for example get
   }
   \end{lstlisting}
 
-This means that actions done by user on the client side may affect the server side. Server side of the component has a state, and client-side events can change it.  Client-side of different components may look and behave exactly the same, thought
-the server side behaviour is different. In practise it leads to different implementaions of same method for different components, thought the client side behaves similar. The challenge here is that we 
-need to test both client and server side for each component.
+\subscection {Basic test case structure}
+To use TestBench, the test case class should extend the TestBenchTestCase class,
+which provides the WebDriver and ElementQuery APIs. A developer
+can configure Testbench test by using following annotations:
+\begin{itemize}
+  \item \@Rule -defines certain TestBench parameters.
+  \item \@Before - the annotated method is executed before each test.
+  \item \@Test - annotates the tested method.
+  \item \@After - the annotated method is executed after test.
+\end{itemize}
 
-Because Vaadin is a statefull framework this brings additional complexity in testing client-side and server-side communications. When event happens on the client side it will notify server side. If this event affects the server side state, the server side will notify the client side about this change. Because of a network delay or long time code execution on the server side there might be a delay between client side action and the change on a client.  In these circumstances the client-side should wait for server side code to execute, because it might affect the next client side instruction. To handle this situation Testbench has waitForVaadin method, which suspend code execution until there is no work to be done on the client side. 
+A typical test case structure is the is the following:
+\begin{itemize}
+  \item Set TestBench parameters.
+  \item Open the tested web-page URL.
+  \item Find an element for interraction (Button, TextField).
+  \item Interact with the elements (click buttons,menus,etc.).
+  \item Find an element to check.
+  \item Get and the value of the checked element.
+  \item (optional) get screenshot.
+\end{itemize}
+	\lstset{language=Java}
+	\begin{lstlisting}
+		@Theme("mytheme")
+		@Widgetset("com.example.testbench.MyAppWidgetset")
+		public class MyUI extends UI {
+		    @Override
+		    protected void init(VaadinRequest vaadinRequest) {
+		        final VerticalLayout layout = new VerticalLayout();
+		        layout.setMargin(true);
+		        setContent(layout);
+		
+		        Button button = new Button("Click Me");
+		        button.addClickListener(new Button.ClickListener() {
+		            @Override
+		            public void buttonClick(ClickEvent event) {
+		                layout.addComponent(new Label("Thank you for clicking"));
+		            }
+		        });
+		        layout.addComponent(button);
+		
+		    }
+		
+		    @WebServlet(urlPatterns = "/*", name = "MyUIServlet", asyncSupported = true)
+		    @VaadinServletConfiguration(ui = MyUI.class, productionMode = false)
+		    public static class MyUIServlet extends VaadinServlet {
+		    }
+		}
+	\end{lstlisting}
+	\lstset{language=Java}
+	\begin{lstlisting}
+	public class ButtonTest extends TestBenchTestCase {
+	    public static final String baseUrl = "http://localhost:8080";
+	
+	    @Before
+	    public void setUp() throws Exception {
+	        // Set WebDriver
+	        setDriver(new FirefoxDriver());
+	    }
+	
+	    @After
+	    public void tearDown() throws Exception {
+	        getDriver().quit();
+	    }
+	
+	    @Test
+	    public void testClick() {
+	    	//Open URL
+	        getDriver().get(baseUrl + "?restartApplication");
+	        ButtonElement button = $(ButtonElement.class).first();
+	        button.click();
+	        LabelElement label = $(LabelElement.class).first();
+	        String text = label.getText();
+	        Assert.assertEquals("Thank you for clicking", text);
+	    }
+	}
+	\end{lstlisting}
+	
+	When running this test you will get the following results:
+\subsection {Challenges}
+Because Vaadin is a statefull framework this brings additional complexity in
+testing client-side and server-side communications. When event happens on the client side 
+it will notify the server side. If this event affects the server side state, the
+server side will notify the client side about this change.
+ Because of a network delay or long time code execution on the server side there might be a delay between 
+ client side action and the change on a client.  
+ In these circumstances the client-side should wait for server side code to execute,
+  because it might affect the next client side instruction.
+  To handle this situation Testbench has waitForVaadin method, which suspend code execution until 
+  there is no work to be done on the client side.
       
   
     \lstset{language=Java}
