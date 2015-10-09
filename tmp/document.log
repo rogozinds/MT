@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.6)  6 OCT 2015 23:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.8)  9 OCT 2015 11:02
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -436,7 +436,7 @@ Missing character: There is no ‚ in font cmr5!
 Missing character: There is no Ä in font cmr5!
 Missing character: There is no ù in font cmr5!
 
-Overfull \hbox (23.5068pt too wide) in paragraph at lines 898--899
+Overfull \hbox (23.5068pt too wide) in paragraph at lines 899--900
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -453,49 +453,588 @@ Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ô in font cmr9!
 [16]
-Overfull \hbox (31.67365pt too wide) in paragraph at lines 916--917
+Overfull \hbox (31.67365pt too wide) in paragraph at lines 917--918
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[17] [18]
-Overfull \hbox (5.00848pt too wide) in paragraph at lines 1067--1068
+! Undefined control sequence.
+l.925 \subscection
+                   {Basic test case structure}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\spacefactor' in vertical mode.
+\@->\spacefactor 
+                 \@m 
+l.930   \item \@
+                Rule -defines certain TestBench parameters.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.930   \item \@
+                Rule -defines certain TestBench parameters.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 930.
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.931   \item
+              \@Before - the annotated method is executed before each test.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.931   \item \@
+                Before - the annotated method is executed before each test.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.931   \item \@
+                Before - the annotated method is executed before each test.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! You can't use `\spacefactor' in math mode.
+\@->\spacefactor 
+                 \@m 
+l.931   \item \@
+                Before - the annotated method is executed before each test.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.932   \item
+              \@Test - annotates the tested method.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.932   \item \@
+                Test - annotates the tested method.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.932   \item \@
+                Test - annotates the tested method.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no Ë in font cmex10!
+Missing character: There is no Ë in font cmex10!
+
+Overfull \hbox (139.59853pt too wide) in paragraph at lines 930--932
+[][]$\OML/cmm/m/it/9 Rule \OMS/cmsy/m/n/9 ^^@ \OML/cmm/m/it/9 definescertainTes
+tBenchparameters:Before \OMS/cmsy/m/n/9 ^^@ \OML/cmm/m/it/9 theannotatedmethodi
+sexecutedbeforeeachtest:[][]$ 
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.932   \item \@
+                Test - annotates the tested method.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! You can't use `\spacefactor' in vertical mode.
+\@->\spacefactor 
+                 \@m 
+l.932   \item \@
+                Test - annotates the tested method.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.932   \item \@
+                Test - annotates the tested method.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.933   \item
+              \@After - the annotated method is executed after test.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.933   \item \@
+                After - the annotated method is executed after test.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.933   \item \@
+                After - the annotated method is executed after test.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! You can't use `\spacefactor' in math mode.
+\@->\spacefactor 
+                 \@m 
+l.933   \item \@
+                After - the annotated method is executed after test.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Command \end{itemize} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.934 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.934 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.934 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.934 \end{itemize}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no Ë in font cmex10!
+Missing character: There is no Ë in font cmex10!
+
+Overfull \hbox (41.48592pt too wide) in paragraph at lines 932--935
+[][]$\OML/cmm/m/it/9 Test \OMS/cmsy/m/n/9 ^^@ \OML/cmm/m/it/9 annotatestheteste
+dmethod:After \OMS/cmsy/m/n/9 ^^@ \OML/cmm/m/it/9 theannotatedmethodisexecuteda
+ftertest:$ 
+ []
+
+
+Overfull \hbox (11.25655pt too wide) in paragraph at lines 953--954
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.33997pt too wide) in paragraph at lines 958--959
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (68.42442pt too wide) in paragraph at lines 961--962
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (97.00836pt too wide) in paragraph at lines 968--969
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (64.341pt too wide) in paragraph at lines 969--970
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (11.25655pt too wide) in paragraph at lines 970--971
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.0897pt too wide) in paragraph at lines 977--979
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[17] [18] [19]
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ô in font cmr9!
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1107 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1107 
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ú in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ù in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ú in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ù in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ù in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ù in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ô in font cmr9!
+
+Overfull \hbox (14.34853pt too wide) in paragraph at lines 1098--1107
+\OT1/cmr/m/n/9 TextField-Ele-ment filterElement=table.$(\OML/cmm/m/it/9 TextFie
+ldElement:class\OT1/cmr/m/n/9 )\OML/cmm/m/it/9 :id\OT1/cmr/m/n/9 (\OML/cmm/m/it
+/9 filter \OMS/cmsy/m/n/9 ^^@
+ []
+
+
+Overfull \hbox (120.72427pt too wide) in paragraph at lines 1098--1107
+\OML/cmm/m/it/9 field\OT1/cmr/m/n/9 )\OML/cmm/m/it/9 :first\OT1/cmr/m/n/9 (); \
+OML/cmm/m/it/9 filterElement:setValue\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 special\OT
+1/cmr/m/n/9 ); \OML/cmm/m/it/9 ==ComparingfilteredvaluesTableRowElementrow \OT1
+/cmr/m/n/9 =
+ []
+
+
+Overfull \hbox (933.40442pt too wide) in paragraph at lines 1098--1107
+\OML/cmm/m/it/9 table:getRow\OT1/cmr/m/n/9 (1); \OML/cmm/m/it/9 assertEquals\OT
+1/cmr/m/n/9 (\OML/cmm/m/it/9 row:getCell\OT1/cmr/m/n/9 (0)\OML/cmm/m/it/9 :getV
+alue\OT1/cmr/m/n/9 ()\OML/cmm/m/it/9 ; special\OT1/cmr/m/n/9 ); \OML/cmm/m/it/9
+ ==Commentthesearemockpicturesandamocktest; becausethisTablecomponentdoesnothav
+esuchafeaturelikeafilteredfield\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 butits\OT1/cmr/m
+/n/9 100\OML/cmm/m/it/9 IfwerunthistestwegetsomethinglikethisTableExamplepictur
+e:Wewillgoabitfurtherwiththisexample:[]$ 
+ []
+
+! Too many }'s.
+\@par ... \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.1107 
+       
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+Overfull \hbox (3.95207pt too wide) in paragraph at lines 1108--1112
+[][]\OT1/cmr/m/n/9 Integrating with BDD frame-works Test-bench can be in-te-gra
+ted with such Behaviour-
+ []
+
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ô in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ú in font cmr9!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1118 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1118 
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ù in font cmr9!
+
+Overfull \hbox (242.04562pt too wide) in paragraph at lines 1117--1118
+\OML/cmm/m/it/9 specialsymbolisused:JBehaveimplicitlycastspassedvaluetoaparamet
+erstype:SocheckValueInCellwillhavetwointegerparametersrowNumber \OT1/cmr/m/n/9 
+=
+ []
+
+! Too many }'s.
+\@par ... \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.1118 
+       
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+Overfull \hbox (45.25415pt too wide) in paragraph at lines 1119--1127
+\OT1/cmr/m/n/9 for-eSce-nario //open web page pub-lic void be-for-eSce-nario() 
+ set-Driver(TestBench.createDriver(new
+ []
+
+
+Overfull \hbox (1.30594pt too wide) in paragraph at lines 1133--1137
+[][]\OT1/cmr/m/n/9 @Given("web-page with ta-ble") pub-lic void the-Front-Page()
+ throws Throw-able  page
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1140         TableElement table = page.$
+                                          (TableElement.class).first();
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten $.
+l.1143     }
+            
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1144 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1144 
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ú in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ù in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ú in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ù in font cmr9!
+
+Overfull \hbox (316.7209pt too wide) in paragraph at lines 1138--1144
+[][]\OT1/cmr/m/n/9 @When("typing $\OML/cmm/m/it/9 valuetofilterfield\OT1/cmr/m/
+n/9 ")\OML/cmm/m/it/9 publicvoiduserTypesToFIlterField\OT1/cmr/m/n/9 (\OML/cmm/
+m/it/9 Stringvalue\OT1/cmr/m/n/9 )\OML/cmm/m/it/9 throwsThrowable[]$\OT1/cmr/m/
+n/9 (TableElement.class).first();
+ []
+
+
+Overfull \hbox (161.62491pt too wide) in paragraph at lines 1138--1144
+\OT1/cmr/m/n/9 TextField-Ele-ment filterElement=table.$(\OML/cmm/m/it/9 TextFie
+ldElement:class\OT1/cmr/m/n/9 )\OML/cmm/m/it/9 :id\OT1/cmr/m/n/9 (\OML/cmm/m/it
+/9 filter \OMS/cmsy/m/n/9 ^^@ \OML/cmm/m/it/9 field\OT1/cmr/m/n/9 )\OML/cmm/m/i
+t/9 :first\OT1/cmr/m/n/9 (); \OML/cmm/m/it/9 filterElement:setValue\OT1/cmr/m/n
+/9 (\OML/cmm/m/it/9 special\OT1/cmr/m/n/9 ); []$ 
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1149             TableElement table = page.$
+                                              (TableElement.class).first();
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Too many }'s.
+l.1152     }
+            
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+Overfull \hbox (596.62685pt too wide) in paragraph at lines 1146--1153
+[][]\OT1/cmr/m/n/9 @Then("value in row $\OML/cmm/m/it/9 rowNumberandcell$\OT1/c
+mr/m/n/9 cellNumber is $\OML/cmm/m/it/9 expectedValue\OT1/cmr/m/n/9 ")\OML/cmm/
+m/it/9 publicvoidcheckValueInCell\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 introwNumber; 
+intcellNumber; StringexpectedValue\OT1/cmr/m/n/9 )\OML/cmm/m/it/9 throwsThrowab
+le[]$\OT1/cmr/m/n/9 (TableElement.class).first();
+ []
+
+
+Overfull \hbox (128.96071pt too wide) in paragraph at lines 1146--1153
+\OT1/cmr/m/n/9 TableRow-Ele-ment row=table.getRow(rowNumber); as-sertE-quals(ro
+w.getCell(cellNumber).getValue(),expectedValue);
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1146--1153
+
+ []
+
+! Too many }'s.
+l.1154 }
+        
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+Overfull \hbox (101.97246pt too wide) in paragraph at lines 1159--1168
+\OT1/cmr/m/n/9 .useS-to-ryRe-porter-Builder(new Sto-ryRe-porter-Builder().withD
+efaultFormats().withFormats(Format.CONSOLE,
+ []
+
+[20] [21]
+Overfull \hbox (5.00848pt too wide) in paragraph at lines 1246--1247
 [][]\OT1/cmr/m/n/9 http://www.tiobe.com/index.php/content/paperinfo/tpci/index.
 html 
  []
 
-[19] [20] (./document.aux)
+[22] (./document.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3248 strings out of 493304
- 45792 string characters out of 6139871
- 151964 words of memory out of 5000000
- 6676 multiletter control sequences out of 15000+600000
- 11005 words of font info for 36 fonts, out of 8000000 for 9000
+ 3291 strings out of 493304
+ 46416 string characters out of 6139871
+ 155964 words of memory out of 5000000
+ 6718 multiletter control sequences out of 15000+600000
+ 11363 words of font info for 37 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,6n,49p,757b,1448s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,6n,49p,809b,1452s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/times/utmr8a.pfb>
-Output written on document.pdf (20 pages, 277464 bytes).
+msfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
+s/utmr8a.pfb>
+Output written on document.pdf (22 pages, 306103 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
+ 148 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

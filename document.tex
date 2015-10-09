@@ -1088,17 +1088,110 @@ server side will notify the client side about this change.
     using different versions of Testbench with different versions of Vaadin.
     
    \subsection{Actual use of Testbench}
-    Here I would describe how Testbench is used in Vaadin. How many tests are in
-    Vaadin. How we run them, how failed tests are fixed what are the problems
-    and benefits. What features of the Testbench are used (parallel testing
-    run, searching elements on web-page by id,name,class, xpath, etc.)
+   Use of TestBench in Vaadin
+The greatest value to Vaadin team is that Testbench tests build up a regression test suite for the Vaadin framework. This allowed developers to refactor code without fear of breaking the previous work. Sometimes developers do not know all the details of the framework and make mistakes, failing tests give sufficient information about the problem and give a confidence that their patches do not break existing code.  This is extremely important for large open-source projects, because this reduces cost for developers to contribute to the project. Besides all patches are reviewed by Vaadin experts and running tests beforehand rejects failable code. 
+
+While our automated acceptance tests carried great value, there were instances where a failing Testbench test gave a false alarm. One of the most fundamental problems of Web testing is that the developer can make a change that keeps the application completely correct, but break an automated test. That might be caused by changing DOM or CSS of the page, for example adding an extra div may affect searching element by xPath. Such kind of problems occurs quite often when developing new features. 
+
+Especially in agile development when work is done in small iterations/cycles, changes in code require changes in testing. This gives a fast feedback and an opportunity to find and fix problems early, but also brings frustration for developers that they have to fix problems both in code and tests. That might bring a false attitude that writing tests on early stages of the project, when there is no clear picture of the final product, increases the amount of work for developers. We totally believe that writing tests reduces an overall work, even if these tests have to be changed often. Usually a good rule is that every patch should add or edit at least one test suite, that also ease the reviewers job, because a test suite explains what is the reason of the patch. 
+
+In addition to having value throughout the development lifecycle, Testbench tests are valuable artifacts to get end-users feedback. Because Testbench tests are executed in browser, tests can be used for demonstrating application features to the end-user. Let’s look at the example. Assume someone extended a Table component by adding a filter field to it, typing value in the filter field filters values of the underlying table. Test for this feature may look like this:
+TableElement table = getTableElement();
+TextFieldElement filterElement=table.$(TextFieldElement.class).id(“filter-field”).first();
+filterElement.setValue(“special”);
+//Comparing filtered values
+TableRowElement row=table.getRow(1);
+assertEquals(row.getCell(0).getValue(),”special”);
+// Comment these are mock pictures and a mock test, because this Table component does not have such a feature like a filtered field (but it’s 100% donable, just creating custom components for vaadin is out of the scope of this master thesis and probably would take some time). So should I stress this out somehow? For me it’s obvious that it’s just an example (both code and picture).
+ If we run this test we get something like this TableExample picture. We will go a bit further with this example.
+
+Integrating with BDD frameworks
+Testbench can be integrated with such Behaviour-Driven Development (BDD) frameworks as JBehave and Cucumber. JBehave allows to write user-stories in common(?) English and associate them with Automated Acceptance tests. 
+User story in JBehave will look like this:
+Scenario: filter table contents
+
+Given web-page with table
+When typing speicial to filter field
+Then value in row 1 and cell 0 is special
+
+User story steps are matched into actual Java tests using annotations.  The method with an annotation interact with an application and perform the actions needed. Since TestBench tests are pure Java code and BDD steps can be run as JUnit tests, we can combine these to make JBehave run TestBench tests. We start by extending the TestBenchTestCase  and use JBehave’s @BeforeScenario annotation to open a tested webpage. @Given @When and @Then annotations are mapped with correspoiding steps in the user scenario. To pass parameters from the user-scenario step to a Java method “$”- special symbol is used. JBehave implicitly casts passed value to a parameters type. So checkValueInCell will have two integer parameters rowNumber=1, cellNumber=0 and string paremeter expectedValue=special. 
+
+ public class FilterTableSteps extends TestBenchTestCase {
+  TableTestUI page;
+    @BeforeScenario
+    //open web page
+    public void beforeScenario() {
+        setDriver(TestBench.createDriver(new FirefoxDriver()));
+        getDriver().get("http://localhost:8080");
+    }
+
+    @AfterScenario
+    public void afterScenario() {
+        getDriver().quit();
+    }
+
+    @Given("web-page with table")
+    public void theFrontPage() throws Throwable {
+        page = PageFactory.initElements(getDriver(), TableTestUI.class);
+    }
+
+    @When("typing $value to filter field")
+    public void userTypesToFIlterField(String value) throws Throwable {
+        TableElement table = page.$(TableElement.class).first();
+TextFieldElement filterElement=table.$(TextFieldElement.class).id(“filter-field”).first();
+filterElement.setValue(“special”);
+    }
+
+
+    @Then("value in row $rowNumber and cell $cellNumber is $expectedValue")
+    public void checkValueInCell(int rowNumber,int cellNumber,String expectedValue)
+            throws Throwable {
+            TableElement table = page.$(TableElement.class).first();
+TableRowElement row=table.getRow(rowNumber);
+assertEquals(row.getCell(cellNumber).getValue(),expectedValue);
+    }
+
+}
+To link a Java class and a textual story file we need to create a configuration class.
+The simplest configuration is a one-to-one mapping between a Java class and a textual story file. 
+public class SimpleConfig extends JUnitStory {
+ 
+    // Here we specify the configuration, starting from default MostUsefulConfiguration, and changing only what is needed
+    @Override
+    public Configuration configuration() {
+        return new MostUsefulConfiguration()
+            // where to find the stories
+            .useStoryLoader(new LoadFromClasspath(this.getClass())) 
+            // CONSOLE and TXT reporting
+            .useStoryReporterBuilder(new StoryReporterBuilder().withDefaultFormats().withFormats(Format.CONSOLE, Format.TXT));
+    }
+ 
+    // Here we specify the steps classes
+    @Override
+    public InjectableStepsFactory stepsFactory() {    	
+        // varargs, can have more that one steps classes
+        return new InstanceStepsFactory(configuration(), new FilterTableSteps());
+    }
+}
+
+
+So we can have both a user-story for our test explaining what should be done and a browser executed test showing the actual implementation. Picture with user story and browser implementation.  
+
+We believe that user-stories scenarios greatly ease communication between stackholders, especially if some of them do not have relevant technical background. So user-stories can be shared between stackholders to show what is done and what is planning to be done, if there are questions executing these user-stories in a browser will help to reveal more details about it. 
+   
+   
+   
+ %   Here I would describe how Testbench is used in Vaadin. How many tests are
+    % in Vaadin. How we run them, how failed tests are fixed what are the problems
+ %   and benefits. What features of the Testbench are used (parallel testing
+ %   run, searching elements on web-page by id,name,class, xpath, etc.)
     
-    Then I would like to mentioned how user/developer may use Testbench, what is
-    needed. Unfortunatelly it's really hard to find data to meausure the profit
-    of using testging tools. It would be really nice to have a big project and
-    have development with/without testing and see the end result, but I think
-    it's really unlikely to happen. But may be there were some similiar studies,
-    at least for other tools.
+ %   Then I would like to mentioned how user/developer may use Testbench, what
+    % is needed. Unfortunatelly it's really hard to find data to meausure the profit
+ %   of using testging tools. It would be really nice to have a big project and
+ %   have development with/without testing and see the end result, but I think
+ %   it's really unlikely to happen. But may be there were some similiar
+    % studies, at least for other tools.
  \section {Discussion and Conclussion}
  	Middle of April/ End of April
  	\subsection {Summary}
