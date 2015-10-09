@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.8)  9 OCT 2015 13:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.8)  9 OCT 2015 16:52
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -415,13 +415,9 @@ File: babel.def 2013/12/03 3.9h Babel common definitions
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
-) (./document.aux (./intro.aux) (./webtesting.aux) (./testbenchdevelop.aux) (./
-testbench.aux)
-(./testbenchuse.aux)
-
-LaTeX Warning: Label `ch:testbenchuse' multiply defined.
-
-)
+) (./document.aux (./intro.aux) (./background.aux) (./webtesting.aux) (./testbe
+nchdevelop.aux)
+(./testbenchuse.aux))
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
@@ -438,7 +434,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count133
 \scratchdimen=\dimen153
@@ -524,7 +521,7 @@ LaTeX Info: Redefining \nameref on input line 44.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/tty_tut_logo.jpg, id=100, 632.3625pt x 94.3525pt>
+<images/tty_tut_logo.jpg, id=92, 632.3625pt x 94.3525pt>
 File: images/tty_tut_logo.jpg Graphic file (type jpg)
 
 <use images/tty_tut_logo.jpg>
@@ -622,34 +619,31 @@ File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 
 ]
 
-LaTeX Warning: Reference `ch:style' on page 2 undefined on input line 54.
+LaTeX Warning: Reference `ch:vaadin' on page 2 undefined on input line 55.
 
 
-LaTeX Warning: Reference `sec:ref_styles' on page 2 undefined on input line 57.
-
-
-
-LaTeX Warning: Reference `ch:concl' on page 2 undefined on input line 57.
+LaTeX Warning: Reference `ch:concl' on page 2 undefined on input line 58.
 
 ) [2]
+\openout2 = `background.aux'.
+
+ (./background.tex
  2.
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 223.
-
 [3
+
 
 
 ]
 
-LaTeX Warning: Citation `cleanCode' on page 4 undefined on input line 264.
+LaTeX Warning: Citation `cleanCode' on page 4 undefined on input line 44.
 
-[4] [5]
+[4]) [5]
 \openout2 = `webtesting.aux'.
 
  (./webtesting.tex
  3.
 [6
+
 
 
 ] [7] [8]
@@ -1127,14 +1121,13 @@ You need to provide a definition with \DeclareInputText
 or \DeclareInputMath before using this key.
 
 [10]) [11]
+\openout2 = `testbenchdevelop.aux'.
+
+ (./testbenchdevelop.tex
  4.
 [12
 
 
-]
-\openout2 = `testbenchdevelop.aux'.
-
- (./testbenchdevelop.tex [13
 
 ]
 
@@ -1145,7 +1138,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59   We didn�
+l.62   We didn�
                 �t find any arguments to change the tools were used in the p...
 
 You need to provide a definition with \DeclareInputText 
@@ -1159,7 +1152,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59   We didn’
+l.62   We didn’
                  t find any arguments to change the tools were used in the p...
 
 You need to provide a definition with \DeclareInputText 
@@ -1167,21 +1160,21 @@ or \DeclareInputMath before using this key.
 
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 61.
+(hyperref)                than one, level fixed on input line 64.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 71.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 74.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
- [14]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
+ [13]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
-) [15]
+) [14]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `latin1'.
@@ -1190,7 +1183,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142   �
+l.145   �
           �new feature”, “enchantment”, “error/bug”. At the beginn...
 
 You need to provide a definition with \DeclareInputText 
@@ -1204,7 +1197,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142   “
+l.145   “
            new feature”, “enchantment”, “error/bug”. At the beginn...
 
 You need to provide a definition with \DeclareInputText 
@@ -1218,7 +1211,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142   “new feature�
+l.145   “new feature�
                         �, “enchantment”, “error/bug”. At the beginn...
 
 You need to provide a definition with \DeclareInputText 
@@ -1232,7 +1225,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142   “new feature”
+l.145   “new feature”
                          , “enchantment”, “error/bug”. At the beginn...
 
 You need to provide a definition with \DeclareInputText 
@@ -1246,7 +1239,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142   “new feature”, �
+l.145   “new feature”, �
                              �enchantment”, “error/bug”. At the beginn...
 
 You need to provide a definition with \DeclareInputText 
@@ -1260,7 +1253,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142   “new feature”, “
+l.145   “new feature”, “
                               enchantment”, “error/bug”. At the beginn...
 
 You need to provide a definition with \DeclareInputText 
@@ -1274,7 +1267,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142   “new feature”, “enchantment�
+l.145   “new feature”, “enchantment�
                                            �, “error/bug”. At the beginn...
 
 You need to provide a definition with \DeclareInputText 
@@ -1288,7 +1281,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142   “new feature”, “enchantment”
+l.145   “new feature”, “enchantment”
                                             , “error/bug”. At the beginn...
 
 You need to provide a definition with \DeclareInputText 
@@ -1302,7 +1295,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142   “new feature”, “enchantment”, �
+l.145   “new feature”, “enchantment”, �
                                                 �error/bug”. At the beginn...
 
 You need to provide a definition with \DeclareInputText 
@@ -1316,7 +1309,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142   “new feature”, “enchantment”, “
+l.145   “new feature”, “enchantment”, “
                                                  error/bug”. At the beginn...
 
 You need to provide a definition with \DeclareInputText 
@@ -1330,7 +1323,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142 ...ure”, “enchantment”, “error/bug�
+l.145 ...ure”, “enchantment”, “error/bug�
                                                   �. At the beginning of the...
 
 You need to provide a definition with \DeclareInputText 
@@ -1344,7 +1337,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142 ...re”, “enchantment”, “error/bug”
+l.145 ...re”, “enchantment”, “error/bug”
                                                   . At the beginning of the ...
 
 You need to provide a definition with \DeclareInputText 
@@ -1358,7 +1351,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 ...ided into several sections for example �
+l.159 ...ided into several sections for example �
                                                   �to be done”, “in prog...
 
 You need to provide a definition with \DeclareInputText 
@@ -1372,7 +1365,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 ...ded into several sections for example “
+l.159 ...ded into several sections for example “
                                                   to be done”, “in progr...
 
 You need to provide a definition with \DeclareInputText 
@@ -1386,7 +1379,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 ...eral sections for example “to be done�
+l.159 ...eral sections for example “to be done�
                                                   �, “in progress”, “i...
 
 You need to provide a definition with \DeclareInputText 
@@ -1400,7 +1393,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 ...ral sections for example “to be done”
+l.159 ...ral sections for example “to be done”
                                                   , “in progress”, “in...
 
 You need to provide a definition with \DeclareInputText 
@@ -1414,7 +1407,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 ...sections for example “to be done”, �
+l.159 ...sections for example “to be done”, �
                                                   �in progress”, “in rev...
 
 You need to provide a definition with \DeclareInputText 
@@ -1428,7 +1421,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 ...ections for example “to be done”, “
+l.159 ...ections for example “to be done”, “
                                                   in progress”, “in revi...
 
 You need to provide a definition with \DeclareInputText 
@@ -1442,7 +1435,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 ...xample “to be done”, “in progress�
+l.159 ...xample “to be done”, “in progress�
                                                   �, “in review”,
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1455,7 +1448,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 ...ample “to be done”, “in progress”
+l.159 ...ample “to be done”, “in progress”
                                                   , “in review”,
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1468,7 +1461,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 ...e “to be done”, “in progress”, �
+l.159 ...e “to be done”, “in progress”, �
                                                   �in review”,
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1481,7 +1474,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 ... “to be done”, “in progress”, “
+l.159 ... “to be done”, “in progress”, “
                                                   in review”,
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1494,7 +1487,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 ...one”, “in progress”, “in review�
+l.159 ...one”, “in progress”, “in review�
                                                   �,
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1507,7 +1500,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 ...ne”, “in progress”, “in review”
+l.159 ...ne”, “in progress”, “in review”
                                                   ,
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1520,7 +1513,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.157   �
+l.160   �
           �closed”. Paper stickers represent tickets and the person who is...
 
 You need to provide a definition with \DeclareInputText 
@@ -1534,7 +1527,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.157   “
+l.160   “
            closed”. Paper stickers represent tickets and the person who is...
 
 You need to provide a definition with \DeclareInputText 
@@ -1548,7 +1541,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.157   “closed�
+l.160   “closed�
                    �. Paper stickers represent tickets and the person who is...
 
 You need to provide a definition with \DeclareInputText 
@@ -1562,7 +1555,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.157   “closed”
+l.160   “closed”
                     . Paper stickers represent tickets and the person who is...
 
 You need to provide a definition with \DeclareInputText 
@@ -1576,7 +1569,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.159 ...t from the sprint backlog queue called �
+l.162 ...t from the sprint backlog queue called �
                                                   �to be done”
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1589,7 +1582,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.159 ... from the sprint backlog queue called “
+l.162 ... from the sprint backlog queue called “
                                                   to be done”
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1602,7 +1595,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.159 ...rint backlog queue called “to be done�
+l.162 ...rint backlog queue called “to be done�
                                                   �
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1615,7 +1608,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.159 ...int backlog queue called “to be done”
+l.162 ...int backlog queue called “to be done”
                                                   
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1628,7 +1621,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.160 ...name on the sticker and move it to the �
+l.163 ...name on the sticker and move it to the �
                                                   �in progress” section.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1641,7 +1634,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.160 ...ame on the sticker and move it to the “
+l.163 ...ame on the sticker and move it to the “
                                                   in progress” section.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1654,7 +1647,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.160 ...icker and move it to the “in progress�
+l.163 ...icker and move it to the “in progress�
                                                   � section.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1667,12 +1660,12 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.160 ...cker and move it to the “in progress”
+l.163 ...cker and move it to the “in progress”
                                                    section.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-[16]
+[15]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `latin1'.
@@ -1681,7 +1674,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.185     control systems, all repositories are �
+l.188     control systems, all repositories are �
                                                   �equal”. Though in pract...
 
 You need to provide a definition with \DeclareInputText 
@@ -1695,7 +1688,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.185 ...control systems, all repositories are “
+l.188 ...control systems, all repositories are “
                                                   equal”. Though in practi...
 
 You need to provide a definition with \DeclareInputText 
@@ -1709,7 +1702,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.185 ... systems, all repositories are “equal�
+l.188 ... systems, all repositories are “equal�
                                                   �. Though in practise deve...
 
 You need to provide a definition with \DeclareInputText 
@@ -1723,7 +1716,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.185 ...systems, all repositories are “equal”
+l.188 ...systems, all repositories are “equal”
                                                   . Though in practise devel...
 
 You need to provide a definition with \DeclareInputText 
@@ -1737,7 +1730,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.186     create a �
+l.189     create a �
                      �master” repository, where everyone push their own ch...
 
 You need to provide a definition with \DeclareInputText 
@@ -1751,7 +1744,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.186     create a “
+l.189     create a “
                       master” repository, where everyone push their own ch...
 
 You need to provide a definition with \DeclareInputText 
@@ -1765,7 +1758,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.186     create a “master�
+l.189     create a “master�
                               � repository, where everyone push their own ch...
 
 You need to provide a definition with \DeclareInputText 
@@ -1779,21 +1772,21 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.186     create a “master”
+l.189     create a “master”
                                 repository, where everyone push their own ch...
 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-[17] [18] <images/gerrit1.png, id=346, 963.6pt x 722.7pt>
+[16] [17] <images/gerrit1.png, id=330, 963.6pt x 722.7pt>
 File: images/gerrit1.png Graphic file (type png)
 
 <use images/gerrit1.png>
-Package pdftex.def Info: images/gerrit1.png used on input line 267.
+Package pdftex.def Info: images/gerrit1.png used on input line 270.
 (pdftex.def)             Requested size: 320.0935pt x 240.06866pt.
- [19]
+ [18]
 File: class.1 Graphic file (type mps)
- [MP to PDF] (./class.1)
+ [MP to PDF] (./class.1) [19 <./images/gerrit1.png>]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `latin1'.
@@ -1802,7 +1795,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.292 ...irect children of the element, while it�
+l.295 ...irect children of the element, while it�
                                                   �s recursive analog looks
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1815,7 +1808,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.292 ...rect children of the element, while it’
+l.295 ...rect children of the element, while it’
                                                   s recursive analog looks
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1823,12 +1816,11 @@ or \DeclareInputMath before using this key.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
-Overfull \hbox (10.12392pt too wide) in paragraph at lines 288--297
+Overfull \hbox (10.12392pt too wide) in paragraph at lines 291--300
 [][]\T1/cmr/m/n/12 AbstractHasTestBenchCommandExecutor class pro-vides `$(Class
  clazz)' and `$$(Class
  []
 
-[20 <./images/gerrit1.png>]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `latin1'.
@@ -1837,7 +1829,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.298       <div id=”id1”>
+l.301       <div id=”id1”>
                               
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1850,7 +1842,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.298       <div id=”id1”>
+l.301       <div id=”id1”>
                               
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1863,7 +1855,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.298       <div id=”id1”>
+l.301       <div id=”id1”>
                               
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1876,7 +1868,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.298       <div id=”id1”>
+l.301       <div id=”id1”>
                               
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1889,7 +1881,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.307 ... searching the element based on element�
+l.310 ... searching the element based on element�
                                                   �s id,class,
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1902,7 +1894,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.307 ...searching the element based on element’
+l.310 ...searching the element based on element’
                                                   s id,class,
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1915,7 +1907,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.319 ...strict search for buttons with caption �
+l.322 ...strict search for buttons with caption �
                                                   �ok” we add a caption fi...
 
 You need to provide a definition with \DeclareInputText 
@@ -1929,7 +1921,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.319 ...trict search for buttons with caption “
+l.322 ...trict search for buttons with caption “
                                                   ok” we add a caption fil...
 
 You need to provide a definition with \DeclareInputText 
@@ -1943,7 +1935,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.319 ...t search for buttons with caption “ok�
+l.322 ...t search for buttons with caption “ok�
                                                   � we add a caption filter ...
 
 You need to provide a definition with \DeclareInputText 
@@ -1957,7 +1949,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.319 ... search for buttons with caption “ok”
+l.322 ... search for buttons with caption “ok”
                                                    we add a caption filter t...
 
 You need to provide a definition with \DeclareInputText 
@@ -1971,7 +1963,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.323 ....$(ButtonElement.class).caption(“ok”)
+l.326 ....$(ButtonElement.class).caption(“ok”)
                                                   .all();
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1984,7 +1976,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.323 ....$(ButtonElement.class).caption(“ok”)
+l.326 ....$(ButtonElement.class).caption(“ok”)
                                                   .all();
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1997,7 +1989,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.323 ....$(ButtonElement.class).caption(“ok”)
+l.326 ....$(ButtonElement.class).caption(“ok”)
                                                   .all();
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -2010,7 +2002,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.323 ....$(ButtonElement.class).caption(“ok”)
+l.326 ....$(ButtonElement.class).caption(“ok”)
                                                   .all();
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -2023,7 +2015,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.326 ...ent class as a foundation and extend it�
+l.329 ...ent class as a foundation and extend it�
                                                   �s functionality by using ...
 
 You need to provide a definition with \DeclareInputText 
@@ -2037,7 +2029,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.326 ...nt class as a foundation and extend it’
+l.329 ...nt class as a foundation and extend it’
                                                   s functionality by using J...
 
 You need to provide a definition with \DeclareInputText 
@@ -2051,7 +2043,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.328 ...conventions is Vaadin component name + �
+l.331 ...conventions is Vaadin component name + �
                                                   �Element”. In other word...
 
 You need to provide a definition with \DeclareInputText 
@@ -2065,7 +2057,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.328 ...onventions is Vaadin component name + “
+l.331 ...onventions is Vaadin component name + “
                                                   Element”. In other words...
 
 You need to provide a definition with \DeclareInputText 
@@ -2079,7 +2071,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.328 ...s is Vaadin component name + “Element�
+l.331 ...s is Vaadin component name + “Element�
                                                   �. In other words ButtonEl...
 
 You need to provide a definition with \DeclareInputText 
@@ -2093,7 +2085,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.328 ... is Vaadin component name + “Element”
+l.331 ... is Vaadin component name + “Element”
                                                   . In other words ButtonEle...
 
 You need to provide a definition with \DeclareInputText 
@@ -2107,7 +2099,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.328 ...ore flexibility when writing tests. Let�
+l.331 ...ore flexibility when writing tests. Let�
                                                   �s look at the example:
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -2120,14 +2112,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.328 ...re flexibility when writing tests. Let’
+l.331 ...re flexibility when writing tests. Let’
                                                   s look at the example:
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-[21]
+[20]
 ! Undefined control sequence.
-l.349 \subscection
+l.352 \subscection
                    {Basic test case structure}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2138,7 +2130,7 @@ and I'll forget about whatever was undefined.
 ! You can't use `\spacefactor' in vertical mode.
 \@->\spacefactor 
                  \@m 
-l.354   \item \@
+l.357   \item \@
                 Rule -defines certain TestBench parameters.
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2148,7 +2140,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.354   \item \@
+l.357   \item \@
                 Rule -defines certain TestBench parameters.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2160,7 +2152,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.355   \item
+l.358   \item
               \@Before - the annotated method is executed before each test.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2172,7 +2164,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.355   \item \@
+l.358   \item \@
                 Before - the annotated method is executed before each test.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2184,7 +2176,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.355   \item \@
+l.358   \item \@
                 Before - the annotated method is executed before each test.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2192,7 +2184,7 @@ If that doesn't work, type  X <return>  to quit.
 ! You can't use `\spacefactor' in math mode.
 \@->\spacefactor 
                  \@m 
-l.355   \item \@
+l.358   \item \@
                 Before - the annotated method is executed before each test.
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2206,7 +2198,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.356   \item
+l.359   \item
               \@Test - annotates the tested method.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2214,7 +2206,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.356   \item \@
+l.359   \item \@
                 Test - annotates the tested method.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2222,7 +2214,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.356   \item \@
+l.359   \item \@
                 Test - annotates the tested method.
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2233,7 +2225,7 @@ my insertion and my current dilemma will both disappear.
 Missing character: There is no � in font cmex10!
 Missing character: There is no � in font cmex10!
 
-Overfull \hbox (126.41272pt too wide) in paragraph at lines 354--356
+Overfull \hbox (126.41272pt too wide) in paragraph at lines 357--359
 [][]$\OML/cmm/m/it/12 Rule \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 definescertain
 TestBenchparameters:Before \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 theannotatedme
 thodisexecutedbeforeeachtest:[][]$ 
@@ -2242,7 +2234,7 @@ thodisexecutedbeforeeachtest:[][]$
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.356   \item \@
+l.359   \item \@
                 Test - annotates the tested method.
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2253,7 +2245,7 @@ deleted material, e.g., by typing `I$}'.
 ! You can't use `\spacefactor' in vertical mode.
 \@->\spacefactor 
                  \@m 
-l.356   \item \@
+l.359   \item \@
                 Test - annotates the tested method.
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2263,7 +2255,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.356   \item \@
+l.359   \item \@
                 Test - annotates the tested method.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2275,7 +2267,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.357   \item
+l.360   \item
               \@After - the annotated method is executed after test.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2287,7 +2279,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.357   \item \@
+l.360   \item \@
                 After - the annotated method is executed after test.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2299,7 +2291,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.357   \item \@
+l.360   \item \@
                 After - the annotated method is executed after test.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2307,7 +2299,7 @@ If that doesn't work, type  X <return>  to quit.
 ! You can't use `\spacefactor' in math mode.
 \@->\spacefactor 
                  \@m 
-l.357   \item \@
+l.360   \item \@
                 After - the annotated method is executed after test.
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2321,7 +2313,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.358 \end{itemize}
+l.361 \end{itemize}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2333,7 +2325,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.358 \end{itemize}
+l.361 \end{itemize}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2345,7 +2337,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.358 \end{itemize}
+l.361 \end{itemize}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2353,7 +2345,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.358 \end{itemize}
+l.361 \end{itemize}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2364,20 +2356,21 @@ my insertion and my current dilemma will both disappear.
 Missing character: There is no � in font cmex10!
 Missing character: There is no � in font cmex10!
 
-Overfull \hbox (0.42416pt too wide) in paragraph at lines 356--359
+Overfull \hbox (0.42416pt too wide) in paragraph at lines 359--362
 [][]$\OML/cmm/m/it/12 Test \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 annotatesthete
 stedmethod:After \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 theannotatedmethodisexec
 utedaftertest:$ 
  []
 
+[21]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 392.
-[22] [23]) [24]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 395.
+ [22]) [23]
 \openout2 = `testbenchuse.aux'.
 
  (./testbenchuse.tex
  5.
-[25
+[24
 
 
 
@@ -2392,7 +2385,7 @@ Overfull \hbox (1.11682pt too wide) in paragraph at lines 59--62
 l-op-ment (BDD) frame-
  []
 
-[26]
+[25]
 Overfull \hbox (74.68967pt too wide) in paragraph at lines 102--103
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2403,88 +2396,55 @@ Overfull \hbox (158.77791pt too wide) in paragraph at lines 121--130
 ithDefaultFormats().withFormats(Format.CONSOLE,
  []
 
-[27]) [28] [29
+[26]) [27] [28
 
-] [30
+] [29
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 477.
- [31]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 477.
- (./document.aux (./intro.aux) (./webtesting.aux)
-(./testbenchdevelop.aux) (./testbenchuse.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 477.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 477.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 345.
+ [30]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 345.
+ (./document.aux (./intro.aux) (./background.aux)
+(./webtesting.aux) (./testbenchdevelop.aux) (./testbenchuse.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 345.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 345.
+Package rerunfilecheck Info: File `document.out' has not changed.
+(rerunfilecheck)             Checksum: D952293A3DC4E76F151B018775B34755;1360.
 
-
-Package rerunfilecheck Warning: File `document.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `document.out':
-(rerunfilecheck)             Before: 1D82DA1EAEA01F38C5A3F78284EA4B97;1507
-(rerunfilecheck)             After:  AD5B0CD55844F0A15A4A7AE48A477B4F;1455.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 477.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 345.
  ) 
 Here is how much of TeX's memory you used:
- 11024 strings out of 493304
- 158211 string characters out of 6139871
- 292130 words of memory out of 5000000
- 13961 multiletter control sequences out of 15000+600000
+ 11017 strings out of 493304
+ 158125 string characters out of 6139871
+ 295130 words of memory out of 5000000
+ 13959 multiletter control sequences out of 15000+600000
  21597 words of font info for 46 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  43i,12n,51p,472b,1869s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section.6.3} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.6} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.1.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fo
-nts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy6.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1095.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfbx0600.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-rm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfs
-s1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti
-0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share
-/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/times/utmr8a.pfb>
-Output written on document.pdf (38 pages, 462014 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/
+fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1095.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfbx0600.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fss1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+ti0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/times/utmr8a.pfb>
+Output written on document.pdf (37 pages, 461175 bytes).
 PDF statistics:
- 715 PDF objects out of 1000 (max. 8388607)
- 646 compressed objects within 7 object streams
- 322 named destinations out of 1000 (max. 500000)
- 203 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 695 PDF objects out of 1000 (max. 8388607)
+ 627 compressed objects within 7 object streams
+ 313 named destinations out of 1000 (max. 500000)
+ 187 words of extra memory for PDF output out of 10000 (max. 10000000)
 

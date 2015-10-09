@@ -1,60 +1,60 @@
 	
 	 \chapter{Introduction}
 	 \label{ch:intro} 		
-	 Web applications provide critical services to our society,
-	 ranging from the financial and commercial sector,to the public
-	 administration and health care.The wide spread use of web
-	 applications as the natural interface between a service and its
-	 users puts a serious demand on the quality levels that web
-	 application developers are expected to deliver. At the same time,
-	 web applications tend to evolve quickly, especially for what
-	 concerns the presentation and interaction layer. The release
-	 cycle of web applications is very short, which makes it difficult
-	 to accommodate quality assurance (e.g.,testing) activities in 
-	 the development process when a new release is delivered. For
-	 these reasons, the possibility to increase the effectiveness and
-	 efficiency of web testing has become a major need and several 
-	 methodologies, tools and techniques have been developed over time.
-	 
-	 In these paper I will present Vaadin framework and testing tool for Vaadin,
-	 called Vaadin Testbench.
+	The 21st century has become an era of web applications. Software systems
+	developed as a web based applcation allowes the end user to access data via web browser
+	from different parts of the world and also from different devices (laptop,
+	phones,tablets) has become one of the main features of modern
+	applications. Static html web sites, with little amount of javascript, which
+	were constituting the big part of the Web are loosing their popularity.
 	
-	``Vaadin Framework is a Java web application development framework that is
-	designed to make creation and maintenance of high quality web-based user interfaces easy.
-	 Vaadin supports two different programming models: server-side and client-side. 
-	 `` \cite[pr1.1]{bookVaaidn}
-	 Vaadin TestBench is a tool for automated user interface testing of web
-	 applications on all platforms and browsers. \cite{vaadinTestbenchSite}
-	 
-	 In the Fall 2014 I was a part of the team which developed Vaadin Testbench
+	 Modern web	applications are very interactive and dynamic, they are becoming
+	more powerful, and the difference between desktop and web applications
+	dissapears. Web technologies are developing so fast, that even such domain
+	specific applications as IDE(Integrated Development Environment), trading
+	sytems or graphic editors can be accessed via web browser. As a resut of the
+	growth of web applications, development and maintanance of such complicated
+	systems becomes more challenging. To reduce development and maintanance costs
+	software frameworks are coming into existence.
+	
+	In this paper I will describe tools and methodologies used for web testing. Mainly I will focus on a Java-base
+	framework for developing Web applications called Vaadin and a testing tool
+	called Vaadin Testbench.
+	
+	 In the Fall of 2014 I was a part of the team which developed Vaadin Testbench
 	 4.0.0 and released it in the beginging of December. Web testing tools is a
-	 new topic and in the this work I will represent the main ideas and challenges
-	 of web testing and how they were solved during Testbench development. I will
-	 also describe Vaadin framework, because Testbench is focused on testing web
-	 applications written with Vaadin. I will also describe the working flow, what
-	 tools and methodologies were used and how the final product might help Vaadin
-	 developers.
+	 new topic and I will represent the main ideas and challenges
+	 of web testing and how they were solved during Testbench development.
 	 
 	 The goal of this work is to provide a tool for a developer, that will help to
 	 write tests which can simulate user actions on the web page. The main
-	 challenge is that code written with Vaadin might execute both on the
-	 client-side and server-side, so that events happen on the client-side will be
-	 properly sent to the server-side. Another challenge is to develop an universal
-	 easy to use testing tool for Vaadin framework with a clear API.
+	 challenge is that code written with Vaadin code executes both on the
+	 client-side and server-side and testing tool should handle all the complexity
+	 in testing client-side and server-side communications. Another challenge is to
+	 develop an universal and easy to use testing tool for Vaadin framework with a
+	 clear API.
 	 
 	  The result of the work was Testbench 4.0.0 released in December 2014.
 	  Several user tests have shown, that a person with experience in Java and
 	  Vaadin, but without any experience using Testbench, needs 15 minutes to setup
 	  the envirenment and write a simple ``button-click'' test. We consider this
-	  result as a success. Vaadin is an open-source project and Testbench is
-	  available with free for non-comercial use license. So every person from Vaadin community can try
-	  Testbench and take a look on results of our work and decide does it suits
-	  his/her own needs.
+	  result as a success.
 	  
-	  This document is structured as follows. Chapter~\ref{ch:style}
-	  discusses briefly the basics of writing and presentation style
-	  regarding the text, figures, tables and mathematical
-	  notations. Chapters~\ref{sec:ref_styles} and \ref{ch:concl} summarize
-	   the referencing basics and the whole document. There are two example
-	appendices as well (Appendix A and B).
+	  Vaadin is an open-source project and Testbench is available with free for non-comercial use license. 
+	  So every person from Vaadin community can try Testbench and take a look on results of our work and
+	   decide does it suits his/her own needs.
+	  
+	  	 
+	  I will also , because Testbench is focused on testing web
+	 applications written with Vaadin. I will also describe the working flow, what
+	 tools and methodologies the team used and how the final product helps
+	 Vaadin developers.
+	  
+	  
+	  This document is structured as follows. Chapter~\ref{ch:webtesting} describes
+	  and compares different tehniques used in Web testing. Chapter~\ref{ch:vaadin} describes Vaadin framework.
+	  Chapter \ref{ch:testbenchdevelop} presents the developing process of TestBench tools and methodologies used. Chapter
+	  \ref{ch:testbenchuse} shows the example of writing tests and the value for
+	  end user from using Testbench. Chapter~\ref{ch:concl} summarize the whole
+	  document and list the results. There are two example appendices as well (Appendix A and B).
 % ~\ref{app:A} and \ref{app:B}). Labels do not with \chapter*

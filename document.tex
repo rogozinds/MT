@@ -178,6 +178,7 @@ Dmitrii Rogozin
 % You don't have to align these with whitespaces, but it makes the
 % .tex file more readable
 \begin{termlist}
+\item [IDE] Integrated Development Environment
 \item [CC license] Creative Commons license
 \item [LaTeX] 	   Typesetting system for scientific documentation
 \item [SI system]  Syst\`eme international d'unit�s, International System of Units
@@ -217,140 +218,8 @@ first usage in the text.
 
 % You can write everything into single tex file. Alternatively, you
 % can write each chapter into separate file and then include them her
-	 
-\chapter{Theoretical background}
-\label{ch:thBackground} 
-	\subsection{Terms and Definitions}
-		21st century has become an era of web applications. Software systems developed
-		as a web based applcation allowes the end user to access data via web browser
-		from different parts of the world and also from different devices (laptop,
-		phones,tablets) has become one of the main features of modern
-		applications. 
-		
-		Static html web sites, with little amount of javascript, which were
-		constituting the big part of the Web are passing away. Modern web
-		applications are very interactive and dynamic, they are becoming
-		more powerful, and the difference between desktop and web applications
-		dissapears. Web technologies are developing so fast, that even such domain
-		specific applications as IDE(Integrated Development Dnvironment), trading
-		sytems or graphic editors can be accessed via web browser. The key concept
-		that helps such complicated software to become web-based is a multi-tier
-		arhcitecture - the concept where the parts of the system are divided into
-		separate tiers. This allows to develop presentation tier, which is
-		responsible for user interface generation and lightweight validation, to
-		be separate from complicated business-logic which runs on the server
-		side. As a consequence the presentation tier code may be executed on different
-		platforms, including web browsers. 
-		
-		As an extend of the growth of web applications the developing and maintaining such complicated systems becomes more and more challenging.
-		All applications have a lot of common features and problems which
-		were already solved by developers beforehand. This is a good practise not to
-		try to reenvent a whell, but take an already made solution. That is why many
-		modern applications are based on one or several software frameworks. Indeed it
-		is hard to imagine that some developers team will pick a programming
-		language and start to develop everything from scratch, without using any
-		framework or third-party library. Same implications are applyied for testing
-		frameworks. The rapidly changing and highly competitive business environment,
-		choosing a right toolset is one of the key factors of the sucess. 
-		
-		Nowdays some companies are still rely on manual testing or ignore this
-		important part of software development at all. Such approach has several
-		sorrowful consequences:
-		
-		1. The developers are affraid of changing already written
-		code. Because they do not have a confidence that their changes will break something. They
-			stop cleaning their production code because they fear the changes would
-			do more harm than good. ``Their production code began to rot"
-			\cite[p.123]{cleanCode} 
-		2. The effort of finding errors and
-			fixing them raises with the amount of code written. Because the developers can not localize the place where the error is
-		actual happening.
-		3. Developing new features become harder,if they are based on the part of the
-		system which have errors.
-		
-		4. All in all this leads to increasing the cost of the whole system.
-	 	
-	 	To test easily the huge amount code an automated web testing is come into existence.
-	 	 Web testing is a kind of software testing that accentuate on web which assists to slice down price,
-	  lessen the exertion requisite to check web applications as well as web sites, amplify software value,
-	   condense time-to-market and reusability of test cases are also be done. 
-	   
-		IEEE has defined software testing as the process of evaluating a software
-		system to verify that it satisfies specified requirements [3 XU]. A set of
-		requirments for the web application includes security, performance,
-		presentation, etc. We will focus on several requirements for the web
-		application which differ from desktop application. 
-		
-		One of the key requirements which makes testing web applications harder than
-		testing desktop applicatiosn is support of different browsers and operating systems and also
-		different devices. A lot of desktop applications are developed to support some
-		particular operating system or different versions of the product are developed
-		and maintained for different operating systems. Web applications on the
-		contrary should support not only different operating systems, but also
-		different browsers and devices. So, if developers team decides to support
-		three operating systems (Windows, OSX, Android), three type of devices (phone,
-		tablet, PC) and three browsers (Chrome, Firefox, Internet Explorer) the number
-		of possible variations is already twenty seven. If you decide to support
-		different version of browsers, which in some circumstances may vary a lot,
-		the number of different configurations of tested machines will be close to
-		one hudred. In this case manual testing is unexceptable, because it will lead
-		to unwarranted expenses. 
-		
-		Another difference between web and desktop applications is
-		navigation on the webpage and between pages, the unexpected state change via
-		the browser Back button or direct URL entry in the browser. Also some
-		resources or parts of the application can be not acccessable, due to
-		connection problems or maintanance. Such unexpected behaviour may happen, and
-		must be handled properly, not to crash the whole application.
 
-		Web testing includes the different type of testing like:
-			- functionality tests
-			- compatibility tests
-			- load tests
-			- performance tests
-			- integration tests
-		All these types of tests are equivalent important and picking a tool which
-		will help to write these tests is not an easy task. It is an advantage when
-		the testing tool is using same principles and similiar programming language
-		with other tools in the project. We think that using same programming language
-		to write both tests and code is much easier for the developer. This idea is
-		related to Test-Driven Development (TDD), when tests are written
-		before production code.
-		
-		Test-Driven Development is a very popular methodology of software
-			development. The main idea is to write tests first and then code. The main
-			benefits of such approach are:
-				1. The developer is sure that his code works as intendent, because all his
-				code is tested.
-				2. The errors are found at early stage of the development cycle, which
-				reduces the cost of fixing problems.
-			
-			Three laws of TDD \cite[pp122]{Cleancode}[Book page 122]
-				1. You may not write production code until you have written a failing unit
-				test.
-				2. You may not write more of a unit test than is sufficient to fail.
-				3. You may not write more production code than is sufficient to pass the
-				curently failing test.
-			\iffalse	
-					\subsection {Approaches in Web Testing}	
-						\begin{textit}
-							In this chapter I will explain
-							what does testing actually meands. What types of testing exist: unit, integration, user-interface, regression,
-						etc. What are the differences between these types of testing.
-						
-						Next I will prove why testing is so important in software development. Here I
-						would like to mention some information about \textit{Quality control}. The
-						idea is to show that testing increseases the speed of software development
-						and also improves it's quality. So in terms of quality control testing will
-						decrease the price and increase the value of the product for the end user.
-						
-						Also I want to mention other methodologies like \textit{Agile development},
-						\textit{User experience design} and \textit{Test Driven Development}. And how
-						testing can be used/integrated with these methodologies/processes.
-						\end{textit}
-			\fi
-
-
+\include{background} 
 \include{webtesting}
 
 \iffalse  
@@ -368,13 +237,12 @@ first usage in the text.
 		just introducing it.
 \fi
 
-\chapter{Development of Testbench}
+
 \include{testbenchdevelop}
-\label{ch:testbenchdevelop}
-   	
 \include {testbenchuse}   	
   
-      
+
+\iffalse
  \subsection {Comparing Testbench with other tools}
     Here I will compare testbench to some other testing tools for example
     Selenium, what are benefits of using Testbench. The main idea is to focus
@@ -391,16 +259,13 @@ first usage in the text.
     sometimes it takes too much time, so I would like to mention ,what are the
     problems/challenges in having a lot of tests.
 
-\iffalse      
+      
  \subsection {Vaadin integration}
     Testbench using some features of Vaadin framework, for example searching
     elements by vaadin selectors. So I want to describe how integration with
     Vaadin is done. What are the challenges. For example what would happen when
     using different versions of Testbench with different versions of Vaadin.
 \fi    
-
-
-
 
  \section {Discussion and Conclussion}
  	Middle of April/ End of April
@@ -450,6 +315,9 @@ first usage in the text.
 		Performance evaluation of web based automation testing tools.,
 		Confluence The Next Generation Information Technology Summit (Confluence),
 		2014 5th International Conference. 25-26 Sept. 2014, pp. 731 - 735
+		\bibitem{webAppTesting8}
+		Sebastian Elbaum, Gregg Rothermel
+		Leveraging User-Session Data to Support Web Application Testing
 		\bibitem {bookVaaidn} 
 		 Author name.
 		\bibitem {tiobeIndex}
