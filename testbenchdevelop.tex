@@ -59,7 +59,8 @@
   can finish before the end of the sprint.
 
   In our case we were not developing a new product, but releasing a new version.
-  We didn’t find any arguments to change the tools were used in the previous release.
+  We didn nott find any arguments to change the tools were used in the previous
+  release.
 
   \subsubsection {Tools used}
   
@@ -142,7 +143,7 @@
   Trac is an enhanced wiki and issue tracking system for software development
   projects. Trac may include several projects and users or developers can
   create tasks (also called tickets) for these projects. The tickets may have different types:
-  “new feature”, “enchantment”, “error/bug”. At the beginning of the project the product owner
+  ``new feature'', ``enchantment'', ``error/bug''. At the beginning of the project the product owner
   goes through the list of the tickets and add them to a new milestone.
   Milestone is a plan for the next release, which includes set of tickets.
 
@@ -156,11 +157,11 @@
   In the Testbench4 project we used the trac milestone as a product backlog. On
   the sprint planning we estimate which tasks can be completed at the end of the sprint 
   and move them to the sprint backlog. As sprint backlog we used a scrum board.
-  Scrum board is a white board, divided into several sections for example “to be done”, “in progress”, “in review”,
-  “closed”. Paper stickers represent tickets and the person who is working on
+  Scrum board is a white board, divided into several sections for example ``to be done'', ``in progress'', ``in review'',
+  ``closed''. Paper stickers represent tickets and the person who is working on
   the ticket. The workflow is the following - a developer picks the
-  ticket from the sprint backlog queue called “to be done” 
-  writes his name on the sticker and move it to the “in progress” section.
+  ticket from the sprint backlog queue called ``to be done'' 
+  writes his name on the sticker and move it to the ``in progress'' section.
   After he submitted a patch to the code review he moves the sticker to another
   section and so on.
   
@@ -185,8 +186,8 @@
    \item Distributed revision control systems such as Git, are structured on a
     peer-to-peer basis: instead of one centralised repository. Every developer
     has their own repository and there is no main repository as in client-server
-    control systems, all repositories are “equal”. Though in practise developers
-    create a “master” repository, where everyone push their own changes and pull
+    control systems, all repositories are ``equal''. Though in practise developers
+    create a ``master'' repository, where everyone push their own changes and pull
     changes made by other developers.
   \end{itemize}
   
@@ -278,39 +279,42 @@
   to the author of the patch. As an overall code review helps to keep source code quality on a higher level.
 
 
-  \subsection{Testbench class diagram}
-  
-  \section{Example}
+  \section{Testbench class diagram}
 
-  
   The hierarchy of classes in testbench consists of many tens of classes and each class has tens of methods.
-  Here we will describe the most important classes and the basic principles.
-
-    \includegraphics{class.1}
+  Here we will describe the most important classes and the basic principles see
+  figure~\ref{fig:classdiagram}.
+	\begin{figure}
+		\label{fig:classdiagram}
+	    \includegraphics{class.1}
+	    \caption{Testbench class diagram}
+    \end{figure}
     
-AbstractHasTestBenchCommandExecutor class provides  `\$(Class clazz)' and
-`\$\$(Class clazz)' methods which create a query for searching elements of
+\textbf{AbstractHasTestBenchCommandExecutor} class provides  `\$(Class clazz)'
+and `\$\$(Class clazz)' methods which create a query for searching elements of
 the given type.
  `\$' method builds a recursive search query and `\$\$' a non-recursive one.
- Non-recursive search query looks only for direct children of the element, while it’s recursive analog looks
-  through all children of the element. Children elements are inner html-elements.
+ Non-recursive search query looks only for direct children of the element, while
+ it is recursive analog looks through all children of the element. Children
+ elements are inner html-elements.
    For example if web-page has the following DOM(Document-Object Model). 
    Button and checkbox input elements are children elements of the div element with id id1.
   \lstset{language=HTML}
     \begin{lstlisting}
-      <div id=”id1”>
+      <div id="id1">
         <input type="button">
         <input type ="checkbox">
       </div>
   \end{lstlisting}
   
   
-ElementQuery<T> used for locating web elements(vaadin buttons, text fields, labels, etc.) on the web-page.
+\textbf{ElementQuery<T>} used for locating web elements(vaadin buttons, text
+fields, labels, etc.) on the web-page.
  Generic parameter T specifies the type of a searched element. 
- ElementQuery class provides methods for searching the element based on element’s id,class,
-  caption or other criteria. These methods can be considered as filters in the query.
-   ElementQuery uses the Builder pattern, which helps to add several filters to build a specific query and after
-    the query is built execute it.
+ ElementQuery class provides methods for searching the element based on
+ element's id,class, caption or other criteria. These methods can be considered as filters in the query.
+ ElementQuery uses the Builder pattern, which helps to add several filters to build a specific query and after
+ the query is built execute it.
 
 For example to find all children elements which are buttons:
   \lstset{language=Java}
@@ -319,16 +323,24 @@ For example to find all children elements which are buttons:
     List<Button> allButtons=elem.$(ButtonElement.class).all();
   \end{lstlisting}
   
-To restrict search for buttons with caption “ok” we add a caption filter to the query.
+To restrict search for buttons with caption ``ok'' we add a caption filter to the query.
   \lstset{language=Java}
   \begin{lstlisting}
   AbstractHasTestBenchCommandExecutor elem = getParentElement();
-  List<Button> allButtons=elem.$(ButtonElement.class).caption(“ok”).all();
+  List<Button> allButtons=elem.$(ButtonElement.class).caption("ok").all();
   \end{lstlisting}
   
-TestbenchElemenet - is a base class for operating vaadin components. In includes methods to access properties common to all Vaadin elements, such as getSize(), getLocation(), getCssValue(), etc. TestbenchElement class uses Selenium WebElement class as a foundation and extend it’s functionality by using JavascriptExecutor, which allows to execute JavaScript code, and change the default element behaviour. 
+\textbf{TestbenchElemenet} - is a base class for operating vaadin components. In
+includes methods to access properties common to all Vaadin elements, such as getSize(), getLocation(), getCssValue(), etc.
+TestbenchElement class uses Selenium WebElement class as a foundation and extend
+it's functionality by using JavascriptExecutor,
+which allows to execute JavaScript code, and change the default element behaviour.
 
-ButtonElement, MenuBarElement, TableElement, etc. - implement specific class features. The default naming conventions is Vaadin component name + “Element”. In other words ButtonElement accesses buttons methods, TableElement table methods and so on. The important aspect is that hierarchy of testbench elements is similar to vaadin elements. That gives more flexibility when writing tests. Let’s look at the example:
+\textbf{ButtonElement, MenuBarElement, TableElement}, etc. - implement specific
+class features. The default naming conventions is Vaadin component name + ``Element''.
+In other words ButtonElement accesses buttons methods, TableElement table methods and so on.
+The important aspect is that hierarchy of testbench elements is similar to vaadin elements.
+That gives more flexibility when writing tests.
 
 The  developer/tester can specify concrete class for getting access to specific methods of the element:
  
@@ -337,6 +349,7 @@ The  developer/tester can specify concrete class for getting access to specific 
   TableElement table= getElement();.$(TableElement.class).first();
   TableRowElement row=table.getRow(0);
  \end{lstlisting}
+ 
 or use a more generic class to utilize method of a parent class, for example get caption of all elements :
 
   \lstset{language=Java}
@@ -349,15 +362,15 @@ or use a more generic class to utilize method of a parent class, for example get
   }
   \end{lstlisting}
 
-\subscection {Basic test case structure}
+\subsection {Basic test case structure}
 To use TestBench, the test case class should extend the TestBenchTestCase class,
 which provides the WebDriver and ElementQuery APIs. A developer
 can configure Testbench test by using following annotations:
 \begin{itemize}
-  \item \@Rule -defines certain TestBench parameters.
-  \item \@Before - the annotated method is executed before each test.
-  \item \@Test - annotates the tested method.
-  \item \@After - the annotated method is executed after test.
+  \item @Rule -defines certain TestBench parameters.
+  \item @Before - the annotated method is executed before each test.
+  \item @Test - annotates the tested method.
+  \item @After - the annotated method is executed after test.
 \end{itemize}
 
 A typical test case structure is the is the following:
@@ -483,11 +496,3 @@ server side will notify the client side about this change.
         }
       }
     \end{lstlisting}  
-     \subsection {What was actually done}
-      So here I will mention what was actually done during Testbench4
-      development process, there were 3 people working on the project for 2-3
-      months. Part of the work was a bit routine, like implementing some basic
-      API or fixing bugs, but I think I can find some topics which interesting
-      and new/have academic value. I don't want to dig deep into details, like
-      why you can not confirm editing the textfield by sending a 'Return' code.
-      But describe more the methodology and approaches used.

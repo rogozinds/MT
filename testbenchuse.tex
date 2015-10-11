@@ -30,13 +30,21 @@ changes in code require changes in testing. This gives a fast feedback and
        also ease the reviewers job, because a test suite explains what is the reason of the patch. 
 
 In addition to having value throughout the development lifecycle,
- Testbench tests are valuable artifacts to get end-users feedback.
-  Because Testbench tests are executed in browser, tests can be used 
-  for demonstrating application features to the end-user. 
+Testbench tests are valuable artifacts to get end-users feedback.
+Because Testbench tests are executed in browser, tests can be used 
+for demonstrating application features to the end-user. 
   
-  Assume someone extended a Table component by adding a filter field to it,
-  typing value in the filter field filters values of the underlying table. 
-  Test for this feature may look like this:
+To demonstrate the usage of Testbench we will create a test for Vaadin Table
+component extension. Developing Vaadin components is outside the scope of this
+work, we assume someone extended a Table component by adding a filter field to
+it. Typing value in the filter field filters values of the underlying table. 
+	\begin{figure}
+	\label{fig:filtertable}
+	\includegraphics[width=0.75\textwidth]{filtertable}
+	\caption{Table component extension}
+	\end{figure}
+
+Test for this feature may look like this:
   	\lstset{language=Java}
   	\begin{lstlisting}
 		TableElement table = getTableElement();
@@ -47,16 +55,13 @@ In addition to having value throughout the development lifecycle,
 		assertEquals(row.getCell(0).getValue(),"special");
 	\end{lstlisting}	
 	
-// Comment these are mock pictures and a mock test, 
-because this Table component does not have such a feature like a filtered
- field (but it is 100% doable, just creating custom components for vaadin is
-  out of the scope of this master thesis and probably would take some time).
-  So should I stress this out somehow? For me it is obvious that it is just an example (both code and picture).
- If we run this test we get something like this TableExample picture. We will go a bit further with this example.
+If we run this test we get something like picture see
+figure~\ref{fig:filtertable}. In the next section we will show how we can improve this test by using BDD frameworks.
 
 \section{Integrating with BDD frameworks}
 
-Testbench can be integrated with such Behaviour-Driven Development (BDD) frameworks as JBehave and Cucumber. 
+Testbench can be integrated with such Behaviour-Driven Development (BDD)
+frameworks as JBehave or Cucumber.
 JBehave allows to write user-stories in non-technical English and associate them with Automated Acceptance tests. 
 User story in JBehave will look like this:
 
@@ -116,30 +121,39 @@ User story steps are matched into actual Java tests using annotations.
 \end{lstlisting}
 To link a Java class and a textual story file we need to create a configuration class.
 The simplest configuration is a one-to-one mapping between a Java class and a textual story file. 
+
+\lstset{language=Java}
+\begin{lstlisting}
 public class SimpleConfig extends JUnitStory {
- 
-    // Here we specify the configuration, starting from default MostUsefulConfiguration, and changing only what is needed
+    // Here we specify the configuration, starting from default MostUsefulConfiguration,
+    // and changing only what is needed
     @Override
     public Configuration configuration() {
-        return new MostUsefulConfiguration()
-            // where to find the stories
+    	return new MostUsefulConfiguration()
+        	// where to find the stories
             .useStoryLoader(new LoadFromClasspath(this.getClass())) 
             // CONSOLE and TXT reporting
-            .useStoryReporterBuilder(new StoryReporterBuilder().withDefaultFormats().withFormats(Format.CONSOLE, Format.TXT));
+            .useStoryReporterBuilder(new StoryReporterBuilder()
+            .withDefaultFormats()
+            .withFormats(Format.CONSOLE, Format.TXT));
     }
  
     // Here we specify the steps classes
     @Override
     public InjectableStepsFactory stepsFactory() {    	
         // varargs, can have more that one steps classes
-        return new InstanceStepsFactory(configuration(), new FilterTableSteps());
+        return new InstanceStepsFactory(configuration(),
+         new FilterTableSteps());
     }
 }
+\end{lstlisting}
 
-
-So we can have both a user-story for our test explaining what should be done and a browser executed test showing the actual implementation. Picture with user story and browser implementation.  
-
-We believe that user-stories scenarios greatly ease communication between stackholders, especially if some of them do not have relevant technical background. So user-stories can be shared between stackholders to show what is done and what is planning to be done, if there are questions executing these user-stories in a browser will help to reveal more details about it. 
+So we can have both a user-story for our test explaining what should be done and a browser executed
+test showing the actual implementation. Picture with user story and browser implementation. We believe that user-stories 
+scenarios greatly ease communication between stackholders, 
+especially if some of them do not have relevant technical background.
+So user-stories can be shared between stackholders to show what is done and what is planning to be done, 
+if there are questions executing these user-stories in a browser will help to reveal more details about it. 
    
    
    

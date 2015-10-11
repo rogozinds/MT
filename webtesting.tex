@@ -64,32 +64,33 @@
 			example if an element with an id ``textfield'' changed its value the
 			assertion element will have string ``textfield'' as value.
 					
-			\begin{lstlisting}
-			 public class TestWebPageClass {
-			   static final String ASSERT_ELEM_ID="assertElementId";
-			   static Map<AbstractElement,String> map = new HashMap();
-			   static  {
-  			   map.put(new TextField(),"textField");
-  			   map.put(new ComboBox(), "combobox");
-			   }
-			   
-			   TextField assertionElement=new TextField();
-			   public void createTestWebPage () {
-			    Iterator it = classToAssertValue.entrySet().iterator();
-			    while (it.hasNext()) {
-			     it.getKey().setId(it.getValue());
-			     addElementToWebPage(it.getKey());
-			     it.getKey().setValueChangeListener(event-> {
-			       assertionElement.setValue(it.getValue());
-			     });
-			    }
-			    addAssertElement();
-			   }  
-			   public static <AbstractElement,String> getMap() {
-			     return map;
-			   }
-			 }
-			\end{lstlisting}
+\begin{lstlisting}
+public class TestWebPageClass {
+	static final String ASSERT_ELEM_ID="assertElementId";
+	 static Map<AbstractElement,String> map = new HashMap();
+	 static  {
+  	   map.put(new TextField(),"textField");
+  	   map.put(new ComboBox(), "combobox");
+	}
+
+	TextField assertionElement=new TextField();
+	public void createTestWebPage () {
+	    Iterator it = classToAssertValue.entrySet().iterator();
+	    while (it.hasNext()) {
+	    it.getKey().setId(it.getValue());
+	    addElementToWebPage(it.getKey());
+	    it.getKey().setValueChangeListener(event-> {
+	      assertionElement.setValue(it.getValue());
+	      });
+	  	}
+		addAssertElement();
+	}  
+	
+	public static <AbstractElement,String> getMap() {
+		return map;
+	}
+}
+\end{lstlisting}
       
       In our test we iterate through all elements in the map and find the
       element on the test web page by id. Then set a value to this element,
@@ -97,30 +98,30 @@
       of the assertion element. In the last step we compare the value in the
       assertion element with a value in the map.
 			
-      \begin{lstlisting}
-      public class ValueChangeListenerTestClass {
-       <AbstractElement,String> map=TestWebPageClass.getMap();
-       String assertElementId=TestWebPageClass.ASSERT_ELEM_ID;
-       UIElement assertElement=findElementById(assertElementId);
+\begin{lstlisting}
+public class ValueChangeListenerTestClass {
+	<AbstractElement,String> map=TestWebPageClass.getMap();
+	String assertElementId=TestWebPageClass.ASSERT_ELEM_ID;
+	UIElement assertElement=findElementById(assertElementId);
        
-        @Test
-        public void testValueChangeListener() {
-          openWebPage();
-          Iterator it = map.entrySet().iterator();
+    @Test
+    public void testValueChangeListener() {
+    	openWebPage();
+        Iterator it = map.entrySet().iterator();
           
-          while (it.hasNext()) {
-            Map.Entry pair = (Map.Entry)it.next();
-            UIElement elem=findElementById(map.getValue());
-            elem.setValue(``foo'');
-            String assertMessage=``Element with id=''+pair.getValue()
-            + ``has wrong value'';
-          
-          Assert.assertEquals(assertMessage,assertElement.getValue(),
-          pair.getValue);
-          }
-       }
-      }
-			\end{lstlisting}
+        while (it.hasNext()) {
+        	Map.Entry pair = (Map.Entry)it.next();
+        	UIElement elem=findElementById(map.getValue());
+        	elem.setValue(``foo'');
+        	String assertMessage=``Element with id=''+pair.getValue()
+        	+ ``has wrong value'';
+        
+        	Assert.assertEquals(assertMessage,assertElement.getValue(),
+        	pair.getValue);
+        }
+    }
+}
+\end{lstlisting}
   
       As mentioned before, the biggest advantage of programmable tests against
       C\&R is scalability. When using programmable tests, testing new elements
@@ -129,21 +130,22 @@
       example we decide to have a test that checks that getValue() mehtod
       returns the same value as it was set with setValue method we can create
       a new test method which will use the same map of elements. 
-      \begin{lstlisting}
-        //test getValue() and setValue()
-        @Test
-        public void testSetValue() {
-          openWebPage();
-          private String testValue="foo";
-          Iterator it = map.entrySet().iterator();
-          while (it.hasNext()) {
-             Map.Entry pair = (Map.Entry)it.next();
-            UIElement elem=findElementById(map.getValue());
-             elem.setValue(``foo'');  
-             Assert.assertEquals(elem.getValue(),testValue);        
-          }
+
+\begin{lstlisting}
+	//test getValue() and setValue()
+	@Test
+	public void testSetValue() {
+    	openWebPage();
+    	private String testValue="foo";
+    	Iterator it = map.entrySet().iterator();
+    	while (it.hasNext()) {
+    		Map.Entry pair = (Map.Entry)it.next();
+			UIElement elem=findElementById(map.getValue());
+            elem.setValue(``foo'');  
+            Assert.assertEquals(elem.getValue(),testValue);        
         }
-      \end{lstlisting}
+    }
+\end{lstlisting}
 
       As a result we can see that thought writing programmable tests with
       compare to C\&R is harder and requires more experience and skills, they
@@ -162,16 +164,17 @@ expensive to write but easier to evolve than C\&R ones, with an advantage after
    		 resutls to the monitor agent. Then the monitor compares the test output
    		 with the expected result and prints the final report. The example of the
    		 test case in paper \cite{Zhongen2}
-   		 \begin{verbatim}
-			 <request url = “http://mytestwebsite/login.asp”> 
-			 	<parameter name = “name” value = “computer”/> 
-			 	<parameter name = “password” value = “hello”/> 
+   		 \lstset{language=XML}
+   		 \begin{lstlisting}
+			 <request url = "http://mytestwebsite/login.asp"> 
+			 	<parameter name = "name" value = "computer"/> 
+			 	<parameter name = "password" value = "hello"/> 
 			</request> 
 			<response> 
-			 	<match op = “contains” regexp=false select = 
-			 	“/html/body” value = “Login Error!”/> 
+			 	<match op = "contains" regexp=false select = 
+			 	"/html/body" value = "Login Error!"/> 
 			</response> 
-   		 \end{verbatim}	
+   		\end{lstlisting}	
 		This approach has one major disadvantage, such test framework can not test
 		the application UI, it tests only server side logic, while client
 		side stays untested. Another minor issue is that developer wants to write
@@ -203,11 +206,14 @@ expensive to write but easier to evolve than C\&R ones, with an advantage after
 		situations in web applications, for example gmail, ebay. Navigating in big and
 		branched DOM structure is not trivial. 
 		There are several Methods for Locating Web page Elements:
-			1. By id -locates the web page elements using their id values.
-			2. By name -locates the web page elements using their name.
-			3. By tag - locates the web page elements using their tag.
-			4. By class - locates the web page elements using their class. 
-			5. By XPath - selects a web page element by navigating the HTML tree.
+		\begin{itemize}
+		  \item By id -locates the web page elements using their id values.
+		  \item By name -locates the web page elements using their name.
+		  \item By tag - locates the web page elements using their tag.
+		  \item By class - locates the web page elements using their class.
+		  \item By XPath - selects a web page element by navigating the HTML tree.
+		\end{itemize}
+
 		XPath is the language used for locating nodes in an XML document. As HTML can
 		be an implementation of XML (XHTML), users can use this language to target
 		elements in the web applications.	
@@ -217,11 +223,12 @@ expensive to write but easier to evolve than C\&R ones, with an advantage after
        to supporting test automation. Learning all the tools will gives different options for approaching different 
        test automation problems. The entire suite of tools allows many options for locating UI
        elements and comparing expected test results against actual application behavior.
-       The opportunity to execute one’s tests on multiple browser platforms is indispensable
-       in web development. 
+       The opportunity to execute one's tests on multiple browser platforms is
+       indispensable in web development. 
        
        Selenium is composed of multiple software tools.
-       Selenium  WebDriver makes direct calls to the browser using browser’s native support for automation.
+       Selenium  WebDriver makes direct calls to the browser using browser's
+       native support for automation.
        
        Selenium IDE - is a development environment with graphical interace for
        building test scripts.
