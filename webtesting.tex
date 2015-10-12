@@ -279,7 +279,7 @@ expensive to write but easier to evolve than C\&R ones, with an advantage after
 		
 
 	To create a test suite for the Grid configuration created above see an
-	example \ref{lst:starthub2}. Here is a explanation of basic :
+	example \ref{lst:starthub2}. Here is a explanation of basic steps :
 	\begin{itemize}
 	  \item Specify a url of tested web page line 6.
 	  \item Specify a url of a node where test will run line 7.
@@ -290,8 +290,6 @@ expensive to write but easier to evolve than C\&R ones, with an advantage after
 	  \item Close web page line 20.
 	\end{itemize}
 	
-	
-	The algorithm for creating a test suite is straight forward.
 	\lstset{style=a1listing}
 	\begin{lstlisting} [caption=Selenium test example,label={lst:starthub2},language=java]
 public 	class TestExample throws MalformedURLException {
@@ -319,6 +317,6 @@ public 	class TestExample throws MalformedURLException {
 
 
 	Selenium Grid allows to run tests in parallel by running different tests
-       at the same time on different remote machines. Distributing tests across
+    at the same time on different remote machines. Distributing tests across
        multiple physical or virtual machines gives an opportunity to execute
        tests on diffrent operating systems and browsers. 
