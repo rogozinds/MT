@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.8)  11 OCT 2015 17:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.8)  12 OCT 2015 15:38
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -413,11 +413,61 @@ File: babel.def 2013/12/03 3.9h Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks26
+\XKV@tempa@toks=\toks27
+\XKV@depth=\count133
+File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box33
+)
+\tc@llx=\dimen153
+\tc@lly=\dimen154
+\tc@urx=\dimen155
+\tc@ury=\dimen156
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen157
+\adjbox@Height=\dimen158
+\adjbox@Depth=\dimen159
+\adjbox@Totalheight=\dimen160
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box34
+\sift@deathcycles=\count135
+\@vwid@loff=\dimen161
+\@vwid@roff=\dimen162
+))
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
-) (./document.aux (./intro.aux) (./background.aux) (./webtesting.aux) (./testbe
-nchdevelop.aux)
-(./testbenchuse.aux))
+) (./document.aux (./intro.aux) (./background.aux) (./webtesting.aux
+
+LaTeX Warning: Label `fig:webdriver' multiply defined.
+
+) (./testbenchdevelop.aux) (./testbenchuse.aux))
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
@@ -437,17 +487,17 @@ LaTeX Font Info:    ... okay on input line 44.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count133
-\scratchdimen=\dimen153
-\scratchbox=\box33
-\nofMPsegments=\count134
-\nofMParguments=\count135
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count136
-\MPscratchDim=\dimen154
-\MPnumerator=\count137
-\makeMPintoPDFobject=\count138
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count136
+\scratchdimen=\dimen163
+\scratchbox=\box35
+\nofMPsegments=\count137
+\nofMParguments=\count138
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count139
+\MPscratchDim=\dimen164
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
+\everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -463,11 +513,11 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count139
+\c@lstlisting=\count142
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box34
+\AtBeginShipoutBox=\box36
 Package hyperref Info: Link coloring OFF on input line 44.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -476,7 +526,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count140
+\c@section@level=\count143
 )
 LaTeX Info: Redefining \ref on input line 44.
 LaTeX Info: Redefining \pageref on input line 44.
@@ -637,7 +687,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:clientserver' on page 3 undefined on input line 1
 5.
 
-<images/client.png, id=168, 963.6pt x 587.19376pt>
+<images/client.png, id=173, 963.6pt x 587.19376pt>
 File: images/client.png Graphic file (type png)
  <use images/client.png>
 Package pdftex.def Info: images/client.png used on input line 18.
@@ -671,13 +721,60 @@ File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
-) [10] [11])
-[12]
+) [10]
+
+LaTeX Warning: Citation `seleniumSite' on page 11 undefined on input line 227.
+
+[11]
+
+Package caption Warning: \label without proper \caption on input line 261.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:webdriver' on page 12 undefined on input line 236
+.
+
+<images/webdriver_structure.png, id=314, 501.875pt x 454.69875pt>
+File: images/webdriver_structure.png Graphic file (type png)
+
+<use images/webdriver_structure.png>
+Package pdftex.def Info: images/webdriver_structure.png used on input line 242.
+
+(pdftex.def)             Requested size: 320.0935pt x 290.02098pt.
+
+
+LaTeX Warning: Reference `fig:selnium_grid' on page 12 undefined on input line 
+254.
+
+[12 <./images/webdriver_structure.png>]
+<images/selenium_grid.png, id=321, 963.6pt x 722.7pt>
+File: images/selenium_grid.png Graphic file (type png)
+
+<use images/selenium_grid.png>
+Package pdftex.def Info: images/selenium_grid.png used on input line 262.
+(pdftex.def)             Requested size: 320.0935pt x 240.06866pt.
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2013/08/26 1.5b listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2013/08/26 1.5b listings language file
+) [13 <./images/selenium_grid.png>]
+Overfull \hbox (75.26674pt too wide) in paragraph at lines 303--304
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (43.77412pt too wide) in paragraph at lines 304--305
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [14]
 \openout2 = `testbenchdevelop.aux'.
 
  (./testbenchdevelop.tex
  4.
-[13
+[15
 
 
 
@@ -686,46 +783,141 @@ File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 65.
 
-[14] [15] [16] [17] [18] <images/gerrit1.png, id=353, 963.6pt x 722.7pt>
+[16] [17] [18] [19] [20] <images/gerrit1.png, id=406, 963.6pt x 722.7pt>
 File: images/gerrit1.png Graphic file (type png)
 
 <use images/gerrit1.png>
 Package pdftex.def Info: images/gerrit1.png used on input line 271.
 (pdftex.def)             Requested size: 320.0935pt x 240.06866pt.
- [19]
+ [21]
 
 Package caption Warning: \label without proper \caption on input line 288.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:classdiagram' on page 20 undefined on input line 
+LaTeX Warning: Reference `fig:classdiagram' on page 22 undefined on input line 
 286.
 
 File: class.1 Graphic file (type mps)
 [MP to PDF] (./class.1)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
-) [20 <./images/gerrit1.png>] [21] [22]
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 408.
- [23]) [24]
+) [22 <./images/gerrit1.png>]
+Overfull \hbox (5.98299pt too wide) in paragraph at lines 322--323
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (56.37117pt too wide) in paragraph at lines 330--331
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[23]
+Overfull \hbox (5.98299pt too wide) in paragraph at lines 349--350
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (94.16231pt too wide) in paragraph at lines 357--358
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[24]
+Overfull \hbox (5.98299pt too wide) in paragraph at lines 389--390
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (31.17708pt too wide) in paragraph at lines 392--393
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (62.6697pt too wide) in paragraph at lines 393--394
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (68.96822pt too wide) in paragraph at lines 398--399
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (37.4756pt too wide) in paragraph at lines 400--401
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (150.84901pt too wide) in paragraph at lines 401--402
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+
+Overfull \hbox (194.93867pt too wide) in paragraph at lines 408--409
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][] 
+ []
+
+
+Overfull \hbox (144.55049pt too wide) in paragraph at lines 409--410
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (62.6697pt too wide) in paragraph at lines 410--411
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (50.07265pt too wide) in paragraph at lines 417--419
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[25]
+Overfull \hbox (31.17708pt too wide) in paragraph at lines 434--435
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (12.28151pt too wide) in paragraph at lines 436--437
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (18.58003pt too wide) in paragraph at lines 438--439
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+] 
+ []
+
+[26]
+Overfull \hbox (12.28151pt too wide) in paragraph at lines 481--482
+[][][][][][][][][][][][][][][] 
+ []
+
+) [27]
 \openout2 = `testbenchuse.aux'.
 
  (./testbenchuse.tex
  5.
-[25
+[28
 
 
 
-] <images/filtertable.png, id=497, 963.6pt x 271.0125pt>
+] <images/filtertable.png, id=555, 963.6pt x 271.0125pt>
 File: images/filtertable.png Graphic file (type png)
 
 <use images/filtertable.png>
 Package pdftex.def Info: images/filtertable.png used on input line 43.
 (pdftex.def)             Requested size: 320.0935pt x 90.02574pt.
 
-Overfull \hbox (39.49802pt too wide) in paragraph at lines 51--52
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (257.9239pt too wide) in paragraph at lines 51--52
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (5.98299pt too wide) in paragraph at lines 55--56
+[][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
@@ -733,7 +925,7 @@ Package caption Warning: \label without proper \caption on input line 42.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:filtertable' on page 26 undefined on input line 5
+LaTeX Warning: Reference `fig:filtertable' on page 29 undefined on input line 5
 9.
 
 
@@ -742,58 +934,126 @@ Overfull \hbox (1.11682pt too wide) in paragraph at lines 63--67
 l-op-ment (BDD) frame-
  []
 
-[26 <./images/filtertable.png>]
-Overfull \hbox (74.68967pt too wide) in paragraph at lines 107--108
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[29 <./images/filtertable.png>]
+Overfull \hbox (5.98299pt too wide) in paragraph at lines 85--86
+[][][][][][][][][][][][][][][][] 
  []
 
-[27]) [28] [29
 
-] [30
+Overfull \hbox (37.4756pt too wide) in paragraph at lines 90--91
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (94.16231pt too wide) in paragraph at lines 101--102
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (87.86378pt too wide) in paragraph at lines 105--106
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (43.77412pt too wide) in paragraph at lines 106--107
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (308.31209pt too wide) in paragraph at lines 107--108
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (113.05788pt too wide) in paragraph at lines 112--113
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (163.44606pt too wide) in paragraph at lines 113--114
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (68.96822pt too wide) in paragraph at lines 115--116
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (68.96822pt too wide) in paragraph at lines 116--117
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (188.64015pt too wide) in paragraph at lines 117--118
+[][][][][][][][][][][][][][][][][] 
+ []
+
+[30]
+Overfull \hbox (144.55049pt too wide) in paragraph at lines 128--129
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (12.28151pt too wide) in paragraph at lines 134--135
+[][][][][][][][][][][][][][][][] 
+ []
+
+) [31] [32
+
+] [33
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 333.
- [31]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 333.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 336.
+ [34]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 336.
  (./document.aux (./intro.aux) (./background.aux)
 (./webtesting.aux) (./testbenchdevelop.aux) (./testbenchuse.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 333.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 333.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 336.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 336.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: FBDACF7FABBBD450218D5AD5C2ADC60D;1298.
+(rerunfilecheck)             Checksum: 3C7723283E317573DDEDF3511028C0D1;1298.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 333.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 336.
  ) 
 Here is how much of TeX's memory you used:
- 11090 strings out of 493304
- 159315 string characters out of 6139871
- 301130 words of memory out of 5000000
- 13991 multiletter control sequences out of 15000+600000
- 21597 words of font info for 46 fonts, out of 8000000 for 9000
+ 11983 strings out of 493304
+ 173073 string characters out of 6139871
+ 305157 words of memory out of 5000000
+ 14810 multiletter control sequences out of 15000+600000
+ 23764 words of font info for 50 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 43i,12n,51p,307b,1869s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/
-fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/t
+ 49i,12n,95p,307b,1869s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
+e/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1
 095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0600.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm08
-00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx120
-0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfti0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on document.pdf (38 pages, 524587 bytes).
+texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfit10
+00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm120
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfti0600.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.
+pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on document.pdf (41 pages, 652677 bytes).
 PDF statistics:
- 742 PDF objects out of 1000 (max. 8388607)
- 671 compressed objects within 7 object streams
- 352 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 818 PDF objects out of 1000 (max. 8388607)
+ 735 compressed objects within 8 object streams
+ 384 named destinations out of 1000 (max. 500000)
+ 199 words of extra memory for PDF output out of 10000 (max. 10000000)
 

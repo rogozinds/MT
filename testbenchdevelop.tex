@@ -324,7 +324,7 @@ For example to find all children elements which are buttons:
   \end{lstlisting}
   
 To restrict search for buttons with caption ``ok'' we add a caption filter to the query.
-  \lstset{language=Java}
+  \lstset{style=a1listing}
   \begin{lstlisting}
   AbstractHasTestBenchCommandExecutor elem = getParentElement();
   List<Button> allButtons=elem.$(ButtonElement.class).caption("ok").all();

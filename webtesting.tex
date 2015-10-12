@@ -7,6 +7,7 @@
 		Replay tests (C\&R) and programmable tests.
 		
 		\section{C\&R}
+		\label{sec:captureReplay}
 			C\&R web testing is based on capture/replay automated
 			tools. \cite{CaptureReplay7} The software tester works with the web
 			application modeling user behaviour, the capture/replay tool records the
@@ -37,6 +38,7 @@
 			Programmable tests can help to solve these problems.
 			
 		\section{Programmable tests} 
+		\label{sec:programTests}
 			Programmable tests are created by a tester manually. This method requires the
 			person to have programming skills and takes more time, but programmable tests
 			are more flexible and allow the developer to use bigger set of tools. The
@@ -220,24 +222,103 @@ expensive to write but easier to evolve than C\&R ones, with an advantage after
 
 	\section {Selenium}
       Selenium is a set of different software tools each with a different approach
-       to supporting test automation. Learning all the tools will gives different options for approaching different 
-       test automation problems. The entire suite of tools allows many options for locating UI
-       elements and comparing expected test results against actual application behavior.
-       The opportunity to execute one's tests on multiple browser platforms is
-       indispensable in web development. 
+       to supporting test automation. The entire suite of tools allows many
+       options for locating UI elements and comparing expected test results
+       against actual application behavior \cite{seleniumSite}.
+       Selenium provides implementation both of C\&R \ref{sec:captureReplay}
+       \ref{sec:programTests} and programmable tests models.  
        
-       Selenium is composed of multiple software tools.
-       Selenium  WebDriver makes direct calls to the browser using browser's
-       native support for automation.
+       \textbf{Selenium IDE} - is a development environment with graphical interace for building test scripts.
+		Selenium IDE has a recording feature,  which records user actions as they are
+		performed and then exports them as a reusable script in one of many programming languages that can be later executed.
        
-       Selenium IDE - is a development environment with graphical interace for
-       building test scripts.
-       Selenium IDE has a recording feature, which records user actions as they are performed and
-       then exports them as a reusable script in one of many programming languages that can be later executed.
+       \textbf{Selenium  WebDriver} makes direct calls to the browser using browser's native support for automation. WebDriver represents a web browser, hiding specific browser details, behind the interface see
+       figure~\ref{fig:webdriver}. Having a unified interface provides
+       multi-browser support and allows same tests to be executed in different
+       envirements.
        
-       Selenium-Grid allows the Selenium solution to scale for large test
-       suites and for test suites that must be run in multiple environments. 
-       Selenium Grid allows to run tests in parallel by running different tests
+	    \begin{figure}
+		\label{fig:webdriver}
+		\includegraphics[width=0.75\textwidth, center]{webdriver_structure}
+		\caption{WebDriver structure}
+		\end{figure}
+       
+       \textbf{Selenium Grid} allows to execute tests on different machines.
+       Selenium Grid is useful for projects with large amount of tests or test
+       suites that must be run in multiple environments.
+       
+		Grid allows to add several physical machines to a test cluster. Grid uses the
+		term ``hub'' for a central point where all tests are loaded. Hub is responsible
+		for distributing the tests across nodes. ``Node'' is  a remote machine with
+		specific configuration which is attached to the hub see
+		figure~\ref{fig:selnium_grid}. Nodes are totally separated from each other and
+		may have different operating systems and browsers. Hub ``decides''
+		for each test suite on which node it should be executed based on test's configuration.
+		By default every node	starts eleven browsers : five Firefox, five Chrome and
+		one Internet Explorer.
+		
+		\begin{figure}
+		\label{fig:webdriver}
+		\includegraphics[width=0.75\textwidth, center]{selenium_grid}
+		\caption{Selenium Grid structure}
+		\end{figure}
+		
+		Selenium Grid is published as a separate jar file, so to setup a test hub you
+		only need to have JRE(Java Runtime Envirenment) installed. To start hub run
+		selenium-server with hub parameter see \ref{lst:starthub} and to start a new
+		node specify a webdriver parameter and the URL of the hub running \ref{lst:startnode}.
+		
+		\begin{lstlisting} [ label={lst:starthub},language=bash, caption=Start hub ]
+		 java -jar	selenium-server-standalone-2.30.0.jar -role hub
+		\end{lstlisting}
+
+		\begin{lstlisting} [caption=Start node, label={lst:startnode},language=bash]
+		java -jar selenium-server-standalone-2.30.0.jar -role webdriver
+		-hub http://http://192.168.1.1:4444/grid/register -port 5566
+		\end{lstlisting}
+		
+
+	To create a test suite for the Grid configuration created above see an
+	example \ref{lst:starthub2}. Here is a explanation of basic :
+	\begin{itemize}
+	  \item Specify a url of tested web page line 6.
+	  \item Specify a url of a node where test will run line 7.
+	  \item Specify settings of the test, for example a browser line 8.
+	  \item Create an instance of remote webDriver line 9.
+	  \item Open a tested web page line 14.
+	  \item Compare actual value on a webpage with expected value line 15.
+	  \item Close web page line 20.
+	\end{itemize}
+	
+	
+	The algorithm for creating a test suite is straight forward.
+	\lstset{style=a1listing}
+	\begin{lstlisting} [caption=Selenium test example,label={lst:starthub2},language=java]
+public 	class TestExample throws MalformedURLException {
+ 	WebDriver driver;
+ 	 String UIUrl,nodeURL;
+ 	 @BeforeTest public void setUp() {
+ 	 	UIUrl="http://app.example.com/hellopage"; 
+		nodeURL="http://192.168.1.2:5566/wd/hub";
+		DesiredCapabilities capability=DesiredCapabilities.firefox();
+		driver=new RemoteWebDriver(new URL(nodeURL),capability);
+	}
+		
+	@Test
+	public void test1() {
+		driver.get(UIUrl);
+		Assert.assertEquals("Welcome",driver.getTitle());
+	}
+	
+	@AfterTest
+	public void afterTest() {
+		driver.quit();
+	}
+}
+	\end{lstlisting}
+
+
+	Selenium Grid allows to run tests in parallel by running different tests
        at the same time on different remote machines. Distributing tests across
        multiple physical or virtual machines gives an opportunity to execute
        tests on diffrent operating systems and browsers. 

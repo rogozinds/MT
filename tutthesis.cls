@@ -305,7 +305,8 @@
 % Use this for (pseudo)code
 \lstdefinestyle{a1listing} { 
   numbers        =left,                             % select either 'left' or 'none'
-  language       =C,                                % C, Java, Matlab, VHDL, XML, HTML...
+  language       =Java,                                % C, Java, Matlab, VHDL,
+  % XML, HTML...
   %basicstyle    =\small\ttfamily,                  % small teletype font
   basicstyle     =\footnotesize\ttfamily,           % even smaller teletype font
   emphstyle      =\color[rgb]{0.0, 0.0, 0.5}\bf,    % blue + bold
@@ -317,7 +318,8 @@
   frame          =lrtb,                 % frame is on (l)eft, (r)ight, (t)op, and (b)ottom
   framerule      =0.1pt,                            % widht of box edge line: 0pt, 0.5pt, 1pt
   linewidth=     \textwidth,                        % whole column wide (misleading term...)
-  xleftmargin=   0.6cm                              % leave space for line numbering
+  xleftmargin=   0.6cm,                              % leave space for line % numbering
+  captionpos=b
 }
 
 % Use this for fonsole listings, for example $cd /bin; ls -la
