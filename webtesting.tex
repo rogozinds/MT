@@ -155,8 +155,8 @@ public class ValueChangeListenerTestClass {
        of developing tests for four different frameworks shows that the development of programmable tests is more time
       consuming (between 32\% and 112\%), but test maintanance requires less
       time (with a saving of 16\% and 51\%). As a result ``In general, programmable test cases are more
-expensive to write but easier to evolve than C\&R ones, with an advantage after
-2 releases (in the median case)''.\cite{CaptureReplay7}
+	expensive to write but easier to evolve than C\&R ones, with an advantage after
+	two releases (in the median case)''.\cite{CaptureReplay7}
 
    \section {Other frameworks ideas}
    		Paper \cite{Xu1} and \cite{Zhongen2} describe of the capture-replay
@@ -203,6 +203,7 @@ expensive to write but easier to evolve than C\&R ones, with an advantage after
 			elements had css rule display:none, they would not be shown for user in the
 			web browser. Thought all user actions could be still emulated by javascript.
 	\section {Challenges}
+	\label {sec:challenges}
 		Papers \cite{Xu1} \cite{Zhongen2} and \cite{testGen3} include very simple
 		examples like login page. Real-life example may have dozens/hundreds of html
 		elements on the webpage see example of Gmail html page \ref{fig:gmailexample}.
@@ -261,7 +262,6 @@ expensive to write but easier to evolve than C\&R ones, with an advantage after
         elements by id,tag, class, Xpath, etc and provides an opportunity to run tests in
         parallel.
 		
-
 	\section {Selenium}
       Selenium is a set of different software tools each with a different approach
        to supporting test automation. The entire suite of tools allows many
@@ -284,6 +284,9 @@ expensive to write but easier to evolve than C\&R ones, with an advantage after
 		\includegraphics[width=0.75\textwidth, center]{webdriver_structure}
 		\caption{WebDriver structure}
 		\end{figure}
+		
+    	\textbf{Selenium Remote Control (RC)} is an old version of Selenium
+    	WebDriver, currently supported only in maintanance mode.
        
        \textbf{Selenium Grid} allows to execute tests on different machines.
        Selenium Grid is useful for projects with large amount of tests or test
@@ -357,10 +360,22 @@ public 	class TestExample throws MalformedURLException {
 }
 	\end{lstlisting}
 
-	As it shown seting up the basic configuration of Selenium Grid is fairly easy.
-	Now show ways of navigating to the exact element by id name class, xpath etc.
-	Add reference to performance article comparesment between WebDriver and IDE
-	\ref{performance6} Selenium Grid allows to run tests in parallel by running
-	different tests at the same time on different remote machines. Distributing tests across
-       multiple physical or virtual machines gives an opportunity to execute
+	As it shown above seting up the basic configuration of Selenium Grid is fairly
+	easy. After we have opened the tested web page with driver.get(UIUrl), you can
+	use ``Find Element" or ``Find Elements" methods with ``By" query object for
+	locating elements on the page. For example to find an element with a
+	class ``avatar'' you need to use By.className query object see example
+	~\ref{lst:classSearch}. Selenium  supports searching elements by id,tag, class,
+	Xpath and all implications from section~\ref{sec:challenges} applies to it. 
+	There is no ideal strategy for searching the required element it is up
+	to developer which one to choose based on requirements.
+	
+	\lstset{style=a1listing}
+	\begin{lstlisting} [caption=Search element by class,label={lst:classSearch}]
+	WebElement avatarElement = driver.findElement(By.className("avatar"));
+	\end{lstlisting}
+
+	Conclusion, why selenium is so good and why we can use it as a base of
+	Testbench, why we can not use Testbewnch for testing vaadin. Selenium Grid
+	allows to run tests in parallel by running different tests at the same time on different remote machines. Distributing tests across multiple physical or virtual machines gives an opportunity to execute
        tests on diffrent operating systems and browsers. 
