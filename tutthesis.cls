@@ -319,7 +319,8 @@
   framerule      =0.1pt,                            % widht of box edge line: 0pt, 0.5pt, 1pt
   linewidth=     \textwidth,                        % whole column wide (misleading term...)
   xleftmargin=   0.6cm,                              % leave space for line % numbering
-  captionpos=b
+  captionpos=b,
+  tabsize=2
 }
 
 % Use this for fonsole listings, for example $cd /bin; ls -la

@@ -203,22 +203,64 @@ expensive to write but easier to evolve than C\&R ones, with an advantage after
 			elements had css rule display:none, they would not be shown for user in the
 			web browser. Thought all user actions could be still emulated by javascript.
 	\section {Challenges}
-		Papers \cite{Xu1} \cite{Zhongen2} and \cite{testGen3} include very simple examples
-		(login page). Real-life example may have dozens/hundreds of html elements on the webpage. This is a typical
-		situations in web applications, for example gmail, ebay. Navigating in big and
-		branched DOM structure is not trivial. 
-		There are several Methods for Locating Web page Elements:
+		Papers \cite{Xu1} \cite{Zhongen2} and \cite{testGen3} include very simple
+		examples like login page. Real-life example may have dozens/hundreds of html
+		elements on the webpage see example of Gmail html page \ref{fig:gmailexample}.
+		Web pages with big and branched DOM bring several challenges:
+		\begin{enumerate}
+		  \item Searching for required element may be very resource-consuming,
+		  affecting time of the test execution. 
+		  \item Changes in DOM may require changes in tests, which increase
+		  application maintanance costs.
+		\end{enumerate}
+		
+		\begin{figure}
+		\label{fig:gmailexample}
+		\includegraphics[width=0.75\textwidth]{gmail_example}
+		\caption{Gmail DOM structure example}
+		\end{figure}
+		
+		Testing frameworks allow several strategies for locating Web page elements:
 		\begin{itemize}
 		  \item By id -locates the web page elements using their id values.
 		  \item By name -locates the web page elements using their name.
 		  \item By tag - locates the web page elements using their tag.
-		  \item By class - locates the web page elements using their class.
-		  \item By XPath - selects a web page element by navigating the HTML tree.
+		  \item By class - locates the web page elements using their class attribute.
+		  \item By XPath - combines previous strategies and builds a search
+		  path to an element in the DOM.
 		\end{itemize}
-
-		XPath is the language used for locating nodes in an XML document. As HTML can
-		be an implementation of XML (XHTML), users can use this language to target
-		elements in the web applications.	
+		
+		The choise between these strategies is a tradeoff between effeciency of the
+		test and its complexity for developer. The research of Maurizio Leotta
+		and Diego Clerissipaper in ``An Industrial Case Study about Web Page Element
+		Localization" ``shows that ID-based methods for locating web page elements are
+		better than XPath methods''\cite{selenium4} showing that tests with search by
+		Xpath executed more than three times longer than same tests with searching
+		elements by Id. According to the same paper ID-based test require less
+		maintenance effort, than the XPath-based test suites. In fact using searching by id for static HTML web pages with small
+		amound of elemnetn works well, but having dynamically generated HTML with 
+		a lot of elements as in example \ref{fig:gmailexample} brings challengies.
+		
+		The biggest downside of searching by id strategy, is that every HTML element
+		should have a unique ID. If the Web pages has a dynamically generated content,
+		for example a table, where amount of rows depends on data, the
+		developer has to add some logic to generate ID for each row and also verify
+		that new ids do not conflict with already created ones. 
+		
+		In some circumstances the developer needs to get a set of elements by some
+		criteria, for example get all elements with a specific tag or class selector
+		and process them in a loop. 
+		
+		As we can see there is no one solution for searching elements on a Web page,
+		which can be used in all cases. The developer should make a solution which
+		searching algorithm to use based on requirements, but the testing framework
+		should provide the developer different tools to choose from. In the next
+		section we present Selenium - a software testing framework for web
+		applications, which allows to create C\&R \ref{sec:captureReplay} and 
+        programmable tests \ref{sec:programTests}.Selenium  supports searching
+        elements by id,tag, class, Xpath, etc and provides an opportunity to run tests in
+        parallel.
+		
 
 	\section {Selenium}
       Selenium is a set of different software tools each with a different approach
@@ -254,7 +296,7 @@ expensive to write but easier to evolve than C\&R ones, with an advantage after
 		figure~\ref{fig:selnium_grid}. Nodes are totally separated from each other and
 		may have different operating systems and browsers. Hub ``decides''
 		for each test suite on which node it should be executed based on test's configuration.
-		By default every node	starts eleven browsers : five Firefox, five Chrome and
+		By default every node starts eleven browsers : five Firefox, five Chrome and
 		one Internet Explorer.
 		
 		\begin{figure}
@@ -282,7 +324,7 @@ expensive to write but easier to evolve than C\&R ones, with an advantage after
 	example \ref{lst:starthub2}. Here is a explanation of basic steps :
 	\begin{itemize}
 	  \item Specify a url of tested web page line 6.
-	  \item Specify a url of a node where test will run line 7.
+	  \item Specify a url of a hub line 7.
 	  \item Specify settings of the test, for example a browser line 8.
 	  \item Create an instance of remote webDriver line 9.
 	  \item Open a tested web page line 14.
@@ -297,9 +339,9 @@ public 	class TestExample throws MalformedURLException {
  	 String UIUrl,nodeURL;
  	 @BeforeTest public void setUp() {
  	 	UIUrl="http://app.example.com/hellopage"; 
-		nodeURL="http://192.168.1.2:5566/wd/hub";
+		hubURL="http://192.168.1.2:5566/wd/hub";
 		DesiredCapabilities capability=DesiredCapabilities.firefox();
-		driver=new RemoteWebDriver(new URL(nodeURL),capability);
+		driver=new RemoteWebDriver(new URL(hubURL),capability);
 	}
 		
 	@Test
@@ -315,8 +357,10 @@ public 	class TestExample throws MalformedURLException {
 }
 	\end{lstlisting}
 
-
-	Selenium Grid allows to run tests in parallel by running different tests
-    at the same time on different remote machines. Distributing tests across
+	As it shown seting up the basic configuration of Selenium Grid is fairly easy.
+	Now show ways of navigating to the exact element by id name class, xpath etc.
+	Add reference to performance article comparesment between WebDriver and IDE
+	\ref{performance6} Selenium Grid allows to run tests in parallel by running
+	different tests at the same time on different remote machines. Distributing tests across
        multiple physical or virtual machines gives an opportunity to execute
        tests on diffrent operating systems and browsers. 
