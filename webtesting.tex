@@ -364,7 +364,7 @@ public 	class TestExample throws MalformedURLException {
 	easy. After we have opened the tested web page with driver.get(UIUrl), you can
 	use ``Find Element" or ``Find Elements" methods with ``By" query object for
 	locating elements on the page. For example to find an element with a
-	class ``avatar'' you need to use By.className query object see example
+	class ``profile'' you need to use By.className query object see example
 	~\ref{lst:classSearch}. Selenium  supports searching elements by id,tag, class,
 	Xpath and all implications from section~\ref{sec:challenges} applies to it. 
 	There is no ideal strategy for searching the required element it is up
@@ -372,10 +372,14 @@ public 	class TestExample throws MalformedURLException {
 	
 	\lstset{style=a1listing}
 	\begin{lstlisting} [caption=Search element by class,label={lst:classSearch}]
-	WebElement avatarElement = driver.findElement(By.className("avatar"));
+	WebElement avatarElement = driver.findElement(By.className("profile"));
 	\end{lstlisting}
 
-	Conclusion, why selenium is so good and why we can use it as a base of
-	Testbench, why we can not use Testbewnch for testing vaadin. Selenium Grid
-	allows to run tests in parallel by running different tests at the same time on different remote machines. Distributing tests across multiple physical or virtual machines gives an opportunity to execute
-       tests on diffrent operating systems and browsers. 
+
+ \section{Reason of developing Testbench}
+  	As shown above Selenium is a powerful tool for web testing. 
+	Selenium Grid allows to run tests in parallel by running different tests at the
+	same time on different remote machines. Distributing tests across 
+	multiple physical or virtual machines gives an opportunity to execute tests 
+	on diffrent operating systems and browsers. 	Conclusion, why selenium is so good and why we can use it as a base of
+	Testbench, why we can not use Testbewnch for testing vaadin. 
