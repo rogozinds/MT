@@ -4,9 +4,9 @@
   The estimated time for developing Testbench4 was from two months to six weeks.
   Our team had three members:
   \begin{itemize}
-    \item Jonatan Kronqvist - tech lead lead
-    \item Mika Mutajarvi developer
-    \item Dmitrii Rogozin developer
+    \item Jonatan Kronqvist - tech lead.
+    \item Mika Mutajarvi developer.
+    \item Dmitrii Rogozin developer.
   \end{itemize}
   
    This is a short period of time and to manage delivering a good-quality product you
@@ -58,25 +58,26 @@
   the error might be found much more lately, which will have a bigger negative impact.
 
   Another feature of Scrum is self organization of the team. The team should
-  decide by itself which toolset to use. Tasks in scrum are not assigned to developers by a manager,
-  but instead developers take items from the backlog by themselves.
+  decide by itself which tool set to use. Tasks in scrum are not assigned to
+  developers by a manager, but instead developers take items from the backlog by themselves.
   This approach saves time and reduces stress, because a person can pick a task,
   which he likes and understands. Developers pick tasks that they
   can finish before the end of the sprint.
 
   In our case we were not developing a new product, but releasing a new version.
-  We didn nott find any arguments to change the tools were used in the previous
+  We did not find any arguments to change the tools were used in the previous
   release.
 
   \subsubsection {Tools used}
   
   \textbf{Maven}
   Maven is a java-based software project management and comprehension tool.
-  Maven is based around the central concept of a build lifecycle. This means that the process for building 
-  and distributing a particular project(artifact) is clearly defined. There are three built-in lifecycles:
-  default, clean and site. Users can define their own lifecycle. Lifecycles consist of phases.
+  Maven is based around the central concept of a build life cycle. This means
+  that the process for building and distributing a particular project(artifact) is clearly defined. There are three built-in lifecycles:
+  default, clean and site. Users can define their own life cycle. Life cycles
+  consist of phases.
    
-  The default lifecycle includes the following phases:
+  The default life cycle includes the following phases:
   \begin{itemize}
     \item validate - validate the project is correct and all necessary
     information is available.
@@ -95,8 +96,8 @@
     sharing with other developers and projects.
   \end{itemize}
   
-  The lifecycle phases are executed sequentially, in the example above if running maven deploy 
-  all the phases will be executed. All maven configurations are specified in the Project Object Model (POM) file.
+  The life cycle phases are executed sequentially, in the example above if
+  running maven deploy all the phases will be executed. All maven configurations are specified in the Project Object Model (POM) file.
   POM is an XML file that contains information about the project and configuration details used by Maven 
   to build the project. 
 
@@ -160,7 +161,7 @@
   possible, preferable before coding starts. This gives a clear vision for all
   members of the team what should be done.
 
-  In the Testbench4 project we used the trac milestone as a product backlog. On
+  In the Testbench4 project we used the Trac milestone as a product backlog. On
   the sprint planning we estimate which tasks can be completed at the end of the sprint 
   and move them to the sprint backlog. As sprint backlog we used a scrum board.
   Scrum board is a white board, divided into several sections for example ``to be done'', ``in progress'', ``in review'',
@@ -224,7 +225,7 @@
   Teamcity builds may be started automatically or manually. One option is to create a configuration to run all
   tests every night or to setup running tests on every git commit. Teamcity
   provides also build dependencies, which can be very helpful if your project
-  depends on some other projects or libraries, teamcity will first build all the dependencies and then run your build.
+  depends on some other projects or libraries, Teamcity will first build all the dependencies and then run your build.
   
   During the development cycle we used four different configurations.
   \begin{itemize}
@@ -237,7 +238,7 @@
     specific time every night, when servers load is lower than during the day.
     This configuration includes all the heavy tests for specific browsers. All
     the tests are run on Google Chrome, Mozilla Firefox and Internet Explorer 8, 9, 10 and 11. 
-    For every test suite teamcity will run the specific browser on a test
+    For every test suite Teamcity will run the specific browser on a test
     cluster. Running such tests is very resource consuming, but provides a
     confidence that the application is supported by all browsers.
     \item Snapshot build is run every night. This build publishes the latest
@@ -267,9 +268,10 @@
 
   Firstly, a developer submits his changes(patch) to Gerrit. Gerrit triggers the
   specific build in Teamcity. This build includes building the project and
-  running tests. After this step is finished, teamcity returns a report about the build, if there are problems 
+  running tests. After this step is finished, Teamcity returns a report about the build, if there are problems 
   the report is send to the developer and the patch is marked as -2. If all
-  tests pass gerrit marks the patch as ready for review and put it to the list of waiting for review patches.
+  tests pass Gerrit marks the patch as ready for review and put it to the list
+  of waiting for review patches.
   Then the reviewer evaluates the patch. Given the patch -1 or -2 means that the developer should fix the problems,
   and submit the next version of the patch. The process continues until someone
   marks the patch as +2,  meaning in can be pushed to git master repository.
@@ -287,7 +289,7 @@
 
   \section{Testbench class diagram}
 
-  The hierarchy of classes in testbench consists of many tens of classes and each class has tens of methods.
+  The hierarchy of classes in Testbench consists of many tens of classes and each class has tens of methods.
   Here we will describe the most important classes and the basic principles see
   figure~\ref{fig:classdiagram}.
 	\begin{figure}
@@ -314,7 +316,7 @@ the given type.
   \end{lstlisting}
   
   
-\textbf{ElementQuery<T>} used for locating web elements(vaadin buttons, text
+\textbf{ElementQuery<T>} used for locating web elements(Vaadin buttons, text
 fields, labels, etc.) on the web-page.
  Generic parameter T specifies the type of a searched element. 
  ElementQuery class provides methods for searching the element based on
@@ -336,7 +338,7 @@ To restrict search for buttons with caption ``ok'' we add a caption filter to th
   List<Button> allButtons=elem.$(ButtonElement.class).caption("ok").all();
   \end{lstlisting}
   
-\textbf{TestbenchElemenet} - is a base class for operating vaadin components. In
+\textbf{TestbenchElemenet} - is a base class for operating Vaadin components. In
 includes methods to access properties common to all Vaadin elements, such as getSize(), getLocation(), getCssValue(), etc.
 TestbenchElement class uses Selenium WebElement class as a foundation and extend
 it's functionality by using JavascriptExecutor,
@@ -345,7 +347,7 @@ which allows to execute JavaScript code, and change the default element behaviou
 \textbf{ButtonElement, MenuBarElement, TableElement}, etc. - implement specific
 class features. The default naming conventions is Vaadin component name + ``Element''.
 In other words ButtonElement accesses buttons methods, TableElement table methods and so on.
-The important aspect is that hierarchy of testbench elements is similar to vaadin elements.
+The important aspect is that hierarchy of testbench elements is similar to Vaadin elements.
 That gives more flexibility when writing tests.
 
 The  developer/tester can specify concrete class for getting access to specific methods of the element:
@@ -383,7 +385,7 @@ A typical test case structure is the is the following:
 \begin{itemize}
   \item Set TestBench parameters.
   \item Open the tested web-page URL.
-  \item Find an element for interraction (Button, TextField).
+  \item Find an element for interaction (Button, TextField).
   \item Interact with the elements (click buttons,menus,etc.).
   \item Find an element to check.
   \item Get and the value of the checked element.
@@ -447,58 +449,61 @@ A typical test case structure is the is the following:
 	\end{lstlisting}
 	
 	When running this test you will get the following results:
-\subsection {Challenges}
-Because Vaadin is a statefull framework this brings additional complexity in
-testing client-side and server-side communications. When event happens on the client side 
-it will notify the server side. If this event affects the server side state, the
-server side will notify the client side about this change.
- Because of a network delay or long time code execution on the server side there might be a delay between 
- client side action and the change on a client.  
- In these circumstances the client-side should wait for server side code to execute,
-  because it might affect the next client side instruction.
-  To handle this situation Testbench has waitForVaadin method, which suspend code execution until 
-  there is no work to be done on the client side.
-      
-  
-    \lstset{language=Java}
-    \begin{lstlisting}
-      public class TestUI extends UI{
-        @Override
-        protected void init(VaadinRequest request) {
-          createUI();
-        }
-        public void createUI() {
-          //step 1 
-          TextField field1=new TextField();
-          TextField field2=new TextField2;
-          field1.setCaption("field1");
-          field2.setCaption("field2");
-          
-          //step 2
-          field1.addValueChangeListener(e->{
-            field2.setValue("foo");
-          });
-        }
-      }
-    \end{lstlisting}  
-    
-    \lstset{language=Java}
-    \begin{lstlisting}
-      public class TextFieldSetValueTest extends TestBenchTestCase{
-        @Test
-        protected void testSetValue() {
-          //Step 3
-          TextFieldElement field1 =
-            $(TextFieldElement.class).caption("field1).first();
-            
-          TextFieldElement field2 =
-            $(TextFieldElement.class).caption("field2).first();  
-          field1.setValue("bar");
-          //Step 4
-          waitForVaadin();
-          
-          //Step 5
-          Assert.assertEquals(field2.getValue(), "foo");           
-        }
-      }
-    \end{lstlisting}  
+\iffalse
+	\subsection {Challenges}
+	Because Vaadin is a stateful framework this brings additional complexity in
+	testing client-side and server-side communications. When event happens on the client side 
+	it will notify the server side. If this event affects the server side state, the
+	server side will notify the client side about this change.
+	 Because of a network delay or long time code execution on the server side there might be a delay between 
+	 client side action and the change on a client.  
+	 In these circumstances the client-side should wait for server side code to execute,
+	  because it might affect the next client side instruction.
+	  To handle this situation Testbench has waitForVaadin method, which suspend code execution until 
+	  there is no work to be done on the client side.
+	      
+	  
+	    \lstset{language=Java}
+	    \begin{lstlisting}
+	      public class TestUI extends UI{
+	        @Override
+	        protected void init(VaadinRequest request) {
+	          createUI();
+	        }
+	        public void createUI() {
+	          //step 1 
+	          TextField field1=new TextField();
+	          TextField field2=new TextField2;
+	          field1.setCaption("field1");
+	          field2.setCaption("field2");
+	          
+	          //step 2
+	          field1.addValueChangeListener(e->{
+	            field2.setValue("foo");
+	          });
+	        }
+	      }
+	    \end{lstlisting}  
+	    
+	    \lstset{language=Java}
+	    \begin{lstlisting}
+	      public class TextFieldSetValueTest extends TestBenchTestCase{
+	        @Test
+	        protected void testSetValue() {
+	          //Step 3
+	          TextFieldElement field1 =
+	            $(TextFieldElement.class).caption("field1).first();
+	            
+	          TextFieldElement field2 =
+	            $(TextFieldElement.class).caption("field2).first();  
+	          field1.setValue("bar");
+	          //Step 4
+	          waitForVaadin();
+	          
+	          //Step 5
+	          Assert.assertEquals(field2.getValue(), "foo");           
+	        }
+	      }
+	    \end{lstlisting}  
+
+\fi

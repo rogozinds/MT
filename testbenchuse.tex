@@ -67,7 +67,7 @@ User story in JBehave will look like this:
 
 Scenario: filter table contents
 Given web-page with table
-When typing speicial to filter field
+When typing special to filter field
 Then value in row 1 and cell 0 is special
 
 User story steps are matched into actual Java tests using annotations. 
@@ -75,7 +75,7 @@ User story steps are matched into actual Java tests using annotations.
   Since TestBench tests are pure Java code and BDD steps can be run as JUnit tests, we can combine these to make
    JBehave run TestBench tests. We start by extending the TestBenchTestCase  and use JBehave's \@BeforeScenario
    annotation to open a tested webpage.
-   @Given @When and @Then annotations are mapped with correspoiding steps in the user scenario.
+   @Given @When and @Then annotations are mapped with corresponding steps in the user scenario.
    To pass parameters from the user-scenario step to a Java method "\$"- special symbol is used.
     JBehave implicitly casts passed value to a parameters type.
     So checkValueInCell will have two integer parameters rowNumber=1, cellNumber=0 and string parameter expectedValue=special. 
@@ -150,10 +150,10 @@ public class SimpleConfig extends JUnitStory {
 
 So we can have both a user-story for our test explaining what should be done and a browser executed
 test showing the actual implementation. Picture with user story and browser implementation. We believe that user-stories 
-scenarios greatly ease communication between stackholders, 
+scenarios greatly ease communication between stakeholders, 
 especially if some of them do not have relevant technical background.
-So user-stories can be shared between stackholders to show what is done and what is planning to be done, 
-if there are questions executing these user-stories in a browser will help to reveal more details about it. 
+So user-stories can be shared between stakeholders to show what is done and what
+is planning to be done, if there are questions executing these user-stories in a browser will help to reveal more details about it. 
    
    
    

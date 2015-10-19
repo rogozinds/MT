@@ -360,7 +360,7 @@ public 	class TestExample throws MalformedURLException {
 }
 	\end{lstlisting}
 
-	As it shown above seting up the basic configuration of Selenium Grid is fairly
+	As it shown above setting up the basic configuration of Selenium Grid is fairly
 	easy. After we have opened the tested web page with driver.get(UIUrl), you can
 	use ``Find Element" or ``Find Elements" methods with ``By" query object for
 	locating elements on the page. For example to find an element with a
@@ -377,9 +377,136 @@ public 	class TestExample throws MalformedURLException {
 
 
  \section{Reason of developing Testbench}
-  	As shown above Selenium is a powerful tool for web testing. 
-	Selenium Grid allows to run tests in parallel by running different tests at the
-	same time on different remote machines. Distributing tests across 
+  	As shown above Selenium is a powerful tool for web testing. However if we use
+  	Selenium to test Vaadin application we will run into several problems.
+  	Selenium does not know about Vaadin specific features, like client-side
+  	communication. 
+  	
+  	Vaadin is a stateful framework this brings additional complexity in
+testing client-side and server-side communications. When event happens on the client side 
+it will notify the server side. If this event affects the server side state, the
+server side will notify the client side about this change.
+ Because of a network delay or long time code execution on the server side there might be a delay between 
+ client side action and the change on a client. In these circumstances the client-side should wait for server side code to execute,
+  because it might affect the next client side instruction. To handle this
+  situation we need to add a delay in Selenium test, see line 20
+   in listing~\ref{lst:seleniumVaadin}. Rely on delay in a test is a bad
+   practise. Adding small delay might be not enough to all client server
+   communication to proceed, adding big delay will increase the test time
+   execution. 
+   
+   Because Selenium framework is not related to Vaadin it requires additional
+   code to take into account client-server communication. For example setting
+   value of the text field requires three lines of code instead of one see lines
+   25-28 in listing~\ref{lst:seleniumVaadin}.
+   
+   Due to these implications a test tool for Vaadin called TestBench was
+   created. TestBench is based on Selenium WebDriver, but it solves
+   problems with client server communication, and brings more suitable
+   API for working with Vaadin components. For example same test written with 
+   the help of TestBench takes less code and does not have delays see example~\ref{lst:testbenchVaadin}.
+  	
+  	
+  	\lstset{style=a1listing}
+  	\begin{lstlisting} [caption=Selenium test for Vaadin application,label={lst:seleniumVaadin}]
+public class AppTest extends TestCase{
+	WebDriver driver;
+    String UIUrl, nodeURL;	
+	@Override @Before
+    public void setUp() {
+        UIUrl = "http://demo.vaadin.com/dashboard/";
+        driver = new FirefoxDriver();
+
+    }
+
+    @Test
+    public void testWithoutTestbench() {
+        driver.get(UIUrl);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        List<WebElement> elements = driver.findElements(By
+                .className("v-button"));
+        if (elements.isEmpty()) {
+            throw new RuntimeException("No buttons found");
+        }
+        elements.get(0).click();
+        driver.findElement(By.id("dashboard-edit")).click();
+        WebElement searchField = driver.findElements(By.className("v-textfield")).get(0);
+        searchField.clear();
+        searchField.sendKeys("New Dashboard");
+        searchField.sendKeys(Keys.TAB);
+        WebElement searchButton = findButtonByCaption("Save");
+        searchButton.click();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        String title = driver.findElement(By.id("dashboard-title")).getText();
+        Assert.assertEquals("New Dashboard", title);
+    }
+
+    public WebElement findButtonByCaption(String caption) {
+        List<WebElement> buttons = driver
+                .findElements(By.className("v-button"));
+        for (WebElement button : buttons) {
+            if (button.getText().equals(caption)) {
+                return button;
+            }
+
+        }
+        return null;
+    }
+
+    public WebElement findButtonByCaption(WebElement parent, String caption) {
+        List<WebElement> buttons = parent
+                .findElements(By.className("v-button"));
+        for (WebElement button : buttons) {
+            if (button.getText().equals(caption)) {
+                return button;
+            }
+
+        }
+        return null;
+    }
+
+    @After
+    public void afterTest() {
+        driver.quit();
+    }
+}
+\end{lstlisting}
+
+	
+	\ref{lst:testbenchVaadin}.
+	\lstset{style=a1listing}
+  	\begin{lstlisting} [caption=TestBench test,label={lst:testbenchVaadin}]
+public class TestBenchTest extends TestBenchTestCase {
+
+    WebDriver driver;
+    String UIUrl, nodeURL;
+
+    @Before
+    public void setUp() throws Exception {
+        UIUrl = "http://demo.vaadin.com/dashboard/";
+        setDriver(new FirefoxDriver());
+    }
+
+    @Test
+    public void test1() {
+        getDriver().get(UIUrl);
+        $(ButtonElement.class).first().click();
+        $(ButtonElement.class).id("dashboard-edit").click();
+        TextFieldElement searchField = $(TextFieldElement.class).first();
+        searchField.setValue("New dashboard");
+        $(ButtonElement.class).caption("Save").first().click();
+
+        String title = $(LabelElement.class).id("dashboard-title").getText();
+        Assert.assertEquals("New dashboard", title);
+    }
+
+    @After
+    public void afterTest() {
+        // driver.quit();
+    }
+}  	
+\end{lstlisting}
+  	Selenium Grid allows to run tests in parallel by running different tests at the same time on different remote machines. Distributing tests across 
 	multiple physical or virtual machines gives an opportunity to execute tests 
-	on diffrent operating systems and browsers. 	Conclusion, why selenium is so good and why we can use it as a base of
-	Testbench, why we can not use Testbewnch for testing vaadin. 
+	on different operating systems and browsers. 	Conclusion, why selenium is so
+	good and why we can use it as a base of Testbench, why we can not use Testbewnch for testing Vaadin. 

@@ -1,0 +1,16 @@
+\chapter{Testbench vs Selenium}
+\label{ch:testbenchvsselenium}
+In this chapter we will present advantages of using TestBench against Selenium.
+
+\section{API built specifically for Vaadin components}
+Selenium operates on the DOM of the Web page and provides only basic methods of
+Web elements like ``click'' or ``sendKeys''. TestBench provides a rich API for
+Vaadin components, which allows to operate on bigger parts of components, for
+ example you can get a row or cell of the Table by index
+ see~\ref{lst:testbench1}.
+  	\lstset{language=Java}
+  	\begin{lstlisting}[caption=Get Vaadin Table cell Value,label={lst:testbench1}]
+TableElement table = getTableElement(); String value = table.getRow(0).getCell(1).getValue();
+	\end{lstlisting}
+	
+	
