@@ -1,6 +1,7 @@
 \chapter{Testbench vs Selenium}
 \label{ch:testbenchvsselenium}
-In this chapter we will present advantages of using TestBench against Selenium.
+In this chapter we will summarize advantages of using TestBench against
+Selenium.
 
 \section{API built specifically for Vaadin components}
 Selenium operates on the DOM of the Web page and provides only basic methods of
@@ -13,4 +14,42 @@ Vaadin components, which allows to operate on bigger parts of components, for
 TableElement table = getTableElement(); String value = table.getRow(0).getCell(1).getValue();
 	\end{lstlisting}
 	
-	
+\section{Client server communication}
+As mentioned in section~\ref{sec:reasontestbenchdevelopment} TestBench handles 
+client server syncronization.
+
+\section{Screenshot comparesment}
+Since version 4.0.0 TestBench has an API for comparing screenshots. This 
+feature was introduced to help users to test UI of the application. We believe
+that User Experience (UX) is very important in Web applications, and an
+important part of UX is look and feel of the application.
+
+In Web applications styling is done with CSS or SCSS. The downside of CSS 
+is that changing CSS rule for one selector may affect a lot of elements on the
+web page. For example change the width or margin of one element may ruin an
+appearance of the whole Web page.
+
+Manual UI testing is very difficult, because of the two main challenges:
+\begin{enumerate}
+  \item After some time the tester looses his concentration and does not see
+  errors
+  \item Small details in applications with rich UI is hard to notice for a
+  human. In other words if you have several textboxes and buttons in different
+  tabs or windows in the application it is hard to notice that some of them are
+  not aligned.
+\end{enumerate}
+
+Both these two problems can be solved with automatic screenshot comparesment.
+ImageComparesment class has an overloaded compare mehtod which takes either an
+image or a path to the reference screenshot. The comparesment is done in 16x16
+blocks comparing RGB values of the every pixel in this block. If there are
+differences in images these parts are videleni with color, so it is easier for a
+tester to find out what was the problem with the test. TestBench test can also
+be configured to automatically take screenshots of the failing tests, it also
+helps developers to narrow the scope of the failing test. 
+tester
+
+
+\section{Parallel testing}
+
+\section{Finding UI element with mouse}

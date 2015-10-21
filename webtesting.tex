@@ -6,16 +6,15 @@
 		budget, the professional level of developers. Two main ideas are Capture and
 		Replay tests (C\&R) and programmable tests.
 		
-		\section{C\&R}
+		\section{Capture and Replay}
 		\label{sec:captureReplay}
 			C\&R web testing is based on capture/replay automated
 			tools. \cite{CaptureReplay7} The software tester works with the web
 			application modeling user behaviour, the capture/replay tool records the
 			whole session and generates the script, which can be executed later,
-			repeating same actions without humans participation. These scripts are then
-			might be edited for comparing expected and actual resutls of the user
-			actions.Script editing might be useful to adjust failed sciprts accordingly
-			to the changes of the web page. Thought if the web page was changed
+			repeating same actions without humans participation. Script editing might
+			 be useful to adjust failed scripts accordingly
+			to the changes of the Web page. Thought if the web page was changed
 			significantly, editing test script might be more expensive than recording the
 			test from scratch. 
 			
@@ -25,13 +24,13 @@
 			The main advantage of this method of testing, is that the tester doesn't
 			require to have experience in coding and building test cases with such tools is a simple task. 
 			
-			On the contrary, maintaing tests is harder and more expensive.
+			On the contrary, maintaining tests is harder and more expensive.
 			The main problem is that editing generated scripts is harder than editing
-			scripts written by a software debeloper. The test cases are strongly coupled
-			with web pages, contain hard-coded values. These factors leads to the
+			scripts written by a software developer. The test cases are strongly coupled
+			with web pages, contain hard-coded values. These factors lead to the
 			problem, that very often the tester have to record a new test, instead of
 			changing the existing ones. When using C\&R tools the tester/developer can
-			not use loose-coupling and decomposition, and other design tehniques to make
+			not use loose-coupling and decomposition, and other design techniques to make
 			easy read and maintained tests. It is hard to use parts of already made test
 			cases when creating new ones if they have common parts. Basically the main
 			approach is to spend a lot of time recording tests all over again and again.
@@ -377,6 +376,7 @@ public 	class TestExample throws MalformedURLException {
 
 
  \section{Reason of developing Testbench}
+ \label{sec:reasontestbenchdevelopment}
   	As shown above Selenium is a powerful tool for web testing. However if we use
   	Selenium to test Vaadin application we will run into several problems.
   	Selenium does not know about Vaadin specific features, like client-side
@@ -506,7 +506,4 @@ public class TestBenchTest extends TestBenchTestCase {
     }
 }  	
 \end{lstlisting}
-  	Selenium Grid allows to run tests in parallel by running different tests at the same time on different remote machines. Distributing tests across 
-	multiple physical or virtual machines gives an opportunity to execute tests 
-	on different operating systems and browsers. 	Conclusion, why selenium is so
-	good and why we can use it as a base of Testbench, why we can not use Testbewnch for testing Vaadin. 
+ 
