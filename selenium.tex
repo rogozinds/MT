@@ -1,0 +1,114 @@
+	\chapter {Selenium}
+	\label{ch:selenium}
+      Selenium is a set of different software tools each with a different approach
+       to supporting test automation. The entire suite of tools allows many
+       options for locating UI elements and comparing expected test results
+       against actual application behavior \cite{seleniumSite}.
+       Selenium provides implementation both of C\&R \ref{sec:captureReplay}
+       \ref{sec:programTests} and programmable tests models.  
+       
+       \textbf{Selenium IDE} - is a development environment with graphical
+       interface for building test scripts.
+		Selenium IDE has a recording feature,  which records user actions as they are
+		performed and then exports them as a reusable script in one of many programming languages that can be later executed.
+       
+       \textbf{Selenium  WebDriver} makes direct calls to the browser using browser's native support for automation. WebDriver represents a web browser, hiding specific browser details, behind the interface see
+       figure~\ref{fig:webdriver}. Having a unified interface provides
+       multi-browser support and allows same tests to be executed in different
+       envirements.
+       
+	    \begin{figure}
+		\label{fig:webdriver}
+		\includegraphics[width=0.75\textwidth, center]{webdriver_structure}
+		\caption{WebDriver structure}
+		\end{figure}
+		
+    	\textbf{Selenium Remote Control (RC)} is an old version of Selenium
+    	WebDriver, currently supported only in maintanance mode.
+       
+       \textbf{Selenium Grid} allows to execute tests on different machines.
+       Selenium Grid is useful for projects with large amount of tests or test
+       suites that must be run in multiple environments.
+       
+		Grid allows to add several physical machines to a test cluster. Grid uses the
+		term ``hub'' for a central point where all tests are loaded. Hub is responsible
+		for distributing the tests across nodes. ``Node'' is  a remote machine with
+		specific configuration which is attached to the hub see
+		figure~\ref{fig:selnium_grid}. Nodes are totally separated from each other and
+		may have different operating systems and browsers. Hub ``decides''
+		for each test suite on which node it should be executed based on test's configuration.
+		By default every node starts eleven browsers : five Firefox, five Chrome and
+		one Internet Explorer.
+		
+		\begin{figure}
+		\label{fig:webdriver}
+		\includegraphics[width=0.75\textwidth, center]{selenium_grid}
+		\caption{Selenium Grid structure}
+		\end{figure}
+		
+		Selenium Grid is published as a separate jar file, so to setup a test hub you
+		only need to have JRE(Java Runtime Envirenment) installed. To start hub run
+		selenium-server with hub parameter see \ref{lst:starthub} and to start a new
+		node specify a webdriver parameter and the URL of the hub running \ref{lst:startnode}.
+		
+		\begin{lstlisting} [ label={lst:starthub},language=bash, caption=Start hub ]
+		 java -jar	selenium-server-standalone-2.30.0.jar -role hub
+		\end{lstlisting}
+
+		\begin{lstlisting} [caption=Start node, label={lst:startnode},language=bash]
+		java -jar selenium-server-standalone-2.30.0.jar -role webdriver
+		-hub http://http://192.168.1.1:4444/grid/register -port 5566
+		\end{lstlisting}
+		
+
+	To create a test suite for the Grid configuration created above see an
+	example \ref{lst:starthub2}. Here is a explanation of basic steps :
+	\begin{itemize}
+	  \item Specify a url of tested web page line 6.
+	  \item Specify a url of a hub line 7.
+	  \item Specify settings of the test, for example a browser line 8.
+	  \item Create an instance of remote webDriver line 9.
+	  \item Open a tested web page line 14.
+	  \item Compare actual value on a webpage with expected value line 15.
+	  \item Close web page line 20.
+	\end{itemize}
+	
+	\lstset{style=a1listing}
+	\begin{lstlisting} [caption=Selenium test example,label={lst:starthub2},language=java]
+public 	class TestExample throws MalformedURLException {
+ 	WebDriver driver;
+ 	 String UIUrl,nodeURL;
+ 	 @BeforeTest public void setUp() {
+ 	 	UIUrl="http://app.example.com/hellopage"; 
+		hubURL="http://192.168.1.2:5566/wd/hub";
+		DesiredCapabilities capability=DesiredCapabilities.firefox();
+		driver=new RemoteWebDriver(new URL(hubURL),capability);
+	}
+		
+	@Test
+	public void test1() {
+		driver.get(UIUrl);
+		Assert.assertEquals("Welcome",driver.getTitle());
+	}
+	
+	@AfterTest
+	public void afterTest() {
+		driver.quit();
+	}
+}
+	\end{lstlisting}
+
+	As it shown above setting up the basic configuration of Selenium Grid is fairly
+	easy. After we have opened the tested web page with driver.get(UIUrl), you can
+	use ``Find Element" or ``Find Elements" methods with ``By" query object for
+	locating elements on the page. For example to find an element with a
+	class ``profile'' you need to use By.className query object see example
+	~\ref{lst:classSearch}. Selenium  supports searching elements by id,tag, class,
+	Xpath and all implications from section~\ref{sec:challenges} applies to it. 
+	There is no ideal strategy for searching the required element it is up
+	to developer which one to choose based on requirements.
+	
+	\lstset{style=a1listing}
+	\begin{lstlisting} [caption=Search element by class,label={lst:classSearch}]
+	WebElement avatarElement = driver.findElement(By.className("profile"));
+	\end{lstlisting}

@@ -16,9 +16,9 @@ TableElement table = getTableElement(); String value = table.getRow(0).getCell(1
 	
 \section{Client server communication}
 As mentioned in section~\ref{sec:reasontestbenchdevelopment} TestBench handles 
-client server syncronization.
+client server synchronization.
 
-\section{Screenshot comparesment}
+\section{Screenshot comparision}
 Since version 4.0.0 TestBench has an API for comparing screenshots. This 
 feature was introduced to help users to test UI of the application. We believe
 that User Experience (UX) is very important in Web applications, and an
@@ -34,22 +34,98 @@ Manual UI testing is very difficult, because of the two main challenges:
   \item After some time the tester looses his concentration and does not see
   errors
   \item Small details in applications with rich UI is hard to notice for a
-  human. In other words if you have several textboxes and buttons in different
+  human. In other words if you have several text fields and buttons in different
   tabs or windows in the application it is hard to notice that some of them are
   not aligned.
 \end{enumerate}
 
-Both these two problems can be solved with automatic screenshot comparesment.
-ImageComparesment class has an overloaded compare mehtod which takes either an
-image or a path to the reference screenshot. The comparesment is done in 16x16
+Both these two problems can be solved with automatic screenshot comparison.
+ImageComparesment class has an overloaded compare method which takes either an
+image or a path to the reference screenshot. The comparison is done in 16x16
 blocks comparing RGB values of the every pixel in this block. If there are
-differences in images these parts are videleni with color, so it is easier for a
-tester to find out what was the problem with the test. TestBench test can also
-be configured to automatically take screenshots of the failing tests, it also
-helps developers to narrow the scope of the failing test. 
-tester
+differences in images these parts are marked with color, so it is easier for a
+tester to find out what was the problem with the test see
+\ref{fig:failedscreen} and \ref{fig:failedscreenmarked}.
 
+	\begin{figure}
+	\label{fig:failedscreen}
+	\includegraphics[width=0.75\textwidth]{screen_fail}
+	\caption{Reference screenshot}
+	\end{figure}
+
+	\begin{figure}
+	\label{fig:failedscreenmarked}
+	\includegraphics[width=0.75\textwidth]{screen_fail_marked_error}
+	\caption{Screenshot with emphasized error}
+	\end{figure}
+
+TestBench test can also be configured to automatically take screenshots of the failing tests by adding
+a ``screenshot on failure rule'' see \ref{lst:screenshotOnFailue}. Automatical
+taking screenshots of failing tests helps developers to narrow the
+scope of the potential problem much faster.
+tester
+  	\begin{lstlisting}[caption=Adding screenshot on failure	rule,label={lst:screenshotOnFailue}]
+@Rule
+public ScreenshotOnFailureRule screenshotOnFailureRule =
+	 new ScreenshotOnFailureRule(this, true);
+	\end{lstlisting}
 
 \section{Parallel testing}
+As mentioned in section~\ref{sec:selenium} Selenium Grid allows to run
+tests on different machines with different configuration. Unfortunatelly
+Selenium does not provide a ready made solution to start those tests in
+parallel, the developer can  use a maven surefire plugin \ref{sureFire} 
+or JUnit ``ParallelComputer" class \ref{junitParallelComputer}. This requires
+additional work for example to use ten parallel threads for running tests using
+surefire plugin you need to add this XML snippet \ref{lst:surefirePom}\ref{sureFireExample}
+to your pom file.
 
-\section{Finding UI element with mouse}
+\lstset{language=XML}
+\begin{lstlisting}[caption=Get Vaadin Table cell Value,label={lst:surefirePom}]
+<plugins>
+    [...]
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.19</version>
+        <configuration>
+          <parallel>methods</parallel>
+          <threadCount>10</threadCount>
+        </configuration>
+      </plugin>
+    [...]
+</plugins>
+\end{lstlisting}	
+
+TestBench4 introduced a ``ParallelTest'' class which thread pool and execute tests
+in separate threads in parallel. The amount of threads can be changed by
+calling ``Parameters.setMaxThreads() method. Besides listing~\ref{lst:starthub2}
+shows that a developer needs to use different WebDrivers for running his test in
+different Web browsers or for running on Selenium Hub. TestBench uses Java
+annotations ``@RunLocally'' \ref{lst:testBenchLocally} and ``RunOnHub''
+ref{lst:testBenchRunOnHub}.
+``RunOnHub'' annotation sets remote Web Driver capabilities for Chrome, Firefox and Internet Explrorer 9,
+10,11 by default. We believe that these adjustments in ``ParallelTest'' class
+minimize the amount of extra code and developers effort needed to setup a test
+environment.
+\lstset{language=Java}
+\begin{lstlisting}[caption=Run test in local Chrome browser locally,label={lst:testBenchLocally}] 
+@RunLocally(Browser.CHROME)
+public class LocalTest extends ParallelTest { 
+	@Test
+	public void test1() {
+		getDriver().get("http://demo.vaadin.com/dashboard/");
+	}
+}
+\end{lstlisting}
+
+\lstset{language=Java}
+\begin{lstlisting}[caption=Run tests on Selenium hub on http://192.168.1.2, label={lst:testBenchRunOnHub}]
+@RunOnHub(http://192.168.1.2)
+public class LocalTest extends ParallelTest {
+@Test
+public void test1() {
+	getDriver().get("http://demo.vaadin.com/dashboard/"); }
+}
+\end{lstlisting}
+

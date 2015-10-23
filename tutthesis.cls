@@ -328,7 +328,8 @@
 { 
   numbers        =none, 
   basicstyle     =\footnotesize\ttfamily, % \small\ttfamily, 
-  showstringspaces=false                  % don't print special symbol for white space
+  showstringspaces=false,                  % don't print special symbol for
+  % white space
   backgroundcolor=\color{gray95}, 
   frame          =lrtb,       % =left,rigth,top,bottom
   framerule      =0pt,        % 0p5, 0.5pt, 
@@ -338,11 +339,17 @@
 
 % You can also define the keywords and other properties of an arbitrary
 % language
-\lstdefinelanguage{myownlanguage}
-{morekeywords={system, application, service, task},
-  sensitive=false,
-  morecomment=[s]{<!--}{-->},
-  morestring=[b]",
+\lstdefinelanguage{jbehave}
+{ 
+  numbers        =none, 
+  basicstyle     =\footnotesize\ttfamily, % \small\ttfamily, 
+  showstringspaces=false,                  % don't print special symbol for
+  % white space
+  backgroundcolor=\color{gray95}, 
+  frame          =lrtb,       % =left,rigth,top,bottom
+  framerule      =0pt,        % 0p5, 0.5pt, 
+  linewidth      =\textwidth, % whole column wide
+  xleftmargin=   0.6cm  
 }
 
 %
