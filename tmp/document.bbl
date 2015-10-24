@@ -1,6 +1,23 @@
 \begin{thebibliography}{10}
 
-\bibitem{cleanCode}
+\bibitem{bookVaaidn}
+Marko Grönroos.
+\newblock {\em Book of Vaadin}.
+\newblock Prentice Hall PTR, Upper Saddle River, NJ, USA, 7 edition, 2015.
+
+\bibitem{tiobeIndex}
+Tiobe index for march 2015, 2015.
+
+\bibitem{maven}
+2014.
+
+\bibitem{ant}
+2014.
+
+\bibitem{akka}
+2014.
+
+\bibitem{cleancode}
 Robert~C. Martin.
 \newblock {\em Clean Code: A Handbook of Agile Software Craftsmanship}.
 \newblock Prentice Hall PTR, Upper Saddle River, NJ, USA, 1 edition, 2008.
@@ -54,14 +71,6 @@ Sebastian Elbaum, Gregg Rothermel, Srikanth Karre, and Marc Fisher~II.
 \newblock Leveraging user-session data to support web application testing.
 \newblock {\em IEEE Trans. Softw. Eng.}, 31(3):187--202, March 2005.
 
-\bibitem{bookVaaidn}
-Marko Grönroos.
-\newblock {\em Book of Vaadin}.
-\newblock Prentice Hall PTR, Upper Saddle River, NJ, USA, 7 edition, 2015.
-
-\bibitem{tiobeIndex}
-Tiobe index for march 2015, 2015.
-
 \bibitem{seleni}
 Filippo Ricca Cristiano~Spadaro Maurizio~Leotta, Diego~Clerissi.
 \newblock Repairing selenium test cases: An industrial case study about web
@@ -70,15 +79,6 @@ Filippo Ricca Cristiano~Spadaro Maurizio~Leotta, Diego~Clerissi.
   IEEE Sixth International Conference on}, pages 487--488. IEEE, 2013.
 
 \bibitem{vaadinTestbenchSite}
-2014.
-
-\bibitem{maven}
-2014.
-
-\bibitem{ant}
-2014.
-
-\bibitem{akka}
 2014.
 
 \bibitem{akkaUseCases}

@@ -3,7 +3,6 @@
 	\section{Web applications}
 	%May be some more intro text''
 		
-		
 	  Static HTML Web sites are loosing their popularity, because users
 	  expect from modern Web sites more than just representing pictures and text.
 	  Generally, users willing to have a higly responsive application with different useful
@@ -55,8 +54,66 @@
 		existing solution, than try to implement your own new one. That is why many
 		modern applications are based on one or several software frameworks. In a
 		rapidly changing and highly competitive business environment, choosing a right toolset is one of
-		the key factors of the success.	Same implications are applied for testing frameworks. 	
+		the key factors of the success.	 	
 		
+  \section{Vaadin}
+  \label{ch:vaadin}
+   ``Vaadin Framework is a Java Web application development framework that is
+  designed to make creation and maintenance of high quality Web-based user interfaces easy.
+   Vaadin supports two different programming models: server-side and client-side. 
+   `` \cite[pr1.1]{bookVaaidn}
+   \emph{Client-side} Vaadin code is executed in the Web browser as JavaScript
+   code.
+   \emph{Server-side} code is executed on the server as Java code on the Java
+   Virtual machine(JVM).
+
+   Client-side code is originally written in Java and then
+   compiled to JavaScript using \emph{Vaadin Client Compiler}. Vaadin Client Compiler is based on Google
+   Web Toolkt(GWT) which provides the opportunity to write code in Java and
+   execute it in the browser. The client-side code is responsible for rendering
+   the user interface and send user interaction to the server.
+  
+   Nowdays there are a lot of standarts and recommendations for Web
+   developers published by World Wide Web Consortium (W3C) or  International
+   Organization for Standardization (ISO), including recommendations for
+   markup languages (HTML,XML), Document Object Models(DOM) and standarts
+   for JavaScript. Inspite of all the standarts the difference between browsers
+   and versions might be significant for the developer. The differences may vary
+   from supporting/not supporting different Cascading Style Sheets (CSS) tags
+   and HTML5 features, different event handling and simply bugs. Vaadin client Compiler and GWT provide a wide browser
+   support, eliminating the difference between browsers, and helping a
+   developer to concentrate on essential parts of the application, instead of
+   wasting time on cross-browser support. Vaadin uses screenshot comparison see
+   \ref{sec:screencompare} as a part of regression testing, which brings
+   confindence to the developer that Vaadin components will not change their
+   appearence unexpectedly. 
+   
+   A server-side code runs as a servlet in a Java Web server, serving HTTP
+   requests.
+   The VaadinServlet is normally used as the servlet class. The servlet receives client requests
+   and inteprets them as events for a particular user session.
+   Events are associated with user interface components and delivered to the event listeners defined in the application.
+   If the User Interface (UI) logic makes changes to the server-side user
+   interface components, the servlet renders them in the Web browser by generating a response.
+   
+   As mentioned before both client-side and server-side code in Vaadin is written
+   in Java. This positively influences the development process in the following
+   way:
+   \begin{itemize}
+     \item The developer does not need to know several programming languages and one
+    person may be involved in the developing of both front-end and back-end. This
+    might be an important factor for small teams and speeds up the development
+    process.
+   \item Vaadin brings the power of Java into the Web development. Due to
+    TIOBE index \cite{tiobeIndex} Java and C are the two most popular programming
+    languages since 2002. This fact allows developer to use a great amount of
+    already-made solutions such as building tools Maven \cite{maven} and Ant
+    \cite{ant}, testing tools \cite{junit}, frameworks for concurrent
+    applications as Akka \cite{akka} and other libraries like Yodatime \cite{yodatime}, Guava \cite{guava} for different stages of development
+    process.
+  \end{itemize}  		
+		
+\section{Testing}
 		Nowadays some companies still rely on manual testing or ignore this
 		important part of software development at all. Such approach has several
 		sorrowful consequences:
@@ -77,8 +134,8 @@
 			\item Costs the whole system increases.
 	 	 \end{itemize}
 	 	 
-	 	 To test easily the huge amount of code an automated Web testing is needed.	
-	 	 Web testing reduces the amount of work required to check Web applications as
+	 	 To test easily the huge amount of code an automated testing is needed.	
+	 	 Automated testing reduces the amount of work required to check Web applications as
 	 	 well as Web sites, amplify software value, enhance reusability of test cases and improve time-to-market.
 	   
 		IEEE defines software testing as the process of evaluating a software
@@ -93,8 +150,7 @@
 		particular operating system or different versions of the product are developed
 		and maintained for different operating systems. 
 		
-		Web applications on the
-		contrary should support not only different operating systems, but also
+		Web applications on the	contrary should support not only different operating systems, but also
 		different browsers and devices. So, if developers team decides to support
 		three operating systems (Windows, OSX, Android), three type of devices (phone,
 		tablet, PC) and three browsers (Chrome, Firefox, Internet Explorer) the number
@@ -111,6 +167,13 @@
 		accessible, due to connection problems or maintenance. Such unexpected
 		behaviour may happen, and must be handled properly, not to crash the whole application.
 
+    As mentioned previously one of the key factors for a successful
+    development process is to pick a right toolset, this also applies to
+    testing. In the chapter \ref{ch:Webtesting} we will present work done by
+    other researchers and show how we can use it in creating a test framework
+    for Vaadin applications.
+      
+\iffalse
 		Web testing includes the different type of testing like:
 		\begin{itemize}
 		  \item functionality tests
@@ -126,40 +189,7 @@
 		It is an advantage when	the testing tool is using same principles and similar programming language
 		with other tools in the project. We think that using same programming language
 		to write both tests and code is much easier for the developer. This idea is
-		related to Test-Driven Development(TDD), when tests are written
+		related to Test Driven Development(TDD), when tests are written
 		before production code.
 		
-		TDD is a very popular methodology of software development. The main idea is to
-		write tests first and then code. The main benefits of such approach are:
-			\begin{itemize}
-			  \item The developer is sure that his code works as intended, because all
-			  his code is tested.
-				\item The errors are found at early stage of the development cycle, which
-				reduces the cost of fixing problems.
-			\end{itemize}
-			
-			Three laws of TDD \cite[pp122]{Cleancode}[Book page 122]
-				\begin{enumerate}
-				  \item You may not write production code until you have written a failing unit	test.
-				  \item You may not write more of a unit test than is sufficient to fail.
-				  \item You may not write more production code than is sufficient to pass the
-				currently failing test.
-				\end{enumerate}
-			\iffalse	
-					\subsection {Approaches in Web Testing}	
-						\begin{textit}
-							In this chapter I will explain
-							what does testing actually meands. What types of testing exist: unit, integration, user-interface, regression,
-						etc. What are the differences between these types of testing.
-						
-						Next I will prove why testing is so important in software development. Here I
-						would like to mention some information about \textit{Quality control}. The
-						idea is to show that testing increases the speed of software
-						development and also improves it's quality. So in terms of quality control testing will
-						decrease the price and increase the value of the product for the end user.
-						
-						Also I want to mention other methodologies like \textit{Agile development},
-						\textit{User experience design} and \textit{Test Driven Development}. And how
-						testing can be used/integrated with these methodologies/processes.
-						\end{textit}
-			\fi
+\fi				
