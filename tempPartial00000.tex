@@ -1,0 +1,49 @@
+%!TeX encoding = ISO-8859-1
+\documentclass[12pt,a4paper,english%,twoside,openright
+]{tutthesis}
+% Ensure the correct Pdf size (not needed in all environments)
+\special{papersize=210mm,297mm}
+%
+% Define your basic information
+%
+\author{Dmitrii Rogozin}
+\title{Testing in web/vaadin applications (draft)}      % primary title (for front page)
+\thesistype{Master of Science thesis} % or Bachelor of Science, Laboratory Report... 
+\examiner{Kari Systä} % without title Prof., Dr., MSc or such
+
+% Special trick to use internal macros outside the cls file
+% (e.g. \@author). Trick is reversed with \makeatother a bit later.
+\makeatletter
+
+% Define the pdf document properties.  Fill in your own keywords.
+\hypersetup{   
+  pdftitle={\@title},
+  pdfauthor={\@author},
+  pdfkeywords={Web-testing Automation testing Vaadin Selenium TestBench}
+}
+\usepackage[english]{babel}
+%
+% You can include special packages or define new commands here at the
+% beginning. Options are given in brackets and package name is in
+% braces:  \usepackage[opt]{pkg_name}
+\DeclareGraphicsRule{*}{mps}{*}{}
+\usepackage[export]{adjustbox}
+\graphicspath{ {images/} }
+\lstset{
+  language=Java, % the language of the code
+   basicstyle=\tiny                
+}
+
+
+% Preparatory content ends here
+
+
+
+\pagenumbering{Roman}
+\pagestyle{headings}
+\begin{document}
+\input{background}
+\bibliographystyle{unsrt}
+\bibliography{masterthesis}
+
+\end{document}

@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: tempPartial00000.aux
+Case mismatch error between cite keys Cleancode and cleancode
+---line 34 of file tempPartial00000.aux
+ : \citation{Cleancode
+ :                    }
+I'm skipping whatever remains of this command
+The style file: unsrt.bst
+Database file #1: masterthesis.bib
+You've used 2 entries,
+            1791 wiz_defined-function locations,
+            461 strings with 3859 characters,
+and the built_in function-call counts, 553 in all, are:
+= -- 58
+> -- 12
+< -- 1
++ -- 5
+- -- 3
+* -- 28
+:= -- 82
+add.period$ -- 7
+call.type$ -- 2
+change.case$ -- 2
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 31
+empty$ -- 56
+format.name$ -- 3
+if$ -- 134
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 3
+newline$ -- 13
+num.names$ -- 2
+pop$ -- 8
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 18
+stack$ -- 0
+substring$ -- 32
+swap$ -- 11
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 5
+width$ -- 3
+write$ -- 28
+(There was 1 error message)

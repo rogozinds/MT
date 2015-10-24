@@ -7,40 +7,43 @@
 	  Static HTML Web sites are loosing their popularity, because users
 	  expect from modern Web sites more than just representing pictures and text.
 	  Generally, users willing to have a higly responsive application with different useful
-	  features, working in the web. As a result Web applications are displacing Web
-	  sites on the market. The difference of Web application from a Web site is the
+	  features, working in the Web. As a result Web applications are displacing Web
+	  sites on the market.
+	  
+	   The difference of Web application from a Web site is the
 	 ``ability of a user to affect the state of the business logic on the
-	 server"[7]. In other words the user/client makes a request to the server, the
-	 server perform some actions (calculate, fetch data from database or external web-service) and
-	  sends the response back to the client, which is rendered in the browser see
-	  figure~\ref{fig:clientserver}.
+	 server"[7]. In other words a user or client makes a request to the server,
+	 the server performs some actions (calculate, fetch data from database or
+	 external Web-service) and sends the response back to the client, which is rendered in the browser see
+	  figure \ref{fig:pic1}.
+	  
 	  \begin{figure}
-	  \label{fig:clientserver}
       	\includegraphics[width=0.75\textwidth]{client}
       	\caption{Web application structure}
+      	\label{fig:pic1}
       \end{figure}
 	  
     	Client-server structure helps to distribute application tasks or workloads
     	between the service providers called servers, and service requestors,
     	called clients. Client-server model helps to separate client and server logic, as
-    	a result these parts can be independent and communicate via application
-    	programming interface (API). Client server model grants several advantages:
+    	a result these parts can be independent and communicate via Application
+    	Programming Interface (API). Client server model grants several advantages:
     	\begin{itemize}
     	  \item Client and server parts can be developed separately.
     	  \item The application may have several clients.
-    	  \item Client, for example Web browser, is already created.
+    	  \item A client, for example Web browser, can be already created.
     	\end{itemize}
     		
     	Client server model is closely related to a multi-tier architecture - the
     	concept where the parts of the system are divided into separate tiers. Web applications
-    	 are often user three-tier architecture:
+    	 are often use three-tier architecture:
     	 \begin{itemize}
-    	   \item presentation tier is responsible for user interface generation and
+    	   \item Presentation tier is responsible for user interface generation and
     	   lightweight validation.
-    	   \item application tier (business logic tier) controls an application
+    	   \item Application tier (business logic tier) controls an application
     	   functionality, determines how data is created, displayed, stored and
     	   changed.
-    	   \item data tier - controls databases or other resources, provides access
+    	   \item Data tier - controls databases or other resources, provides access
     	   to the data.
     	 \end{itemize}
     	Multi-tier architecture allows any of the three tiers to be changed or
@@ -48,12 +51,11 @@
     	external libraries and frameworks.
 		
 		All	applications have a lot of common features and problems which were already
-		solved by developers beforehand. This is a good practise to take an already
-		existing solution, than try to implement your own one. That is why many modern applications 
-		are based on one or several software frameworks. The rapidly changing and
-		highly competitive business environment, choosing a right toolset is one of
-		the key factors of the success.
-		Same implications are applied for testing frameworks. 	
+		solved by developers beforehand. It is a good practise to take an already
+		existing solution, than try to implement your own new one. That is why many
+		modern applications are based on one or several software frameworks. In a
+		rapidly changing and highly competitive business environment, choosing a right toolset is one of
+		the key factors of the success.	Same implications are applied for testing frameworks. 	
 		
 		Nowadays some companies still rely on manual testing or ignore this
 		important part of software development at all. Such approach has several
@@ -61,34 +63,37 @@
 		\begin{itemize}
 			\item The developers are afraid of changing already written
 			code. Because they do not have a confidence that their changes would not 
-			break something. They stop cleaning their production code because they fear the
-			changes would do more harm than good. ``Their production code began to rot"
-			\cite[p.123]{cleanCode} 
+			break existing code. They stop cleaning their production code because they
+			fear the changes would do more harm than good. ``Their production code begin
+			to rot"
+			\cite[p.123]{cleancode} 
 			
-			\item The effort of finding errors and	fixing them raises with the amount of code written.
-			Because the developers can not localize the place where the error is actual
-			happening.
-			\item Developing new features become harder, if they are based on the part
+			\item The effort of finding errors and	fixing them raises with the amount of
+			code written, because the developers can not localize the place where the
+			error is actual happening.
+			\item Developing new features becomes harder, if they are based on the part
 			of the system which have errors.
 		
-			\item Cost increasing of the whole system.
+			\item Costs the whole system increases.
 	 	 \end{itemize}
 	 	 
-	 	 To test easily the huge amount of code an automated web testing is needed.	
-	 	 Web testing reduces the amount of work requisite to check web applications as well as web sites, amplify software value, enhance
-	 	 reusability of test cases and improve time-to-market.
+	 	 To test easily the huge amount of code an automated Web testing is needed.	
+	 	 Web testing reduces the amount of work required to check Web applications as
+	 	 well as Web sites, amplify software value, enhance reusability of test cases and improve time-to-market.
 	   
-		IEEE has defined software testing as the process of evaluating a software
-		system to verify that it satisfies specified requirements [3 XU]. A set of
-		requirements for the web application includes security, performance,
-		presentation, etc. We will focus on several requirements for the web
+		IEEE defines software testing as the process of evaluating a software
+		system to verify that it satisfies specified requirements \cite{Xu1}. A set of
+		requirements for a Web application includes security, performance,
+		presentation, etc. We will focus on several requirements for the Web
 		application which differ from desktop application. 
 		
-		One of the key requirements which makes testing web applications harder than
+		One of the key requirements which makes testing Web applications harder than
 		testing desktop application is support of different browsers and operating systems and also
 		different devices. A lot of desktop applications are developed to support some
 		particular operating system or different versions of the product are developed
-		and maintained for different operating systems. Web applications on the
+		and maintained for different operating systems. 
+		
+		Web applications on the
 		contrary should support not only different operating systems, but also
 		different browsers and devices. So, if developers team decides to support
 		three operating systems (Windows, OSX, Android), three type of devices (phone,
@@ -99,10 +104,10 @@
 		one hundred. In this case manual testing is unexceptable, because it will lead
 		to unwarranted expenses. 
 		
-		Another difference between web and desktop applications is
+		Another difference between Web and desktop applications is
 		navigation on the Web page and between pages, the unexpected state change via
 		the browser back button or direct Uniform Resource Locator(URL) entry in the
-		browser. Also some resources or parts of the application can be not
+		browser. Some resources or parts of the application can be not
 		accessible, due to connection problems or maintenance. Such unexpected
 		behaviour may happen, and must be handled properly, not to crash the whole application.
 
@@ -116,8 +121,9 @@
 		\end{itemize}
 
 		All these types of tests are equivalent important and picking a tool which
-		will help to write these tests is not an easy task. It is an advantage when
-		the testing tool is using same principles and similar programming language
+		will help to write these tests is not an easy task. 
+		
+		It is an advantage when	the testing tool is using same principles and similar programming language
 		with other tools in the project. We think that using same programming language
 		to write both tests and code is much easier for the developer. This idea is
 		related to Test-Driven Development(TDD), when tests are written

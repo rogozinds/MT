@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.6)  24 OCT 2015 20:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.6)  24 OCT 2015 20:13
 entering extended mode
  restricted \write18 enabled.
+ Source specials enabled.
  %&-line parsing enabled.
-**document.tex
-(./document.tex
+**tempPartial00000.tex
+(./tempPartial00000.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (./tutthesis.cls
@@ -543,11 +544,9 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
-) (./document.aux (./intro.aux) (./background.aux) (./webtesting.aux) (./seleni
-um.aux)
-(./reasondeveloptestbench.aux) (./testbenchdevelop.aux)
-(./testbenchcompareselenium.aux) (./testbenchuse.aux))
-\openout1 = `document.aux'.
+)
+(./tempPartial00000.aux)
+\openout1 = `tempPartial00000.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
@@ -618,9 +617,9 @@ LaTeX Info: Redefining \ref on input line 44.
 LaTeX Info: Redefining \pageref on input line 44.
 LaTeX Info: Redefining \nameref on input line 44.
 
-(./document.out) (./document.out)
+(./tempPartial00000.out) (./tempPartial00000.out)
 \@outlinefile=\write4
-\openout4 = `document.out'.
+\openout4 = `tempPartial00000.out'.
 
 
 *geometry* driver: auto-detecting
@@ -657,532 +656,64 @@ LaTeX Info: Redefining \nameref on input line 44.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/tty_tut_logo.jpg, id=108, 632.3625pt x 94.3525pt>
-File: images/tty_tut_logo.jpg Graphic file (type jpg)
-
-<use images/tty_tut_logo.jpg>
-Package pdftex.def Info: images/tty_tut_logo.jpg used on input line 51.
-(pdftex.def)             Requested size: 227.62204pt x 33.96254pt.
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 55.
-
+(./background.tex
+Chapter 1.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 1.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 55--57
-
- []
-
-LaTeX Font Info:    Try loading font information for TS1+cmss on input line 66.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
-File: ts1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-Underfull \hbox (badness 10000) in paragraph at lines 66--71
-
- []
-
-[0
-Non-PDF special ignored!
-
-
-Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./
-images/tty_tut_logo.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 90--98
-
- []
-
-[1
-
-]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 113.
-
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [2
-
-]
-(./document.toc)
-\tf@toc=\write5
-\openout5 = `document.toc'.
-
- [3
-
-] [4] (./document.lof)
-\tf@lof=\write6
-\openout6 = `document.lof'.
-
- [5
-
-] (./document.lot)
-\tf@lot=\write7
-\openout7 = `document.lot'.
-
- [6
-
-] [7
-
-]
-\openout2 = `intro.aux'.
-
-
-(./intro.tex
- 1.
-[1
-
-
-
-]
-Overfull \hbox (4.51999pt too wide) in paragraph at lines 49--53
-[]\T1/cmr/m/n/12 Vaadin is an open-source project and Test-bench is avail-able 
-for free to non-commercial
- []
-
-
-LaTeX Warning: Reference `ch:vaadin' on page 2 undefined on input line 63.
-
-
-LaTeX Warning: Reference `ch:conclusion' on page 2 undefined on input line 66.
-
-) [2]
-\openout2 = `background.aux'.
-
- (./background.tex
- 2.
-<images/client.png, id=209, 963.6pt x 722.7pt>
+<images/client.png, id=13, 963.6pt x 722.7pt>
 File: images/client.png Graphic file (type png)
  <use images/client.png>
 Package pdftex.def Info: images/client.png used on input line 21.
 (pdftex.def)             Requested size: 320.0935pt x 240.06866pt.
- [3
+ [1
+Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
+Non-PDF special ignored!
 
-]
+] [2 <./images/client.png>] [3]
 
-LaTeX Warning: Citation `cleancode' on page 4 undefined on input line 69.
+LaTeX Warning: Citation `Cleancode' on page IV undefined on input line 141.
 
-[4 <./images/client.png>] [5]
-
-LaTeX Warning: Citation `Cleancode' on page 6 undefined on input line 138.
-
-) [6]
-\openout2 = `webtesting.aux'.
-
- (./webtesting.tex
- 3.
-
-LaTeX Warning: Citation `CaptureReplay7' on page 7 undefined on input line 12.
-
-[7
-
-
-
-] [8]
-
-LaTeX Warning: Citation `CaptureReplay7' on page 9 undefined on input line 158.
-
-
-[9] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2013/08/26 1.5b listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
-) [10]
-
-Package caption Warning: \label without proper \caption on input line 218.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:gmailexample' on page 11 undefined on input line 
-208.
-
-<images/gmail_example.png, id=340, 963.6pt x 504.88625pt>
-File: images/gmail_example.png Graphic file (type png)
-
-<use images/gmail_example.png>
-Package pdftex.def Info: images/gmail_example.png used on input line 219.
-(pdftex.def)             Requested size: 320.0935pt x 167.71463pt.
- [11 <./images/gmail_example.png>]
-
-Package caption Warning: \label without proper \caption on input line 218.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:gmailexample' on page 12 undefined on input line 
-242.
-
-) [12]
-\openout2 = `selenium.aux'.
-
- (./selenium.tex
- 4.
-
-LaTeX Warning: Citation `seleniumSite' on page 13 undefined on input line 6.
-
-
-Package caption Warning: \label without proper \caption on input line 21.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:webdriver' on page 13 undefined on input line 16.
-
-
-<images/webdriver_structure.png, id=361, 501.875pt x 454.69875pt>
-File: images/webdriver_structure.png Graphic file (type png)
-
-<use images/webdriver_structure.png>
-Package pdftex.def Info: images/webdriver_structure.png used on input line 22.
-(pdftex.def)             Requested size: 320.0935pt x 290.02098pt.
-
-
-Package caption Warning: \label without proper \caption on input line 44.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:selnium_grid' on page 13 undefined on input line 
-37.
-
-<images/selenium_grid.png, id=363, 963.6pt x 722.7pt>
-File: images/selenium_grid.png Graphic file (type png)
-
-<use images/selenium_grid.png>
-Package pdftex.def Info: images/selenium_grid.png used on input line 45.
-(pdftex.def)             Requested size: 320.0935pt x 240.06866pt.
- [13
-
-
+[4]) (./tempPartial00000.bbl [5])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
+ [6
 
 ]
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2013/08/26 1.5b listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2013/08/26 1.5b listings language file
-) [14 <./images/webdriver_structure.png>] [15 <./images/selenium_grid.png>]
-Overfull \hbox (50.07265pt too wide) in paragraph at lines 113--114
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-) [16]
-\openout2 = `reasondeveloptestbench.aux'.
-
- (./reasondeveloptestbench.tex
- 5.
-[17
-
-
-
-]
-Overfull \hbox (37.4756pt too wide) in paragraph at lines 51--52
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (150.84901pt too wide) in paragraph at lines 59--60
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (37.4756pt too wide) in paragraph at lines 65--66
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (81.56526pt too wide) in paragraph at lines 66--67
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (81.56526pt too wide) in paragraph at lines 82--83
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[18]
-Overfull \hbox (50.07265pt too wide) in paragraph at lines 121--122
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (75.26674pt too wide) in paragraph at lines 125--126
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[19]) [20]
-\openout2 = `testbenchdevelop.aux'.
-
- (./testbenchdevelop.tex
- 6.
-[21
-
-
-
-]
-
-Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 71.
-
-[22] [23] [24] [25] [26] [27] <images/gerrit1.png, id=581, 963.6pt x 722.7pt>
-File: images/gerrit1.png Graphic file (type png)
-
-<use images/gerrit1.png>
-Package pdftex.def Info: images/gerrit1.png used on input line 279.
-(pdftex.def)             Requested size: 320.0935pt x 240.06866pt.
-
-
-Package caption Warning: \label without proper \caption on input line 296.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:classdiagram' on page 28 undefined on input line 
-294.
-
-File: class.1 Graphic file (type mps)
-[MP to PDF] (./class.1) [28 <./images/gerrit1.png>]
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2013/08/26 1.5b listings language file
-)
-Overfull \hbox (5.98299pt too wide) in paragraph at lines 330--331
-[][][][][][][][][][][][][] 
- []
-
-[29]
-Overfull \hbox (56.37117pt too wide) in paragraph at lines 338--339
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (5.98299pt too wide) in paragraph at lines 357--358
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (94.16231pt too wide) in paragraph at lines 365--366
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[30]
-Overfull \hbox (75.26674pt too wide) in paragraph at lines 409--410
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][] 
- []
-
-
-Overfull \hbox (119.3564pt too wide) in paragraph at lines 416--417
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][] 
- []
-
-
-Overfull \hbox (68.96822pt too wide) in paragraph at lines 417--418
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[31]
-Overfull \hbox (12.28151pt too wide) in paragraph at lines 425--427
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-) [32]
-\openout2 = `testbenchcompareselenium.aux'.
-
- (./testbenchcompareselenium.tex
- 7.
-
-Overfull \hbox (176.0431pt too wide) in paragraph at lines 14--15
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-LaTeX Warning: Reference `sec:reasontestbenchdevelopment' on page 33 undefined 
-on input line 18.
-
-[33
-
-
-
-]
-
-Package caption Warning: \label without proper \caption on input line 51.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:failedscreen' on page 34 undefined on input line 
-48.
-
-
-Package caption Warning: \label without proper \caption on input line 57.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:failedscreenmarked' on page 34 undefined on input
- line 48.
-
-<images/screen_fail.png, id=689, 919.435pt x 571.13374pt>
-File: images/screen_fail.png Graphic file (type png)
-
-<use images/screen_fail.png>
-Package pdftex.def Info: images/screen_fail.png used on input line 52.
-(pdftex.def)             Requested size: 320.0935pt x 198.8366pt.
-
-<images/screen_fail_marked_error.png, id=690, 918.43124pt x 571.13374pt>
-File: images/screen_fail_marked_error.png Graphic file (type png)
-
-<use images/screen_fail_marked_error.png>
-Package pdftex.def Info: images/screen_fail_marked_error.png used on input line
- 58.
-(pdftex.def)             Requested size: 320.0935pt x 199.05447pt.
-
-
-LaTeX Warning: Reference `sec:selenium' on page 34 undefined on input line 74.
-
-
-LaTeX Warning: Reference `sureFire' on page 34 undefined on input line 77.
-
-
-LaTeX Warning: Reference `junitParallelComputer' on page 34 undefined on input 
-line 78.
-
-
-LaTeX Warning: Reference `sureFireExample' on page 34 undefined on input line 8
-0.
-
-[34 <./images/screen_fail.png>] [35 <./images/screen_fail_marked_error.png>])
-[36]
-\openout2 = `testbenchuse.aux'.
-
- (./testbenchuse.tex
- 8.
-[37
-
-
-
-] <images/filtertable.png, id=750, 963.6pt x 271.0125pt>
-File: images/filtertable.png Graphic file (type png)
-
-<use images/filtertable.png>
-Package pdftex.def Info: images/filtertable.png used on input line 53.
-(pdftex.def)             Requested size: 320.0935pt x 90.02574pt.
-
-Overfull \hbox (182.34163pt too wide) in paragraph at lines 61--62
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Package caption Warning: \label without proper \caption on input line 52.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:filtertable' on page 38 undefined on input line 6
-9.
-
-
-LaTeX Warning: Citation `studyBDD' on page 38 undefined on input line 76.
-
-[38 <./images/filtertable.png>] [39]
-Overfull \hbox (56.37117pt too wide) in paragraph at lines 119--120
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (50.07265pt too wide) in paragraph at lines 123--124
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (5.98299pt too wide) in paragraph at lines 124--125
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (194.93867pt too wide) in paragraph at lines 125--126
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (75.26674pt too wide) in paragraph at lines 130--131
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (125.65492pt too wide) in paragraph at lines 131--132
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (31.17708pt too wide) in paragraph at lines 133--134
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (37.4756pt too wide) in paragraph at lines 135--136
-[][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (144.55049pt too wide) in paragraph at lines 146--147
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (12.28151pt too wide) in paragraph at lines 152--153
-[][][][][][][][][][][][][][][] 
- []
-
-[40]) [41] (./document.bbl [42
-
-] [43
-
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 259.
- [44]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
- (./document.aux (./intro.aux)
-(./background.aux) (./webtesting.aux) (./selenium.aux)
-(./reasondeveloptestbench.aux) (./testbenchdevelop.aux)
-(./testbenchcompareselenium.aux) (./testbenchuse.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 259.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 259.
-Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 3718AE3A41BB55303298B1F753025C32;1681.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
+ (./tempPartial00000.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
+Package rerunfilecheck Info: File `tempPartial00000.out' has not changed.
+(rerunfilecheck)             Checksum: AD6929977C311B27E046FC2F54A7100C;119.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 259.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 12647 strings out of 493304
- 183828 string characters out of 6139871
- 314029 words of memory out of 5000000
- 15316 multiletter control sequences out of 15000+600000
- 25128 words of font info for 53 fonts, out of 8000000 for 9000
+ 10934 strings out of 493304
+ 161290 string characters out of 6139871
+ 284179 words of memory out of 5000000
+ 14202 multiletter control sequences out of 15000+600000
+ 14120 words of font info for 29 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,12n,95p,307b,1934s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
-e/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/cm-s
-uper/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1095.pfb></usr
-/share/texmf/fonts/type1/public/cm-super/sfbx0600.pfb></usr/share/texmf/fonts/t
-ype1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super
-/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfit1000.pfb></usr/
-share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-fsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfti0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-ti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
-mes/utmr8a.pfb>
-Output written on document.pdf (52 pages, 1023320 bytes).
+ 43i,11n,75p,315b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
+fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf/fonts/type1/public/
+cm-super/sfbi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfti1200.pfb>
+Output written on tempPartial00000.pdf (6 pages, 163456 bytes).
 PDF statistics:
- 1052 PDF objects out of 1200 (max. 8388607)
- 950 compressed objects within 10 object streams
- 503 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
+ 22 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -48,7 +48,7 @@
 % Option labelsep=space removes colon, i.e. Figure 1.1 instead of Figure 1.1:
 \usepackage{hyperref}       % pdf links to e.g. figures and citations
 \usepackage{url}            % web links (URL)
-
+\RequirePackage{textcomp}
 
 % Package documentation http://www.ctan.org/pkg/ 
 
@@ -339,18 +339,7 @@
 
 % You can also define the keywords and other properties of an arbitrary
 % language
-\lstdefinelanguage{jbehave}
-{ 
-  numbers        =none, 
-  basicstyle     =\footnotesize\ttfamily, % \small\ttfamily, 
-  showstringspaces=false,                  % don't print special symbol for
-  % white space
-  backgroundcolor=\color{gray95}, 
-  frame          =lrtb,       % =left,rigth,top,bottom
-  framerule      =0pt,        % 0p5, 0.5pt, 
-  linewidth      =\textwidth, % whole column wide
-  xleftmargin=   0.6cm  
-}
+
 
 %
 % Set header ja footer properties for pages 
