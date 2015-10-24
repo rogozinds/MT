@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.8)  23 OCT 2015 18:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.6)  24 OCT 2015 14:56
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -711,20 +711,28 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 
 
 
-]
+] [4 <./images/client.png>] [5]
 
-LaTeX Warning: Citation `cleanCode' on page 4 undefined on input line 66.
+LaTeX Warning: Citation `Cleancode' on page 6 undefined on input line 135.
 
-[4 <./images/client.png>] [5]) [6]
+) [6]
 \openout2 = `webtesting.aux'.
 
  (./webtesting.tex
  3.
+
+LaTeX Warning: Citation `CaptureReplay7' on page 7 undefined on input line 12.
+
 [7
 
 
 
-] [8] [9] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+] [8]
+
+LaTeX Warning: Citation `CaptureReplay7' on page 9 undefined on input line 158.
+
+
+[9] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
@@ -738,7 +746,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:gmailexample' on page 11 undefined on input line 
 208.
 
-<images/gmail_example.png, id=343, 963.6pt x 504.88625pt>
+<images/gmail_example.png, id=340, 963.6pt x 504.88625pt>
 File: images/gmail_example.png Graphic file (type png)
 
 <use images/gmail_example.png>
@@ -769,7 +777,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:webdriver' on page 13 undefined on input line 16.
 
 
-<images/webdriver_structure.png, id=364, 501.875pt x 454.69875pt>
+<images/webdriver_structure.png, id=361, 501.875pt x 454.69875pt>
 File: images/webdriver_structure.png Graphic file (type png)
 
 <use images/webdriver_structure.png>
@@ -780,7 +788,7 @@ Package pdftex.def Info: images/webdriver_structure.png used on input line 22.
 LaTeX Warning: Reference `fig:selnium_grid' on page 13 undefined on input line 
 37.
 
-<images/selenium_grid.png, id=365, 963.6pt x 722.7pt>
+<images/selenium_grid.png, id=362, 963.6pt x 722.7pt>
 File: images/selenium_grid.png Graphic file (type png)
 
 <use images/selenium_grid.png>
@@ -859,7 +867,7 @@ Overfull \hbox (75.26674pt too wide) in paragraph at lines 125--126
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 71.
 
-[22] [23] [24] [25] [26] [27] <images/gerrit1.png, id=583, 963.6pt x 722.7pt>
+[22] [23] [24] [25] [26] [27] <images/gerrit1.png, id=580, 963.6pt x 722.7pt>
 File: images/gerrit1.png Graphic file (type png)
 
 <use images/gerrit1.png>
@@ -955,14 +963,14 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:failedscreenmarked' on page 34 undefined on input
  line 48.
 
-<images/screen_fail.png, id=691, 919.435pt x 571.13374pt>
+<images/screen_fail.png, id=688, 919.435pt x 571.13374pt>
 File: images/screen_fail.png Graphic file (type png)
 
 <use images/screen_fail.png>
 Package pdftex.def Info: images/screen_fail.png used on input line 52.
 (pdftex.def)             Requested size: 320.0935pt x 198.8366pt.
 
-<images/screen_fail_marked_error.png, id=692, 918.43124pt x 571.13374pt>
+<images/screen_fail_marked_error.png, id=689, 918.43124pt x 571.13374pt>
 File: images/screen_fail_marked_error.png Graphic file (type png)
 
 <use images/screen_fail_marked_error.png>
@@ -994,7 +1002,7 @@ LaTeX Warning: Reference `sureFireExample' on page 34 undefined on input line 8
 
 
 
-] <images/filtertable.png, id=752, 963.6pt x 271.0125pt>
+] <images/filtertable.png, id=749, 963.6pt x 271.0125pt>
 File: images/filtertable.png Graphic file (type png)
 
 <use images/filtertable.png>
@@ -1012,6 +1020,9 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `fig:filtertable' on page 38 undefined on input line 6
 9.
+
+
+LaTeX Warning: Citation `studyBDD' on page 38 undefined on input line 76.
 
 [38 <./images/filtertable.png>]
 
@@ -1091,39 +1102,41 @@ Overfull \hbox (12.28151pt too wide) in paragraph at lines 152--153
 [][][][][][][][][][][][][][][][] 
  []
 
-[40]) [41] [42
+[40]) [41] (./document.bbl [42
 
 ] [43
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 353.
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
  [44]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 353.
- (./document.aux (./intro.aux) (./background.aux)
-(./webtesting.aux) (./selenium.aux) (./reasondeveloptestbench.aux)
-(./testbenchdevelop.aux) (./testbenchcompareselenium.aux) (./testbenchuse.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 353.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 353.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
+ (./document.aux (./intro.aux)
+(./background.aux) (./webtesting.aux) (./selenium.aux)
+(./reasondeveloptestbench.aux) (./testbenchdevelop.aux)
+(./testbenchcompareselenium.aux) (./testbenchuse.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 275.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
 Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: 3718AE3A41BB55303298B1F753025C32;1681.
+
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 353.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
  ) 
 Here is how much of TeX's memory you used:
- 12227 strings out of 493304
- 176979 string characters out of 6139871
- 309420 words of memory out of 5000000
+ 12225 strings out of 493304
+ 176965 string characters out of 6139871
+ 309228 words of memory out of 5000000
  14904 multiletter control sequences out of 15000+600000
- 23764 words of font info for 50 fonts, out of 8000000 for 9000
+ 24448 words of font info for 51 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,12n,95p,307b,1934s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/
-fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/t
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
+e/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1
 095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0600.pfb></usr/share/
@@ -1137,13 +1150,14 @@ xmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/publ
 ic/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/tex
 mf/fonts/type1/public/cm-super/sfti0600.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on document.pdf (52 pages, 996735 bytes).
+c/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.
+pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texm
+f/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/times/utmr8a.pfb>
+Output written on document.pdf (52 pages, 1028653 bytes).
 PDF statistics:
- 1056 PDF objects out of 1200 (max. 8388607)
- 954 compressed objects within 10 object streams
- 509 named destinations out of 1000 (max. 500000)
+ 1050 PDF objects out of 1200 (max. 8388607)
+ 947 compressed objects within 10 object streams
+ 503 named destinations out of 1000 (max. 500000)
  254 words of extra memory for PDF output out of 10000 (max. 10000000)
 
