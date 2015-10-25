@@ -29,6 +29,22 @@ Lei Xu and Baowen Xu.
   Cyberworlds}, CW '04, pages 300--305, Washington, DC, USA, 2004. IEEE
   Computer Society.
 
+\bibitem{AnupamCaptureReplay}
+Vinod Anupam, Juliana Freire, Bharat Kumar, and Daniel Lieuwen.
+\newblock Automating web navigation with the webvcr.
+\newblock {\em Comput. Netw.}, 33(1-6):503--517, June 2000.
+
+\bibitem{selenium4}
+Maurizio Leotta, Diego Clerissi, Filippo Ricca, and Cristiano Spadaro.
+\newblock Repairing selenium test cases: An industrial case study about web
+  page element localization.
+\newblock In {\em Proceedings of the 2013 IEEE Sixth International Conference
+  on Software Testing, Verification and Validation}, ICST '13, pages 487--488,
+  Washington, DC, USA, 2013. IEEE Computer Society.
+
+\bibitem{sureFireExample}
+2014.
+
 \bibitem{Zhongen2}
 Zhong sheng Qian, Huaikou Miao, and Hongwei Zeng.
 \newblock A practical web testing model for web application testing.
@@ -41,17 +57,6 @@ Seung~Hak Kuk and Hyeon~Soo Kim.
 \newblock In {\em Proceedings of the 2008 International Conference on Computer
   Science and Software Engineering - Volume 02}, CSSE '08, pages 694--697,
   Washington, DC, USA, 2008. IEEE Computer Society.
-
-\bibitem{selenium4}
-Maurizio Leotta, Diego Clerissi, Filippo Ricca, and Cristiano Spadaro.
-\newblock Repairing selenium test cases: An industrial case study about web
-  page element localization.
-\newblock In {\em Proceedings of the 2013 IEEE Sixth International Conference
-  on Software Testing, Verification and Validation}, ICST '13, pages 487--488,
-  Washington, DC, USA, 2013. IEEE Computer Society.
-
-\bibitem{sureFireExample}
-2014.
 
 \bibitem{pageObject5}
 Maurizio Leotta, Diego Clerissi, Filippo Ricca, and Cristiano Spadaro.

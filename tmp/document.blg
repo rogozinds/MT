@@ -24,45 +24,45 @@ Warning--I didn't find a database entry for "seleniumSite"
 Warning--I didn't find a database entry for "studyBDD"
 Too many commas in name 1 of "Maurizio Leotta, Diego Clerissi, Filippo Ricca, Cristiano Spadaro" for entry seleni
 while executing---line 944 of file unsrt.bst
-You've used 19 entries,
+You've used 20 entries,
             1791 wiz_defined-function locations,
-            548 strings with 6011 characters,
-and the built_in function-call counts, 4074 in all, are:
-= -- 381
-> -- 105
+            559 strings with 6236 characters,
+and the built_in function-call counts, 4342 in all, are:
+= -- 405
+> -- 119
 < -- 7
-+ -- 45
-- -- 26
-* -- 189
-:= -- 508
-add.period$ -- 46
-call.type$ -- 19
-change.case$ -- 11
++ -- 50
+- -- 30
+* -- 215
+:= -- 551
+add.period$ -- 49
+call.type$ -- 20
+change.case$ -- 12
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 221
-empty$ -- 486
-format.name$ -- 26
-if$ -- 1018
+cite$ -- 20
+duplicate$ -- 230
+empty$ -- 510
+format.name$ -- 30
+if$ -- 1074
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 12
-newline$ -- 80
-num.names$ -- 12
-pop$ -- 113
+int.to.str$ -- 20
+missing$ -- 13
+newline$ -- 85
+num.names$ -- 13
+pop$ -- 114
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 165
+skip$ -- 168
 stack$ -- 0
-substring$ -- 245
-swap$ -- 86
+substring$ -- 270
+swap$ -- 87
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 33
-width$ -- 21
-write$ -- 173
+while$ -- 36
+width$ -- 22
+write$ -- 184
 (There were 2 error messages)
