@@ -36,65 +36,71 @@ server side will notify the client side about this change.
   	\lstset{style=a1listing}
   	\begin{lstlisting} [caption=Selenium test for Vaadin application,label={lst:seleniumVaadin}]
 public class AppTest extends TestCase{
-	WebDriver driver;
-    String UIUrl, nodeURL;	
+  WebDriver driver;
+  String UIUrl, nodeURL;	
 	@Override @Before
     public void setUp() {
-        UIUrl = "http://demo.vaadin.com/dashboard/";
-        driver = new FirefoxDriver();
-
+      UIUrl = "http://demo.vaadin.com/dashboard/";
+      driver = new FirefoxDriver();
     }
 
-    @Test
-    public void testWithoutTestbench() {
-        driver.get(UIUrl);
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        List<WebElement> elements = driver.findElements(By
-                .className("v-button"));
-        if (elements.isEmpty()) {
-            throw new RuntimeException("No buttons found");
-        }
-        elements.get(0).click();
-        driver.findElement(By.id("dashboard-edit")).click();
-        WebElement searchField = driver.findElements(By.className("v-textfield")).get(0);
-        searchField.clear();
-        searchField.sendKeys("New Dashboard");
-        searchField.sendKeys(Keys.TAB);
-        WebElement searchButton = findButtonByCaption("Save");
-        searchButton.click();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        String title = driver.findElement(By.id("dashboard-title")).getText();
-        Assert.assertEquals("New Dashboard", title);
+  @Test
+  public void testWithoutTestbench() {
+    driver.get(UIUrl);
+    driver.manage().timeouts().
+      implicitlyWait(5, TimeUnit.SECONDS);
+    List<WebElement> elements = driver.findElements(By
+      .className("v-button"));
+    if (elements.isEmpty()) {
+      throw new RuntimeException("No buttons found");
+    }
+    elements.get(0).click();
+    driver.findElement(By.id("dashboard-edit")).click();
+    WebElement searchField =
+     driver.findElements(By.className("v-textfield")).get(0);
+    
+    searchField.clear();
+    searchField.sendKeys("New Dashboard");
+    searchField.sendKeys(Keys.TAB);
+    WebElement searchButton = findButtonByCaption("Save");
+    searchButton.click();
+    driver.manage().timeouts().
+      implicitlyWait(5, TimeUnit.SECONDS);
+    String title = driver.findElement(By.
+      id("dashboard-title")).getText();
+    Assert.assertEquals("New Dashboard", title);
     }
 
-    public WebElement findButtonByCaption(String caption) {
-        List<WebElement> buttons = driver
-                .findElements(By.className("v-button"));
-        for (WebElement button : buttons) {
-            if (button.getText().equals(caption)) {
-                return button;
-            }
-
-        }
-        return null;
+  public WebElement findButtonByCaption(String caption) {
+    List<WebElement> buttons = driver
+      .findElements(By.className("v-button"));
+    for (WebElement button : buttons) {
+      if (button.getText().equals(caption)) {
+        return button;
+      }
+    }
+    return null;
     }
 
-    public WebElement findButtonByCaption(WebElement parent, String caption) {
-        List<WebElement> buttons = parent
-                .findElements(By.className("v-button"));
-        for (WebElement button : buttons) {
-            if (button.getText().equals(caption)) {
-                return button;
-            }
+  public WebElement findButtonByCaption(
+    WebElement parent, String caption) {
+   
+    List<WebElement> buttons = parent
+      .findElements(By.className("v-button"));
+    
+    for (WebElement button : buttons) {
+      if (button.getText().equals(caption)) {
+        return button;
+      }
 
-        }
-        return null;
     }
+    return null;
+  }
 
-    @After
-    public void afterTest() {
-        driver.quit();
-    }
+ @After
+ public void afterTest() {
+  driver.quit();
+ }
 }
 \end{lstlisting}
 
@@ -118,11 +124,13 @@ public class TestBenchTest extends TestBenchTestCase {
         getDriver().get(UIUrl);
         $(ButtonElement.class).first().click();
         $(ButtonElement.class).id("dashboard-edit").click();
-        TextFieldElement searchField = $(TextFieldElement.class).first();
+        TextFieldElement searchField =
+           $(TextFieldElement.class).first();
         searchField.setValue("New dashboard");
         $(ButtonElement.class).caption("Save").first().click();
 
-        String title = $(LabelElement.class).id("dashboard-title").getText();
+        String title = $(LabelElement.class).
+          id("dashboard-title").getText();
         Assert.assertEquals("New dashboard", title);
     }
 
