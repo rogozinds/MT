@@ -12,10 +12,12 @@
    This is a short period of time and to manage delivering a good-quality product you
     have to minimize overhead costs. We believe that a team should choose tools
     and methodology which suits its purposes. 
-    Our team decided to use Scrum for managing product development and try to be agile and flexible.
+    Our team decided to use Scrum and Test Driven Development for managing
+    product development and try to be agile and flexible. 
     We decided to have two week sprints.
 
-    \textbf{Scrum} is a management and control process that cuts through
+  \section{Scrum}
+    Scrum is a management and control process that cuts through
     complexity to focus on building software that meets business needs. Management and teams are able to get their
     hands around the requirements and technologies, never let go, and deliver working software,
     incrementally and empirically. The Scrum Team consists of a Product Owner,
@@ -66,11 +68,29 @@
 
   In our case we were not developing a new product, but releasing a new version.
   We did not find any arguments to change the tools were used in the previous
-  release.
+  release we describe them in section \ref{sec:toolsused} .
 
-  \subsubsection {Tools used}
+  \section{Test Driven Development}
+    TDD is a very popular methodology of software development. The main idea is to
+    write tests first and then code. The main benefits of such approach are:
+      \begin{itemize}
+        \item The developer is sure that his code works as intended, because all
+        his code is tested.
+        \item The errors are found at early stage of the development cycle, which
+        reduces the cost of fixing problems.
+      \end{itemize}
+      
+      Three laws of TDD \cite[pp122]{Cleancode}[Book page 122]
+        \begin{enumerate}
+          \item You may not write production code until you have written a failing unit test.
+          \item You may not write more of a unit test than is sufficient to fail.
+          \item You may not write more production code than is sufficient to pass the currently failing test.
+        \end{enumerate}
+        
+  \section {Tools used}
+  \label{sec:toolsused}
   
-  \textbf{Maven}
+  \subsection{Maven}
   Maven is a java-based software project management and comprehension tool.
   Maven is based around the central concept of a build life cycle. This means
   that the process for building and distributing a particular project(artifact) is clearly defined. There are three built-in lifecycles:
@@ -146,7 +166,7 @@
   your dependencies or you found an error in the pom file after you fix the
   problem, all your team members have to just checkout the new version of POM.
  
-  \textbf{Trac}
+  \subsection{Trac}
   Trac is an enhanced wiki and issue tracking system for software development
   projects. Trac may include several projects and users or developers can
   create tasks (also called tickets) for these projects. The tickets may have different types:
@@ -218,7 +238,7 @@
    Git-bisect command - is a binary search against revision graph, which helps to find the commit which
    introduced a bug.
 
-  \textbf{Teamcity} - is a web-based build management and continuous integration
+  \subsection{Teamcity} - is a web-based build management and continuous integration
   tool. Teamcity allows running multiple builds and tests under different platforms and environments.
   Teamcity build combines maven, ant builds, git command and bash scripts.
   
@@ -252,7 +272,8 @@
     website.
    \end{itemize}
 
-\textbf{Gerrit} is a web-based code collaboration tool. Gerrit allows developers to
+\subsection{Gerrit}
+  Gerrit is a web-based code collaboration tool. Gerrit allows developers to
   review patches made by other developers. Gerrit has a very easy system of evaluating patches:
   \begin{itemize}
   \item -2 (veto) - patch has major problems.
@@ -325,7 +346,7 @@ fields, labels, etc.) on the web-page.
  the query is built execute it.
 
 For example to find all children elements which are buttons:
-  \lstset{language=Java}
+  \lstset{style=a1listing}
     \begin{lstlisting}
     AbstractHasTestBenchCommandExecutor elem = getParentElement();
     List<Button> allButtons=elem.$(ButtonElement.class).all();
@@ -370,7 +391,7 @@ or use a more generic class to utilize method of a parent class, for example get
   }
   \end{lstlisting}
 
-\subsection {Basic test case structure}
+\section {Basic test case structure}
 To use TestBench, the test case class should extend the TestBenchTestCase class,
 which provides the WebDriver and ElementQuery APIs. A developer
 can configure Testbench test by using following annotations:

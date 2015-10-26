@@ -1,0 +1,36 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Theoretical background}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Web applications}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Vaadin}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Testing}{chapter.2}% 5
+\BOOKMARK [0][-]{chapter.3}{Web testing}{}% 6
+\BOOKMARK [1][-]{section.3.1}{Capture and Replay}{chapter.3}% 7
+\BOOKMARK [1][-]{section.3.2}{Programmable tests}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.3}{Capture and Replay vs Programmable tests}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.4}{Challenges}{chapter.3}% 10
+\BOOKMARK [2][-]{subsection.3.4.1}{Look and feel testing}{section.3.4}% 11
+\BOOKMARK [2][-]{subsection.3.4.2}{Complex DOM structure}{section.3.4}% 12
+\BOOKMARK [0][-]{chapter.4}{Selenium}{}% 13
+\BOOKMARK [0][-]{chapter.5}{Reason for developing Testbench}{}% 14
+\BOOKMARK [0][-]{chapter.6}{Development of Testbench}{}% 15
+\BOOKMARK [1][-]{section.6.1}{Scrum}{chapter.6}% 16
+\BOOKMARK [1][-]{section.6.2}{Test Driven Development}{chapter.6}% 17
+\BOOKMARK [1][-]{section.6.3}{Tools used}{chapter.6}% 18
+\BOOKMARK [2][-]{subsection.6.3.1}{Maven}{section.6.3}% 19
+\BOOKMARK [2][-]{subsection.6.3.2}{Trac}{section.6.3}% 20
+\BOOKMARK [2][-]{subsection.6.3.3}{Teamcity}{section.6.3}% 21
+\BOOKMARK [2][-]{subsection.6.3.4}{Gerrit}{section.6.3}% 22
+\BOOKMARK [1][-]{section.6.4}{Testbench class diagram}{chapter.6}% 23
+\BOOKMARK [1][-]{section.6.5}{Basic test case structure}{chapter.6}% 24
+\BOOKMARK [0][-]{chapter.7}{Testbench vs Selenium}{}% 25
+\BOOKMARK [1][-]{section.7.1}{API built specifically for Vaadin components}{chapter.7}% 26
+\BOOKMARK [1][-]{section.7.2}{Client server communication}{chapter.7}% 27
+\BOOKMARK [1][-]{section.7.3}{Screenshot comparision}{chapter.7}% 28
+\BOOKMARK [1][-]{section.7.4}{Parallel testing}{chapter.7}% 29
+\BOOKMARK [0][-]{chapter.8}{Testbench use}{}% 30
+\BOOKMARK [1][-]{section.8.1}{Integrating with Behaviour-Driven Development frameworks}{chapter.8}% 31
+\BOOKMARK [1][-]{section.8.2}{Discussion and Conclussion}{chapter.8}% 32
+\BOOKMARK [2][-]{subsection.8.2.1}{Summary}{section.8.2}% 33
+\BOOKMARK [2][-]{subsection.8.2.2}{Advantages and disadvantages}{section.8.2}% 34
+\BOOKMARK [2][-]{subsection.8.2.3}{Future work}{section.8.2}% 35
+\BOOKMARK [1][-]{section.8.3}{Appendix}{chapter.8}% 36

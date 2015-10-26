@@ -1,0 +1,37 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1.}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2.}Theoretical background}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Web applications}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Vaadin}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}Testing}{6}{section.2.3}
+\contentsline {chapter}{\numberline {3.}Web testing}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}Capture and Replay}{8}{section.3.1}
+\contentsline {section}{\numberline {3.2}Programmable tests}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}Capture and Replay vs Programmable tests}{10}{section.3.3}
+\contentsline {section}{\numberline {3.4}Challenges}{13}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Look and feel testing}{13}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Complex DOM structure}{13}{subsection.3.4.2}
+\contentsline {chapter}{\numberline {4.}Selenium}{16}{chapter.4}
+\contentsline {chapter}{\numberline {5.}Reason for developing Testbench}{20}{chapter.5}
+\contentsline {chapter}{\numberline {6.}Development of Testbench}{24}{chapter.6}
+\contentsline {section}{\numberline {6.1}Scrum}{24}{section.6.1}
+\contentsline {section}{\numberline {6.2}Test Driven Development}{26}{section.6.2}
+\contentsline {section}{\numberline {6.3}Tools used}{26}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Maven}{26}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Trac}{28}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Teamcity}{30}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Gerrit}{31}{subsection.6.3.4}
+\contentsline {section}{\numberline {6.4}Testbench class diagram}{32}{section.6.4}
+\contentsline {section}{\numberline {6.5}Basic test case structure}{34}{section.6.5}
+\contentsline {chapter}{\numberline {7.}Testbench vs Selenium}{37}{chapter.7}
+\contentsline {section}{\numberline {7.1}API built specifically for Vaadin components}{37}{section.7.1}
+\contentsline {section}{\numberline {7.2}Client server communication}{37}{section.7.2}
+\contentsline {section}{\numberline {7.3}Screenshot comparision}{37}{section.7.3}
+\contentsline {section}{\numberline {7.4}Parallel testing}{39}{section.7.4}
+\contentsline {chapter}{\numberline {8.}Testbench use}{41}{chapter.8}
+\contentsline {section}{\numberline {8.1}Integrating with Behaviour-Driven Development frameworks}{43}{section.8.1}
+\contentsline {section}{\numberline {8.2}Discussion and Conclussion}{46}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Summary}{46}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Advantages and disadvantages}{46}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.3}Future work}{46}{subsection.8.2.3}
+\contentsline {section}{\numberline {8.3}Appendix}{48}{section.8.3}

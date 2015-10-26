@@ -1,61 +1,19 @@
-	\chapter {Vaadin}
-	\label{ch:vaadin}
 	
-	 ``Vaadin Framework is a Java web application development framework that is
-	designed to make creation and maintenance of high quality web-based user interfaces easy.
-	 Vaadin supports two different programming models: server-side and client-side. 
-	 `` \cite[pr1.1]{bookVaaidn}
-	 \emph{Client-side} Vaadin code is executed in the web browser as JavaScript
-	 code.
-	 \emph{Server-side} code is executed on the server as Java code on the Java
-	 Virtual machine(JVM).
-	 
-	 Client-side code is originally written in Java and then
-	 compiled to JavaScript using \emph{Vaadin Client Compiler}. Vaadin Client Compiler is based on Google
-	 Web Toolkt(GWT) which provides the opportunity to write code in Java and
-	 execute it in the browser. The client-side code is responsible for rendering
-	 the user interface and send user interaction to the server.
+	   As we see in the above example Vaadin gives an opportunity to use already
+    made Java solutions with minimum/no overhead. The server-side code is pure
+    Java and can use a third-party framework or third-party library to ease the
+    development process. For testing server-side code we can use JUnit framework
+    which already has become a standart in the Java world.
+    
+    The difficulties come when testing client side. The client side code is
+    compiled to Javascript and executed in a Web-browser, that is why we can not
+    use a Junit framework to test it. The challenge is that we need to have a
+    framework which can operate on a html page raising javascript events and
+    simulating user interaction, but also sends requests related to these
+    interactions to the server side. In the following chapter we will
+    present several ideas about such testing framework.  
 	
-	 Nowdays there are a lot of standarts and recommendations for web
-	 developers published by World Wide Web Consortium (W3C) or  International
-	 Organization for Standardization (ISO), including recommendations for
-	 markup languages (HTML,XML,SVG), Document Object Models and standarts
-	 for JavaScript. Inspite of all the standarts the difference between browsers
-	 and versions might be significant for the developer. The differences may vary
-	 from supporting/not supporting different CSS tags and HTML5 features,
-	 different event handling and simply bugs. Vaadin client Compiler and GWT provide a wide browser
-	 support, eliminating the difference between browsers, and helping a
-	 developer to concentrate on essential parts of the application, instead of
-	 wasting time on cross-browser support. Vaadin uses screenshot comparesment
-	 (which is mentioned in part ?) as a part of regression testing, which brings
-	 confindence to the developer that Vaadin components will not change their
-	 appearence unexpedly with changing the version of Vaadin. 
-	 
-	 A server-side code runs as a servlet in a Java web server, serving HTTP
-	 requests.
-	 The VaadinServlet is normally used as the servlet class. The servlet receives client requests
-	 and inteprets them as events for a particular user session.
-	 Events are associated with user interface components and delivered to the event listeners defined in the application.
-	 If the UI logic makes changes to the server-side user interface components, 
-	 the servlet renders them in the web browser by generating a response.
-	 
-	 
-	 As mentioned before both client-side and server-side code in Vaadin is written
-	 in Java. This positively influences the development process in the following
-	 way:
-	  1. The developer does not need to know several programming languages and one
-	  person may be involved in the developing of both front-end and back-end. This
-	  might be an important factor for small teams and speeds up the develpment
-	  process.
-	  2. Vaadin brings the power of Java into the web development. Due to
-	  TIOBE index \cite{tiobeIndex} Java and C are the two most popular programming
-	  languages since 2002. This fact allows developer to use a great amount of
-	  already-made solutions such as building tools Maven \cite{maven}, Ant
-	  \cite{ant}, testing tools \cite{junit}, frameworks as akka \cite{akka} and
-	  other libraries like yodatime \cite{yodatime}, guava \cite{guava} for different stages of development
-	  process.
-	  
-	\subsection {Intergrating Vaadin with other frameworks}
+	\section {Intergrating Vaadin with other frameworks}
 	  As mentioned in (link to scratch) one of the key factors for a successful
 	  development process is to pick a right toolset. Integrating server-side
 	  code and other Java frameworks or libraries is easy and needs the minimum
@@ -68,7 +26,7 @@
 	  in a big range of industries all from investment and merchant banking, retail and social media,
 	   simulation, gaming and betting, automobile and traffic systems, health care,
 	   data analytics and much more\cite {akkakUseCases}. Using akka with Vaadin
-	   gives an opportunity to develop concurrent, high responsive web
+	   gives an opportunity to develop concurrent, high responsive Web
 	   applications. Using Akka provides an
 	   opportunity of developing multithreaded easily-scalable backend, when
 	   changes are pushed to the client-side asynchronously(not-blocking UI). 
@@ -91,16 +49,4 @@
 		 a higly responsive application is arhcieved. The complete example can be
 		 downloaded here \cite{vaadinAkka}
 	
-	  As we see in the above example Vaadin gives an opportunity to use already
-	  made Java solutions with minimum/no overhead. The server-side code is pure
-	  Java and can use a third-party framework or third-party library to ease the
-	  development process. For testing server-side code we can use JUnit framework
-	  which already has become a standart in the Java world.
-	  
-	  The difficulties come when testing client side. The client side code is
-	  compiled to Javascript and executed in a web-browser, that is why we can not
-	  use a Junit framework to test it. The challenge is that we need to have a
-	  framework which can operate on a html page raising javascript events and
-	  simulating user interaction, but also send requests related to these
-	  interactions to the server side. In the following chapter we will
-	  present several ideas about such testing framework.	   
+  
