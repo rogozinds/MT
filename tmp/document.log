@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.8)  23 OCT 2015 18:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.8)  26 OCT 2015 12:02
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -469,7 +469,7 @@ um.aux
 LaTeX Warning: Label `fig:webdriver' multiply defined.
 
 ) (./reasondeveloptestbench.aux) (./testbenchdevelop.aux)
-(./testbenchcompareselenium.aux) (./testbenchuse.aux))
+(./testbenchcompareselenium.aux) (./testbenchuse.aux) (./appendixA.aux))
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
@@ -898,29 +898,7 @@ Overfull \hbox (94.16231pt too wide) in paragraph at lines 365--366
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[30]
-Overfull \hbox (75.26674pt too wide) in paragraph at lines 409--410
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][] 
- []
-
-
-Overfull \hbox (119.3564pt too wide) in paragraph at lines 416--417
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][] 
- []
-
-
-Overfull \hbox (68.96822pt too wide) in paragraph at lines 417--418
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[31]
-Overfull \hbox (12.28151pt too wide) in paragraph at lines 425--427
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-) [32]
+[30]) [31]
 \openout2 = `testbenchcompareselenium.aux'.
 
  (./testbenchcompareselenium.tex
@@ -931,10 +909,10 @@ Overfull \hbox (176.0431pt too wide) in paragraph at lines 14--15
  []
 
 
-LaTeX Warning: Reference `sec:reasontestbenchdevelopment' on page 33 undefined 
+LaTeX Warning: Reference `sec:reasontestbenchdevelopment' on page 32 undefined 
 on input line 18.
 
-[33
+[32
 
 
 
@@ -944,7 +922,7 @@ Package caption Warning: \label without proper \caption on input line 51.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:failedscreen' on page 34 undefined on input line 
+LaTeX Warning: Reference `fig:failedscreen' on page 33 undefined on input line 
 48.
 
 
@@ -952,17 +930,17 @@ Package caption Warning: \label without proper \caption on input line 57.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:failedscreenmarked' on page 34 undefined on input
+LaTeX Warning: Reference `fig:failedscreenmarked' on page 33 undefined on input
  line 48.
 
-<images/screen_fail.png, id=691, 919.435pt x 571.13374pt>
+<images/screen_fail.png, id=640, 919.435pt x 571.13374pt>
 File: images/screen_fail.png Graphic file (type png)
 
 <use images/screen_fail.png>
 Package pdftex.def Info: images/screen_fail.png used on input line 52.
 (pdftex.def)             Requested size: 320.0935pt x 198.8366pt.
 
-<images/screen_fail_marked_error.png, id=692, 918.43124pt x 571.13374pt>
+<images/screen_fail_marked_error.png, id=641, 918.43124pt x 571.13374pt>
 File: images/screen_fail_marked_error.png Graphic file (type png)
 
 <use images/screen_fail_marked_error.png>
@@ -971,30 +949,30 @@ Package pdftex.def Info: images/screen_fail_marked_error.png used on input line
 (pdftex.def)             Requested size: 320.0935pt x 199.05447pt.
 
 
-LaTeX Warning: Reference `sec:selenium' on page 34 undefined on input line 74.
+LaTeX Warning: Reference `sec:selenium' on page 33 undefined on input line 74.
 
 
-LaTeX Warning: Reference `sureFire' on page 34 undefined on input line 77.
+LaTeX Warning: Reference `sureFire' on page 33 undefined on input line 77.
 
 
-LaTeX Warning: Reference `junitParallelComputer' on page 34 undefined on input 
+LaTeX Warning: Reference `junitParallelComputer' on page 33 undefined on input 
 line 78.
 
 
-LaTeX Warning: Reference `sureFireExample' on page 34 undefined on input line 8
+LaTeX Warning: Reference `sureFireExample' on page 33 undefined on input line 8
 0.
 
-[34 <./images/screen_fail.png>] [35 <./images/screen_fail_marked_error.png>])
-[36]
+[33 <./images/screen_fail.png>] [34 <./images/screen_fail_marked_error.png>])
+[35]
 \openout2 = `testbenchuse.aux'.
 
  (./testbenchuse.tex
  8.
-[37
+[36
 
 
 
-] <images/filtertable.png, id=752, 963.6pt x 271.0125pt>
+] <images/filtertable.png, id=700, 963.6pt x 271.0125pt>
 File: images/filtertable.png Graphic file (type png)
 
 <use images/filtertable.png>
@@ -1010,102 +988,82 @@ Package caption Warning: \label without proper \caption on input line 52.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:filtertable' on page 38 undefined on input line 6
+LaTeX Warning: Reference `fig:filtertable' on page 37 undefined on input line 6
 9.
 
-[38 <./images/filtertable.png>]
-
-! Package Listings Error: Couldn't load requested style.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.84  \lstset{style=jbehave}
-                            
-The following styles weren't loadable:
-    ,jbehave$
-This may cause errors in the sequel.
-
-
-! Package Listings Error: style jbehave undefined.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.84  \lstset{style=jbehave}
-                            
-The style is not loadable. Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[39]
+[37 <./images/filtertable.png>] [38]
 Overfull \hbox (56.37117pt too wide) in paragraph at lines 119--120
-[][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (50.07265pt too wide) in paragraph at lines 123--124
-[][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (5.98299pt too wide) in paragraph at lines 124--125
-[][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (194.93867pt too wide) in paragraph at lines 125--126
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (75.26674pt too wide) in paragraph at lines 130--131
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][] 
+][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (125.65492pt too wide) in paragraph at lines 131--132
-[][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (31.17708pt too wide) in paragraph at lines 133--134
-[][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (37.4756pt too wide) in paragraph at lines 135--136
-[][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (144.55049pt too wide) in paragraph at lines 146--147
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (12.28151pt too wide) in paragraph at lines 152--153
-[][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][] 
  []
 
-[40]) [41] [42
+[39]) [40] [41
 
-] [43
+] [42
 
-]
+] [43]
+\openout2 = `appendixA.aux'.
+
+ (./appendixA.tex [44
+
+]) [45]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 353.
- [44]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 353.
- (./document.aux (./intro.aux) (./background.aux)
-(./webtesting.aux) (./selenium.aux) (./reasondeveloptestbench.aux)
-(./testbenchdevelop.aux) (./testbenchcompareselenium.aux) (./testbenchuse.aux))
+ (./document.aux
+(./intro.aux) (./background.aux) (./webtesting.aux) (./selenium.aux)
+(./reasondeveloptestbench.aux) (./testbenchdevelop.aux)
+(./testbenchcompareselenium.aux) (./testbenchuse.aux) (./appendixA.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 353.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 353.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 3718AE3A41BB55303298B1F753025C32;1681.
+(rerunfilecheck)             Checksum: C2D176E89BB50E1BD112B7F7EB5AD9C9;1687.
+
 
 LaTeX Warning: There were undefined references.
 
@@ -1115,10 +1073,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 353.
  ) 
 Here is how much of TeX's memory you used:
- 12227 strings out of 493304
- 176979 string characters out of 6139871
- 309420 words of memory out of 5000000
- 14904 multiletter control sequences out of 15000+600000
+ 12240 strings out of 493304
+ 177067 string characters out of 6139871
+ 313047 words of memory out of 5000000
+ 14907 multiletter control sequences out of 15000+600000
  23764 words of font info for 50 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,12n,95p,307b,1934s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1140,10 +1098,10 @@ mf/fonts/type1/public/cm-super/sfti0600.pfb></usr/share/texmf/fonts/type1/publi
 c/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.
 pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on document.pdf (52 pages, 996735 bytes).
+Output written on document.pdf (53 pages, 1002213 bytes).
 PDF statistics:
- 1056 PDF objects out of 1200 (max. 8388607)
- 954 compressed objects within 10 object streams
- 509 named destinations out of 1000 (max. 500000)
+ 1067 PDF objects out of 1200 (max. 8388607)
+ 964 compressed objects within 10 object streams
+ 513 named destinations out of 1000 (max. 500000)
  254 words of extra memory for PDF output out of 10000 (max. 10000000)
 

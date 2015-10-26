@@ -391,62 +391,9 @@ A typical test case structure is the is the following:
   \item Get and the value of the checked element.
   \item (optional) get screenshot.
 \end{itemize}
-	\lstset{language=Java}
-	\begin{lstlisting}
-		@Theme("mytheme")
-		@Widgetset("com.example.testbench.MyAppWidgetset")
-		public class MyUI extends UI {
-		    @Override
-		    protected void init(VaadinRequest vaadinRequest) {
-		        final VerticalLayout layout = new VerticalLayout();
-		        layout.setMargin(true);
-		        setContent(layout);
-		
-		        Button button = new Button("Click Me");
-		        button.addClickListener(new Button.ClickListener() {
-		            @Override
-		            public void buttonClick(ClickEvent event) {
-		                layout.addComponent(new Label("Thank you for clicking"));
-		            }
-		        });
-		        layout.addComponent(button);
-		
-		    }
-		
-		    @WebServlet(urlPatterns = "/*", name = "MyUIServlet", asyncSupported = true)
-		    @VaadinServletConfiguration(ui = MyUI.class, productionMode = false)
-		    public static class MyUIServlet extends VaadinServlet {
-		    }
-		}
-	\end{lstlisting}
-	\lstset{language=Java}
-	\begin{lstlisting}
-	public class ButtonTest extends TestBenchTestCase {
-	    public static final String baseUrl = "http://localhost:8080";
-	
-	    @Before
-	    public void setUp() throws Exception {
-	        // Set WebDriver
-	        setDriver(new FirefoxDriver());
-	    }
-	
-	    @After
-	    public void tearDown() throws Exception {
-	        getDriver().quit();
-	    }
-	
-	    @Test
-	    public void testClick() {
-	    	//Open URL
-	        getDriver().get(baseUrl + "?restartApplication");
-	        ButtonElement button = $(ButtonElement.class).first();
-	        button.click();
-	        LabelElement label = $(LabelElement.class).first();
-	        String text = label.getText();
-	        Assert.assertEquals("Thank you for clicking", text);
-	    }
-	}
-	\end{lstlisting}
+
+A complete example of test UI class \ref{lst:appTestUI}  and a TestBench test
+class \ref{lst:appTestClass} can be found in appendix A \ref{appendixA}.
 	
 	When running this test you will get the following results:
 \iffalse
