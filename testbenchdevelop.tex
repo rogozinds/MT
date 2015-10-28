@@ -131,39 +131,12 @@
   finds  and downloads the exact version of the library and adds it to the
   project. Maven profiles allow to have different configurations of your
   application for development and production or testing. All the maven
-  configuration is in file, that is why editing and sharing configuration
-  between members of the team is very easy. For example to define dependencies you define a
-   dependency section in your POM file:
-  \lstset{language=XML}
-    \begin{lstlisting}
-      <dependency>
-         <groupId>group-a</groupId>
-         <artifactId>artifact-b</artifactId>
-         <version>1.0</version>
-      </dependency>
-    \end{lstlisting}  
+  configuration are in one file, that is why editing and sharing configurations
+  between members of the team is very easy. 
 
-  Afterwards all you team members will have the same dependency downloaded and
-  added to your project. If you want to have different configurations for
-  development and production you can specify the profile in your POM.
-   \lstset{language=XML}
-    \begin{lstlisting}
-      <profile>
-         <id>test</id>
-         <activation>
-            <property>
-               <name>env</name>
-               <value>test</value>
-            </property>
-         </activation>
-      </profile>
-    \end{lstlisting}
-  Afterwards you can pass the profile name to the maven build phase as
-  a parameter.
-
-  Eventually, you have a set of predefined configurations for your application
-  for the whole team. So any developer can checkout pom file from the repository
-  call mvn deploy and he will have the same version of the application with all
+  Finally, you have a set of predefined configurations for your application
+  for the whole team and any developer can checkout POM file from the repository
+  call ``mvn deploy'' and he will have the same version of the application with all
   the specified parameters and downloaded dependencies. If you want to update
   your dependencies or you found an error in the pom file after you fix the
   problem, all your team members have to just checkout the new version of POM.
@@ -317,10 +290,10 @@
   figure~\ref{fig:classdiagram}.
 	\begin{figure}
 		\label{fig:classdiagram}
-	    \includegraphics{class.1}
+	    \includegraphics[width=0.75\textwidth] {umlDiagram.png}
 	    \caption{Testbench class diagram}
     \end{figure}
-    
+
 \textbf{AbstractHasTestBenchCommandExecutor} class provides  `\$(Class clazz)'
 and `\$\$(Class clazz)' methods which create a query for searching elements of
 the given type.
@@ -417,63 +390,3 @@ A typical test case structure is the is the following:
 
 A complete example of test UI class \ref{lst:appTestUI}  and a TestBench test
 class \ref{lst:appTestClass} can be found in appendix A \ref{appendixA}.
-	
-	When running this test you will get the following results:
-\iffalse
-	\subsection {Challenges}
-	Because Vaadin is a stateful framework this brings additional complexity in
-	testing client-side and server-side communications. When event happens on the client side 
-	it will notify the server side. If this event affects the server side state, the
-	server side will notify the client side about this change.
-	 Because of a network delay or long time code execution on the server side there might be a delay between 
-	 client side action and the change on a client.  
-	 In these circumstances the client-side should wait for server side code to execute,
-	  because it might affect the next client side instruction.
-	  To handle this situation Testbench has waitForVaadin method, which suspend code execution until 
-	  there is no work to be done on the client side.
-	      
-	  
-	    \lstset{language=Java}
-	    \begin{lstlisting}
-	      public class TestUI extends UI{
-	        @Override
-	        protected void init(VaadinRequest request) {
-	          createUI();
-	        }
-	        public void createUI() {
-	          //step 1 
-	          TextField field1=new TextField();
-	          TextField field2=new TextField2;
-	          field1.setCaption("field1");
-	          field2.setCaption("field2");
-	          
-	          //step 2
-	          field1.addValueChangeListener(e->{
-	            field2.setValue("foo");
-	          });
-	        }
-	      }
-	    \end{lstlisting}  
-	    
-	    \lstset{language=Java}
-	    \begin{lstlisting}
-	      public class TextFieldSetValueTest extends TestBenchTestCase{
-	        @Test
-	        protected void testSetValue() {
-	          //Step 3
-	          TextFieldElement field1 =
-	            $(TextFieldElement.class).caption("field1).first();
-	            
-	          TextFieldElement field2 =
-	            $(TextFieldElement.class).caption("field2).first();  
-	          field1.setValue("bar");
-	          //Step 4
-	          waitForVaadin();
-	          
-	          //Step 5
-	          Assert.assertEquals(field2.getValue(), "foo");           
-	        }
-	      }
-	    \end{lstlisting}  
-
-\fi

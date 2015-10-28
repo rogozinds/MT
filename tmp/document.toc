@@ -19,9 +19,9 @@
 \contentsline {section}{\numberline {6.3}Tools used}{22}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Maven}{22}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Trac}{24}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Teamcity}{26}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Gerrit}{27}{subsection.6.3.4}
-\contentsline {section}{\numberline {6.4}Testbench class diagram}{28}{section.6.4}
+\contentsline {subsection}{\numberline {6.3.3}Teamcity}{25}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Gerrit}{26}{subsection.6.3.4}
+\contentsline {section}{\numberline {6.4}Testbench class diagram}{27}{section.6.4}
 \contentsline {section}{\numberline {6.5}Basic test case structure}{30}{section.6.5}
 \contentsline {chapter}{\numberline {7.}Testbench vs Selenium}{32}{chapter.7}
 \contentsline {section}{\numberline {7.1}API built specifically for Vaadin components}{32}{section.7.1}
