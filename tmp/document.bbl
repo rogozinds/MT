@@ -42,9 +42,6 @@ Maurizio Leotta, Diego Clerissi, Filippo Ricca, and Cristiano Spadaro.
   on Software Testing, Verification and Validation}, ICST '13, pages 487--488,
   Washington, DC, USA, 2013. IEEE Computer Society.
 
-\bibitem{sureFireExample}
-2014.
-
 \bibitem{Zhongen2}
 Zhong sheng Qian, Huaikou Miao, and Hongwei Zeng.
 \newblock A practical web testing model for web application testing.
@@ -84,6 +81,9 @@ Filippo Ricca Cristiano~Spadaro Maurizio~Leotta, Diego~Clerissi.
   IEEE Sixth International Conference on}, pages 487--488. IEEE, 2013.
 
 \bibitem{vaadinTestbenchSite}
+2014.
+
+\bibitem{sureFireExample}
 2014.
 
 \bibitem{akkaUseCases}

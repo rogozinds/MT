@@ -2,11 +2,13 @@
 \label{ch:testbenchdevelop}
   
   The estimated time for developing Testbench4 was from two months to six weeks.
-  Our team had three members:
+  Our team had four members:
   \begin{itemize}
+    \item Anthony Guerreiro - developer.
+    \item Dmitrii Rogozin - developer.
     \item Jonatan Kronqvist - tech lead.
-    \item Mika Mutajarvi developer.
-    \item Dmitrii Rogozin developer.
+    \item Mika Mutajarvi - developer.
+    
   \end{itemize}
   
    This is a short period of time and to manage delivering a good-quality product you
@@ -81,11 +83,11 @@
       \end{itemize}
       
       Three laws of TDD \cite[pp122]{Cleancode}[Book page 122]
-        \begin{enumerate}
+        \begin{itemize}
           \item You may not write production code until you have written a failing unit test.
           \item You may not write more of a unit test than is sufficient to fail.
           \item You may not write more production code than is sufficient to pass the currently failing test.
-        \end{enumerate}
+        \end{itemize}
         
   \section {Tools used}
   \label{sec:toolsused}
@@ -99,15 +101,15 @@
    
   The default life cycle includes the following phases:
   \begin{itemize}
-    \item validate - validate the project is correct and all necessary
+    \item validate - validates the project is correct and all necessary
     information is available.
-    \item compile - compile the source code of the project.
-    \item test - test the compiled source code using a suitable unit testing
+    \item compile - compiles the source code of the project.
+    \item test - tests the compiled source code using a suitable unit testing
     framework. These tests should not require the code be packaged or deployed
     package - take the compiled code and package it in its distributable format,
     such as a JAR.
-    \item integration-test - process and deploy the package if necessary into an
-    environment where integration tests can be run verify - run any checks to
+    \item integration-test - processes and deploys the package if necessary into
+    an environment where integration tests can be run verify - run any checks to
     verify the package is valid and meets quality criteria
     \item install - install the package into the local repository, for use as a
       dependency in other projects locally.
@@ -116,22 +118,22 @@
     sharing with other developers and projects.
   \end{itemize}
   
-  The life cycle phases are executed sequentially, in the example above if
-  running maven deploy all the phases will be executed. All maven configurations are specified in the Project Object Model (POM) file.
+  The life cycle phases are executed sequentially. For  example 
+  running maven deploy all the  previous phases (validate, compile, test\ldots) will
+  be executed.
+  All maven configurations are specified in the Project Object Model (POM) file.
   POM is an XML file that contains information about the project and configuration details used by Maven 
   to build the project. 
 
   Maven reduces the complexity of developing and maintaining big projects.
   Nowadays applications may depend on dozens of third-party libraries and
-  frameworks. Managing those dependencies manually is very time consuming. You
-  need to find and download the exact version of the library and add it to your project build path.
-  The libraries might have new versions you want to use, so you need to keep track of the versions
-  of the dependencies and the versions of your application, because the might be incompatible. 
-  You may want to have different configurations of your application for development and production or testing.
-  And all the members of your team may have same or different configurations.
-  Eventually, the complexity of managing your system will grow extremely. Maven helps to solve it.
-
-  For example to define dependencies you define a dependency section in your POM file:
+  frameworks. Managing those dependencies manually is very time consuming. Maven
+  finds  and downloads the exact version of the library and adds it to the
+  project. Maven profiles allow to have different configurations of your
+  application for development and production or testing. All the maven
+  configuration is in file, that is why editing and sharing configuration
+  between members of the team is very easy. For example to define dependencies you define a
+   dependency section in your POM file:
   \lstset{language=XML}
     \begin{lstlisting}
       <dependency>
@@ -325,8 +327,8 @@ the given type.
  `\$' method builds a recursive search query and `\$\$' a non-recursive one.
  Non-recursive search query looks only for direct children of the element, while
  it is recursive analog looks through all children of the element. Children
- elements are inner html-elements.
-   For example if web-page has the following DOM(Document-Object Model). 
+ elements are inner HTML-elements.
+   For example if web-page has the following DOM. 
    Button and checkbox input elements are children elements of the div element with id id1.
   \lstset{language=HTML}
     \begin{lstlisting}

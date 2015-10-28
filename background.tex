@@ -69,15 +69,23 @@
 
    Client-side code is originally written in Java and then
    compiled to JavaScript using \emph{Vaadin Client Compiler}. Vaadin Client Compiler is based on Google
-   Web Toolkt(GWT) which provides the opportunity to write code in Java and
-   execute it in the browser. The client-side code is responsible for rendering
-   the user interface and send user interaction to the server.
+   Web Toolkt(GWT). The client-side code is responsible for rendering
+   the user interface and send user interaction to the server. Vaadin Client
+   Compiler has production and development modes. 
+   
+   In production mode Java  client-side code is compiled to one Javascript file. The script file in
+   production mode is obfuscated, that is why reading or debugging it is nearly
+   impossible. In production mode compilation should be called manually,
+   after making changes to a client side Java code.
+   In development mode client code is compiled at run-time, when Web page
+   is reloaded. GWT links Java classes  with a compiled Javascript and gives
+   an opportunity to debug code in a browser.
   
-   Nowdays there are a lot of standarts and recommendations for Web
+   Nowadays there are a lot of standards and recommendations for Web
    developers published by World Wide Web Consortium (W3C) or  International
    Organization for Standardization (ISO), including recommendations for
-   markup languages (HTML, XML), Document Object Models(DOM) and standarts
-   for JavaScript. Inspite of all the standarts the difference between browsers
+   markup languages (HTML, XML), Document Object Models(DOM) and standards
+   for JavaScript. In spite of all the standards the difference between browsers
    and versions might be significant for the developer. The differences may vary
    from supporting/not supporting different Cascading Style Sheets (CSS) tags
    and HTML5 features, different event handling and simply bugs. Vaadin client Compiler and GWT provide a wide browser
@@ -85,13 +93,13 @@
    developer to concentrate on essential parts of the application, instead of
    wasting time on cross-browser support. Vaadin uses screenshot comparison see
    \ref{sec:screencompare} as a part of regression testing, which brings
-   confindence to the developer that Vaadin components will not change their
-   appearence unexpectedly. 
+   confidence to the developer that Vaadin components will not change their
+   appearance unexpectedly. 
    
    A server-side code runs as a servlet in a Java Web server, serving HTTP
    requests.
    The VaadinServlet is normally used as the servlet class. The servlet receives client requests
-   and inteprets them as events for a particular user session.
+   and interprets them as events for a particular user session.
    Events are associated with user interface components and delivered to the event listeners defined in the application.
    If the User Interface (UI) logic makes changes to the server-side user
    interface components, the servlet renders them in the Web browser by generating a response.

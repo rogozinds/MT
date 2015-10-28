@@ -5,20 +5,21 @@ testing.
 However if we use Selenium to test Vaadin application we will run into several problems.
 
 Selenium does not know about Vaadin specific features, like client-side	communication. 
-Vaadin is a stateful framework - an event on a client side my affect a state of
-the applicaton on a server side. This brings additional complexity in testing,
+Vaadin is a stateful framework, an event on a client side my affect a state of
+the application on a server side. This brings additional complexity in testing,
 because client-side and server-side states should be synchronized.
 
-When event happens on the client side it will notify the server side. If this event affects the server side state, the
+When event happens on the client side it will notify the server side.
+If this event affects the server side state, the
 server side will notify the client side about this change.
  Because of a network delay or long time code execution on the server side,
  there might be a delay between client side action and the change on a client. 
  In these circumstances the client-side should wait for server side code to execute,
   because it might affect the next client side instruction. To handle this
   situation we need to add a delay in a Selenium test, see line 20
-   in listing~\ref{lst:seleniumVaadin}. Rely on a delay in a test is a bad
-   practise, because small delay might be not enough to all client server
-   communications to proceed. Adding big delay on the contrary, will increase
+   in listing~\ref{lst:seleniumVaadin} in appendix \ref{appendixA}. Rely on a
+   delay in a test is a bad practise, because small delay might be not enough to all client server
+   communications to proceed. Adding a big delay on the contrary, will increase
    the test time execution. 
    
  Because Selenium framework is not related to Vaadin it requires additional
@@ -26,117 +27,10 @@ server side will notify the client side about this change.
    value of the text field requires three lines of code instead of one see lines
    25-28 in listing~\ref{lst:seleniumVaadin}.
    
-   Due to these implications a test tool for Vaadin called TestBench was
-   created. TestBench is based on Selenium WebDriver, but it solves
+   Due to these reasons a test tool for Vaadin called TestBench was
+   created. TestBench is based on Selenium WebDriver, it solves
    problems with client server communication, and brings more suitable
-   API for working with Vaadin components. For example same test written with 
-   the help of TestBench takes less code and does not have delays see example~\ref{lst:testbenchVaadin}.
+   API for working with Vaadin components. Same test written with 
+   the help of TestBench takes less code and does not have delays see
+   example~\ref{lst:testbenchVaadin} in in appendix \ref{appendixA}.
   	
-  	
-  	\lstset{style=a1listing}
-  	\begin{lstlisting} [caption=Selenium test for Vaadin application,label={lst:seleniumVaadin}]
-public class AppTest extends TestCase{
-  WebDriver driver;
-  String UIUrl, nodeURL;	
-	@Override @Before
-    public void setUp() {
-      UIUrl = "http://demo.vaadin.com/dashboard/";
-      driver = new FirefoxDriver();
-    }
-
-  @Test
-  public void testWithoutTestbench() {
-    driver.get(UIUrl);
-    driver.manage().timeouts().
-      implicitlyWait(5, TimeUnit.SECONDS);
-    List<WebElement> elements = driver.findElements(By
-      .className("v-button"));
-    if (elements.isEmpty()) {
-      throw new RuntimeException("No buttons found");
-    }
-    elements.get(0).click();
-    driver.findElement(By.id("dashboard-edit")).click();
-    WebElement searchField =
-     driver.findElements(By.className("v-textfield")).get(0);
-    
-    searchField.clear();
-    searchField.sendKeys("New Dashboard");
-    searchField.sendKeys(Keys.TAB);
-    WebElement searchButton = findButtonByCaption("Save");
-    searchButton.click();
-    driver.manage().timeouts().
-      implicitlyWait(5, TimeUnit.SECONDS);
-    String title = driver.findElement(By.
-      id("dashboard-title")).getText();
-    Assert.assertEquals("New Dashboard", title);
-    }
-
-  public WebElement findButtonByCaption(String caption) {
-    List<WebElement> buttons = driver
-      .findElements(By.className("v-button"));
-    for (WebElement button : buttons) {
-      if (button.getText().equals(caption)) {
-        return button;
-      }
-    }
-    return null;
-    }
-
-  public WebElement findButtonByCaption(
-    WebElement parent, String caption) {
-   
-    List<WebElement> buttons = parent
-      .findElements(By.className("v-button"));
-    
-    for (WebElement button : buttons) {
-      if (button.getText().equals(caption)) {
-        return button;
-      }
-
-    }
-    return null;
-  }
-
- @After
- public void afterTest() {
-  driver.quit();
- }
-}
-\end{lstlisting}
-
-	
-	\ref{lst:testbenchVaadin}.
-	\lstset{style=a1listing}
-  	\begin{lstlisting} [caption=TestBench test,label={lst:testbenchVaadin}]
-public class TestBenchTest extends TestBenchTestCase {
-
-    WebDriver driver;
-    String UIUrl, nodeURL;
-
-    @Before
-    public void setUp() throws Exception {
-        UIUrl = "http://demo.vaadin.com/dashboard/";
-        setDriver(new FirefoxDriver());
-    }
-
-    @Test
-    public void test1() {
-        getDriver().get(UIUrl);
-        $(ButtonElement.class).first().click();
-        $(ButtonElement.class).id("dashboard-edit").click();
-        TextFieldElement searchField =
-           $(TextFieldElement.class).first();
-        searchField.setValue("New dashboard");
-        $(ButtonElement.class).caption("Save").first().click();
-
-        String title = $(LabelElement.class).
-          id("dashboard-title").getText();
-        Assert.assertEquals("New dashboard", title);
-    }
-
-    @After
-    public void afterTest() {
-        // driver.quit();
-    }
-}  	
-\end{lstlisting}

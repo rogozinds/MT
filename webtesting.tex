@@ -8,7 +8,7 @@
 		
 		\section{Capture and Replay}
 		\label{sec:captureReplay}
-			C\&R Web testing is based on capture/replay automated
+			C\&R Web testing is based on capture and replay automated
 			tools\cite{CaptureReplay7}.  The software tester works with the Web
 			application modeling user behaviour, the capture/replay tool records the
 			whole session and generates the script, which can be executed later,
@@ -16,71 +16,42 @@
 			testing tools is to record a sequence of browsing steps, that can be
 			automatically replayed later and save them in human readable format. Human
 			readable format is an important feature, because script editing might
-			 be useful to adjust failed scripts accordingly	to the changes of the Web page. Thought if the Web page was changed
+			 be useful to adjust failed scripts accordingly	to the changes of the Web page.
+			 Thought if the Web page was changed
 			significantly, editing test script might be more expensive than recording a
 			new test\cite{AnupamCaptureReplay}. 
 			
-			C\&R tools are usually Web browser plugins or Java applets, because they
-			need to control a Web browser to navigate to a Web page. User actions are
-			usually saved as a sequence of steps in HTML or XML. An example of C\&R
-			test can be such HTML document, which is later used to generate a
-			Javascript no reproduce user actions. The example test {lst:capturereplay}
-			opens a URL type two numbers to fields with ``number1'' and ``number2'', then
-			clicks and ``add'' button and verify the result.
+C\&R tools are usually Web browser plugins or Java applets, because they
+need to control a Web browser to navigate on a Web page. User actions are
+usually saved as a sequence of steps in HTML or XML, which is later used to
+generate a Javascript to reproduce user actions. An example of C\&R testing
+tool is Selenium IDE described in chapter\ref{ch:selenium}.
 
-\lstset{style=console}
-\begin{lstlisting} [caption=Generated C\&R test  example,label={lst:capturereplay}]
-<tr> <td>open</td>
-  <td>/tutorials/selenium/selenium_record_replay.htm</td>
-  <td></td>
-</tr>
-<tr>
-  <td>type</td>
-  <td>id=number1</td>
-  <td>123</td>
-</tr>
-<tr>
-  <td>type</td>
-  <td>id=number2</td>
-  <td>123</td>
-</tr>
-<tr>
-  <td>click</td>
-  <td>id=add</td>
-  <td></td>
-</tr>
-<tr>
-  <td>verifyValue</td>
-  <td>id=total</td>
-  <td>246</td>
-</tr>
-\end{lstlisting}
-      
-We must admit that C\&R approach is very popular, there are plenty of
-frameworks both for desktop and Web applications such as TPTP GUI Recorder, SWTBot, QF-Test,
-Selenium IDE.	The main advantage of this method of testing, is that the tester does not
-require to have experience in coding and building test cases with such tools is a simple task. 
-			
-			On the contrary, maintaining tests is harder and more expensive.
-			The main problem is that editing generated scripts is harder than editing
-			scripts written by a software developer. The test cases are strongly coupled
-			with Web pages and contain hard-coded values. These factors lead to the
-			problem, that very often the tester have to record a new test, instead of
-			changing the existing ones. When using C\&R tools the tester can
-			not use loose-coupling and decomposition, and other design techniques to make
-			easy readable and maintainable tests. It is also hard to use parts of already
-			made test cases when creating new ones. Programmable tests can help to solve these problems.
-			
-		\section{Programmable tests} 
-		\label{sec:programTests}
-			Programmable tests are created by a tester manually. This method requires the
-			person to have programming skills and takes more time, but programmable tests
-			are more flexible and allow the developer to use bigger set of tools. The
-			developer may use conditional statements to change execution of the test,
-			loops to repeat same actions, exception handling, data structures like
-			arrays, sets, trees, graphs, logging and etc. Programmable tests are more
-			flexible and powerful than C\&R technique and provides the ability to create
-			parameterized tests - tests which can be executed multiple times with different arguments. 
+The main advantage of C\&R, is that the tester does not
+require to have experience in coding. Building test cases with such tools
+is a simple task.
+On the contrary, maintaining C\&R tests is harder and more expensive.
+The main problem is that editing generated scripts is harder than editing
+scripts written by a software developer. The test cases are strongly coupled
+with Web pages and contain hard-coded values. These factors lead to the
+problem, that very often the tester have to record a new test, instead of
+changing the existing ones.
+
+ When using C\&R tools the tester can
+not use loose-coupling and decomposition, and other design techniques to make
+easy readable and maintainable tests. It is also hard to use parts of already
+made test cases when creating new ones. Programmable tests can help to solve these problems.
+
+\section{Programmable tests} 
+\label{sec:programTests}
+Programmable tests are created by a tester manually. This method requires the
+person to have programming skills and takes more time, but programmable tests
+are more flexible and allow the developer to use bigger set of tools. The
+developer may use conditional statements to change execution of the test,
+loops to repeat same actions, exception handling, data structures like
+arrays, sets, trees, graphs, logging and etc. Programmable tests are more
+flexible and powerful than C\&R tests and provide an opportunity to create
+parameterized tests - tests which can be executed multiple times with different arguments. 
 
       Thought writing programmable tests is harder in
       compare with C\&R and requires more experience and skills, programmable tests
@@ -92,15 +63,14 @@ require to have experience in coding and building test cases with such tools is 
       after two releases (in the median case)''.\cite{CaptureReplay7}
 
  \section{Capture and Replay vs Programmable tests}
-  		To show that programmable tests are more powerful than C\&R we provide an
-			artificial example of testing Vaadin framework.		
-			Vaadin has a set of UI element classes and we want to	test that changing elements value triggers a value change listener event.
-			First we create a Web page where we add elements we
-			want to test such as text field, combo box, radio button and an	assertion
-			input element see TestWebPageClass \ref{lst:vaadintest}.
-       UI elements are added to a hash map
-			as keys. Strings which will be set to the assertion element are added as
-			values to the same map line 5.
+ To show that programmable tests are more powerful than C\&R we provide an
+artificial example of testing Vaadin framework.	
+Vaadin has a set of UI element classes and we want to	test that changing elements value triggers a value change listener event.
+First we create a Web page where we add elements we
+want to test such as text field, combo box, radio button and an	assertion
+input element see TestWebPageClass \ref{lst:vaadintest}.
+ UI elements are added to a hash map as keys. Strings which will be set to the
+ assertion element are added as values to the same map line 5.
 			An assertion element we include a string line 9, which will be  compared with
       expected value.  Then we iterate through all values in the map, set their
       ids line 13 and add elements to the Web page line. We also add value

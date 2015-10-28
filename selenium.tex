@@ -11,11 +11,14 @@
        interface for building test scripts.
 		Selenium IDE has a recording feature,  which records user actions as they are
 		performed and then exports them as a reusable script in one of many programming languages that can be later executed.
-       
+		An example of recorded test \ref{lst:capturereplay} opens a URL type two
+		numbers to fields with ``number1'' and ``number2'', then -
+		clicks and ``add'' button and verify the result see Appendix \ref{appendixA}.
+		
        \textbf{Selenium  WebDriver} makes direct calls to the browser using browser's native support for automation. WebDriver represents a web browser, hiding specific browser details, behind the interface see
        figure~\ref{fig:webdriver}. Having a unified interface provides
        multi-browser support and allows same tests to be executed in different
-       envirements.
+       environments.
        
 	    \begin{figure}
 		\label{fig:webdriver}
@@ -47,22 +50,25 @@
 		\end{figure}
 		
 		Selenium Grid is published as a separate jar file, so to setup a test hub you
-		only need to have JRE(Java Runtime Envirenment) installed. To start hub run
-		selenium-server with hub parameter see \ref{lst:starthub} and to start a new
-		node specify a webdriver parameter and the URL of the hub running \ref{lst:startnode}.
+		only need to have JRE(Java Runtime Envirenment) installed. For starting hub
+		run selenium-server with hub parameter see \ref{lst:starthub}. For starting
+		a new node specify a ``webdriver'' parameter and the URL of the hub running
+		\ref{lst:startnode}.
 		
 		\begin{lstlisting} [ label={lst:starthub},language=bash, caption=Start hub ]
 		 java -jar	selenium-server-standalone-2.30.0.jar -role hub
 		\end{lstlisting}
 
 		\begin{lstlisting} [caption=Start node, label={lst:startnode},language=bash]
-		java -jar selenium-server-standalone-2.30.0.jar -role webdriver
-		-hub http://http://192.168.1.1:4444/grid/register -port 5566
+		java -jar selenium-server-standalone-2.30.0.jar 
+		-role webdriver
+		-hub http://http://192.168.1.1:4444/grid/register
+		-port 5566
 		\end{lstlisting}
 		
 
 	To create a test suite for the Grid configuration created above see an
-	example \ref{lst:starthub2}. Here is a explanation of basic steps :
+	example \ref{lst:starthub2}. The basic steps are the following:
 	\begin{itemize}
 	  \item Specify a url of tested web page line 6.
 	  \item Specify a url of a hub line 7.
@@ -99,14 +105,14 @@ public 	class TestExample throws MalformedURLException {
 	\end{lstlisting}
 
 	As it shown above setting up the basic configuration of Selenium Grid is fairly
-	easy. After we have opened the tested web page with driver.get(UIUrl), you can
-	use ``Find Element" or ``Find Elements" methods with ``By" query object for
+	easy. After you have opened the tested Web page with ``driver.get(UIUrl)'', you
+	can use ``Find Element" or ``Find Elements" methods with ``By" query object for
 	locating elements on the page. For example to find an element with a
 	class ``profile'' you need to use By.className query object see example
-	~\ref{lst:classSearch}. Selenium  supports searching elements by id,tag, class,
-	Xpath and all implications from section~\ref{sec:challenges} applies to it. 
-	There is no ideal strategy for searching the required element it is up
-	to developer which one to choose based on requirements.
+	~\ref{lst:classSearch}. Selenium  supports searching elements by id, tag,
+	class, Xpath and all implications from section~\ref{sec:challenges} applies to it. 
+	There is no ideal strategy for searching the required element, a developer
+	decides which one to choose based on requirements.
 	
 	\lstset{style=a1listing}
 	\begin{lstlisting} [caption=Search element by class,label={lst:classSearch}]

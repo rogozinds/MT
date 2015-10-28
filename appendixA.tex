@@ -2,6 +2,31 @@
 \appendix
 \section{Appendix A}
 \label{appendixA}
+
+\lstset{style=console}
+\begin{lstlisting} [caption=Generated C\&R test  example using Selenium IDE ,label={lst:capturereplay}]
+<tr> <td>open</td>
+<td>/tutorials/selenium/selenium_record_replay.htm</td> <td></td> </tr> <tr>
+  <td>type</td>
+  <td>id=number1</td>
+  <td>123</td>
+</tr>
+<tr>
+  <td>type</td>
+  <td>id=number2</td>
+  <td>123</td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>id=add</td>
+  <td></td>
+</tr>
+<tr>
+  <td>verifyValue</td>
+  <td>id=total</td>
+  <td>246</td>
+</tr>
+\end{lstlisting}
 	 
 \lstset{style=a1listing}
 \begin{lstlisting} [caption=Test UI class example,label={lst:appTestUI}]
@@ -62,4 +87,113 @@ public class ButtonTest extends TestBenchTestCase {
 		Assert.assertEquals("Thank you for clicking", text);
 	}
     }
+\end{lstlisting}
+
+
+  	\lstset{style=a1listing}
+  	\begin{lstlisting} [caption=Selenium test for Vaadin application,label={lst:seleniumVaadin}]
+public class AppTest extends TestCase{
+  WebDriver driver;
+  String UIUrl, nodeURL;	
+	@Override @Before
+    public void setUp() {
+      UIUrl = "http://demo.vaadin.com/dashboard/";
+      driver = new FirefoxDriver();
+    }
+
+  @Test
+  public void testWithoutTestbench() {
+    driver.get(UIUrl);
+    driver.manage().timeouts().
+      implicitlyWait(5, TimeUnit.SECONDS);
+    List<WebElement> elements = driver.findElements(By
+      .className("v-button"));
+    if (elements.isEmpty()) {
+      throw new RuntimeException("No buttons found");
+    }
+    elements.get(0).click();
+    driver.findElement(By.id("dashboard-edit")).click();
+    WebElement searchField =
+     driver.findElements(By.className("v-textfield")).get(0);
+    
+    searchField.clear();
+    searchField.sendKeys("New Dashboard");
+    searchField.sendKeys(Keys.TAB);
+    WebElement searchButton = findButtonByCaption("Save");
+    searchButton.click();
+    driver.manage().timeouts().
+      implicitlyWait(5, TimeUnit.SECONDS);
+    String title = driver.findElement(By.
+      id("dashboard-title")).getText();
+    Assert.assertEquals("New Dashboard", title);
+    }
+
+  public WebElement findButtonByCaption(String caption) {
+    List<WebElement> buttons = driver
+      .findElements(By.className("v-button"));
+    for (WebElement button : buttons) {
+      if (button.getText().equals(caption)) {
+        return button;
+      }
+    }
+    return null;
+    }
+
+  public WebElement findButtonByCaption(
+    WebElement parent, String caption) {
+   
+    List<WebElement> buttons = parent
+      .findElements(By.className("v-button"));
+    
+    for (WebElement button : buttons) {
+      if (button.getText().equals(caption)) {
+        return button;
+      }
+
+    }
+    return null;
+  }
+
+ @After
+ public void afterTest() {
+  driver.quit();
+ }
+}
+\end{lstlisting}
+
+	
+	\ref{lst:testbenchVaadin}.
+	\lstset{style=a1listing}
+  	\begin{lstlisting} [caption=TestBench test,label={lst:testbenchVaadin}]
+public class TestBenchTest extends TestBenchTestCase {
+
+    WebDriver driver;
+    String UIUrl, nodeURL;
+
+    @Before
+    public void setUp() throws Exception {
+        UIUrl = "http://demo.vaadin.com/dashboard/";
+        setDriver(new FirefoxDriver());
+    }
+
+    @Test
+    public void test1() {
+        getDriver().get(UIUrl);
+        $(ButtonElement.class).first().click();
+        $(ButtonElement.class).id("dashboard-edit").click();
+        TextFieldElement searchField =
+           $(TextFieldElement.class).first();
+        searchField.setValue("New dashboard");
+        $(ButtonElement.class).caption("Save").first().click();
+
+        String title = $(LabelElement.class).
+          id("dashboard-title").getText();
+        Assert.assertEquals("New dashboard", title);
+    }
+
+    @After
+    public void afterTest() {
+        // driver.quit();
+    }
+}  	
 \end{lstlisting}
