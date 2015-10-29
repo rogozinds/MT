@@ -14,7 +14,7 @@
    This is a short period of time and to manage delivering a good-quality product you
     have to minimize overhead costs. We believe that a team should choose tools
     and methodology which suits its purposes. 
-    Our team decided to use Scrum and Test Driven Development for managing
+    Our team decided to use Scrum and Test Driven Development(TDD) for managing
     product development and try to be agile and flexible. 
     We decided to have two week sprints.
 
@@ -38,27 +38,30 @@
 
   The main idea of scrum is that development is done in short-time periods
   called sprints. Each spring consists of several phases:
-  Sprint planning - when team decides what tasks should be done during the
+  \begin{itemize}
+    \item  Sprint planning - when team decides what tasks should be done during the
   sprint .
-
-  Main phase - when actual development is done.
-  Sprint review - when team shows/demos the results to the product owner
-  Retrospective - when team discuss what can be improved.
-
-
+  \item   Main phase - when actual development is done.
+  \item Sprint review - when team shows the results to the product owner.
+  \item Retrospective - when team discuss what can be improved.
+  \end{itemize}
+ 
   Sprint may take from one to four weeks. The development team should decide
   what sprint length suits their needs. During sprint planning the team chooses
   which tasks will be moved from a product backlog to a sprint backlog.
   One of the restrictions is that the task in sprint backlog should be done in one sprint.
   If the team thinks that the task can not be finished in one sprint this task
   should be divided into several subtasks. 
+  
   Having such one-sprint tasks helps the scrum team to keep track of the
-  progress easily. Besides this gives an opportunity to receive feedback for each completed task at the end
-  of the sprint. This helps to detect problems at the early stages, when
-  the errors does not have a tremendous feedback. So even if a feature was misunderstood by the development team
-  and you have to redone it completely , the team wastes time equal to the
-  length of the spring at maximum. While in a classical waterfall model, a sequential design process in which
-  progress is seen as flowing steadily through the phases of all development stages, 
+  progress easily and gives an opportunity to receive feedback for each
+  completed task at the end of the sprint. This helps to detect problems at the early stages, when
+  the errors does not have a tremendous feedback.
+  Even if a feature was misunderstood by the development team
+  and the team  has to redone it completely , the team wastes time equal to the
+  length of the spring at maximum. While in a classical waterfall model,
+   a sequential design process in which progress is seen as flowing steadily through 
+   the phases of all development stages, 
   the error might be found much more lately, which will have a bigger negative impact.
 
   Another feature of Scrum is self organization of the team. The team should
@@ -73,8 +76,8 @@
   release we describe them in section \ref{sec:toolsused} .
 
   \section{Test Driven Development}
-    TDD is a very popular methodology of software development. The main idea is to
-    write tests first and then code. The main benefits of such approach are:
+  TDD is a very popular methodology of a software development. The main idea is
+  to write tests first and then code. The main benefits of such approach are:
       \begin{itemize}
         \item The developer is sure that his code works as intended, because all
         his code is tested.
@@ -96,31 +99,30 @@
   Maven is a java-based software project management and comprehension tool.
   Maven is based around the central concept of a build life cycle. This means
   that the process for building and distributing a particular project(artifact) is clearly defined. There are three built-in lifecycles:
-  default, clean and site. Users can define their own life cycle. Life cycles
-  consist of phases.
-   
-  The default life cycle includes the following phases:
+  default, clean and site. Users can define their own life cycle. 
+  
+  Life cycles  consist of phases.  The default life cycle includes the following phases:
   \begin{itemize}
     \item validate - validates the project is correct and all necessary
     information is available.
     \item compile - compiles the source code of the project.
     \item test - tests the compiled source code using a suitable unit testing
-    framework. These tests should not require the code be packaged or deployed
-    package - take the compiled code and package it in its distributable format,
-    such as a JAR.
+    framework. These tests should not require the code be packaged or deployed.
+    \item package - takes the compiled code and packages it in its distributable
+    format, such as JAR.
     \item integration-test - processes and deploys the package if necessary into
-    an environment where integration tests can be run verify - run any checks to
-    verify the package is valid and meets quality criteria
-    \item install - install the package into the local repository, for use as a
+    an environment where integration tests can be run.
+    \item verify - runs any checks to verify the package is valid and meets quality criteria
+    \item install - installs the package into the local repository, for use as a
       dependency in other projects locally.
-    \item  deploy - done in an integration or
-    release environment, copies the final package to the remote repository for
+    \item  deploy - copies the final package to the remote repository for
     sharing with other developers and projects.
   \end{itemize}
   
   The life cycle phases are executed sequentially. For  example 
-  running maven deploy all the  previous phases (validate, compile, test\ldots) will
-  be executed.
+  running maven deploy executes all the  previous phases (validate, compile,
+  test\ldots).
+  
   All maven configurations are specified in the Project Object Model (POM) file.
   POM is an XML file that contains information about the project and configuration details used by Maven 
   to build the project. 
@@ -129,39 +131,47 @@
   Nowadays applications may depend on dozens of third-party libraries and
   frameworks. Managing those dependencies manually is very time consuming. Maven
   finds  and downloads the exact version of the library and adds it to the
-  project. Maven profiles allow to have different configurations of your
+  project.
+  
+   Maven profiles allow to have different configurations of your
   application for development and production or testing. All the maven
-  configuration are in one file, that is why editing and sharing configurations
-  between members of the team is very easy. 
+  configuration are in the same POM file, that is why editing and sharing
+  configurations between members of the team is very easy. 
 
   Finally, you have a set of predefined configurations for your application
   for the whole team and any developer can checkout POM file from the repository
   call ``mvn deploy'' and he will have the same version of the application with all
-  the specified parameters and downloaded dependencies. If you want to update
-  your dependencies or you found an error in the pom file after you fix the
-  problem, all your team members have to just checkout the new version of POM.
+  the specified parameters and downloaded dependencies. If you updated
+  your dependencies or fixed an error, all your team members
+  have to just checkout the new version of a POM file.
  
   \subsection{Trac}
   Trac is an enhanced wiki and issue tracking system for software development
-  projects. Trac may include several projects and users or developers can
-  create tasks (also called tickets) for these projects. The tickets may have different types:
-  ``new feature'', ``enchantment'', ``error/bug''. At the beginning of the project the product owner
-  goes through the list of the tickets and add them to a new milestone.
-  Milestone is a plan for the next release, which includes set of tickets.
+  projects. Trac may include several projects. Users or developers can
+  create tasks (also called tickets) for these projects. 
+  
+   Before development a new release a product owner goes through 
+   the list of the tickets and add them to a new milestone.
+  Milestone is a plan for the next release, which includes a set of tickets.
 
   Tickets have different value for the end user, but developers can not always
-  assess that value by themselves. Product owner should help the development team to figure out the
-  value of each ticket for the end user. Based on the value and time estimation each ticket should be prioritized.
+  assess that value by themselves. Product owner should help the development team
+   to figure out the
+  value of each ticket for the end user. Based on the value and time estimation
+   each ticket should be prioritized.
   Prioritizing tickets is a very important task and should be done as soon as
   possible, preferable before coding starts. This gives a clear vision for all
   members of the team what should be done.
 
   In the Testbench4 project we used the Trac milestone as a product backlog. On
   the sprint planning we estimate which tasks can be completed at the end of the sprint 
-  and move them to the sprint backlog. As sprint backlog we used a scrum board.
+  and move them to the sprint backlog. As a sprint backlog we used a scrum
+  board.
+  
   Scrum board is a white board, divided into several sections for example ``to be done'', ``in progress'', ``in review'',
   ``closed''. Paper stickers represent tickets and the person who is working on
-  the ticket. The workflow is the following - a developer picks the
+  the ticket.  
+  The workflow is the following - a developer picks the
   ticket from the sprint backlog queue called ``to be done'' 
   writes his name on the sticker and move it to the ``in progress'' section.
   After he submitted a patch to the code review he moves the sticker to another
@@ -171,7 +181,7 @@
   also the current sprint progress. One can also find more detailed information
   about tickets and the project progress in Trac.
  
-  
+ \subsection{Git}
   As a version control system we used \textbf{Git} - distributed revision control system
   which focuses on speed, data integrity, and support for distributed,
   non-linear workflows. There are two types of revision control systems :
@@ -179,11 +189,12 @@
    \begin{itemize}
    \item Client-server - such version control systems as SVN and CVS, have a 
     a centralised model, where there's a copy of the current code on a central
-    server, which users check out in order to work on locally. When a user made
+    server, which users copy in order to work with locally. When a user makes
     some changes, he updates from the central version (in case other people have
     made changes in the meantime), solve conflicts (same part of code was
     changed by different people at the same time) that might have arisen, and
-    then push their code into the server. Afterwards other people can check it out again.
+    then push their code back to the server. Afterwards other people can check
+    it out again.
 
    \item Distributed revision control systems such as Git, are structured on a
     peer-to-peer basis: instead of one centralised repository. Every developer
@@ -194,41 +205,50 @@
   \end{itemize}
   
   One of the biggest advantage of distributed systems is that repositories are
-  synchronised by exchanging change-sets in the form of patches, meaning that 
-  only changes are sent. In systems like SVN every time you pull changes from
-  the central repository you are downloading the whole snapshot of your application sources.
+  synchronised by exchanging change-sets in the form of patches, in other words
+  if you have changed two symbols, these two symbols plus some internal
+  information - author, time, etc. On the contrary, in systems like SVN every
+  time you pull changes from the central repository you are downloading 
+  the whole snapshot of your application sources.
   
   Also Git lets developers to have their local history of changes and commits,
   but then when pushing changes to the master repository they can rebase these changes as one commit.
   This helps on one hand keep a local history of intermediate steps for
-  developer, but on the other hand have only commits for completed changes/features in the main repository
-  seen for all other developers. Git has a powerful set of tools including unix commands,
-  for example to find all commits made by one person you can use log command and pipeline it to a grep 
-  (print lines matching a pattern) command.
+  developer, but on the other hand have only commits for completed changes
+  or features in the main repository. 
+  
+  Git has a powerful set of tools including
+  unix commands. For example to find all commits made by one person you can use
+  log command and pipeline it to a pattern matching command like ``grep''.
   
    Git-blame command allows you to see the history of every line of your source
-   code. This is very useful, if you have questions about some particular few lines of code.
-   You can find an author of those lines and ask him a question.
+   code. If you have questions about some particular few lines of code,
+   you can find an author of those lines and ask him a question.
    
    Git-bisect command - is a binary search against revision graph, which helps to find the commit which
    introduced a bug.
 
-  \subsection{Teamcity} - is a web-based build management and continuous integration
-  tool. Teamcity allows running multiple builds and tests under different platforms and environments.
+  \subsection{Teamcity}
+  Teamcity - is a Web-based build management and continuous integration tool.
+  Teamcity allows running multiple builds and tests under different platforms and environments.
   Teamcity build combines maven, ant builds, git command and bash scripts.
   
-  Teamcity builds may be started automatically or manually. One option is to create a configuration to run all
-  tests every night or to setup running tests on every git commit. Teamcity
-  provides also build dependencies, which can be very helpful if your project
-  depends on some other projects or libraries, Teamcity will first build all the dependencies and then run your build.
+  Teamcity builds may be started automatically or manually. One option is to create a configuration 
+  to run all  tests every night or to setup running tests on every git commit. Teamcity
+  provides also build dependencies. If project A depends on a library B,
+  Teamcity will first build library B with its dependencies and then start build
+  project A.
   
   During the development cycle we used four different configurations.
   \begin{itemize}
-  \item Running tests on every git commit. This configuration is started when Gerrit patch is submitted.
+  \item Running tests on every git commit. This configuration is started when
+  Gerrit \ref{sec:gerrit} patch is submitted.
    Running all tests for all browsers is very time consuming and may take several hours. 
    That is why in this configuration includes only JUnit tests and PhantomJS
-   tests, which does not need to run the actual browser. These kind of tests show common errors for all browsers.
-   Running those tests gives a developer a fast feedback, if his changes caused some problems.
+   tests, which does not need to run the actual browser.
+   These tests show common errors for all browsers. Running those tests gives
+    a developer a fast feedback, if his changes caused some problems.
+   
    \item Running all tests on latest commit every night. This build triggers at
     specific time every night, when servers load is lower than during the day.
     This configuration includes all the heavy tests for specific browsers. All
@@ -236,19 +256,22 @@
     For every test suite Teamcity will run the specific browser on a test
     cluster. Running such tests is very resource consuming, but provides a
     confidence that the application is supported by all browsers.
+    
     \item Snapshot build is run every night. This build publishes the latest
     version of the product to a maven repository.  Users can download
     the snapshot build with the latest version of the product, if they want to
     test new features, but do not want to wait for the release build.
+    
     \item Release build is run when the team releases a new version of the
     product. This includes building all the dependencies, running all the tests,
     specifying the version of the product, creating release notes, making tag in
     the Git repository, publishing a new version to maven repository and Vaadin
-    website.
+    Web site.
    \end{itemize}
 
 \subsection{Gerrit}
-  Gerrit is a web-based code collaboration tool. Gerrit allows developers to
+\label{sec:gerrit}
+  Gerrit is a Web-based code collaboration tool. Gerrit allows developers to
   review patches made by other developers. Gerrit has a very easy system of evaluating patches:
   \begin{itemize}
   \item -2 (veto) - patch has major problems.
@@ -259,29 +282,34 @@
   
   The difference between +1 and +2 is that the patch can not be pushed to git
   repository without having +2. The reviewer can give +1 if he is not sure about his level of competence
-  and want someone else to inspect the patch. There are might be several configurations of the review process,
-  Figure 1 shows the process used in the Testbench4 project.
+  and want someone else to inspect the patch. 
+  There are might be several configurations of the review process,
+  figure \ref{fig:gerritTestbench} shows the process used in the
+  Testbench4 project.
 
   Firstly, a developer submits his changes(patch) to Gerrit. Gerrit triggers the
   specific build in Teamcity. This build includes building the project and
-  running tests. After this step is finished, Teamcity returns a report about the build, if there are problems 
-  the report is send to the developer and the patch is marked as -2. If all
+  running tests. After this step is finished, Teamcity returns a report about the build,
+  if there are problems the report is send to the developer and the patch is marked as -2. If all
   tests pass Gerrit marks the patch as ready for review and put it to the list
   of waiting for review patches.
-  Then the reviewer evaluates the patch. Given the patch -1 or -2 means that the developer should fix the problems,
-  and submit the next version of the patch. The process continues until someone
-  marks the patch as +2,  meaning in can be pushed to git master repository.
+  Afterwards the reviewer evaluates the patch. Given the patch -1 or -2 means
+  that the developer should fix the problems, and submit the next version of the patch. 
+  The process continues until someone  marks the patch as +2,
+    meaning in can be pushed to git master repository.
     \begin{figure}
       \includegraphics[width=0.75\textwidth]{gerrit1.png}
+      \label{fig:gerritTestbench}
       \caption{Gerrit structure}
     \end{figure}
+    
   Code review helps team members to follow similar code conventions, 
   keep code clean and readable and find bugs. Also code review helps developers to know more about 
   the whole project they are working in. Integrating Gerrit with an automated build tool, 
   such as TeamCity, allows to run tests before publishing commit for review. 
-  The patch with failing tests is rejected automatically and an email with report for all failing tests sended 
-  to the author of the patch. As an overall code review helps to keep source code quality on a higher level.
-
+  The patch with failing tests is rejected automatically and an email with report
+   for all failing tests sent to the author of the patch. 
+   As an overall code review helps to keep source code quality on a higher level.
 
   \section{Testbench class diagram}
 
@@ -300,71 +328,82 @@ the given type.
  `\$' method builds a recursive search query and `\$\$' a non-recursive one.
  Non-recursive search query looks only for direct children of the element, while
  it is recursive analog looks through all children of the element. Children
- elements are inner HTML-elements.
-   For example if web-page has the following DOM. 
-   Button and checkbox input elements are children elements of the div element with id id1.
-  \lstset{language=HTML}
-    \begin{lstlisting}
-      <div id="id1">
-        <input type="button">
-        <input type ="checkbox">
-      </div>
+ elements are inner HTML-elements. In example \ref{lst:domexample}
+   button and check box input elements are children elements of the div element
+   with id id1.
+ \lstset{style=console}
+  \begin{lstlisting} [caption=Simple DOM example,label={lst:domexample}]
+  <div id="id1">
+	  <input type="button">
+      <input type ="checkbox">
+  </div>
   \end{lstlisting}
   
   
-\textbf{ElementQuery<T>} used for locating web elements(Vaadin buttons, text
-fields, labels, etc.) on the web-page.
- Generic parameter T specifies the type of a searched element. 
+\textbf{ElementQuery<T>} used for locating Web elements(Vaadin buttons, text
+fields, labels, etc.) on the Web page. Generic parameter T specifies the type of a searched element. 
  ElementQuery class provides methods for searching the element based on
- element's id,class, caption or other criteria. These methods can be considered as filters in the query.
- ElementQuery uses the Builder pattern, which helps to add several filters to build a specific query and after
+ element's id,class, caption or other criteria. These methods can be considered
+ as filters in the query. ElementQuery uses the Builder pattern, 
+ which helps to add several filters to build a specific query and after
  the query is built execute it.
 
-For example to find all children elements which are buttons:
+Example \ref{lst:searchButtons} shows finding all children elements of the
+parent element  which are buttons:
   \lstset{style=a1listing}
-    \begin{lstlisting}
-    AbstractHasTestBenchCommandExecutor elem = getParentElement();
-    List<Button> allButtons=elem.$(ButtonElement.class).all();
+\begin{lstlisting} [caption=Search for all buttons,label={lst:searchButtons}]
+AbstractHasTestBenchCommandExecutor elem = getParentElement();
+List<Button> allButtons=elem.$(ButtonElement.class).all();
+\end{lstlisting}
+  
+To restrict search for buttons with caption ``ok'' we add a caption filter to
+the query see example \ref{lst:searchOkButtons}.
+  \lstset{style=a1listing}
+  \begin{lstlisting} [caption=Search for for button  with caption "ok", label={lst:searchOkButtons}]
+AbstractHasTestBenchCommandExecutor elem =  getParentElement();
+List<Button> allButtons=elem.$(ButtonElement.class)
+	.caption("ok").all();
   \end{lstlisting}
   
-To restrict search for buttons with caption ``ok'' we add a caption filter to the query.
-  \lstset{style=a1listing}
-  \begin{lstlisting}
-  AbstractHasTestBenchCommandExecutor elem = getParentElement();
-  List<Button> allButtons=elem.$(ButtonElement.class).caption("ok").all();
-  \end{lstlisting}
-  
-\textbf{TestbenchElemenet} - is a base class for operating Vaadin components. In
-includes methods to access properties common to all Vaadin elements, such as getSize(), getLocation(), getCssValue(), etc.
+\textbf{TestBenchElemenet} - is a base class for operating Vaadin components. It
+includes methods to access properties common to all Vaadin elements,
+such as "getSize()'', ``getLocation()'', ``getCssValue()'', etc.
 TestbenchElement class uses Selenium WebElement class as a foundation and extend
 it's functionality by using JavascriptExecutor,
 which allows to execute JavaScript code, and change the default element behaviour.
 
-\textbf{ButtonElement, MenuBarElement, TableElement}, etc. - implement specific
-class features. The default naming conventions is Vaadin component name + ``Element''.
-In other words ButtonElement accesses buttons methods, TableElement table methods and so on.
-The important aspect is that hierarchy of testbench elements is similar to Vaadin elements.
-That gives more flexibility when writing tests.
+\textbf{TestBenchTestCase} - an abstract super class of TestBench test.
 
-The  developer/tester can specify concrete class for getting access to specific methods of the element:
+\textbf{ParallelTest} - supports running test in parallel threads with several
+browser configurations.
+
+\textbf{ButtonElement, MenuBarElement, TableElement}, etc. - implement specific
+Vaadin class features. The default naming conventions is Vaadin component name
+plus ``Element''. In other words ButtonElement accesses buttons methods,
+TableElement table methods and so on.
+
+The important aspect is that hierarchy of testbench elements is similar to Vaadin elements.
+That gives more flexibility when writing tests. The  developer/tester can
+specify concrete class for getting access to specific methods of the element see example \ref{lst:specificExample}.
  
- \lstset{language=Java}
-  \begin{lstlisting}
+\lstset{style=a1listing}
+\begin{lstlisting} [caption=Test for Vaadin table, label={lst:specificExample}]
   TableElement table= getElement();.$(TableElement.class).first();
   TableRowElement row=table.getRow(0);
  \end{lstlisting}
  
-or use a more generic class to utilize method of a parent class, for example get caption of all elements :
+or use a more generic class to utilize method of a parent class, for example get
+caption of all elements, see example \ref{lst:genericExample}.
 
-  \lstset{language=Java}
-  \begin{lstlisting}
-  List<TestBenchElement> elements= getElement().$(TestBenchElement.class).all();
-  List<String captions=new ArrayList<String ();
-    for(int i =0;i<elements.size();i++) {
-      captions.add(elements.get(i).getCaption());
-    }
-  }
-  \end{lstlisting}
+\lstset{style=a1listing}
+\begin{lstlisting} [caption=Caption test for Vaadin elements, label={lst:genericExample}]
+List<TestBenchElement> elements=
+	getElement().$(TestBenchElement.class).all();
+List<String captions=new ArrayList<String ();
+for(int i=0;i<elements.size();i++) {
+	captions.add(elements.get(i).getCaption());
+}
+\end{lstlisting}
 
 \section {Basic test case structure}
 To use TestBench, the test case class should extend the TestBenchTestCase class,
@@ -380,7 +419,7 @@ can configure Testbench test by using following annotations:
 A typical test case structure is the is the following:
 \begin{itemize}
   \item Set TestBench parameters.
-  \item Open the tested web-page URL.
+  \item Open the tested Web page URL.
   \item Find an element for interaction (Button, TextField).
   \item Interact with the elements (click buttons,menus,etc.).
   \item Find an element to check.
@@ -390,3 +429,30 @@ A typical test case structure is the is the following:
 
 A complete example of test UI class \ref{lst:appTestUI}  and a TestBench test
 class \ref{lst:appTestClass} can be found in appendix A \ref{appendixA}.
+
+\section {Results}
+During Testbench4 development 41 tickets were closed the detailed information
+about these tickets can be found in table \ref{table:tickets} in
+appendix B \ref{appendixB}. 
+
+To improve User Experience (UX) we have tried to reduce an amount of
+configuration needed for using TestBench. We provide a complete simple test,
+which requires zero coding or configuration. Developers can use it as an example
+and extend it for their own requirements. Users may create a sample
+Vaadin application via GUI using Vaadin Eclipse plugin.
+To create a sample Test via console Maven user should use a Vaadin Maven
+archetype see \ref{lst:mavenexample}.
+\lstset{style=console}
+\begin{lstlisting}[caption=Create Vaadin sample application command.,label={lst:mavenexample}]
+mvn archetype:generate 
+	-DarchetypeGroupId=com.vaadin
+	-DarchetypeArtifactId=vaadin-archetype-application
+	-DarchetypeVersion=LATEST
+\end{lstlisting}
+
+ After beta release we made several usability tests.
+A Vaadin developer, without experience in using TestBench, manages to create and 
+run a simple ``button-click'' test in less that 15 minutes. 
+
+Vaadin Testbench 4 is released with CVAL license, it is free for non-commercial
+use, so everyone can try it out.

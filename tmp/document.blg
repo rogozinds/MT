@@ -16,6 +16,7 @@ A level-1 auxiliary file: testbenchcompareselenium.aux
 A level-1 auxiliary file: testbenchuse.aux
 The style file: unsrt.bst
 A level-1 auxiliary file: appendixA.aux
+A level-1 auxiliary file: appendixB.aux
 Database file #1: masterthesis.bib
 Warning--I didn't find a database entry for "junit"
 Warning--I didn't find a database entry for "yodatime"
@@ -25,45 +26,45 @@ Warning--I didn't find a database entry for "seleniumSite"
 Warning--I didn't find a database entry for "studyBDD"
 Too many commas in name 1 of "Maurizio Leotta, Diego Clerissi, Filippo Ricca, Cristiano Spadaro" for entry seleni
 while executing---line 944 of file unsrt.bst
-You've used 20 entries,
+You've used 21 entries,
             1791 wiz_defined-function locations,
-            560 strings with 6249 characters,
-and the built_in function-call counts, 4342 in all, are:
-= -- 405
-> -- 119
-< -- 7
-+ -- 50
-- -- 30
-* -- 215
-:= -- 551
-add.period$ -- 49
-call.type$ -- 20
-change.case$ -- 12
+            566 strings with 6461 characters,
+and the built_in function-call counts, 4629 in all, are:
+= -- 436
+> -- 123
+< -- 8
++ -- 52
+- -- 31
+* -- 228
+:= -- 589
+add.period$ -- 53
+call.type$ -- 21
+change.case$ -- 13
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 230
-empty$ -- 510
-format.name$ -- 30
-if$ -- 1074
+cite$ -- 21
+duplicate$ -- 247
+empty$ -- 543
+format.name$ -- 31
+if$ -- 1147
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 13
-newline$ -- 85
-num.names$ -- 13
-pop$ -- 114
+int.to.str$ -- 21
+missing$ -- 14
+newline$ -- 90
+num.names$ -- 14
+pop$ -- 119
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 168
+skip$ -- 177
 stack$ -- 0
-substring$ -- 270
-swap$ -- 87
-text.length$ -- 7
+substring$ -- 289
+swap$ -- 94
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 36
-width$ -- 22
-write$ -- 184
+while$ -- 40
+width$ -- 23
+write$ -- 196
 (There were 2 error messages)

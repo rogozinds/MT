@@ -18,19 +18,22 @@
 \BOOKMARK [1][-]{section.6.3}{Tools used}{chapter.6}% 18
 \BOOKMARK [2][-]{subsection.6.3.1}{Maven}{section.6.3}% 19
 \BOOKMARK [2][-]{subsection.6.3.2}{Trac}{section.6.3}% 20
-\BOOKMARK [2][-]{subsection.6.3.3}{Teamcity}{section.6.3}% 21
-\BOOKMARK [2][-]{subsection.6.3.4}{Gerrit}{section.6.3}% 22
-\BOOKMARK [1][-]{section.6.4}{Testbench class diagram}{chapter.6}% 23
-\BOOKMARK [1][-]{section.6.5}{Basic test case structure}{chapter.6}% 24
-\BOOKMARK [0][-]{chapter.7}{Testbench vs Selenium}{}% 25
-\BOOKMARK [1][-]{section.7.1}{API built specifically for Vaadin components}{chapter.7}% 26
-\BOOKMARK [1][-]{section.7.2}{Client server communication}{chapter.7}% 27
-\BOOKMARK [1][-]{section.7.3}{Screenshot comparision}{chapter.7}% 28
-\BOOKMARK [1][-]{section.7.4}{Parallel testing}{chapter.7}% 29
-\BOOKMARK [0][-]{chapter.8}{Testbench use}{}% 30
-\BOOKMARK [1][-]{section.8.1}{Integrating with Behaviour-Driven Development frameworks}{chapter.8}% 31
-\BOOKMARK [1][-]{section.8.2}{Discussion and Conclussion}{chapter.8}% 32
-\BOOKMARK [2][-]{subsection.8.2.1}{Summary}{section.8.2}% 33
-\BOOKMARK [2][-]{subsection.8.2.2}{Advantages and disadvantages}{section.8.2}% 34
-\BOOKMARK [2][-]{subsection.8.2.3}{Future work}{section.8.2}% 35
-\BOOKMARK [1][-]{section.Alph0.1}{Appendix A}{chapter.8}% 36
+\BOOKMARK [2][-]{subsection.6.3.3}{Git}{section.6.3}% 21
+\BOOKMARK [2][-]{subsection.6.3.4}{Teamcity}{section.6.3}% 22
+\BOOKMARK [2][-]{subsection.6.3.5}{Gerrit}{section.6.3}% 23
+\BOOKMARK [1][-]{section.6.4}{Testbench class diagram}{chapter.6}% 24
+\BOOKMARK [1][-]{section.6.5}{Basic test case structure}{chapter.6}% 25
+\BOOKMARK [1][-]{section.6.6}{Results}{chapter.6}% 26
+\BOOKMARK [0][-]{chapter.7}{Testbench vs Selenium}{}% 27
+\BOOKMARK [1][-]{section.7.1}{API built specifically for Vaadin components}{chapter.7}% 28
+\BOOKMARK [1][-]{section.7.2}{Client server communication}{chapter.7}% 29
+\BOOKMARK [1][-]{section.7.3}{Screenshot comparision}{chapter.7}% 30
+\BOOKMARK [1][-]{section.7.4}{Parallel testing}{chapter.7}% 31
+\BOOKMARK [0][-]{chapter.8}{Testbench use}{}% 32
+\BOOKMARK [1][-]{section.8.1}{Integrating with Behaviour-Driven Development frameworks}{chapter.8}% 33
+\BOOKMARK [1][-]{section.8.2}{Discussion and Conclussion}{chapter.8}% 34
+\BOOKMARK [2][-]{subsection.8.2.1}{Summary}{section.8.2}% 35
+\BOOKMARK [2][-]{subsection.8.2.2}{Advantages and disadvantages}{section.8.2}% 36
+\BOOKMARK [2][-]{subsection.8.2.3}{Future work}{section.8.2}% 37
+\BOOKMARK [1][-]{section.Alph0.1}{Appendix A}{chapter.8}% 38
+\BOOKMARK [1][-]{section.Alph0.1}{Appendix B}{chapter.8}% 39
