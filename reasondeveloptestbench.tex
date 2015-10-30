@@ -1,9 +1,12 @@
 \chapter{Reason for developing Testbench}
 \label{ch:reasontestbenchdevelopment}
-As shown in chapter~\ref{ch:selenium} Selenium is a powerful tool for web
-testing.
-However if we use Selenium to test Vaadin application we will run into several problems.
+As shown in chapter~\ref{ch:selenium} Selenium is a powerful tool for Web
+testing. However when using Selenium to test Vaadin application we will run into
+several problems. Due to these reasons a test tool for Vaadin called TestBench was
+created. TestBench is based on Selenium WebDriver, it solves  problems with client server communication,
+ and brings more suitable API for working with Vaadin components
 
+\section{Client server communication}
 Selenium does not know about Vaadin specific features, like client-side	communication. 
 Vaadin is a stateful framework, an event on a client side my affect a state of
 the application on a server side. This brings additional complexity in testing,
@@ -18,19 +21,14 @@ server side will notify the client side about this change.
   because it might affect the next client side instruction. To handle this
   situation we need to add a delay in a Selenium test, see line 20
    in listing~\ref{lst:seleniumVaadin} in appendix \ref{appendixA}. Rely on a
-   delay in a test is a bad practise, because small delay might be not enough to all client server
-   communications to proceed. Adding a big delay on the contrary, will increase
-   the test time execution. 
+   delay in a test is a bad practise, because small delay might be not
+   enough, adding a big delay on the contrary, will increase the test time
+   execution.
+
+\section{Extra code}
+ Vaadin has a rich collection of UI components, but Selenium provides only
+ basic methods like ``click'' or ``sendKeys'', which makes developers to right
+ extra code for operating on Vaadin components. Same test for a text field
+ written with Selenium \ref{lst:seleniumVaadin} and Vaadin
+ TestBench\ref{lst:testbenchVaadin} takes 67 and 31 lines of code respectively.
    
- Because Selenium framework is not related to Vaadin it requires additional
-   code to take into account client-server communication. For example setting
-   value of the text field requires three lines of code instead of one see lines
-   25-28 in listing~\ref{lst:seleniumVaadin}.
-   
-   Due to these reasons a test tool for Vaadin called TestBench was
-   created. TestBench is based on Selenium WebDriver, it solves
-   problems with client server communication, and brings more suitable
-   API for working with Vaadin components. Same test written with 
-   the help of TestBench takes less code and does not have delays see
-   example~\ref{lst:testbenchVaadin} in in appendix \ref{appendixA}.
-  	

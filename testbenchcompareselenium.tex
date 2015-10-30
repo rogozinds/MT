@@ -11,14 +11,29 @@ Vaadin components, which allows to operate on bigger parts of components, for
  see~\ref{lst:testbench1}.
   	\lstset{language=Java}
   	\begin{lstlisting}[caption=Get Vaadin Table cell Value,label={lst:testbench1}]
-TableElement table = getTableElement(); String value = table.getRow(0).getCell(1).getValue();
+TableElement table = getTableElement();
+String value = table.getRow(0).getCell(1).getValue();
 	\end{lstlisting}
 	
 \section{Client server communication}
-As mentioned in section~\ref{sec:reasontestbenchdevelopment} TestBench handles 
-client server synchronization.
+As mentioned in section~\ref{ch:reasontestbenchdevelopment}
+Selenium does not handle client server communications in Vaadin
+application. TestBench fixes this problem.
 
-\section{Screenshot comparision}
+Before calling any client side code, for example, setting a value of a
+text field, TestBench waits for server side code to finish. When event happens
+on the client happens, TestBench sets a boolean value ``hasRequestToServer'' to
+true and sends a request to the server side. When the server side finishes its
+work, it returns a response and the client side sets the ``hasRequestToServer''
+flag back to false. While there is a request to a server executing all TestBench
+methods on the client are suspended see figure \ref{fig:clientServerTestbench}.  
+	\begin{figure}
+	\label{fig:clientServerTestbench}
+	\includegraphics[width=0.75\textwidth]{clientServerTestbench}
+	\caption{Client server synchronization in TestBench}
+	\end{figure}
+
+\section{Screenshot comparison}
 \label{sec:screencompare}
 Since version 4.0.0 TestBench has an API for comparing screenshots. This 
 feature was introduced to help users to test UI of the application. We believe
@@ -61,10 +76,10 @@ tester to find out what was the problem with the test see
 	\end{figure}
 
 TestBench test can also be configured to automatically take screenshots of the failing tests by adding
-a ``screenshot on failure rule'' see \ref{lst:screenshotOnFailue}. Automatical
+a ``screenshot on failure rule'' see \ref{lst:screenshotOnFailue}. Automatically
 taking screenshots of failing tests helps developers to narrow the
-scope of the potential problem much faster.
-tester
+scope of a potential problem much faster.
+
   	\begin{lstlisting}[caption=Adding screenshot on failure	rule,label={lst:screenshotOnFailue}]
 @Rule
 public ScreenshotOnFailureRule screenshotOnFailureRule =
@@ -72,8 +87,9 @@ public ScreenshotOnFailureRule screenshotOnFailureRule =
 	\end{lstlisting}
 
 \section{Parallel testing}
+\label{paralelTesting}
 As mentioned in section~\ref{sec:selenium} Selenium Grid allows to run
-tests on different machines with different configuration. Unfortunatelly
+tests on different machines with different configuration. Unfortunately
 Selenium does not provide a ready made solution to start those tests in
 parallel, the developer can  use a maven surefire plugin \ref{sureFire} 
 or JUnit ``ParallelComputer" class \ref{junitParallelComputer}. This requires

@@ -13,6 +13,8 @@
 \contentsline {subsection}{\numberline {3.4.2}Complex DOM structure}{12}{subsection.3.4.2}
 \contentsline {chapter}{\numberline {4.}Selenium}{15}{chapter.4}
 \contentsline {chapter}{\numberline {5.}Reason for developing Testbench}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}Client server communication}{19}{section.5.1}
+\contentsline {section}{\numberline {5.2}Extra code}{19}{section.5.2}
 \contentsline {chapter}{\numberline {6.}Development of Testbench}{20}{chapter.6}
 \contentsline {section}{\numberline {6.1}Scrum}{20}{section.6.1}
 \contentsline {section}{\numberline {6.2}Test Driven Development}{22}{section.6.2}
@@ -28,13 +30,13 @@
 \contentsline {chapter}{\numberline {7.}Testbench vs Selenium}{33}{chapter.7}
 \contentsline {section}{\numberline {7.1}API built specifically for Vaadin components}{33}{section.7.1}
 \contentsline {section}{\numberline {7.2}Client server communication}{33}{section.7.2}
-\contentsline {section}{\numberline {7.3}Screenshot comparision}{33}{section.7.3}
-\contentsline {section}{\numberline {7.4}Parallel testing}{35}{section.7.4}
-\contentsline {chapter}{\numberline {8.}Testbench use}{37}{chapter.8}
-\contentsline {section}{\numberline {8.1}Integrating with Behaviour-Driven Development frameworks}{39}{section.8.1}
+\contentsline {section}{\numberline {7.3}Screenshot comparison}{34}{section.7.3}
+\contentsline {section}{\numberline {7.4}Parallel testing}{36}{section.7.4}
+\contentsline {chapter}{\numberline {8.}Testbench use}{38}{chapter.8}
+\contentsline {section}{\numberline {8.1}Integrating with Behaviour-Driven Development frameworks}{40}{section.8.1}
 \contentsline {section}{\numberline {8.2}Discussion and Conclussion}{42}{section.8.2}
 \contentsline {subsection}{\numberline {8.2.1}Summary}{42}{subsection.8.2.1}
 \contentsline {subsection}{\numberline {8.2.2}Advantages and disadvantages}{42}{subsection.8.2.2}
 \contentsline {subsection}{\numberline {8.2.3}Future work}{42}{subsection.8.2.3}
 \contentsline {section}{\numberline {.1}Appendix A}{45}{section.Alph0.1}
-\contentsline {section}{\numberline {.1}Appendix B}{50}{section.Alph0.1}
+\contentsline {section}{\numberline {.1}Appendix B}{51}{section.Alph0.1}

@@ -4,10 +4,13 @@ In this chapter we will show several examples of using TestBench for writing
 automated tests and show their value for different stakeholders. 
 
 Originally TestBench was developed as a tool for writing acceptance tests for 
-Vaadin framework. Acceptance test determines that requirements of a
-specification are met. Currently (Fall 2015) there are over 6500 tests written
-in Vaadin framework which use TestBench and are run every day. Nonetheless TestBench can be used for any application written
-with Vaadin.
+Vaadin framework it also used can be used to test any application written with
+Vaadin. Acceptance test determines that requirements of a specification are met.
+Currently (Fall 2015) there are over 6500 tests written for Vaadin framework.
+All tests are running in Chrome, Firefox and Internet Explorer 9,10,11 during
+night builds and before every release. New version of Vaadin framework can
+not be released even with one test failing. This strict rule helps to keep
+the quality of the product on a high level.
 
 Having automated tests allow developers to refactor code without fear of
 breaking previous work. Developers may not know all the details of the framework and make mistakes,
@@ -17,54 +20,64 @@ breaking previous work. Developers may not know all the details of the framework
  Having automated acceptance testing is extremely important for large
  open-source projects, because this reduces a cost for developers to contribute
  to a project.  All patches to the framework are reviewed by Vaadin experts and
- running tests beforehand rejects failable code.
+ running tests beforehand rejects fallible code.
 
- While automated tests have great value, there are instances
+ While automated tests have great value, there are circumstanceTs
  where a failing Testbench test gives a false alarm. One of the most fundamental
   problems of Web testing is that a developer can make a change that keeps
    the application completely correct, but breaks an automated test.   
- That might be caused by changing DOM or CSS of the page, for example adding
-    an extra div may affect searching element by xPath. Such kind of problems 
-    occurs quite often when developing new features. 
+That might be caused by changing DOM or CSS of the page, for example adding
+an extra div may affect searching element by xPath. Such kind of problems 
+occurs quite often when developing new features. Using ``screenshot on failure''
+rule \ref{lst:screenshotOnFailue} helps to figure out such kind of problems. If
+a developer get an error ``can not find an element on the Web page'', 
+but this element is presented on a screenshot, most likely the problem is in
+locating the element code.
 
 Especially in agile development when work is done in small iterations/cycles, 
 changes in code require changes in testing. This gives a fast feedback and
  an opportunity to find and fix problems early, but also brings frustration
-  for developers that they have to fix problems both in code and tests. 
-  That might bring a false attitude that writing tests on early stages of the project,
-   when there is no clear picture of the final product,
-    increases the amount of work for developers. 
-    We totally believe that writing tests reduces an overall work,
-     even if these tests have to be changed often.
-      Usually a good rule is that every patch should add or edit at least one test suite, that
-       also ease the reviewers job, because a test suite explains what is the reason of the patch. 
+for developers that they have to fix problems both in code and tests. 
+That might bring a false attitude that writing tests on early stages of the project,
+ when there is no clear picture of the final product,
+ increases the amount of work for developers. 
+ 
+ We are sure that writing tests reduces an overall work,
+ even if these tests have to be changed often.
+ Usually a good rule is that every patch should add or edit at least one test suite, that
+ also ease the reviewers job, because a test suite explains what is the reason of the patch. 
 
-In addition to having value throughout the development lifecycle,
+In addition to having value throughout the development life cycle,
 Testbench tests are valuable artifacts to get end-users feedback.
-Because Testbench tests are executed in browser, tests can be used 
+Because Testbench tests are executed in a browser, tests can be used 
 for demonstrating framework or application features to the end-user. 
   
-To demonstrate the usage of Testbench we will create a test for Vaadin Table
+To demonstrate the usage of Testbench we will create a test for a Vaadin table
 component extension. Developing Vaadin components is outside the scope of
 this work, we assume someone extended a Table component by adding a filter field to
-it. Typing value in the filter field filters values of the underlying table. 
+it. Typing value in the filter field filters values of the underlying table wee
+figure \ref{fig:filtertable}.
 	\begin{figure}
 	\label{fig:filtertable}
 	\includegraphics[width=0.75\textwidth]{filtertable}
-	\caption{Table component extension}
+	\caption{Table component extension example.}
 	\end{figure}
 
-Test for this feature may look like this:
-  	\lstset{language=Java}
-  	\begin{lstlisting}
-		TableElement table = getTableElement();
-		TextFieldElement filterElement=table.$(TextFieldElement.class).id("filter-field").first();
-		filterElement.setValue("special");
-		//Comparing filtered values
-		TableRowElement row=table.getRow(1);
-		assertEquals(row.getCell(0).getValue(),"special");
-	\end{lstlisting}	
-	
+An essential  part of a Test for the filter feature is represented in listing
+\ref{lst:testbenchTest}. 
+
+ \lstset{style=a1listing}
+  \begin{lstlisting} [caption=Example of table test,label={lst:testbenchTest}]
+TableElement table = getTableElement();
+TextFieldElement filterElement=table.
+	$(TextFieldElement.class).id("filter-field").first();
+filterElement.setValue("special");
+
+//Comparing filtered values
+TableRowElement row=table.getRow(1);
+assertEquals(row.getCell(0).getValue(),"special");
+  \end{lstlisting}
+
 If we run this test we get something like picture see
 figure~\ref{fig:filtertable}.
 In the next section we will show how to improve this test by using
@@ -72,8 +85,8 @@ Behaviour-Driven Development(BDD) framework.
 
 \section{Integrating with Behaviour-Driven Development frameworks}
 
-The main goal of BDD is to get executable specifications of a system
-\cite{studyBDD}. In other words BDD frameworks allow  to write user-stories in
+The main goal of BDD is to get executable specifications of a system.
+In other words BDD frameworks allow  to write user-stories in
 common language, for example English, and associate them with automated
 acceptance tests.
 
@@ -89,82 +102,20 @@ When typing special to filter field
 Then value in row 1 and cell 0 is special
   \end{lstlisting}
 User story steps are matched into actual Java tests using annotations. 
- The method with an annotation interact with an application and perform the actions needed.
-  Since TestBench tests are pure Java code and BDD steps can be run as JUnit tests, we can combine these to make
-   JBehave run TestBench tests. We start by extending the TestBenchTestCase  and use JBehave's \@BeforeScenario
-   annotation to open a tested Web page.
-   @Given @When and @Then annotations are mapped with corresponding steps in the user scenario.
-   To pass parameters from the user-scenario step to a Java method "\$"- special symbol is used.
-    JBehave implicitly casts passed value to a parameters type.
-    So checkValueInCell will have two integer parameters rowNumber=1, cellNumber=0 and string parameter expectedValue=special. 
+The method with an annotation interact with an application and perform the actions needed.
+Since TestBench tests are pure Java code and BDD steps can be run as JUnit tests, we can combine these to make
+JBehave run TestBench tests.
 
-  	\lstset{language=Java}
-  	\begin{lstlisting}
-	 public class FilterTableSteps extends TestBenchTestCase {
-	  TableTestUI page;
-	    @BeforeScenario
-	    //open web page
-	    public void beforeScenario() {
-	        setDriver(TestBench.createDriver(new FirefoxDriver()));
-	        getDriver().get("http://localhost:8080");
-	    }
-	
-	    @AfterScenario
-	    public void afterScenario() {
-	        getDriver().quit();
-	    }
-	
-	    @Given("web-page with table")
-	    public void theFrontPage() throws Throwable {
-	        page = PageFactory.initElements(getDriver(), TableTestUI.class);
-	    }
-	
-	    @When("typing $value to filter field")
-	    public void userTypesToFIlterField(String value) throws Throwable {
-	        TableElement table = page.$(TableElement.class).first();
-			TextFieldElement filterElement=table.$(TextFieldElement.class).id("filter-field").first();
-			filterElement.setValue("special");
-	    }
-	
-	
-	    @Then("value in row $rowNumber and cell $cellNumber is $expectedValue")
-	    public void checkValueInCell(int rowNumber,int cellNumber,String expectedValue)
-	            throws Throwable {
-	            TableElement table = page.$(TableElement.class).first();
-				TableRowElement row=table.getRow(rowNumber);
-				assertEquals(row.getCell(cellNumber).getValue(),expectedValue);
-	    }
-	
-	}
-\end{lstlisting}
+We start by extending the TestBenchTestCase  and use JBehave's ``\@BeforeScenario''
+annotation to open a tested Web page.  @Given @When and @Then annotations are
+linked with corresponding steps in the user scenario.
+To pass parameters from the user-scenario step to a Java method "\$"- special symbol is used.
+JBehave implicitly casts passed value to a parameters type. The complete example
+of the test is in appendix A \ref{lst:testbenchTest}.
+
 To link a Java class and a textual story file we need to create a configuration class.
-The simplest configuration is a one-to-one mapping between a Java class and a textual story file. 
-
-\lstset{language=Java}
-\begin{lstlisting}
-public class SimpleConfig extends JUnitStory {
-    // Here we specify the configuration, starting from default MostUsefulConfiguration,
-    // and changing only what is needed
-    @Override
-    public Configuration configuration() {
-    	return new MostUsefulConfiguration()
-        	// where to find the stories
-            .useStoryLoader(new LoadFromClasspath(this.getClass())) 
-            // CONSOLE and TXT reporting
-            .useStoryReporterBuilder(new StoryReporterBuilder()
-            .withDefaultFormats()
-            .withFormats(Format.CONSOLE, Format.TXT));
-    }
- 
-    // Here we specify the steps classes
-    @Override
-    public InjectableStepsFactory stepsFactory() {    	
-        // varargs, can have more that one steps classes
-        return new InstanceStepsFactory(configuration(),
-         new FilterTableSteps());
-    }
-}
-\end{lstlisting}
+The simplest configuration is a one-to-one mapping between a Java class and a textual story file
+see example in appendix A \ref{lst:bddconfig}. 
 
 So we can have both a user-story for our test explaining what should be done and a browser executed
 test showing the actual implementation. Picture with user story and browser implementation. We believe that user-stories 

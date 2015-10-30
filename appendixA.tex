@@ -197,3 +197,77 @@ public class TestBenchTest extends TestBenchTestCase {
     }
 }  	
 \end{lstlisting}
+
+ \lstset{style=a1listing}
+\begin{lstlisting} [caption=JBehave test example,label={lst:jbehaveTest}]
+public class FilterTableSteps extends TestBenchTestCase {
+	TableTestUI page;
+	@BeforeScenario
+		//open web page
+	public void beforeScenario() {
+		setDriver(TestBench.createDriver(
+			new FirefoxDriver()));
+		getDriver().get("http://localhost:8080");
+	}
+	
+	@AfterScenario
+	public void afterScenario() {
+		getDriver().quit();
+	}
+	
+	@Given("web-page with table")
+		public void theFrontPage() throws Throwable {
+		page = PageFactory.initElements(
+			getDriver(), TableTestUI.class);
+	}
+	
+	@When("typing $value to filter field")
+	public void filterTable(String value)
+		throws Throwable {
+		TableElement table =
+			page.$(TableElement.class).first();
+		TextFieldElement filterElement=
+			table.$(TextFieldElement.class).
+			id("filter-field").first();
+		filterElement.setValue("special");
+	}
+	
+	
+	@Then("value in row $rowNumber 
+		and cell $cellNumber is $expectedValue")
+	public void checkValueInCell(int rowNumber,
+		int cellNumber,String expectedValue) throws Throwable {
+		TableElement table = page.$(TableElement.class).first();
+		TableRowElement row=table.getRow(rowNumber);
+		assertEquals(row.getCell(cellNumber).
+			getValue(),expectedValue);
+	}
+}
+\end{lstlisting}
+
+\lstset{style=a1listing}
+\begin{lstlisting} [caption=JBehave configuration example,label={lst:jbehaveConfig}]
+public class SimpleConfig extends JUnitStory {
+	//Specify the configuration, starting from default
+	//MostUsefulConfiguration, // and changing only what is needed
+    
+	@Override
+	public Configuration configuration() {
+		return new MostUsefulConfiguration()
+		// where to find the stories
+		.useStoryLoader(new LoadFromClasspath(this.getClass())) 
+		// CONSOLE and TXT reporting
+		.useStoryReporterBuilder(new StoryReporterBuilder()
+			.withDefaultFormats()
+			.withFormats(Format.CONSOLE, Format.TXT));
+	}
+ 
+	// Specify the steps classes
+	@Override
+	public InjectableStepsFactory stepsFactory() {    	
+	// varargs, can have more than one step class
+		return new InstanceStepsFactory(configuration(),
+		new FilterTableSteps());
+	}
+}
+\end{lstlisting}
