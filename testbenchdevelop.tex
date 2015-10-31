@@ -85,7 +85,7 @@
         reduces the cost of fixing problems.
       \end{itemize}
       
-      Three laws of TDD \cite[pp122]{Cleancode}[Book page 122]
+      Three laws of TDD \cite[pp122]{cleancode}[Book page 122]
         \begin{itemize}
           \item You may not write production code until you have written a failing unit test.
           \item You may not write more of a unit test than is sufficient to fail.
@@ -298,9 +298,10 @@
   The process continues until someone  marks the patch as +2,
     meaning in can be pushed to git master repository.
     \begin{figure}
+    \centering
       \includegraphics[width=0.75\textwidth]{gerrit1.png}
-      \label{fig:gerritTestbench}
       \caption{Gerrit structure}
+      \label{fig:gerritTestbench}
     \end{figure}
     
   Code review helps team members to follow similar code conventions, 
@@ -317,10 +318,11 @@
   Here we will describe the most important classes and the basic principles see
   figure~\ref{fig:classdiagram}.
 	\begin{figure}
-		\label{fig:classdiagram}
+	\centering	
 	    \includegraphics[width=0.75\textwidth] {umlDiagram.png}
 	    \caption{Testbench class diagram}
-    \end{figure}
+	    \label{fig:classdiagram}
+  \end{figure}
 
 \textbf{TestBenchCommandExecutor} handles client server communication
 and provides screenshot comparison implementation.
@@ -375,7 +377,7 @@ TestbenchElement class uses Selenium WebElement class as a foundation and extend
 it's functionality by using JavascriptExecutor,
 which allows to execute JavaScript code, and change the default element behaviour.
 
-\textbf{TestBenchTestCase} - an abstract super class of TestBench test.
+\textbf{TestBenchTestCase} - an abstract super class of a TestBench test.
 
 \textbf{ParallelTest} - supports running test in parallel threads with several
 browser configurations see \ref{sec:paralelTesting} for more details.
@@ -464,5 +466,5 @@ options:
 \begin{itemize}
   \item Free 30-days trial period.
   \item One year non-commercial license. All the details how to get it are at
-  Vaadin blog \ref{vaadinBlog}.
+  Vaadin blog \cite{vaadinBlog}.
 \end{itemize}

@@ -9,7 +9,7 @@ Web elements like ``click'' or ``sendKeys''. TestBench provides a rich API for
 Vaadin components, which allows to operate on bigger parts of components, for
  example you can get a row or cell of the Table by index
  see~\ref{lst:testbench1}.
-  	\lstset{language=Java}
+  	\lstset{style=a1listing}
   	\begin{lstlisting}[caption=Get Vaadin Table cell Value,label={lst:testbench1}]
 TableElement table = getTableElement();
 String value = table.getRow(0).getCell(1).getValue();
@@ -28,9 +28,10 @@ work, it returns a response and the client side sets the ``hasRequestToServer''
 flag back to false. While there is a request to a server executing all TestBench
 methods on the client are suspended see figure \ref{fig:clientServerTestbench}.  
 	\begin{figure}
-	\label{fig:clientServerTestbench}
+	\centering
 	\includegraphics[width=0.75\textwidth]{clientServerTestbench}
 	\caption{Client server synchronization in TestBench}
+	\label{fig:clientServerTestbench}
 	\end{figure}
 
 \section{Screenshot comparison}
@@ -64,15 +65,17 @@ tester to find out what was the problem with the test see
 \ref{fig:failedscreen} and \ref{fig:failedscreenmarked}.
 
 	\begin{figure}
-	\label{fig:failedscreen}
+	\centering
 	\includegraphics[width=0.75\textwidth]{screen_fail}
 	\caption{Reference screenshot}
+	\label{fig:failedscreen}
 	\end{figure}
 
 	\begin{figure}
-	\label{fig:failedscreenmarked}
+	\centering
 	\includegraphics[width=0.75\textwidth]{screen_fail_marked_error}
 	\caption{Screenshot with emphasized error}
+	\label{fig:failedscreenmarked}
 	\end{figure}
 
 TestBench test can also be configured to automatically take screenshots of the failing tests by adding
@@ -80,6 +83,7 @@ a ``screenshot on failure rule'' see \ref{lst:screenshotOnFailue}. Automatically
 taking screenshots of failing tests helps developers to narrow the
 scope of a potential problem much faster.
 
+\lstset{style=a1listing}
   	\begin{lstlisting}[caption=Adding screenshot on failure	rule,label={lst:screenshotOnFailue}]
 @Rule
 public ScreenshotOnFailureRule screenshotOnFailureRule =
@@ -88,16 +92,16 @@ public ScreenshotOnFailureRule screenshotOnFailureRule =
 
 \section{Parallel testing}
 \label{paralelTesting}
-As mentioned in section~\ref{sec:selenium} Selenium Grid allows to run
+As mentioned in section~\ref{ch:selenium} Selenium Grid allows to run
 tests on different machines with different configuration. Unfortunately
 Selenium does not provide a ready made solution to start those tests in
-parallel, the developer can  use a maven surefire plugin \ref{sureFire} 
-or JUnit ``ParallelComputer" class \ref{junitParallelComputer}. This requires
+parallel, the developer can  use a maven surefire plugin \cite{sureFire} 
+or JUnit ``ParallelComputer" class \cite{junitParallelComputer}. This requires
 additional work for example to use ten parallel threads for running tests using
-surefire plugin you need to add this XML snippet \ref{lst:surefirePom}\ref{sureFireExample}
-to your pom file.
+surefire plugin you need to add this XML snippet \ref{lst:surefirePom}
+to your POM file.
 
-\lstset{language=XML}
+\lstset{style=console}
 \begin{lstlisting}[caption=Get Vaadin Table cell Value,label={lst:surefirePom}]
 <plugins>
     [...]
@@ -120,12 +124,12 @@ calling ``Parameters.setMaxThreads() method. Besides listing~\ref{lst:starthub2}
 shows that a developer needs to use different WebDrivers for running his test in
 different Web browsers or for running on Selenium Hub. TestBench uses Java
 annotations ``@RunLocally'' \ref{lst:testBenchLocally} and ``RunOnHub''
-ref{lst:testBenchRunOnHub}.
+\ref{lst:testBenchRunOnHub}.
 ``RunOnHub'' annotation sets remote Web Driver capabilities for Chrome, Firefox and Internet Explrorer 9,
 10,11 by default. We believe that these adjustments in ``ParallelTest'' class
 minimize the amount of extra code and developers effort needed to setup a test
 environment.
-\lstset{language=Java}
+\lstset{style=a1listing}
 \begin{lstlisting}[caption=Run test in local Chrome browser locally,label={lst:testBenchLocally}] 
 @RunLocally(Browser.CHROME)
 public class LocalTest extends ParallelTest { 
@@ -136,7 +140,7 @@ public class LocalTest extends ParallelTest {
 }
 \end{lstlisting}
 
-\lstset{language=Java}
+\lstset{style=a1listing}
 \begin{lstlisting}[caption=Run tests on Selenium hub on http://192.168.1.2, label={lst:testBenchRunOnHub}]
 @RunOnHub(http://192.168.1.2)
 public class LocalTest extends ParallelTest {
