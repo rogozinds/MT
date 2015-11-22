@@ -14,7 +14,16 @@ Tiobe index for march 2015, 2015.
 \bibitem{ant}
 2014.
 
+\bibitem{junit}
+2014.
+
 \bibitem{akka}
+2015.
+
+\bibitem{yodatime}
+2014.
+
+\bibitem{guava}
 2014.
 
 \bibitem{cleancode}
@@ -29,7 +38,7 @@ Lei Xu and Baowen Xu.
   Cyberworlds}, CW '04, pages 300--305, Washington, DC, USA, 2004. IEEE
   Computer Society.
 
-\bibitem{AnupamCaptureReplay}
+\bibitem{CaptureReplay7}
 Vinod Anupam, Juliana Freire, Bharat Kumar, and Daniel Lieuwen.
 \newblock Automating web navigation with the webvcr.
 \newblock {\em Comput. Netw.}, 33(1-6):503--517, June 2000.
@@ -41,6 +50,15 @@ Maurizio Leotta, Diego Clerissi, Filippo Ricca, and Cristiano Spadaro.
 \newblock In {\em Proceedings of the 2013 IEEE Sixth International Conference
   on Software Testing, Verification and Validation}, ICST '13, pages 487--488,
   Washington, DC, USA, 2013. IEEE Computer Society.
+
+\bibitem{seleniumSite}
+2014.
+
+\bibitem{vaadinBlog}
+2015.
+
+\bibitem{junitParallelComputer}
+2015.
 
 \bibitem{Zhongen2}
 Zhong sheng Qian, Huaikou Miao, and Hongwei Zeng.
@@ -73,12 +91,11 @@ Sebastian Elbaum, Gregg Rothermel, Srikanth Karre, and Marc Fisher~II.
 \newblock Leveraging user-session data to support web application testing.
 \newblock {\em IEEE Trans. Softw. Eng.}, 31(3):187--202, March 2005.
 
-\bibitem{seleni}
-Filippo Ricca Cristiano~Spadaro Maurizio~Leotta, Diego~Clerissi.
-\newblock Repairing selenium test cases: An industrial case study about web
-  page element localization.
-\newblock In {\em Software Testing, Verification and Validation (ICST), 2013
-  IEEE Sixth International Conference on}, pages 487--488. IEEE, 2013.
+\bibitem{vaadinCookBook}
+Ondrej~Kvasnovsky Jaroslav~Holan.
+\newblock {\em Vaadin 7 Cookbook}.
+\newblock Packt Publishing Ltd, Livery Place, 35 Livery Street, Birmingham, UK,
+  1 edition, 2013.
 
 \bibitem{vaadinTestbenchSite}
 2014.
@@ -98,11 +115,5 @@ S.D. Williams.
 
 \bibitem{vaadinAkka}
 2014.
-
-\bibitem{vaadinBlog}
-2015.
-
-\bibitem{junitParallelComputer}
-2015.
 
 \end{thebibliography}

@@ -9,7 +9,7 @@
 		\section{Capture and Replay}
 		\label{sec:captureReplay}
 			C\&R Web testing is based on capture and replay automated
-			tools\cite{CaptureReplay7}.  The software tester works with the Web
+			tools.  The software tester works with the Web
 			application modeling user behaviour, the capture/replay tool records the
 			whole session and generates the script, which can be executed later,
 			repeating same actions without humans participation. The main idea of C\&R
@@ -19,7 +19,7 @@
 			 be useful to adjust failed scripts accordingly	to the changes of the Web page.
 			 Thought if the Web page was changed
 			significantly, editing test script might be more expensive than recording a
-			new test\cite{AnupamCaptureReplay}. 
+			new test\cite{CaptureReplay7}. 
 			
 C\&R tools are usually Web browser plugins or Java applets, because they
 need to control a Web browser to navigate on a Web page. User actions are
@@ -184,7 +184,7 @@ public class ValueChangeListenerTestClass {
       page is compared with a reference screenshot. 
 	\subsection{Complex DOM structure}
     Real-life example may have dozens/hundreds of HTML
-		elements on the Web page see example of Gmail HTML page
+		elements on the Web page see figure
 		\ref{fig:gmailexample}.
 		Web pages with big and branched DOM bring several challenges:
 		\begin{enumerate}
@@ -195,9 +195,10 @@ public class ValueChangeListenerTestClass {
 		\end{enumerate}
 		
 		\begin{figure}
-		\label{fig:gmailexample}
-		\includegraphics[width=0.75\textwidth]{gmail_example}
-		\caption{Gmail DOM structure example}
+		\centering
+		  \includegraphics[width=0.75\textwidth]{gmail_example}
+		  \caption{Gmail page structure}
+		  \label{fig:gmailexample}
 		\end{figure}
 		
 		Testing frameworks allow several strategies for locating Web page elements:

@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: document.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: background.aux
+A level-1 auxiliary file: webtesting.aux
+A level-1 auxiliary file: selenium.aux
+A level-1 auxiliary file: reasondeveloptestbench.aux
+A level-1 auxiliary file: testbenchdevelop.aux
+A level-1 auxiliary file: testbenchcompareselenium.aux
+A level-1 auxiliary file: testbenchuse.aux
+A level-1 auxiliary file: conclusion.aux
+The style file: unsrt.bst
+A level-1 auxiliary file: appendixA.aux
+A level-1 auxiliary file: appendixB.aux
+Database file #1: masterthesis.bib
+Warning--I didn't find a database entry for "sureFire"
+You've used 26 entries,
+            1791 wiz_defined-function locations,
+            569 strings with 6342 characters,
+and the built_in function-call counts, 4863 in all, are:
+= -- 431
+> -- 128
+< -- 7
++ -- 57
+- -- 31
+* -- 218
+:= -- 601
+add.period$ -- 57
+call.type$ -- 26
+change.case$ -- 13
+chr.to.int$ -- 0
+cite$ -- 26
+duplicate$ -- 261
+empty$ -- 614
+format.name$ -- 31
+if$ -- 1209
+int.to.chr$ -- 0
+int.to.str$ -- 26
+missing$ -- 15
+newline$ -- 105
+num.names$ -- 14
+pop$ -- 159
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 194
+stack$ -- 0
+substring$ -- 257
+swap$ -- 89
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 37
+width$ -- 28
+write$ -- 221
+(There was 1 warning)

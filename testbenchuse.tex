@@ -55,12 +55,13 @@ for demonstrating framework or application features to the end-user.
 To demonstrate the usage of Testbench we will create a test for a Vaadin table
 component extension. Developing Vaadin components is outside the scope of
 this work, we assume someone extended a Table component by adding a filter field to
-it. Typing value in the filter field filters values of the underlying table wee
+it. Typing value in the filter field filters values of the underlying table see
 figure \ref{fig:filtertable}.
 	\begin{figure}
-	\label{fig:filtertable}
+	\centering
 	\includegraphics[width=0.75\textwidth]{filtertable}
 	\caption{Table component extension example.}
+	\label{fig:filtertable}
 	\end{figure}
 
 An essential  part of a Test for the filter feature is represented in listing
@@ -78,8 +79,6 @@ TableRowElement row=table.getRow(1);
 assertEquals(row.getCell(0).getValue(),"special");
   \end{lstlisting}
 
-If we run this test we get something like picture see
-figure~\ref{fig:filtertable}.
 In the next section we will show how to improve this test by using
 Behaviour-Driven Development(BDD) framework.
 
@@ -115,7 +114,7 @@ of the test is in appendix A \ref{lst:testbenchTest}.
 
 To link a Java class and a textual story file we need to create a configuration class.
 The simplest configuration is a one-to-one mapping between a Java class and a textual story file
-see example in appendix A \ref{lst:bddconfig}. 
+see example in appendix A \ref{lst:jbehaveConfig}. 
 
 So we can have both a user-story for our test explaining what should be done and a browser executed
 test showing the actual implementation. Picture with user story and browser implementation. We believe that user-stories 
