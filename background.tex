@@ -3,13 +3,13 @@
 	\section{Web applications}
 	%May be some more intro text''
 		
-	  Static HTML Web sites are loosing their popularity, because users
+	  Static HTML Web pages are loosing their popularity, because users
 	  expect from modern Web sites more than just representing pictures and text.
-	  Generally, users willing to have a highly responsive application with
+	  Generally, users want to have a highly responsive applications with
 	  different useful features, working in the Web. As a result Web applications are displacing Web
 	  sites on the market.
 	  
-	   The difference of Web application from a Web site is the
+	   The difference between Web applications and Web sites is the
 	 ``ability of a user to affect the state of the business logic on the
 	 server"[7]. In other words a user or a client makes a request to a server,
 	 the server performs some actions (calculate, fetch data from database or
@@ -58,8 +58,8 @@
 		
   \section{Vaadin}
   \label{ch:vaadin}
-   ``Vaadin Framework is a Java Web application development framework that is
-  designed to make creation and maintenance of high quality Web-based user interfaces easy.
+    Vaadin is a Java-based development framework for Web applications. ''Vaadin
+    is designed to make creation and maintenance of high quality Web-based user interfaces easy.
    Vaadin supports two different programming models: server-side and client-side. 
    `` \cite[pr1.1]{bookVaaidn}
    \emph{Client-side} Vaadin code is executed in the Web browser as JavaScript
@@ -88,26 +88,54 @@
    for JavaScript. In spite of all the standards the difference between browsers
    and versions might be significant for the developer. The differences may vary
    from supporting different Cascading Style Sheets (CSS) tags
-   and HTML5 features, different event handling and simply bugs. Vaadin client Compiler and GWT provide a wide browser
-   support, eliminating the difference between browsers, and helping a
+   and HTML5 features, differences in event handling and simply bugs. Vaadin
+   client Compiler and GWT provide a wide browser support, eliminating the difference between browsers, and helping a
    developer to concentrate on essential parts of the application, instead of
-   wasting time on cross-browser support. Vaadin framework uses screenshot
-   comparison see \ref{sec:screencompare} as a part of regression testing, which brings
-   confidence to the developer that Vaadin components will not change their
-   appearance unexpectedly. 
+   wasting time on cross-browser support. 
+   
+   Vaadin supports several popular Web browsers Internet Explorer 8 and newer
+   versions, Firefox, Chrome, Safarin and Opera. Regression tests are run
+   in all these browsers before every Vaadin framework release. Screenshot
+   comparison as a part of regression testing see \ref{sec:screencompare},
+   brings confidence to the developer that Vaadin components will not change their appearance unexpectedly. 
    
    A server-side code runs as a servlet in a Java Web server, serving HTTP
-   requests.
-   The ``VaadinServlet'' is normally used as the servlet class. The servlet
-   receives client requests and interprets them as events for a particular user session.
+   requests. The servlet receives an HTTP requests from the client and
+   interprets them as events for a particular user session.
    Events are associated with User Interface (UI) components and delivered to
    the event listeners defined in the application. After processing a request
-   the servlet send a response back to the client and the client renders the
-   changes in UI received in the response. 
+   the servlet sends a HTTP response back to the client and the client renders
+   the changes in UI received in the response.
    
-   As mentioned before both client-side and server-side code in Vaadin is written
-   in Java. This positively influences the development process in the following
-   way:
+   The communication between client and server sides is handled by a component
+   connector. The main task of the connector is to send user interaction
+   with the widget to the server-side and receive state changes from the server-side 
+   and broadcast them to the widget see \ref{fig:vaadinClientCom}. 
+    
+	  \begin{figure}
+      	\includegraphics[width=0.75\textwidth]{vaadinClientCom}
+      	\caption{Vaadin client server communication}
+      	\label{fig:vaadinClientCom}
+      \end{figure}
+      
+   For client to server communication connector uses Remote Procedure
+   Calls(RPC) to the server-side. An RPC defines methods that can be called
+   through the ``ServerRpc'' interface. After RPC is called from the client side
+   it is serialized to a JavaScript Object Notation(JSON) and passed to the
+   server side as a part of HTTP request. A server-side component registers an
+   RCP handler which processes the RPC. 
+   
+   Server to client communication is done by using shared
+   state. Shared state can be accessed both from client-side and server-side,
+   but it is read-only on the client-side. When share state has changed it is
+   serialized and send to the client side as a HTTP response. When state change
+   occurs on the client side, the onStateChanged() method in the connector is called,
+   allowing to change the connected widget.
+   
+  
+   Vaadin framework handles all the client to server communication and provide
+   a Java API for the user both for client and server sides. This positively
+    influences the development process in the following way:
    \begin{itemize}
      \item The developer does not need to know several programming languages and one
     person may be involved in the developing of both a front-end and a back-end.
@@ -124,8 +152,8 @@
 		
 \section{Testing}
 		Nowadays some companies still rely on manual testing or ignore this
-		important part of software development at all. Such approach has several
-		sorrowful consequences:
+		important part of software development. Such approach has several
+		negative consequences:
 		\begin{itemize}
 			\item The developers are afraid of changing already written
 			code. Because they do not have a confidence that their changes would not 
