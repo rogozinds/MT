@@ -5,13 +5,13 @@
 		
 	  Static HTML Web sites are loosing their popularity, because users
 	  expect from modern Web sites more than just representing pictures and text.
-	  Generally, users willing to have a higly responsive application with different useful
-	  features, working in the Web. As a result Web applications are displacing Web
+	  Generally, users willing to have a highly responsive application with
+	  different useful features, working in the Web. As a result Web applications are displacing Web
 	  sites on the market.
 	  
 	   The difference of Web application from a Web site is the
 	 ``ability of a user to affect the state of the business logic on the
-	 server"[7]. In other words a user or client makes a request to the server,
+	 server"[7]. In other words a user or a client makes a request to a server,
 	 the server performs some actions (calculate, fetch data from database or
 	 external Web-service) and sends the response back to the client, which is rendered in the browser see
 	  figure \ref{fig:pic1}.
@@ -25,12 +25,12 @@
     	Client-server structure helps to distribute application tasks or workloads
     	between the service providers called servers, and service requestors,
     	called clients. Client-server model helps to separate client and server logic, as
-    	a result these parts can be independent and communicate via Application
-    	Programming Interface (API). Client server model grants several advantages:
+    	a result these parts can be independent and communicate via API. Client
+    	server model grants several advantages:
     	\begin{itemize}
     	  \item Client and server parts can be developed separately.
     	  \item The application may have several clients.
-    	  \item A client, for example Web browser, can be already created.
+    	  \item A client, for example a Web browser, can be already created.
     	\end{itemize}
     		
     	Client server model is closely related to a multi-tier architecture - the
@@ -84,39 +84,40 @@
    Nowadays there are a lot of standards and recommendations for Web
    developers published by World Wide Web Consortium (W3C) or  International
    Organization for Standardization (ISO), including recommendations for
-   markup languages (HTML, XML), Document Object Models(DOM) and standards
+   markup languages, Document Object Models (DOM) and standards
    for JavaScript. In spite of all the standards the difference between browsers
    and versions might be significant for the developer. The differences may vary
-   from supporting/not supporting different Cascading Style Sheets (CSS) tags
+   from supporting different Cascading Style Sheets (CSS) tags
    and HTML5 features, different event handling and simply bugs. Vaadin client Compiler and GWT provide a wide browser
    support, eliminating the difference between browsers, and helping a
    developer to concentrate on essential parts of the application, instead of
-   wasting time on cross-browser support. Vaadin uses screenshot comparison see
-   \ref{sec:screencompare} as a part of regression testing, which brings
+   wasting time on cross-browser support. Vaadin framework uses screenshot
+   comparison see \ref{sec:screencompare} as a part of regression testing, which brings
    confidence to the developer that Vaadin components will not change their
    appearance unexpectedly. 
    
    A server-side code runs as a servlet in a Java Web server, serving HTTP
    requests.
-   The VaadinServlet is normally used as the servlet class. The servlet receives client requests
-   and interprets them as events for a particular user session.
-   Events are associated with user interface components and delivered to the event listeners defined in the application.
-   If the User Interface (UI) logic makes changes to the server-side user
-   interface components, the servlet renders them in the Web browser by generating a response.
+   The ``VaadinServlet'' is normally used as the servlet class. The servlet
+   receives client requests and interprets them as events for a particular user session.
+   Events are associated with User Interface (UI) components and delivered to
+   the event listeners defined in the application. After processing a request
+   the servlet send a response back to the client and the client renders the
+   changes in UI received in the response. 
    
    As mentioned before both client-side and server-side code in Vaadin is written
    in Java. This positively influences the development process in the following
    way:
    \begin{itemize}
      \item The developer does not need to know several programming languages and one
-    person may be involved in the developing of both front-end and back-end. This
-    might be an important factor for small teams and speeds up the development
+    person may be involved in the developing of both a front-end and a back-end.
+    This might be an important factor for small teams and speeds up the development
     process.
    \item Vaadin brings the power of Java into the Web development. Due to
     TIOBE index \cite{tiobeIndex} Java and C are the two most popular programming
     languages since 2002. This fact allows developer to use a great amount of
     already-made solutions such as building tools Maven \cite{maven} and Ant
-    \cite{ant}, testing tools \cite{junit}, frameworks for concurrent
+    \cite{ant}, testing tools like JUnit \cite{junit}, frameworks for concurrent
     applications as Akka \cite{akka} and other libraries like Yodatime \cite{yodatime}, Guava \cite{guava} for different stages of development
     process.
   \end{itemize}  		

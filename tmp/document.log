@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.8)  30 OCT 2015 16:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.8)  3 NOV 2015 10:50
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -738,7 +738,7 @@ File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 
  (./background.tex
  2.
-<images/client.png, id=294, 963.6pt x 722.7pt>
+<images/client.png, id=297, 963.6pt x 722.7pt>
 File: images/client.png Graphic file (type png)
  <use images/client.png>
 Package pdftex.def Info: images/client.png used on input line 20.
@@ -750,13 +750,13 @@ Package pdftex.def Info: images/client.png used on input line 20.
 ]
 [4 <./images/client.png>] [5]
 
-LaTeX Warning: Citation `junit' on page 6 undefined on input line 119.
+LaTeX Warning: Citation `junit' on page 6 undefined on input line 120.
 
 
-LaTeX Warning: Citation `yodatime' on page 6 undefined on input line 120.
+LaTeX Warning: Citation `yodatime' on page 6 undefined on input line 121.
 
 
-LaTeX Warning: Citation `guava' on page 6 undefined on input line 120.
+LaTeX Warning: Citation `guava' on page 6 undefined on input line 121.
 
 [6]) [7]
 \openout2 = `webtesting.aux'.
@@ -783,7 +783,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:gmailexample' on page 12 undefined on input line 
 188.
 
-<images/gmail_example.png, id=430, 963.6pt x 504.88625pt>
+<images/gmail_example.png, id=433, 963.6pt x 504.88625pt>
 File: images/gmail_example.png Graphic file (type png)
 
 <use images/gmail_example.png>
@@ -814,7 +814,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:webdriver' on page 15 undefined on input line 19.
 
 
-<images/webdriver_structure.png, id=461, 501.875pt x 454.69875pt>
+<images/webdriver_structure.png, id=464, 501.875pt x 454.69875pt>
 File: images/webdriver_structure.png Graphic file (type png)
 
 <use images/webdriver_structure.png>
@@ -833,7 +833,7 @@ LaTeX Warning: Reference `fig:selnium_grid' on page 15 undefined on input line
 
 
 
-] <images/selenium_grid.png, id=468, 963.6pt x 722.7pt>
+] <images/selenium_grid.png, id=471, 963.6pt x 722.7pt>
 File: images/selenium_grid.png Graphic file (type png)
 
 <use images/selenium_grid.png>
@@ -884,7 +884,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:gerritTestbench' on page 27 undefined on input li
 ne 287.
 
-<images/gerrit1.png, id=565, 963.6pt x 722.7pt>
+<images/gerrit1.png, id=568, 963.6pt x 722.7pt>
 File: images/gerrit1.png Graphic file (type png)
  <use images/gerrit1.png>
 Package pdftex.def Info: images/gerrit1.png used on input line 301.
@@ -899,7 +899,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:classdiagram' on page 28 undefined on input line 
 318.
 
-<images/umlDiagram.png, id=571, 694.595pt x 508.90125pt>
+<images/umlDiagram.png, id=574, 694.595pt x 508.90125pt>
 File: images/umlDiagram.png Graphic file (type png)
 
 <use images/umlDiagram.png>
@@ -932,7 +932,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:clientServerTestbench' on page 33 undefined on in
 put line 29.
 
-<images/clientServerTestbench.png, id=638, 749.80125pt x 474.77374pt>
+<images/clientServerTestbench.png, id=641, 749.80125pt x 474.77374pt>
 File: images/clientServerTestbench.png Graphic file (type png)
 
 <use images/clientServerTestbench.png>
@@ -961,14 +961,14 @@ LaTeX Warning: Reference `fig:failedscreenmarked' on page 34 undefined on input
  line 64.
 
 [34 <./images/clientServerTestbench.png>]
-<images/screen_fail.png, id=655, 919.435pt x 571.13374pt>
+<images/screen_fail.png, id=658, 919.435pt x 571.13374pt>
 File: images/screen_fail.png Graphic file (type png)
 
 <use images/screen_fail.png>
 Package pdftex.def Info: images/screen_fail.png used on input line 68.
 (pdftex.def)             Requested size: 320.0935pt x 198.8366pt.
 
-<images/screen_fail_marked_error.png, id=656, 918.43124pt x 571.13374pt>
+<images/screen_fail_marked_error.png, id=659, 918.43124pt x 571.13374pt>
 File: images/screen_fail_marked_error.png Graphic file (type png)
 
 <use images/screen_fail_marked_error.png>
@@ -1014,7 +1014,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:filtertable' on page 39 undefined on input line 5
 9.
 
-<images/filtertable.png, id=716, 963.6pt x 271.0125pt>
+<images/filtertable.png, id=719, 963.6pt x 271.0125pt>
 File: images/filtertable.png Graphic file (type png)
 
 <use images/filtertable.png>
@@ -1114,10 +1114,10 @@ nts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sftt1200.pfb>
-Output written on document.pdf (61 pages, 1017553 bytes).
+Output written on document.pdf (61 pages, 1017837 bytes).
 PDF statistics:
- 1231 PDF objects out of 1440 (max. 8388607)
- 1119 compressed objects within 12 object streams
+ 1234 PDF objects out of 1440 (max. 8388607)
+ 1122 compressed objects within 12 object streams
  558 named destinations out of 1000 (max. 500000)
  392 words of extra memory for PDF output out of 10000 (max. 10000000)
 
