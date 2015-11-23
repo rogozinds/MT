@@ -8,12 +8,12 @@
 		
 		\section{Capture and Replay}
 		\label{sec:captureReplay}
-			C\&R Web testing is based on capture and replay automated
-			tools.  The software tester works with the Web
-			application modeling user behaviour, the capture/replay tool records the
-			whole session and generates the script, which can be executed later,
-			repeating same actions without humans participation. The main idea of C\&R
-			testing tools is to record a sequence of browsing steps, that can be
+			C\&R tools have been developed for testing the applications against graphical user interfaces. 
+			The software tester works with the Web application modeling user behaviour,
+			the capture/replay tool records the whole session and generates the script,
+			 which can be executed later,	repeating same actions without humans participation.
+			  The main idea of C\&R
+			testing tools is to record a sequence of user actions, that can be
 			automatically replayed later and save them in human readable format. Human
 			readable format is an important feature, because script editing might
 			 be useful to adjust failed scripts accordingly	to the changes of the Web page.
@@ -30,7 +30,8 @@ tool is Selenium IDE described in chapter\ref{ch:selenium}.
 The main advantage of C\&R, is that the tester does not
 require to have experience in coding. Building test cases with such tools
 is a simple task.
-On the contrary, maintaining C\&R tests is harder and more expensive.
+On the contrary, maintaining C\&R tests is harder and more
+expensive\cite{CaptureReplay7}.
 The main problem is that editing generated scripts is harder than editing
 scripts written by a software developer. The test cases are strongly coupled
 with Web pages and contain hard-coded values. These factors lead to the
@@ -53,9 +54,8 @@ arrays, sets, trees, graphs, logging and etc. Programmable tests are more
 flexible and powerful than C\&R tests and provide an opportunity to create
 parameterized tests - tests which can be executed multiple times with different arguments. 
 
-      Thought writing programmable tests is harder in
-      compare with C\&R and requires more experience and skills, programmable tests
-      provide more flexibility and scalability. The empirical study
+      Thought writing programmable tests is harder than C\&R and requires more
+      experience and skills, programmable tests provide more flexibility and scalability. The empirical study
        of developing tests for four different frameworks shows that the development of programmable tests is more time
       consuming (between 32\% and 112\%), but test maintenance requires less
       time (with a saving of 16\% and 51\%). As a result ``In general, programmable test cases are more
@@ -211,16 +211,15 @@ public class ValueChangeListenerTestClass {
 		  path to an element in the DOM.
 		\end{itemize}
 		
-		The efficiency between these strategies is a trad eoff between effeciency of
-		the test and its complexity for developer. The research of Maurizio Leotta
-		and Diego Clerissipaper in ``An Industrial Case Study about Web Page Element
-		Localization" ``shows that ID-based methods for locating Web page elements are
-		better than XPath methods''\cite{selenium4} showing that tests with search by
-		Xpath executed more than three times longer than same tests with searching
-		elements by Id. According to the same paper ID-based test require less
-		maintenance effort, than the XPath-based test suites. In fact using searching by id for static HTML Web pages with small
-		amount of elements works well, but having dynamically generated HTML with 
-		a lot of elements as in example \ref{fig:gmailexample} brings challenges.
+		The efficiency between these strategies is a trade-off between effeciency of
+		the test and its complexity for developer. An industrial case study shows that 
+		XPath methods for locating elements on a Web page take 
+		three times longer than same tests with searching
+    elements by id\cite{selenium4}. 
+	   Id-based tests for static HTML Web pages with small amount of elements
+	   is an optimal solution. On the contarary, in case of dynamically
+	   generated HTML with many elements as in example \ref{fig:gmailexample}
+	   searching elements by id is inappropriate.
 		
 		The biggest downside of searching by id strategy, is that every HTML element
 		should have a unique ID. If the Web pages has a dynamically generated content,
