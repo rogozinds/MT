@@ -1,8 +1,8 @@
 	\chapter {Selenium}
 	\label{ch:selenium}
-      Selenium is a set of different software tools each with different approach
-       to supporting test automation. The entire suite of tools allows many
-       options for locating UI elements and comparing expected test results
+      Selenium is a set of different software tools each with different
+      approaches to supporting test automation. The entire suite of tools allows
+      many options for locating UI elements and comparing expected test results
        against actual application behavior \cite{seleniumSite}.
        Selenium provides implementation both of C\&R \ref{sec:captureReplay}
        \ref{sec:programTests} and programmable tests models.  
@@ -51,7 +51,7 @@
 		\label{fig:selnium_grid}
 		\end{figure}
 		
-		Selenium Grid is published as a separate jar file, so to setup a test hub you
+		Selenium Grid is released as a separate jar file, so to setup a test hub you
 		only need to have JRE(Java Runtime Envirenment) installed. For starting hub
 		run selenium-server with hub parameter see \ref{lst:starthub}. For starting
 		a new node specify a ``webdriver'' parameter and the URL of the hub running
@@ -69,51 +69,14 @@
 		\end{lstlisting}
 		
 
-	To create a test suite for the Grid configuration created above see an
-	example \ref{lst:starthub2}. The basic steps are the following:
-	\begin{itemize}
-	  \item Specify a url of tested web page line 6.
-	  \item Specify a url of a hub line 7.
-	  \item Specify settings of the test, for example a browser line 8.
-	  \item Create an instance of remote webDriver line 9.
-	  \item Open a tested web page line 14.
-	  \item Compare actual value on a webpage with expected value line 15.
-	  \item Close web page line 20.
-	\end{itemize}
-	
-	\lstset{style=a1listing}
-	\begin{lstlisting} [caption=Selenium test example,label={lst:starthub2},language=java]
-public 	class TestExample throws MalformedURLException {
- 	WebDriver driver;
- 	 String UIUrl,nodeURL;
- 	 @BeforeTest public void setUp() {
- 	 	UIUrl="http://app.example.com/hellopage"; 
-		hubURL="http://192.168.1.2:5566/wd/hub";
-		DesiredCapabilities capability=DesiredCapabilities.firefox();
-		driver=new RemoteWebDriver(new URL(hubURL),capability);
-	}
-		
-	@Test
-	public void test1() {
-		driver.get(UIUrl);
-		Assert.assertEquals("Welcome",driver.getTitle());
-	}
-	
-	@AfterTest
-	public void afterTest() {
-		driver.quit();
-	}
-}
-	\end{lstlisting}
-
-	As it shown above setting up the basic configuration of Selenium Grid is fairly
-	easy. After you have opened the tested Web page with ``driver.get(UIUrl)'', you
-	can use ``Find Element" or ``Find Elements" methods with ``By" query object for
-	locating elements on the page. For example to find an element with a
-	class ``profile'' you need to use By.className query object see example
-	~\ref{lst:classSearch}. Selenium  supports searching elements by id, tag,
-	class, Xpath and all implications from section~\ref{sec:challenges} applies to it. 
-	There is no ideal strategy for searching the required element, a developer
+	After you have set up the basic configuration of Selenium Grid you can open a
+	tested Web page ``driver.get(UIUrl)'' and use ``Find Element" or ``Find
+	Elements" to get Web elements on your Web page see example
+	\ref{lst:starthub2}in the Appendix A. 
+	 Selenium  supports searching elements by id, tag, class, Xpath.
+	 For example to find an element with a class ``profile'' you need to use
+	 By.className query object see example ~\ref{lst:classSearch}. There is no
+	  ideal strategy for searching the required element, a developer
 	decides which one to choose based on requirements.
 	
 	\lstset{style=a1listing}

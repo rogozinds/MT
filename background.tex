@@ -70,9 +70,14 @@
    Client-side code is originally written in Java and then
    compiled to JavaScript using \emph{Vaadin Client Compiler}. Vaadin Client Compiler is based on Google
    Web Toolkt(GWT). The client-side code is responsible for rendering
-   the user interface and send user interaction to the server. Vaadin Client
-   Compiler has production and development modes. 
+   the user interface and send user interaction to the server. Vaadin allows
+   developing client-side modules, which run in a browser without server
+   communication. Client-side modules are used when there is no stable
+   connection, for example mobile applications or  higly responsive UI logic is
+   needed as in games. Client side module is compiled to Javascript and can be
+   loaded to any web page.
    
+   Vaadin Client Compiler has production and development modes. 
    In production mode Java  client-side code is compiled to one Javascript file. The script file in
    production mode is obfuscated, that is why reading or debugging it is nearly
    impossible. In production mode compilation should be called manually,
@@ -81,7 +86,7 @@
    is reloaded. GWT links Java classes  with a compiled Javascript and gives
    an opportunity to debug code in a browser.
   
-   Nowadays there are a lot of standards and recommendations for Web
+   Nowadays there are many standards and recommendations for Web
    developers published by World Wide Web Consortium (W3C) or  International
    Organization for Standardization (ISO), including recommendations for
    markup languages, Document Object Models (DOM) and standards
@@ -97,7 +102,8 @@
    versions, Firefox, Chrome, Safarin and Opera. Regression tests are run
    in all these browsers before every Vaadin framework release. Screenshot
    comparison as a part of regression testing see \ref{sec:screencompare},
-   brings confidence to the developer that Vaadin components will not change their appearance unexpectedly. 
+   brings confidence to the developer that Vaadin components will not change
+   their behaviour and appearance unexpectedly.
    
    A server-side code runs as a servlet in a Java Web server, serving HTTP
    requests. The servlet receives an HTTP requests from the client and
@@ -129,8 +135,9 @@
    state. Shared state can be accessed both from client-side and server-side,
    but it is read-only on the client-side. When share state has changed it is
    serialized and send to the client side as a HTTP response. When state change
-   occurs on the client side, the onStateChanged() method in the connector is called,
+   occurs on the client side, the ``onStateChanged()'' method in the connector is called,
    allowing to change the connected widget.
+   
    
   
    Vaadin framework handles all the client to server communication and provide

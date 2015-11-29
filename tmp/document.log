@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.8)  22 NOV 2015 19:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.6)  29 NOV 2015 19:48
 entering extended mode
  restricted \write18 enabled.
- Source specials enabled.
  %&-line parsing enabled.
 **document.tex
 (./document.tex
@@ -544,11 +543,7 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
-) (./document.aux (./intro.aux) (./background.aux) (./webtesting.aux) (./seleni
-um.aux)
-(./reasondeveloptestbench.aux) (./testbenchdevelop.aux)
-(./testbenchcompareselenium.aux) (./testbenchuse.aux) (./conclusion.aux)
-(./appendixA.aux) (./appendixB.aux))
+) (./document.aux)
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
@@ -567,8 +562,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 44.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 44.
@@ -659,7 +653,7 @@ LaTeX Info: Redefining \nameref on input line 44.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/tty_tut_logo.jpg, id=171, 632.3625pt x 94.3525pt>
+<images/tty_tut_logo.jpg, id=4, 632.3625pt x 94.3525pt>
 File: images/tty_tut_logo.jpg Graphic file (type jpg)
 
 <use images/tty_tut_logo.jpg>
@@ -699,42 +693,81 @@ File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) [2
 
 ]
-(./document.toc [3
 
-])
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
 \tf@toc=\write5
 \openout5 = `document.toc'.
 
- [4] (./document.lof)
+[3
+
+]
+
+Package hyperref Warning: old lof file detected, not used; run LaTeX again.
+
 \tf@lof=\write6
 \openout6 = `document.lof'.
 
- [5
+[4
 
-] (./document.lot)
+]
+
+Package hyperref Warning: old lot file detected, not used; run LaTeX again.
+
 \tf@lot=\write7
 \openout7 = `document.lot'.
 
- [6
+[5
 
-] [7
+] [6
 
 ]
 \openout2 = `intro.aux'.
 
-
-(./intro.tex
+ (./intro.tex
  1.
 [1
 
 
 
-]) [2]
+]
+
+LaTeX Warning: Reference `ch:background' on page 2 undefined on input line 62.
+
+
+LaTeX Warning: Reference `ch:Webtesting' on page 2 undefined on input line 63.
+
+
+LaTeX Warning: Reference `ch:selenium' on page 2 undefined on input line 65.
+
+
+LaTeX Warning: Reference `ch:reasontestbenchdevelopment' on page 2 undefined on
+ input line 66.
+
+
+LaTeX Warning: Reference `ch:testbenchdevelop' on page 2 undefined on input lin
+e 67.
+
+
+LaTeX Warning: Reference `ch:testbenchvsselenium' on page 2 undefined on input 
+line 68.
+
+
+LaTeX Warning: Reference `ch:testbenchuse' on page 2 undefined on input line 69
+.
+
+
+LaTeX Warning: Reference `ch:conclusion' on page 2 undefined on input line 71.
+
+) [2]
 \openout2 = `background.aux'.
 
  (./background.tex
  2.
-<images/client.png, id=298, 963.6pt x 722.7pt>
+
+LaTeX Warning: Reference `fig:pic1' on page 3 undefined on input line 17.
+
+<images/client.png, id=53, 963.6pt x 722.7pt>
 File: images/client.png Graphic file (type png)
  <use images/client.png>
 Package pdftex.def Info: images/client.png used on input line 20.
@@ -744,47 +777,28 @@ Package pdftex.def Info: images/client.png used on input line 20.
 
 
 ]
-[4 <./images/client.png>] [5]
-<images/vaadinClientCom.png, id=322, 663.47874pt x 581.17125pt>
-File: images/vaadinClientCom.png Graphic file (type png)
 
-<use images/vaadinClientCom.png>
-Package pdftex.def Info: images/vaadinClientCom.png used on input line 116.
-(pdftex.def)             Requested size: 320.0935pt x 280.38676pt.
- [6 <./images/vaadinClientCom.png>] [7])
-[8]
-\openout2 = `webtesting.aux'.
+LaTeX Warning: Citation `bookVaaidn' on page 4 undefined on input line 64.
 
- (./webtesting.tex
- 3.
-[9
+[4 <./images/client.png>]
 
-
-
-] [10] [11] [12] <images/gmail_example.png, id=445, 963.6pt x 504.88625pt>
-File: images/gmail_example.png Graphic file (type png)
-
-<use images/gmail_example.png>
-Package pdftex.def Info: images/gmail_example.png used on input line 199.
-(pdftex.def)             Requested size: 320.0935pt x 167.71463pt.
- [13] [14 <./images/gmail_example.png>]) [15]
-\openout2 = `selenium.aux'.
+LaTeX Warning: um.aux'.
 
 
 (./selenium.tex
  4.
-<images/webdriver_structure.png, id=479, 501.875pt x 454.69875pt>
+<images/webdriver_structure.png, id=404, 501.875pt x 454.69875pt>
 File: images/webdriver_structure.png Graphic file (type png)
 
 <use images/webdriver_structure.png>
 Package pdftex.def Info: images/webdriver_structure.png used on input line 25.
 (pdftex.def)             Requested size: 320.0935pt x 290.02098pt.
- [16
+ [14
 
 
 
 ]
-<images/selenium_grid.png, id=488, 963.6pt x 722.7pt>
+<images/selenium_grid.png, id=413, 963.6pt x 722.7pt>
 File: images/selenium_grid.png Graphic file (type png)
 
 <use images/selenium_grid.png>
@@ -796,14 +810,13 @@ File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
-) [17 <./images/webdriver_structure.png>] [18 <./images/selenium_grid.png>]) [1
-9]
+) [15 <./images/webdriver_structure.png>]) [16 <./images/selenium_grid.png>]
 \openout2 = `reasondeveloptestbench.aux'.
 
 
 (./reasondeveloptestbench.tex
  5.
-) [20
+) [17
 
 
 
@@ -812,32 +825,32 @@ File: lstlang1.sty 2013/08/26 1.5b listings language file
 
  (./testbenchdevelop.tex
  6.
-[21
+[18
 
 
 
-] [22] [23] [24]
+] [19] [20] [21]
 Overfull \hbox (1.45683pt too wide) in paragraph at lines 149--152
 []\T1/cmr/m/n/12 Trac is an en-hanced wiki and is-sue track-ing sys-tem for sof
 t-ware de-vel-op-ment projects.
  []
 
-[25] [26] [27] <images/gerrit1.png, id=586, 963.6pt x 722.7pt>
+[22] [23] [24] <images/gerrit1.png, id=489, 963.6pt x 722.7pt>
 File: images/gerrit1.png Graphic file (type png)
 
 <use images/gerrit1.png>
 Package pdftex.def Info: images/gerrit1.png used on input line 302.
 (pdftex.def)             Requested size: 320.0935pt x 240.06866pt.
- [28]
-<images/umlDiagram.png, id=592, 694.595pt x 508.90125pt>
+ [25]
+<images/umlDiagram.png, id=495, 694.595pt x 508.90125pt>
 File: images/umlDiagram.png Graphic file (type png)
 
 <use images/umlDiagram.png>
 Package pdftex.def Info: images/umlDiagram.png used on input line 322.
 (pdftex.def)             Requested size: 320.0935pt x 234.5245pt.
- [29 <./images/gerrit1.png>] [30 <./images/umlDiagram.png>]
+ [26 <./images/gerrit1.png>] [27 <./images/umlDiagram.png>]
 
-LaTeX Warning: Reference `sec:paralelTesting' on page 31 undefined on input lin
+LaTeX Warning: Reference `sec:paralelTesting' on page 28 undefined on input lin
 e 383.
 
 
@@ -845,23 +858,23 @@ Overfull \hbox (5.98299pt too wide) in paragraph at lines 396--397
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[31] [32]) [33]
+[28] [29]) [30]
 \openout2 = `testbenchcompareselenium.aux'.
 
  (./testbenchcompareselenium.tex
  7.
-<images/clientServerTestbench.png, id=661, 749.80125pt x 474.77374pt>
+<images/clientServerTestbench.png, id=565, 749.80125pt x 474.77374pt>
 File: images/clientServerTestbench.png Graphic file (type png)
 
 <use images/clientServerTestbench.png>
 Package pdftex.def Info: images/clientServerTestbench.png used on input line 32
 .
 (pdftex.def)             Requested size: 320.0935pt x 202.68535pt.
- [34
+ [31
 
 
 
-] [35 <./images/clientServerTestbench.png>] <images/screen_fail.png, id=680, 91
+] [32 <./images/clientServerTestbench.png>] <images/screen_fail.png, id=583, 91
 9.435pt x 571.13374pt>
 File: images/screen_fail.png Graphic file (type png)
 
@@ -869,53 +882,53 @@ File: images/screen_fail.png Graphic file (type png)
 Package pdftex.def Info: images/screen_fail.png used on input line 69.
 (pdftex.def)             Requested size: 320.0935pt x 198.8366pt.
 
-<images/screen_fail_marked_error.png, id=681, 918.43124pt x 571.13374pt>
+<images/screen_fail_marked_error.png, id=584, 918.43124pt x 571.13374pt>
 File: images/screen_fail_marked_error.png Graphic file (type png)
 
 <use images/screen_fail_marked_error.png>
 Package pdftex.def Info: images/screen_fail_marked_error.png used on input line
  76.
 (pdftex.def)             Requested size: 320.0935pt x 199.05447pt.
- [36 <./images/screen_fail.png> <./images/screen_fail_marked_error.png>]
+ [33 <./images/screen_fail.png> <./images/screen_fail_marked_error.png>]
 
-LaTeX Warning: Citation `sureFire' on page 37 undefined on input line 98.
+LaTeX Warning: Citation `sureFire' on page 34 undefined on input line 98.
 
-[37]) [38]
+[34]) [35]
 \openout2 = `testbenchuse.aux'.
 
  (./testbenchuse.tex
  8.
-[39
+[36
 
 
 
-] <images/filtertable.png, id=743, 963.6pt x 271.0125pt>
+] <images/filtertable.png, id=648, 963.6pt x 271.0125pt>
 File: images/filtertable.png Graphic file (type png)
 
 <use images/filtertable.png>
 Package pdftex.def Info: images/filtertable.png used on input line 62.
 (pdftex.def)             Requested size: 320.0935pt x 90.02574pt.
- [40 <./images/filtertable.png>] [41]) [42]
+ [37 <./images/filtertable.png>] [38]) [39]
 \openout2 = `conclusion.aux'.
 
 
 (./conclusion.tex
  9.
-) [43
+) [40
 
 
 
-] (./document.bbl [44
+] (./document.bbl [41
 
-] [45
+] [42
 
-]) [46]
+]) [43]
 \openout2 = `appendixA.aux'.
 
- (./appendixA.tex [47
+ (./appendixA.tex [44
 
-] [48] [49] [50]
-[51]) [52]
+] [45] [46] [47]
+[48] [49] [50]) [51]
 \openout2 = `appendixB.aux'.
 
  (./appendixB.texpdfTeX warning (ext4): destination with the same identifier (n
@@ -931,10 +944,10 @@ Overfull \hbox (17.96974pt too wide) in paragraph at lines 6--53
 
 LaTeX Warning: Float too large for page by 14.85672pt on input line 55.
 
-) [53
+) [52
 
 
-] [54]
+] [53]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
  (./document.aux (./intro.aux) (./background.aux) (./webtesting.aux) (./seleniu
@@ -952,31 +965,3088 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
  ) 
 Here is how much of TeX's memory you used:
- 12490 strings out of 493304
- 182054 string characters out of 6139871
+ 12475 strings out of 493304
+ 181713 string characters out of 6139871
  312171 words of memory out of 5000000
- 15089 multiletter control sequences out of 15000+600000
- 21246 words of font info for 47 fonts, out of 8000000 for 9000
+ 15088 multiletter control sequences out of 15000+600000
+ 22239 words of font info for 49 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,12n,95p,307b,1932s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
-fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf/fonts/type1/public/
-cm-super/sfbi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfit1000.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fo
-nts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sftt1200.pfb>
-Output written on document.pdf (62 pages, 1034557 bytes).
+fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfbi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfit1000.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfsl1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+tt1200.pfb>
+Output written on document.pdf (61 pages, 1066628 bytes).
 PDF statistics:
- 1260 PDF objects out of 1440 (max. 8388607)
- 1145 compressed objects within 12 object streams
- 567 named destinations out of 1000 (max. 500000)
+ 1246 PDF objects out of 1440 (max. 8388607)
+ 1130 compressed objects within 12 object streams
+ 552 named destinations out of 1000 (max. 500000)
  397 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+e `lst:appTestUI' on page 29 undefined on input line 435
+.
+
+
+LaTeX Warning: Reference `lst:appTestClass' on page 29 undefined on input line 
+436.
+
+
+LaTeX Warning: Reference `appendixA' on page 29 undefined on input line 436.
+
+
+LaTeX Warning: Reference `table:tickets' on page 29 undefined on input line 440
+.
+
+
+LaTeX Warning: Reference `appendixB' on page 29 undefined on input line 441.
+
+[29]
+
+LaTeX Warning: Reference `lst:mavenexample' on page 30 undefined on input line 
+449.
+
+
+LaTeX Warning: Citation `vaadinBlog' on page 30 undefined on input line 469.
+
+) [30]
+\openout2 = `testbenchcompareselenium.aux'.
+
+ (./testbenchcompareselenium.tex
+ 7.
+
+LaTeX Warning: Reference `lst:testbench1' on page 31 undefined on input line 11
+.
+
+
+LaTeX Warning: Reference `ch:reasontestbenchdevelopment' on page 31 undefined o
+n input line 19.
+
+
+LaTeX Warning: Reference `fig:clientServerTestbench' on page 31 undefined on in
+put line 29.
+
+<images/clientServerTestbench.png, id=268, 749.80125pt x 474.77374pt>
+File: images/clientServerTestbench.png Graphic file (type png)
+
+<use images/clientServerTestbench.png>
+Package pdftex.def Info: images/clientServerTestbench.png used on input line 32
+.
+(pdftex.def)             Requested size: 320.0935pt x 202.68535pt.
+ [31
+
+
+
+]
+
+LaTeX Warning: Reference `fig:failedscreen' on page 32 undefined on input line 
+65.
+
+
+LaTeX Warning: Reference `fig:failedscreenmarked' on page 32 undefined on input
+ line 65.
+
+[32 <./images/clientServerTestbench.png>]
+<images/screen_fail.png, id=289, 919.435pt x 571.13374pt>
+File: images/screen_fail.png Graphic file (type png)
+
+<use images/screen_fail.png>
+Package pdftex.def Info: images/screen_fail.png used on input line 69.
+(pdftex.def)             Requested size: 320.0935pt x 198.8366pt.
+
+<images/screen_fail_marked_error.png, id=290, 918.43124pt x 571.13374pt>
+File: images/screen_fail_marked_error.png Graphic file (type png)
+
+<use images/screen_fail_marked_error.png>
+Package pdftex.def Info: images/screen_fail_marked_error.png used on input line
+ 76.
+(pdftex.def)             Requested size: 320.0935pt x 199.05447pt.
+
+
+LaTeX Warning: Reference `lst:screenshotOnFailue' on page 33 undefined on input
+ line 82.
+
+[33 <./images/screen_fail.png> <./images/screen_fail_marked_error.png>]
+
+LaTeX Warning: Reference `ch:selenium' on page 34 undefined on input line 95.
+
+
+LaTeX Warning: Citation `sureFire' on page 34 undefined on input line 98.
+
+
+LaTeX Warning: Citation `junitParallelComputer' on page 34 undefined on input l
+ine 99.
+
+
+LaTeX Warning: Reference `lst:surefirePom' on page 34 undefined on input line 1
+01.
+
+
+LaTeX Warning: Reference `lst:starthub2' on page 34 undefined on input line 123
+.
+
+
+LaTeX Warning: Reference `lst:testBenchLocally' on page 34 undefined on input l
+ine 126.
+
+
+LaTeX Warning: Reference `lst:testBenchRunOnHub' on page 34 undefined on input 
+line 127.
+
+[34]) [35]
+\openout2 = `testbenchuse.aux'.
+
+ (./testbenchuse.tex
+ 8.
+
+LaTeX Warning: Reference `lst:screenshotOnFailue' on page 36 undefined on input
+ line 32.
+
+[36
+
+
+
+]
+
+LaTeX Warning: Reference `fig:filtertable' on page 37 undefined on input line 5
+9.
+
+<images/filtertable.png, id=348, 963.6pt x 271.0125pt>
+File: images/filtertable.png Graphic file (type png)
+
+<use images/filtertable.png>
+Package pdftex.def Info: images/filtertable.png used on input line 62.
+(pdftex.def)             Requested size: 320.0935pt x 90.02574pt.
+
+
+LaTeX Warning: Reference `lst:testbenchTest' on page 37 undefined on input line
+ 68.
+
+[37 <./images/filtertable.png>]
+
+LaTeX Warning: Reference `lst:scenario' on page 38 undefined on input line 94.
+
+
+LaTeX Warning: Reference `lst:testbenchTest' on page 38 undefined on input line
+ 113.
+
+
+LaTeX Warning: Reference `lst:jbehaveConfig' on page 38 undefined on input line
+ 117.
+
+[38]) [39]
+\openout2 = `conclusion.aux'.
+
+ (./conclusion.tex
+ 9.
+) [40
+
+
+
+] (./document.bbl [41
+
+] [42
+
+]) [43]
+\openout2 = `appendixA.aux'.
+
+ (./appendixA.tex [44
+
+] [45] [46] [47]
+[48]
+
+LaTeX Warning: Reference `lst:testbenchVaadin' on page 49 undefined on input li
+ne 252.
+
+[49] [50]) [51]
+\openout2 = `appendixB.aux'.
+
+ (./appendixB.texpdfTeX warning (ext4): destination with the same identifier (n
+ame{section.Alph0.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.3 \section{Appendix B}
+                        
+Overfull \hbox (17.96974pt too wide) in paragraph at lines 6--53
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 14.85672pt on input line 55.
+
+) [52
+
+
+] [53]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
+
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `document.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.265 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: document
+(./document.tex
+! Interruption.
+l.2 
+    \documentclass[12pt,a4paper,english%,twoside,openright
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \documentclass
+                  [12pt,a4paper,english%,twoside,openright
+? 
+! Interruption.
+\GenericError  ...                                
+                                                  \endgroup 
+l.2 \documentclass
+                  [12pt,a4paper,english%,twoside,openright
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 \usepackage
+                [english]{babel}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 \usepackage
+                [export]{adjustbox}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 \begin{document}
+                     
+? 
+File: images/tty_tut_logo.jpg Graphic file (type jpg)
+<use images/tty_tut_logo.jpg>
+Package pdftex.def Info: images/tty_tut_logo.jpg used on input line 51.
+(pdftex.def)             Requested size: 227.62204pt x 33.96254pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--71
+
+ []
+
+[1
+
+
+
+Non-PDF special ignored!]pdfTeX warning (ext4): destination with the same ident
+ifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.88 \chapter
+             *{Abstract} [0]
+Underfull \hbox (badness 10000) in paragraph at lines 90--98
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.107 \chapter
+              *{Preface} [1
+
+]pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.151 \tableofcontents
+                                                    % Create TOC [2
+
+]
+\tf@toc=\write8
+\openout8 = `document.toc'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.iii}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.155 \listoffigures
+                                                     % Optional: create the ...
+[3
+
+]
+\tf@lof=\write9
+\openout9 = `document.lof'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.iv}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.160 \listoftables
+                                                     % Optional: create the ...
+[4
+
+]
+\tf@lot=\write10
+\openout10 = `document.lot'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.v}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.174 \chapter
+              *{List of abbreviations and symbols} [5
+
+]pdfTeX warning (ext4): destination with the same identifier (name{page.vi}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.200 \cleardoublepage
+                       [6
+
+]
+\@input{intro.aux}
+\openout2 = `intro.aux'.
+
+(./intro.tex
+Appendix A.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.38 
+      [1
+
+
+
+]
+
+LaTeX Warning: Reference `ch:background' on page 2 undefined on input line 62.
+
+
+LaTeX Warning: Reference `ch:Webtesting' on page 2 undefined on input line 63.
+
+
+LaTeX Warning: Reference `ch:selenium' on page 2 undefined on input line 65.
+
+
+LaTeX Warning: Reference `ch:reasontestbenchdevelopment' on page 2 undefined on
+ input line 66.
+
+
+LaTeX Warning: Reference `ch:testbenchdevelop' on page 2 undefined on input lin
+e 67.
+
+
+LaTeX Warning: Reference `ch:testbenchvsselenium' on page 2 undefined on input 
+line 68.
+
+
+LaTeX Warning: Reference `ch:testbenchuse' on page 2 undefined on input line 69
+.
+
+
+LaTeX Warning: Reference `ch:conclusion' on page 2 undefined on input line 71.
+
+)pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.211 \include{intro}
+                      [2]
+\@input{background.aux}
+\openout2 = `background.aux'.
+
+(./background.tex
+Appendix B.
+
+LaTeX Warning: Reference `fig:pic1' on page 3 undefined on input line 17.
+
+File: images/client.png Graphic file (type png)
+<use images/client.png>
+Package pdftex.def Info: images/client.png used on input line 20.
+(pdftex.def)             Requested size: 320.0935pt x 240.06866pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.45     	   \item D
+                    ata tier - controls databases or other resources, provid...
+[3
+
+
+
+]
+
+LaTeX Warning: Citation `bookVaaidn' on page 4 undefined on input line 64.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.69 
+      [4]
+
+LaTeX Warning: Reference `sec:screencompare' on page 5 undefined on input line 
+104.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.115 
+       [5]
+
+LaTeX Warning: Reference `fig:vaadinClientCom' on page 6 undefined on input lin
+e 119.
+
+File: images/vaadinClientCom.png Graphic file (type png)
+<use images/vaadinClientCom.png>
+Package pdftex.def Info: images/vaadinClientCom.png used on input line 122.
+(pdftex.def)             Requested size: 320.0935pt x 280.38676pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.140 
+       [6]
+
+LaTeX Warning: Citation `tiobeIndex' on page 7 undefined on input line 152.
+
+
+LaTeX Warning: Citation `maven' on page 7 undefined on input line 154.
+
+
+LaTeX Warning: Citation `ant' on page 7 undefined on input line 155.
+
+
+LaTeX Warning: Citation `junit' on page 7 undefined on input line 155.
+
+
+LaTeX Warning: Citation `akka' on page 7 undefined on input line 156.
+
+
+LaTeX Warning: Citation `yodatime' on page 7 undefined on input line 156.
+
+
+LaTeX Warning: Citation `guava' on page 7 undefined on input line 156.
+
+
+LaTeX Warning: Citation `cleancode' on page 7 undefined on input line 170.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.184 
+       [7]
+
+LaTeX Warning: Citation `Xu1' on page 8 undefined on input line 186.
+
+
+LaTeX Warning: Reference `ch:Webtesting' on page 8 undefined on input line 216.
+
+
+)pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.221 \include{background}
+                           [8]
+\@input{webtesting.aux}
+\openout2 = `webtesting.aux'.
+
+(./webtesting.tex
+Appendix C.
+
+LaTeX Warning: Citation `CaptureReplay7' on page 9 undefined on input line 21.
+
+
+LaTeX Warning: Reference `ch:selenium' on page 9 undefined on input line 27.
+
+
+LaTeX Warning: Citation `CaptureReplay7' on page 9 undefined on input line 33.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.39 
+      [9
+
+
+
+]
+
+LaTeX Warning: Citation `CaptureReplay7' on page 10 undefined on input line 62.
+
+
+
+LaTeX Warning: Reference `lst:vaadintest' on page 10 undefined on input line 75
+.
+
+
+LaTeX Warning: Reference `lst:vaadintest2' on page 10 undefined on input line 7
+6.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77 
+      [10]
+
+LaTeX Warning: Reference `sec:screencompare' on page 11 undefined on input line
+ 92.
+
+
+LaTeX Warning: Reference `fig:gmailexample' on page 11 undefined on input line 
+97.
+
+File: images/gmail_example.png Graphic file (type png)
+<use images/gmail_example.png>
+Package pdftex.def Info: images/gmail_example.png used on input line 108.
+(pdftex.def)             Requested size: 320.0935pt x 167.71463pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.119 		  \item B
+                 y XPath - combines previous strategies and builds a search
+[11]
+
+LaTeX Warning: Citation `selenium4' on page 12 undefined on input line 127.
+
+
+LaTeX Warning: Reference `fig:gmailexample' on page 12 undefined on input line 
+130.
+
+
+LaTeX Warning: Reference `ch:selenium' on page 12 undefined on input line 147.
+
+
+LaTeX Warning: Reference `sec:captureReplay' on page 12 undefined on input line
+ 148.
+
+
+LaTeX Warning: Reference `sec:programTests' on page 12 undefined on input line 
+149.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.152 
+       [12])pdfTeX warning (ext4): destination with the same identifier (name{p
+age.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.222 \include{webtesting}
+                           [13]
+\@input{selenium.aux}
+\openout2 = `selenium.aux'.
+
+(./selenium.tex
+Appendix D.
+
+LaTeX Warning: Citation `seleniumSite' on page 14 undefined on input line 6.
+
+
+LaTeX Warning: Reference `sec:captureReplay' on page 14 undefined on input line
+ 7.
+
+
+LaTeX Warning: Reference `sec:programTests' on page 14 undefined on input line 
+8.
+
+
+LaTeX Warning: Reference `lst:capturereplay' on page 14 undefined on input line
+ 14.
+
+
+LaTeX Warning: Reference `appendixA' on page 14 undefined on input line 16.
+
+
+LaTeX Warning: Reference `fig:webdriver' on page 14 undefined on input line 19.
+
+
+File: images/webdriver_structure.png Graphic file (type png)
+<use images/webdriver_structure.png>
+Package pdftex.def Info: images/webdriver_structure.png used on input line 25.
+(pdftex.def)             Requested size: 320.0935pt x 290.02098pt.
+
+
+LaTeX Warning: Reference `fig:selnium_grid' on page 14 undefined on input line 
+41.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.46 
+      [14
+
+
+
+]
+File: images/selenium_grid.png Graphic file (type png)
+ <use images/selenium_grid.png>
+Package pdftex.def Info: images/selenium_grid.png used on input line 49.
+(pdftex.def)             Requested size: 320.0935pt x 240.06866pt.
+
+
+LaTeX Warning: Reference `lst:starthub' on page 15 undefined on input line 56.
+
+
+LaTeX Warning: Reference `lst:startnode' on page 15 undefined on input line 58.
+
+
+
+LaTeX Warning: Reference `lst:starthub2' on page 15 undefined on input line 75.
+
+
+
+LaTeX Warning: Reference `lst:classSearch' on page 15 undefined on input line 7
+8.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.81 
+      [15])pdfTeX warning (ext4): destination with the same identifier (name{pa
+ge.16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.223 \include{selenium}
+                         [16]
+\@input{reasondeveloptestbench.aux}
+\openout2 = `reasondeveloptestbench.aux'.
+
+(./reasondeveloptestbench.tex
+Appendix E.
+
+LaTeX Warning: Reference `ch:selenium' on page 17 undefined on input line 3.
+
+
+LaTeX Warning: Reference `lst:seleniumVaadin' on page 17 undefined on input lin
+e 23.
+
+
+LaTeX Warning: Reference `appendixA' on page 17 undefined on input line 23.
+
+
+LaTeX Warning: Reference `lst:seleniumVaadin' on page 17 undefined on input lin
+e 32.
+
+
+LaTeX Warning: Reference `lst:testbenchVaadin' on page 17 undefined on input li
+ne 33.
+
+)pdfTeX warning (ext4): destination with the same identifier (name{page.17}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.224 \include{reasondeveloptestbench}
+                                       [17
+
+
+
+]
+\@input{testbenchdevelop.aux}
+\openout2 = `testbenchdevelop.aux'.
+
+(./testbenchdevelop.tex
+Appendix F.
+pdfTeX warning (ext4): destination with the same identifier (name{page.18}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36   \textbf{Scrum master}
+                             - a person who should help the team to increase...
+[18
+
+
+
+]pdfTeX warning (ext4): destination with the same identifier (name{page.19}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.73 
+      [19]
+
+LaTeX Warning: Reference `sec:toolsused' on page 20 undefined on input line 76.
+
+
+
+LaTeX Warning: Citation `cleancode' on page 20 undefined on input line 88.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.20}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.108     \item c
+                 ompile - compiles the source code of the project. [20]pdfTeX w
+arning (ext4): destination with the same identifier (name{page.21}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.141   F
+         inally, you have a set of predefined configurations for your applic...
+[21]
+Overfull \hbox (1.45683pt too wide) in paragraph at lines 149--152
+\T1/cmr/m/n/12 Trac is an en-hanced wiki and is-sue track-ing sys-tem for soft-
+ware de-vel-op-ment projects.
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.22}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.183 
+       [22]pdfTeX warning (ext4): destination with the same identifier (name{pa
+ge.23}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.223 
+       [23]
+
+LaTeX Warning: Reference `sec:gerrit' on page 24 undefined on input line 245.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.24}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.259 
+       [24]
+
+LaTeX Warning: Reference `fig:gerritTestbench' on page 25 undefined on input li
+ne 287.
+
+File: images/gerrit1.png Graphic file (type png)
+<use images/gerrit1.png>
+Package pdftex.def Info: images/gerrit1.png used on input line 302.
+(pdftex.def)             Requested size: 320.0935pt x 240.06866pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.25}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.306 
+       [25]
+
+LaTeX Warning: Reference `fig:classdiagram' on page 26 undefined on input line 
+319.
+
+File: images/umlDiagram.png Graphic file (type png)
+<use images/umlDiagram.png>
+Package pdftex.def Info: images/umlDiagram.png used on input line 322.
+(pdftex.def)             Requested size: 320.0935pt x 234.5245pt.
+
+
+LaTeX Warning: Reference `lst:domexample' on page 26 undefined on input line 33
+6.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.26}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.340 ...imple DOM example,label={lst:domexample}]
+                                                   [26]
+
+LaTeX Warning: Reference `lst:searchButtons' on page 27 undefined on input line
+ 356.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.27}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.359 ...or all buttons,label={lst:searchButtons}]
+                                                   [27]
+
+LaTeX Warning: Reference `lst:searchOkButtons' on page 28 undefined on input li
+ne 365.
+
+
+LaTeX Warning: Reference `sec:paralelTesting' on page 28 undefined on input lin
+e 383.
+
+
+LaTeX Warning: Reference `lst:specificExample' on page 28 undefined on input li
+ne 392.
+
+
+Overfull \hbox (5.98299pt too wide) in paragraph at lines 396--397
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+LaTeX Warning: Reference `lst:genericExample' on page 28 undefined on input lin
+e 401.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.28}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.402 
+       [28]
+
+LaTeX Warning: Reference `lst:appTestUI' on page 29 undefined on input line 435
+.
+
+
+LaTeX Warning: Reference `lst:appTestClass' on page 29 undefined on input line 
+436.
+
+
+LaTeX Warning: Reference `appendixA' on page 29 undefined on input line 436.
+
+
+LaTeX Warning: Reference `table:tickets' on page 29 undefined on input line 440
+.
+
+
+LaTeX Warning: Reference `appendixB' on page 29 undefined on input line 441.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.29}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.443 T
+       o improve User Experience (UX) we have tried to reduce an amount of
+[29]
+
+LaTeX Warning: Reference `lst:mavenexample' on page 30 undefined on input line 
+449.
+
+
+LaTeX Warning: Citation `vaadinBlog' on page 30 undefined on input line 469.
+
+)pdfTeX warning (ext4): destination with the same identifier (name{page.30}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.225 \include{testbenchdevelop}
+                                 [30]
+\@input{testbenchcompareselenium.aux}
+\openout2 = `testbenchcompareselenium.aux'.
+
+(./testbenchcompareselenium.tex
+Appendix G.
+
+LaTeX Warning: Reference `lst:testbench1' on page 31 undefined on input line 11
+.
+
+
+LaTeX Warning: Reference `ch:reasontestbenchdevelopment' on page 31 undefined o
+n input line 19.
+
+
+LaTeX Warning: Reference `fig:clientServerTestbench' on page 31 undefined on in
+put line 29.
+
+File: images/clientServerTestbench.png Graphic file (type png)
+<use images/clientServerTestbench.png>
+Package pdftex.def Info: images/clientServerTestbench.png used on input line 32
+.
+(pdftex.def)             Requested size: 320.0935pt x 202.68535pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.31}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.43 
+      [31
+
+
+
+]
+
+LaTeX Warning: Reference `fig:failedscreen' on page 32 undefined on input line 
+65.
+
+
+LaTeX Warning: Reference `fig:failedscreenmarked' on page 32 undefined on input
+ line 65.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.32}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.66 
+      [32]
+File: images/screen_fail.png Graphic file (type png)
+ <use images/screen_fail.png>
+Package pdftex.def Info: images/screen_fail.png used on input line 69.
+(pdftex.def)             Requested size: 320.0935pt x 198.8366pt.
+File: images/screen_fail_marked_error.png Graphic file (type png)
+
+<use images/screen_fail_marked_error.png>
+Package pdftex.def Info: images/screen_fail_marked_error.png used on input line
+ 76.
+(pdftex.def)             Requested size: 320.0935pt x 199.05447pt.
+
+
+LaTeX Warning: Reference `lst:screenshotOnFailue' on page 33 undefined on input
+ line 82.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.33}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.89 public 
+            ScreenshotOnFailureRule screenshotOnFailureRule = [33]
+
+LaTeX Warning: Reference `ch:selenium' on page 34 undefined on input line 95.
+
+
+LaTeX Warning: Citation `sureFire' on page 34 undefined on input line 98.
+
+
+LaTeX Warning: Citation `junitParallelComputer' on page 34 undefined on input l
+ine 99.
+
+
+LaTeX Warning: Reference `lst:surefirePom' on page 34 undefined on input line 1
+01.
+
+
+LaTeX Warning: Reference `lst:starthub2' on page 34 undefined on input line 123
+.
+
+
+LaTeX Warning: Reference `lst:testBenchLocally' on page 34 undefined on input l
+ine 126.
+
+
+LaTeX Warning: Reference `lst:testBenchRunOnHub' on page 34 undefined on input 
+line 127.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.34}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.136 	@Test
+             [34])pdfTeX warning (ext4): destination with the same identifier (
+name{page.35}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.226 \include {testbenchcompareselenium}
+                                          [35]
+\@input{testbenchuse.aux}
+\openout2 = `testbenchuse.aux'.
+
+(./testbenchuse.tex
+Appendix H.
+
+LaTeX Warning: Reference `lst:screenshotOnFailue' on page 36 undefined on input
+ line 32.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.36}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.37 E
+      specially in agile development when work is done in small iterations/c...
+[36
+
+
+
+]
+
+LaTeX Warning: Reference `fig:filtertable' on page 37 undefined on input line 5
+9.
+
+File: images/filtertable.png Graphic file (type png)
+<use images/filtertable.png>
+Package pdftex.def Info: images/filtertable.png used on input line 62.
+(pdftex.def)             Requested size: 320.0935pt x 90.02574pt.
+
+
+LaTeX Warning: Reference `lst:testbenchTest' on page 37 undefined on input line
+ 68.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.37}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79 assertEquals(
+                  row.getCell(0).getValue(),"special"); [37]
+
+LaTeX Warning: Reference `lst:scenario' on page 38 undefined on input line 94.
+
+
+LaTeX Warning: Reference `lst:testbenchTest' on page 38 undefined on input line
+ 113.
+
+
+LaTeX Warning: Reference `lst:jbehaveConfig' on page 38 undefined on input line
+ 117.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.38}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.126 
+       [38])pdfTeX warning (ext4): destination with the same identifier (name{p
+age.39}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.227 \include {testbenchuse}
+                              [39]
+\@input{conclusion.aux}
+\openout2 = `conclusion.aux'.
+
+(./conclusion.tex
+Appendix I.
+)pdfTeX warning (ext4): destination with the same identifier (name{page.40}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.228 \include{conclusion}
+                           [40
+
+
+
+]
+\citation{*}
+\bibstyle{unsrt}
+\bibdata{masterthesis}
+No file document.bbl.
+pdfTeX warning (ext4): destination with the same identifier (name{page.41}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.263   \include{appendixA}
+                            [41
+
+
+\@writefile{toc}{\contentsline {section}{\numberline {I.1}Discussion and Conclu
+ssion}{41}{section.I.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {I.1.1}Summary}{41}{sub
+section.I.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {I.1.2}Advantages and d
+isadvantages}{41}{subsection.I.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {I.1.3}Future work}{41}
+{subsection.I.1.3}}
+]
+\@input{appendixA.aux}
+\openout2 = `appendixA.aux'.
+
+(./appendixA.texpdfTeX warning (ext4): destination with the same identifier (na
+me{section.Alph0.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.3 \section{Appendix A}
+                        pdfTeX warning (ext4): destination with the same identi
+fier (name{lstlisting.Alph0.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.7 ...Test Web Page class,label={lst:vaadintest}]
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{lstnumber.1.1}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.8 public 
+           class TestWebPageClass {pdfTeX warning (ext4): destination with the 
+same identifier (name{lstnumber.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9   static 
+             final String ASSERT_ELEM_ID="assertElementId";pdfTeX warning (ext4
+): destination with the same identifier (name{lstnumber.1.3}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.10   static 
+              Map<AbstractElement,String> map = new HashMap();pdfTeX warning (e
+xt4): destination with the same identifier (name{lstnumber.1.4}) has been alrea
+dy used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.11   static 
+               {pdfTeX warning (ext4): destination with the same identifier (na
+me{lstnumber.1.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12          map.
+                  put(new TextField(),"textField");pdfTeX warning (ext4): desti
+nation with the same identifier (name{lstnumber.1.6}) has been already used, du
+plicate ignored
+<to be read again> 
+                   \relax 
+l.13          map.
+                  put(new ComboBox(), "combobox");pdfTeX warning (ext4): destin
+ation with the same identifier (name{lstnumber.1.7}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.14   }
+        pdfTeX warning (ext4): destination with the same identifier (name{lstnu
+mber.1.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.16   TextField 
+                 assertionElement=new TextField();pdfTeX warning (ext4): destin
+ation with the same identifier (name{lstnumber.1.9}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.16   TextField 
+                 assertionElement=new TextField();pdfTeX warning (ext4): destin
+ation with the same identifier (name{lstnumber.1.10}) has been already used, du
+plicate ignored
+<to be read again> 
+                   \relax 
+l.17   public 
+              void createTestWebPage () {pdfTeX warning (ext4): destination wit
+h the same identifier (name{lstnumber.1.11}) has been already used, duplicate i
+gnored
+<to be read again> 
+                   \relax 
+l.18     Iterator 
+                  it = classToAssertValue.entrySet().iterator();pdfTeX warning 
+(ext4): destination with the same identifier (name{lstnumber.1.12}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.19     while 
+               (it.hasNext()) {pdfTeX warning (ext4): destination with the same
+ identifier (name{lstnumber.1.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20      it.
+             getKey().setId(it.getValue());pdfTeX warning (ext4): destination w
+ith the same identifier (name{lstnumber.1.14}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.21      addElementToWebPage(
+                              it.getKey());pdfTeX warning (ext4): destination w
+ith the same identifier (name{lstnumber.1.15}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.22      it.
+             getKey().setValueChangeListener(event-> {pdfTeX warning (ext4): de
+stination with the same identifier (name{lstnumber.1.16}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.23        assertionElement.
+                             setValue(it.getValue());pdfTeX warning (ext4): des
+tination with the same identifier (name{lstnumber.1.17}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.24      });
+             pdfTeX warning (ext4): destination with the same identifier (name{
+lstnumber.1.18}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.25     }
+          pdfTeX warning (ext4): destination with the same identifier (name{lst
+number.1.19}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27     addAssertElement(
+                          );pdfTeX warning (ext4): destination with the same id
+entifier (name{lstnumber.1.20}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27     addAssertElement(
+                          );pdfTeX warning (ext4): destination with the same id
+entifier (name{lstnumber.1.21}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.28   }
+        pdfTeX warning (ext4): destination with the same identifier (name{lstnu
+mber.1.22}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.30     public 
+                static <AbstractElement,String> getMap() {pdfTeX warning (ext4)
+: destination with the same identifier (name{lstnumber.1.23}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.30     public 
+                static <AbstractElement,String> getMap() {pdfTeX warning (ext4)
+: destination with the same identifier (name{lstnumber.1.24}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.31       return 
+                  map;pdfTeX warning (ext4): destination with the same identifi
+er (name{lstnumber.1.25}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.32     }
+          pdfTeX warning (ext4): destination with the same identifier (name{lst
+number.1.26}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.33 }
+      pdfTeX warning (ext4): destination with the same identifier (name{lstlist
+ing.Alph0.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.37 ...aption=Test class,label={lst:vaadintest2}]
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{lstnumber.2.1}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.38 public 
+            class ValueChangeListenerTestClass {pdfTeX warning (ext4): destinat
+ion with the same identifier (name{lstnumber.2.2}) has been already used, dupli
+cate ignored
+<to be read again> 
+                   \relax 
+l.39   <A
+         bstractElement,String> map=TestWebPageClass.getMap();pdfTeX warning (e
+xt4): destination with the same identifier (name{lstnumber.2.3}) has been alrea
+dy used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40   String 
+              assertElementId=TestWebPageClass.ASSERT_ELEM_ID;pdfTeX warning (e
+xt4): destination with the same identifier (name{lstnumber.2.4}) has been alrea
+dy used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.41   UIElement 
+                 assertElement=findElementById(assertElementId);pdfTeX warning 
+(ext4): destination with the same identifier (name{lstnumber.2.5}) has been alr
+eady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.43   @Test
+            pdfTeX warning (ext4): destination with the same identifier (name{l
+stnumber.2.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.43   @Test
+            pdfTeX warning (ext4): destination with the same identifier (name{l
+stnumber.2.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.44   public 
+              void testValueChangeListener() {pdfTeX warning (ext4): destinatio
+n with the same identifier (name{lstnumber.2.8}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.45     openWebPage(
+                     );pdfTeX warning (ext4): destination with the same identif
+ier (name{lstnumber.2.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.46     Iterator 
+                  it = map.entrySet().iterator();pdfTeX warning (ext4): destina
+tion with the same identifier (name{lstnumber.2.10}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.48     while 
+               (it.hasNext()) {pdfTeX warning (ext4): destination with the same
+ identifier (name{lstnumber.2.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.48     while 
+               (it.hasNext()) {pdfTeX warning (ext4): destination with the same
+ identifier (name{lstnumber.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49       Map.
+               Entry pair = (Map.Entry)it.next();pdfTeX warning (ext4): destina
+tion with the same identifier (name{lstnumber.2.13}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.50       UIElement 
+                     elem=findElementById(map.getValue());pdfTeX warning (ext4)
+: destination with the same identifier (name{lstnumber.2.14}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.51       elem.
+                setValue(``foo'');pdfTeX warning (ext4): destination with the s
+ame identifier (name{lstnumber.2.15}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.52       String 
+                  assertMessage=``Element with id=''+pair.getValue()pdfTeX warn
+ing (ext4): destination with the same identifier (name{page.42}) has been alrea
+dy used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53           + 
+                 ``has wrong value''; [42
+
+]pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.2.
+16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53           + 
+                 ``has wrong value'';pdfTeX warning (ext4): destination with th
+e same identifier (name{lstnumber.2.17}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.55       Assert.
+                  assertEquals(assertMessage,assertElement.getValue(),pdfTeX wa
+rning (ext4): destination with the same identifier (name{lstnumber.2.18}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.55       Assert.
+                  assertEquals(assertMessage,assertElement.getValue(),pdfTeX wa
+rning (ext4): destination with the same identifier (name{lstnumber.2.19}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.56           pair.
+                    getValue);pdfTeX warning (ext4): destination with the same 
+identifier (name{lstnumber.2.20}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.57       }
+            pdfTeX warning (ext4): destination with the same identifier (name{l
+stnumber.2.21}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58     }
+          pdfTeX warning (ext4): destination with the same identifier (name{lst
+number.2.22}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.59 }
+      pdfTeX warning (ext4): destination with the same identifier (name{lstlist
+ing.Alph0.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.66 ...g Selenium IDE ,label={lst:capturereplay}]
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{lstnumber.3.1}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.67 <t
+       r>pdfTeX warning (ext4): destination with the same identifier (name{lstn
+umber.3.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68   <t
+         d>open</td>pdfTeX warning (ext4): destination with the same identifier
+ (name{lstnumber.3.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.69   <t
+         d>pdfTeX warning (ext4): destination with the same identifier (name{ls
+tnumber.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.70     /t
+           utorials/selenium/selenium_record_replay.htmpdfTeX warning (ext4): d
+estination with the same identifier (name{lstnumber.3.5}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.71   </t
+          d>pdfTeX warning (ext4): destination with the same identifier (name{l
+stnumber.3.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.72   <t
+         d>type</td>pdfTeX warning (ext4): destination with the same identifier
+ (name{lstnumber.3.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.73   <t
+         d>id=number1</td>pdfTeX warning (ext4): destination with the same iden
+tifier (name{lstnumber.3.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.74   <t
+         d>123</td>pdfTeX warning (ext4): destination with the same identifier 
+(name{lstnumber.3.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.75 </t
+        r>pdfTeX warning (ext4): destination with the same identifier (name{lst
+number.3.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.76 <t
+       r>pdfTeX warning (ext4): destination with the same identifier (name{lstn
+umber.3.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77   <t
+         d>type</td>pdfTeX warning (ext4): destination with the same identifier
+ (name{lstnumber.3.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78   <t
+         d>id=number2</td>pdfTeX warning (ext4): destination with the same iden
+tifier (name{lstnumber.3.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79   <t
+         d>123</td>pdfTeX warning (ext4): destination with the same identifier 
+(name{lstnumber.3.14}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.80 </t
+        r>pdfTeX warning (ext4): destination with the same identifier (name{lst
+number.3.15}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.81 <t
+       r>pdfTeX warning (ext4): destination with the same identifier (name{lstn
+umber.3.16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82   <t
+         d>click</td>pdfTeX warning (ext4): destination with the same identifie
+r (name{lstnumber.3.17}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83   <t
+         d>id=add</td>pdfTeX warning (ext4): destination with the same identifi
+er (name{lstnumber.3.18}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.84   <t
+         d></td>pdfTeX warning (ext4): destination with the same identifier (na
+me{lstnumber.3.19}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.85 </t
+        r>pdfTeX warning (ext4): destination with the same identifier (name{lst
+number.3.20}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.86 <t
+       r>pdfTeX warning (ext4): destination with the same identifier (name{lstn
+umber.3.21}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87   <t
+         d>verifyValue</td>pdfTeX warning (ext4): destination with the same ide
+ntifier (name{lstnumber.3.22}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.88   <t
+         d>id=total</td>pdfTeX warning (ext4): destination with the same identi
+fier (name{lstnumber.3.23}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.89   <t
+         d>246</td>pdfTeX warning (ext4): destination with the same identifier 
+(name{lstnumber.3.24}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.90 </t
+        r>pdfTeX warning (ext4): destination with the same identifier (name{lst
+listing.Alph0.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.94 ...ample,label={lst:starthub2},language=java]
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{lstnumber.4.1}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.95 public 
+             class TestExample throws MalformedURLException {pdfTeX warning (ex
+t4): destination with the same identifier (name{lstnumber.4.2}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.96   WebDriver 
+                 driver;pdfTeX warning (ext4): destination with the same identi
+fier (name{lstnumber.4.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.97    String 
+               UIUrl,nodeURL;pdfTeX warning (ext4): destination with the same i
+dentifier (name{lstnumber.4.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.98    @BeforeTest 
+                    public void setUp() {pdfTeX warning (ext4): destination wit
+h the same identifier (name{lstnumber.4.5}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.99     UIUrl=
+               "http://app.example.com/hellopage";pdfTeX warning (ext4): destin
+ation with the same identifier (name{lstnumber.4.6}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.100     hubURL=
+                 "http://192.168.1.2:5566/wd/hub";pdfTeX warning (ext4): destin
+ation with the same identifier (name{lstnumber.4.7}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.101     DesiredCapabilities 
+                              capability=DesiredCapabilities.firefox();pdfTeX w
+arning (ext4): destination with the same identifier (name{lstnumber.4.8}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.102     driver=
+                 new RemoteWebDriver(new URL(hubURL),capability);pdfTeX warning
+ (ext4): destination with the same identifier (name{page.43}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.103   }
+          [43]pdfTeX warning (ext4): destination with the same identifier (name
+{lstnumber.4.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.103   }
+         pdfTeX warning (ext4): destination with the same identifier (name{lstn
+umber.4.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.105   @Test
+             pdfTeX warning (ext4): destination with the same identifier (name{
+lstnumber.4.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.105   @Test
+             pdfTeX warning (ext4): destination with the same identifier (name{
+lstnumber.4.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.106   public 
+               void test1() {pdfTeX warning (ext4): destination with the same i
+dentifier (name{lstnumber.4.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.107     driver.
+                 get(UIUrl);pdfTeX warning (ext4): destination with the same id
+entifier (name{lstnumber.4.14}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.108     Assert.
+                 assertEquals("Welcome",driver.getTitle());pdfTeX warning (ext4
+): destination with the same identifier (name{lstnumber.4.15}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.109   }
+         pdfTeX warning (ext4): destination with the same identifier (name{lstn
+umber.4.16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.111   @AfterTest
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{lstnumber.4.17}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.111   @AfterTest
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{lstnumber.4.18}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.112   public 
+               void afterTest() {pdfTeX warning (ext4): destination with the sa
+me identifier (name{lstnumber.4.19}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.113     driver.
+                 quit();pdfTeX warning (ext4): destination with the same identi
+fier (name{lstnumber.4.20}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.114   }
+         pdfTeX warning (ext4): destination with the same identifier (name{lstn
+umber.4.21}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.115 }
+       pdfTeX warning (ext4): destination with the same identifier (name{lstlis
+ting.Alph0.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.119 ...t UI class example,label={lst:appTestUI}]
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{lstnumber.5.1}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.120 @Theme(
+             "mytheme")pdfTeX warning (ext4): destination with the same identif
+ier (name{lstnumber.5.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.121 @Widgetset(
+                 "com.example.testbench.MyAppWidgetset")pdfTeX warning (ext4): 
+destination with the same identifier (name{lstnumber.5.3}) has been already use
+d, duplicate ignored
+<to be read again> 
+                   \relax 
+l.122 public 
+             class MyUI extends UI {pdfTeX warning (ext4): destination with the
+ same identifier (name{lstnumber.5.4}) has been already used, duplicate ignored
+
+<to be read again> 
+                   \relax 
+l.123 	@Override
+                pdfTeX warning (ext4): destination with the same identifier (na
+me{lstnumber.5.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.124 	protected 
+                 void init(VaadinRequest vaadinRequest) {pdfTeX warning (ext4):
+ destination with the same identifier (name{lstnumber.5.6}) has been already us
+ed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.125 	final 
+             VerticalLayout layout = new VerticalLayout();pdfTeX warning (ext4)
+: destination with the same identifier (name{lstnumber.5.7}) has been already u
+sed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.126 	layout.
+              setMargin(true);pdfTeX warning (ext4): destination with the same 
+identifier (name{lstnumber.5.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.127 	setContent(
+                  layout);pdfTeX warning (ext4): destination with the same iden
+tifier (name{lstnumber.5.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.129 	Button 
+              button = new Button("Click Me");pdfTeX warning (ext4): destinatio
+n with the same identifier (name{lstnumber.5.10}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.129 	Button 
+              button = new Button("Click Me");pdfTeX warning (ext4): destinatio
+n with the same identifier (name{lstnumber.5.11}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.130 	button.
+              addClickListener(new Button.ClickListener() {pdfTeX warning (ext4
+): destination with the same identifier (name{lstnumber.5.12}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.131 	@Override
+                pdfTeX warning (ext4): destination with the same identifier (na
+me{lstnumber.5.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.132 	public 
+              void buttonClick(ClickEvent event)pdfTeX warning (ext4): destinat
+ion with the same identifier (name{lstnumber.5.14}) has been already used, dupl
+icate ignored
+<to be read again> 
+                   \relax 
+l.133 		layout.
+               addComponent(new Label("Thank you forpdfTeX warning (ext4): dest
+ination with the same identifier (name{lstnumber.5.15}) has been already used, 
+duplicate ignored
+<to be read again> 
+                   \relax 
+l.134 			clicking"
+                  )); }pdfTeX warning (ext4): destination with the same identif
+ier (name{lstnumber.5.16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.135 	});
+          pdfTeX warning (ext4): destination with the same identifier (name{lst
+number.5.17}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.136 	layout.
+              addComponent(button);pdfTeX warning (ext4): destination with the 
+same identifier (name{lstnumber.5.18}) has been already used, duplicate ignored
+
+<to be read again> 
+                   \relax 
+l.138 	}
+        pdfTeX warning (ext4): destination with the same identifier (name{lstnu
+mber.5.19}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138 	}
+        pdfTeX warning (ext4): destination with the same identifier (name{lstnu
+mber.5.20}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.140 	@WebServlet(
+                   urlPatterns = "/*", name = "MyUIServlet",pdfTeX warning (ext
+4): destination with the same identifier (name{lstnumber.5.21}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.140 	@WebServlet(
+                   urlPatterns = "/*", name = "MyUIServlet",pdfTeX warning (ext
+4): destination with the same identifier (name{lstnumber.5.22}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.141 		asyncSupported 
+                       = true)pdfTeX warning (ext4): destination with the same 
+identifier (name{lstnumber.5.23}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.142 	@VaadinServletConfiguration(
+                                   ui = MyUI.class,pdfTeX warning (ext4): desti
+nation with the same identifier (name{lstnumber.5.24}) has been already used, d
+uplicate ignored
+<to be read again> 
+                   \relax 
+l.143 		productionMode 
+                       = false)pdfTeX warning (ext4): destination with the same
+ identifier (name{lstnumber.5.25}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.144 	public 
+              static class MyUIServlet extends VaadinServlet {pdfTeX warning (e
+xt4): destination with the same identifier (name{lstnumber.5.26}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.145 	}
+        pdfTeX warning (ext4): destination with the same identifier (name{lstnu
+mber.5.27}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.146 }
+       pdfTeX warning (ext4): destination with the same identifier (name{page.4
+4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.147 \end{lstlisting}
+                       [44]pdfTeX warning (ext4): destination with the same ide
+ntifier (name{lstlisting.Alph0.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.150 ...h class example,label={lst:appTestClass}]
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{lstnumber.6.1}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.151 public 
+             class ButtonTest extends TestBenchTestCase {pdfTeX warning (ext4):
+ destination with the same identifier (name{lstnumber.6.2}) has been already us
+ed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.152 	public 
+              static final String baseUrl =pdfTeX warning (ext4): destination w
+ith the same identifier (name{lstnumber.6.3}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.153 		"
+         http://localhost:8080";pdfTeX warning (ext4): destination with the sam
+e identifier (name{lstnumber.6.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.155 	@Before
+              pdfTeX warning (ext4): destination with the same identifier (name
+{lstnumber.6.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.155 	@Before
+              pdfTeX warning (ext4): destination with the same identifier (name
+{lstnumber.6.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.156 	public 
+              void setUp() throws Exception {pdfTeX warning (ext4): destination
+ with the same identifier (name{lstnumber.6.7}) has been already used, duplicat
+e ignored
+<to be read again> 
+                   \relax 
+l.157 		//
+           Set WebDriverpdfTeX warning (ext4): destination with the same identi
+fier (name{lstnumber.6.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.158 	setDriver(
+                 new FirefoxDriver());pdfTeX warning (ext4): destination with t
+he same identifier (name{lstnumber.6.9}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.159 }
+       pdfTeX warning (ext4): destination with the same identifier (name{lstnum
+ber.6.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.161 	@After
+             pdfTeX warning (ext4): destination with the same identifier (name{
+lstnumber.6.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.161 	@After
+             pdfTeX warning (ext4): destination with the same identifier (name{
+lstnumber.6.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.162 	public 
+              void tearDown() throws Exception {pdfTeX warning (ext4): destinat
+ion with the same identifier (name{lstnumber.6.13}) has been already used, dupl
+icate ignored
+<to be read again> 
+                   \relax 
+l.163 		getDriver(
+                  ).quit();pdfTeX warning (ext4): destination with the same ide
+ntifier (name{lstnumber.6.14}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.164 	}
+        pdfTeX warning (ext4): destination with the same identifier (name{lstnu
+mber.6.15}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.166 	@Test
+            pdfTeX warning (ext4): destination with the same identifier (name{l
+stnumber.6.16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.166 	@Test
+            pdfTeX warning (ext4): destination with the same identifier (name{l
+stnumber.6.17}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.167 	public 
+              void testClick() {pdfTeX warning (ext4): destination with the sam
+e identifier (name{lstnumber.6.18}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.168 	//
+         Open URLpdfTeX warning (ext4): destination with the same identifier (n
+ame{lstnumber.6.19}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.169 	getDriver(
+                 ).get(baseUrl + "?restartApplication");pdfTeX warning (ext4): 
+destination with the same identifier (name{lstnumber.6.20}) has been already us
+ed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.170 	ButtonElement 
+                     button = $(ButtonElement.class).first();pdfTeX warning (ex
+t4): destination with the same identifier (name{lstnumber.6.21}) has been alrea
+dy used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.171 		button.
+               click();pdfTeX warning (ext4): destination with the same identif
+ier (name{lstnumber.6.22}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.172 		LabelElement 
+                     label = $(LabelElement.class).first();pdfTeX warning (ext4
+): destination with the same identifier (name{lstnumber.6.23}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.173 		String 
+               text = label.getText();pdfTeX warning (ext4): destination with t
+he same identifier (name{lstnumber.6.24}) has been already used, duplicate igno
+red
+<to be read again> 
+                   \relax 
+l.174 		Assert.
+               assertEquals("Thank you for clicking", text);pdfTeX warning (ext
+4): destination with the same identifier (name{lstnumber.6.25}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.175 	}
+        pdfTeX warning (ext4): destination with the same identifier (name{lstnu
+mber.6.26}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.176     }
+           pdfTeX warning (ext4): destination with the same identifier (name{ls
+tlisting.Alph0.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.181 ...n application,label={lst:seleniumVaadin}]
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{lstnumber.7.1}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.182 public 
+             class AppTest extends TestCase{pdfTeX warning (ext4): destination 
+with the same identifier (name{lstnumber.7.2}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.183   WebDriver 
+                  driver;pdfTeX warning (ext4): destination with the same ident
+ifier (name{lstnumber.7.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.184   String 
+               UIUrl, nodeURL;pdfTeX warning (ext4): destination with the same 
+identifier (name{lstnumber.7.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.185 	@Override 
+                 @BeforepdfTeX warning (ext4): destination with the same identi
+fier (name{lstnumber.7.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.186     public 
+                 void setUp() {pdfTeX warning (ext4): destination with the same
+ identifier (name{lstnumber.7.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.187       UIUrl 
+                  = "http://demo.vaadin.com/dashboard/";pdfTeX warning (ext4): 
+destination with the same identifier (name{lstnumber.7.7}) has been already use
+d, duplicate ignored
+<to be read again> 
+                   \relax 
+l.188       driver 
+                   = new FirefoxDriver();pdfTeX warning (ext4): destination wit
+h the same identifier (name{lstnumber.7.8}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.189     }
+           pdfTeX warning (ext4): destination with the same identifier (name{ls
+tnumber.7.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.191   @Test
+             pdfTeX warning (ext4): destination with the same identifier (name{
+lstnumber.7.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.191   @Test
+             pdfTeX warning (ext4): destination with the same identifier (name{
+lstnumber.7.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.192   public 
+               void testWithoutTestbench() {pdfTeX warning (ext4): destination 
+with the same identifier (name{lstnumber.7.12}) has been already used, duplicat
+e ignored
+<to be read again> 
+                   \relax 
+l.193     driver.
+                 get(UIUrl);pdfTeX warning (ext4): destination with the same id
+entifier (name{lstnumber.7.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.194     driver.
+                 manage().timeouts().pdfTeX warning (ext4): destination with th
+e same identifier (name{lstnumber.7.14}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.195       implicitlyWait(
+                           5, TimeUnit.SECONDS);pdfTeX warning (ext4): destinat
+ion with the same identifier (name{page.45}) has been already used, duplicate i
+gnored
+<to be read again> 
+                   \relax 
+l.196     List<
+               WebElement> elements = driver.findElements(By [45]pdfTeX warning
+ (ext4): destination with the same identifier (name{lstnumber.7.15}) has been a
+lready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.196     List<
+               WebElement> elements = driver.findElements(BypdfTeX warning (ext
+4): destination with the same identifier (name{lstnumber.7.16}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.197       .c
+              lassName("v-button"));pdfTeX warning (ext4): destination with the
+ same identifier (name{lstnumber.7.17}) has been already used, duplicate ignore
+d
+<to be read again> 
+                   \relax 
+l.198     if 
+             (elements.isEmpty()) {pdfTeX warning (ext4): destination with the 
+same identifier (name{lstnumber.7.18}) has been already used, duplicate ignored
+
+<to be read again> 
+                   \relax 
+l.199       throw 
+                  new RuntimeException("No buttons found");pdfTeX warning (ext4
+): destination with the same identifier (name{lstnumber.7.19}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.200     }
+           pdfTeX warning (ext4): destination with the same identifier (name{ls
+tnumber.7.20}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.201     elements.
+                   get(0).click();pdfTeX warning (ext4): destination with the s
+ame identifier (name{lstnumber.7.21}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.202     driver.
+                 findElement(By.id("dashboard-edit")).click();pdfTeX warning (e
+xt4): destination with the same identifier (name{lstnumber.7.22}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.203     WebElement 
+                     searchField =pdfTeX warning (ext4): destination with the s
+ame identifier (name{lstnumber.7.23}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.204      driver.
+                  findElements(By.className("v-textfield")).get(0);pdfTeX warni
+ng (ext4): destination with the same identifier (name{lstnumber.7.24}) has been
+ already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.206     searchField.
+                      clear();pdfTeX warning (ext4): destination with the same 
+identifier (name{lstnumber.7.25}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.206     searchField.
+                      clear();pdfTeX warning (ext4): destination with the same 
+identifier (name{lstnumber.7.26}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.207     searchField.
+                      sendKeys("New Dashboard");pdfTeX warning (ext4): destinat
+ion with the same identifier (name{lstnumber.7.27}) has been already used, dupl
+icate ignored
+<to be read again> 
+                   \relax 
+l.208     searchField.
+                      sendKeys(Keys.TAB);pdfTeX warning (ext4): destination wit
+h the same identifier (name{lstnumber.7.28}) has been already used, duplicate i
+gnored
+<to be read again> 
+                   \relax 
+l.209     WebElement 
+                     searchButton = findButtonByCaption("Save");pdfTeX warning 
+(ext4): destination with the same identifier (name{lstnumber.7.29}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.210     searchButton.
+                       click();pdfTeX warning (ext4): destination with the same
+ identifier (name{lstnumber.7.30}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.211     driver.
+                 manage().timeouts().pdfTeX warning (ext4): destination with th
+e same identifier (name{lstnumber.7.31}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.212       implicitlyWait(
+                           5, TimeUnit.SECONDS);pdfTeX warning (ext4): destinat
+ion with the same identifier (name{lstnumber.7.32}) has been already used, dupl
+icate ignored
+<to be read again> 
+                   \relax 
+l.213     String 
+                 title = driver.findElement(By.pdfTeX warning (ext4): destinati
+on with the same identifier (name{lstnumber.7.33}) has been already used, dupli
+cate ignored
+<to be read again> 
+                   \relax 
+l.214       id(
+               "dashboard-title")).getText();pdfTeX warning (ext4): destination
+ with the same identifier (name{lstnumber.7.34}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.215     Assert.
+                 assertEquals("New Dashboard", title);pdfTeX warning (ext4): de
+stination with the same identifier (name{lstnumber.7.35}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.216     }
+           pdfTeX warning (ext4): destination with the same identifier (name{ls
+tnumber.7.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.218   public 
+               WebElement findButtonByCaption(String caption) {pdfTeX warning (
+ext4): destination with the same identifier (name{lstnumber.7.37}) has been alr
+eady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.218   public 
+               WebElement findButtonByCaption(String caption) {pdfTeX warning (
+ext4): destination with the same identifier (name{lstnumber.7.38}) has been alr
+eady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.219     List<
+               WebElement> buttons = driverpdfTeX warning (ext4): destination w
+ith the same identifier (name{lstnumber.7.39}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.220       .f
+              indElements(By.className("v-button"));pdfTeX warning (ext4): dest
+ination with the same identifier (name{lstnumber.7.40}) has been already used, 
+duplicate ignored
+<to be read again> 
+                   \relax 
+l.221     for 
+              (WebElement button : buttons) {pdfTeX warning (ext4): destination
+ with the same identifier (name{lstnumber.7.41}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.222       if 
+               (button.getText().equals(caption)) {pdfTeX warning (ext4): desti
+nation with the same identifier (name{lstnumber.7.42}) has been already used, d
+uplicate ignored
+<to be read again> 
+                   \relax 
+l.223         return 
+                     button;pdfTeX warning (ext4): destination with the same id
+entifier (name{lstnumber.7.43}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.224       }
+             pdfTeX warning (ext4): destination with the same identifier (name{
+lstnumber.7.44}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.225     }
+           pdfTeX warning (ext4): destination with the same identifier (name{ls
+tnumber.7.45}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.226     return 
+                 null;pdfTeX warning (ext4): destination with the same identifi
+er (name{lstnumber.7.46}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.227     }
+           pdfTeX warning (ext4): destination with the same identifier (name{ls
+tnumber.7.47}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.229   public 
+               WebElement findButtonByCaption(pdfTeX warning (ext4): destinatio
+n with the same identifier (name{lstnumber.7.48}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.229   public 
+               WebElement findButtonByCaption(pdfTeX warning (ext4): destinatio
+n with the same identifier (name{lstnumber.7.49}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.230     WebElement 
+                     parent, String caption) {pdfTeX warning (ext4): destinatio
+n with the same identifier (name{lstnumber.7.50}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.232     List<
+               WebElement> buttons = parentpdfTeX warning (ext4): destination w
+ith the same identifier (name{lstnumber.7.51}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.232     List<
+               WebElement> buttons = parentpdfTeX warning (ext4): destination w
+ith the same identifier (name{lstnumber.7.52}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.233       .f
+              indElements(By.className("v-button"));pdfTeX warning (ext4): dest
+ination with the same identifier (name{lstnumber.7.53}) has been already used, 
+duplicate ignored
+<to be read again> 
+                   \relax 
+l.235     for 
+              (WebElement button : buttons) {pdfTeX warning (ext4): destination
+ with the same identifier (name{lstnumber.7.54}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.235     for 
+              (WebElement button : buttons) {pdfTeX warning (ext4): destination
+ with the same identifier (name{lstnumber.7.55}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.236       if 
+               (button.getText().equals(caption)) {pdfTeX warning (ext4): desti
+nation with the same identifier (name{lstnumber.7.56}) has been already used, d
+uplicate ignored
+<to be read again> 
+                   \relax 
+l.237         return 
+                     button;pdfTeX warning (ext4): destination with the same id
+entifier (name{lstnumber.7.57}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.238       }
+             pdfTeX warning (ext4): destination with the same identifier (name{
+page.46}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.240     }
+            [46]pdfTeX warning (ext4): destination with the same identifier (na
+me{lstnumber.7.58}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.240     }
+           pdfTeX warning (ext4): destination with the same identifier (name{ls
+tnumber.7.59}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.240     }
+           pdfTeX warning (ext4): destination with the same identifier (name{ls
+tnumber.7.60}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.241     return 
+                 null;pdfTeX warning (ext4): destination with the same identifi
+er (name{lstnumber.7.61}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.242   }
+         pdfTeX warning (ext4): destination with the same identifier (name{lstn
+umber.7.62}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.244  @After
+             pdfTeX warning (ext4): destination with the same identifier (name{
+lstnumber.7.63}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.244  @After
+             pdfTeX warning (ext4): destination with the same identifier (name{
+lstnumber.7.64}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.245  public 
+              void afterTest() {pdfTeX warning (ext4): destination with the sam
+e identifier (name{lstnumber.7.65}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.246   driver.
+               quit();pdfTeX warning (ext4): destination with the same identifi
+er (name{lstnumber.7.66}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.247  }
+        pdfTeX warning (ext4): destination with the same identifier (name{lstnu
+mber.7.67}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.248 }
+       
+
+LaTeX Warning: Reference `lst:testbenchVaadin' on page 47 undefined on input li
+ne 252.
+
+pdfTeX warning (ext4): destination with the same identifier (name{lstlisting.Al
+ph0.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.254 ...stBench test,label={lst:testbenchVaadin}]
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{lstnumber.8.1}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.255 public 
+             class TestBenchTest extends TestBenchTestCase {pdfTeX warning (ext
+4): destination with the same identifier (name{lstnumber.8.2}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.257     WebDriver 
+                    driver;pdfTeX warning (ext4): destination with the same ide
+ntifier (name{lstnumber.8.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.257     WebDriver 
+                    driver;pdfTeX warning (ext4): destination with the same ide
+ntifier (name{lstnumber.8.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.258     String 
+                 UIUrl, nodeURL;pdfTeX warning (ext4): destination with the sam
+e identifier (name{lstnumber.8.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.260     @Before
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{lstnumber.8.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.260     @Before
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{lstnumber.8.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.261     public 
+                 void setUp() throws Exception {pdfTeX warning (ext4): destinat
+ion with the same identifier (name{lstnumber.8.8}) has been already used, dupli
+cate ignored
+<to be read again> 
+                   \relax 
+l.262         UIUrl 
+                    = "http://demo.vaadin.com/dashboard/";pdfTeX warning (ext4)
+: destination with the same identifier (name{lstnumber.8.9}) has been already u
+sed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.263         setDriver(
+                        new FirefoxDriver());pdfTeX warning (ext4): destination
+ with the same identifier (name{lstnumber.8.10}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.264     }
+           pdfTeX warning (ext4): destination with the same identifier (name{ls
+tnumber.8.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.266     @Test
+               pdfTeX warning (ext4): destination with the same identifier (nam
+e{lstnumber.8.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.266     @Test
+               pdfTeX warning (ext4): destination with the same identifier (nam
+e{lstnumber.8.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.267     public 
+                 void test1() {pdfTeX warning (ext4): destination with the same
+ identifier (name{lstnumber.8.14}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.268         getDriver(
+                        ).get(UIUrl);pdfTeX warning (ext4): destination with th
+e same identifier (name{lstnumber.8.15}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.269         $(
+                ButtonElement.class).first().click();pdfTeX warning (ext4): des
+tination with the same identifier (name{lstnumber.8.16}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.270         $(
+                ButtonElement.class).id("dashboard-edit").click();pdfTeX warnin
+g (ext4): destination with the same identifier (name{lstnumber.8.17}) has been 
+already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.271         TextFieldElement 
+                               searchField =pdfTeX warning (ext4): destination 
+with the same identifier (name{lstnumber.8.18}) has been already used, duplicat
+e ignored
+<to be read again> 
+                   \relax 
+l.272            $(
+                   TextFieldElement.class).first();pdfTeX warning (ext4): desti
+nation with the same identifier (name{lstnumber.8.19}) has been already used, d
+uplicate ignored
+<to be read again> 
+                   \relax 
+l.273         searchField.
+                          setValue("New dashboard");pdfTeX warning (ext4): dest
+ination with the same identifier (name{lstnumber.8.20}) has been already used, 
+duplicate ignored
+<to be read again> 
+                   \relax 
+l.274         $(
+                ButtonElement.class).caption("Save").first().click();pdfTeX war
+ning (ext4): destination with the same identifier (name{lstnumber.8.21}) has be
+en already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.276         String 
+                     title = $(LabelElement.class).pdfTeX warning (ext4): desti
+nation with the same identifier (name{lstnumber.8.22}) has been already used, d
+uplicate ignored
+<to be read again> 
+                   \relax 
+l.276         String 
+                     title = $(LabelElement.class).pdfTeX warning (ext4): desti
+nation with the same identifier (name{lstnumber.8.23}) has been already used, d
+uplicate ignored
+<to be read again> 
+                   \relax 
+l.277           id(
+                   "dashboard-title").getText();pdfTeX warning (ext4): destinat
+ion with the same identifier (name{lstnumber.8.24}) has been already used, dupl
+icate ignored
+<to be read again> 
+                   \relax 
+l.278         Assert.
+                     assertEquals("New dashboard", title);pdfTeX warning (ext4)
+: destination with the same identifier (name{lstnumber.8.25}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.279     }
+           pdfTeX warning (ext4): destination with the same identifier (name{ls
+tnumber.8.26}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.281     @After
+                pdfTeX warning (ext4): destination with the same identifier (na
+me{lstnumber.8.27}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.281     @After
+                pdfTeX warning (ext4): destination with the same identifier (na
+me{lstnumber.8.28}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.282     public 
+                 void afterTest() {pdfTeX warning (ext4): destination with the 
+same identifier (name{lstnumber.8.29}) has been already used, duplicate ignored
+
+<to be read again> 
+                   \relax 
+l.283         //
+                 driver.quit();pdfTeX warning (ext4): destination with the same
+ identifier (name{lstnumber.8.30}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.284     }
+           pdfTeX warning (ext4): destination with the same identifier (name{pa
+ge.47}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.285 }
+        [47]pdfTeX warning (ext4): destination with the same identifier (name{l
+stnumber.8.31}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.285 }
+       pdfTeX warning (ext4): destination with the same identifier (name{lstlis
+ting.Alph0.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.289 ...ave test example,label={lst:jbehaveTest}]
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{lstnumber.9.1}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.290 public 
+             class FilterTableSteps extends TestBenchTestCase {pdfTeX warning (
+ext4): destination with the same identifier (name{lstnumber.9.2}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.291 	TableTestUI 
+                   page;pdfTeX warning (ext4): destination with the same identi
+fier (name{lstnumber.9.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.292 	@BeforeScenario
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{lstnumber.9.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.293 		//
+          open web pagepdfTeX warning (ext4): destination with the same identif
+ier (name{lstnumber.9.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.294 	public 
+              void beforeScenario() {pdfTeX warning (ext4): destination with th
+e same identifier (name{lstnumber.9.6}) has been already used, duplicate ignore
+d
+<to be read again> 
+                   \relax 
+l.295 		setDriver(
+                  TestBench.createDriver(pdfTeX warning (ext4): destination wit
+h the same identifier (name{lstnumber.9.7}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.296 			new 
+             FirefoxDriver()));pdfTeX warning (ext4): destination with the same
+ identifier (name{lstnumber.9.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.297 		getDriver(
+                  ).get("http://localhost:8080");pdfTeX warning (ext4): destina
+tion with the same identifier (name{lstnumber.9.9}) has been already used, dupl
+icate ignored
+<to be read again> 
+                   \relax 
+l.298 	}
+        pdfTeX warning (ext4): destination with the same identifier (name{lstnu
+mber.9.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.300 	@AfterScenario
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{lstnumber.9.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.300 	@AfterScenario
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{lstnumber.9.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.301 	public 
+              void afterScenario() {pdfTeX warning (ext4): destination with the
+ same identifier (name{lstnumber.9.13}) has been already used, duplicate ignore
+d
+<to be read again> 
+                   \relax 
+l.302 		getDriver(
+                  ).quit();pdfTeX warning (ext4): destination with the same ide
+ntifier (name{lstnumber.9.14}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.303 	}
+        pdfTeX warning (ext4): destination with the same identifier (name{lstnu
+mber.9.15}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.305 	@Given(
+              "web-page with table")pdfTeX warning (ext4): destination with the
+ same identifier (name{lstnumber.9.16}) has been already used, duplicate ignore
+d
+<to be read again> 
+                   \relax 
+l.305 	@Given(
+              "web-page with table")pdfTeX warning (ext4): destination with the
+ same identifier (name{lstnumber.9.17}) has been already used, duplicate ignore
+d
+<to be read again> 
+                   \relax 
+l.306 		public 
+               void theFrontPage() throws Throwable {pdfTeX warning (ext4): des
+tination with the same identifier (name{lstnumber.9.18}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.307 		page 
+             = PageFactory.initElements(pdfTeX warning (ext4): destination with
+ the same identifier (name{lstnumber.9.19}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.308 			getDriver(
+                   ), TableTestUI.class);pdfTeX warning (ext4): destination wit
+h the same identifier (name{lstnumber.9.20}) has been already used, duplicate i
+gnored
+<to be read again> 
+                   \relax 
+l.309 	}
+        pdfTeX warning (ext4): destination with the same identifier (name{lstnu
+mber.9.21}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.311 	@When(
+             "typing $value to filter field")pdfTeX warning (ext4): destination
+ with the same identifier (name{lstnumber.9.22}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.311 	@When(
+             "typing $value to filter field")pdfTeX warning (ext4): destination
+ with the same identifier (name{lstnumber.9.23}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.312 	public 
+              void filterTable(String value)pdfTeX warning (ext4): destination 
+with the same identifier (name{lstnumber.9.24}) has been already used, duplicat
+e ignored
+<to be read again> 
+                   \relax 
+l.313 		throws 
+               Throwable {pdfTeX warning (ext4): destination with the same iden
+tifier (name{lstnumber.9.25}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.314 		TableElement 
+                     table =pdfTeX warning (ext4): destination with the same id
+entifier (name{lstnumber.9.26}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.315 			page.
+              $(TableElement.class).first();pdfTeX warning (ext4): destination 
+with the same identifier (name{lstnumber.9.27}) has been already used, duplicat
+e ignored
+<to be read again> 
+                   \relax 
+l.316 		TextFieldElement 
+                         filterElement=pdfTeX warning (ext4): destination with 
+the same identifier (name{lstnumber.9.28}) has been already used, duplicate ign
+ored
+<to be read again> 
+                   \relax 
+l.317 			table.
+               $(TextFieldElement.class).pdfTeX warning (ext4): destination wit
+h the same identifier (name{lstnumber.9.29}) has been already used, duplicate i
+gnored
+<to be read again> 
+                   \relax 
+l.318 			id(
+            "filter-field").first();pdfTeX warning (ext4): destination with the
+ same identifier (name{lstnumber.9.30}) has been already used, duplicate ignore
+d
+<to be read again> 
+                   \relax 
+l.319 		filterElement.
+                      setValue("special");pdfTeX warning (ext4): destination wi
+th the same identifier (name{lstnumber.9.31}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.320 	}
+        pdfTeX warning (ext4): destination with the same identifier (name{lstnu
+mber.9.32}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 	@Then(
+             "value in row $rowNumberpdfTeX warning (ext4): destination with th
+e same identifier (name{lstnumber.9.33}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.323 	@Then(
+             "value in row $rowNumberpdfTeX warning (ext4): destination with th
+e same identifier (name{lstnumber.9.34}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.323 	@Then(
+             "value in row $rowNumberpdfTeX warning (ext4): destination with th
+e same identifier (name{lstnumber.9.35}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.324 		and 
+            cell $cellNumber is $expectedValue")pdfTeX warning (ext4): destinat
+ion with the same identifier (name{lstnumber.9.36}) has been already used, dupl
+icate ignored
+<to be read again> 
+                   \relax 
+l.325 	public 
+              void checkValueInCell(int rowNumber,pdfTeX warning (ext4): destin
+ation with the same identifier (name{lstnumber.9.37}) has been already used, du
+plicate ignored
+<to be read again> 
+                   \relax 
+l.326 		int 
+            cellNumber,String expectedValue) throws Throwable {pdfTeX warning (
+ext4): destination with the same identifier (name{lstnumber.9.38}) has been alr
+eady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.327 		TableElement 
+                     table = page.$(TableElement.class).first();pdfTeX warning 
+(ext4): destination with the same identifier (name{lstnumber.9.39}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.328 		TableRowElement 
+                        row=table.getRow(rowNumber);pdfTeX warning (ext4): dest
+ination with the same identifier (name{lstnumber.9.40}) has been already used, 
+duplicate ignored
+<to be read again> 
+                   \relax 
+l.329 		assertEquals(
+                     row.getCell(cellNumber).pdfTeX warning (ext4): destination
+ with the same identifier (name{lstnumber.9.41}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.330 			getValue(
+                  ),expectedValue);pdfTeX warning (ext4): destination with the 
+same identifier (name{page.48}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.331 	}
+         [48]pdfTeX warning (ext4): destination with the same identifier (name{
+lstnumber.9.42}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.331 	}
+        pdfTeX warning (ext4): destination with the same identifier (name{lstnu
+mber.9.43}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.332 }
+       pdfTeX warning (ext4): destination with the same identifier (name{lstlis
+ting.Alph0.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.336 ...ration example,label={lst:jbehaveConfig}]
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{lstnumber.10.1}) has been already used, du
+plicate ignored
+<to be read again> 
+                   \relax 
+l.337 public 
+             class SimpleConfig extends JUnitStory {pdfTeX warning (ext4): dest
+ination with the same identifier (name{lstnumber.10.2}) has been already used, 
+duplicate ignored
+<to be read again> 
+                   \relax 
+l.338 	//
+         Specify the configuration, starting from defaultpdfTeX warning (ext4):
+ destination with the same identifier (name{lstnumber.10.3}) has been already u
+sed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.339 	//
+         MostUsefulConfiguration, // and changing only what is neededpdfTeX war
+ning (ext4): destination with the same identifier (name{lstnumber.10.4}) has be
+en already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.341 	@Override
+                pdfTeX warning (ext4): destination with the same identifier (na
+me{lstnumber.10.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.341 	@Override
+                pdfTeX warning (ext4): destination with the same identifier (na
+me{lstnumber.10.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.342 	public 
+              Configuration configuration() {pdfTeX warning (ext4): destination
+ with the same identifier (name{lstnumber.10.7}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.343 		return 
+               new MostUsefulConfiguration()pdfTeX warning (ext4): destination 
+with the same identifier (name{lstnumber.10.8}) has been already used, duplicat
+e ignored
+<to be read again> 
+                   \relax 
+l.344 		//
+           where to find the storiespdfTeX warning (ext4): destination with the
+ same identifier (name{lstnumber.10.9}) has been already used, duplicate ignore
+d
+<to be read again> 
+                   \relax 
+l.345 		.u
+          seStoryLoader(new LoadFromClasspath(this.getClass()))pdfTeX warning (
+ext4): destination with the same identifier (name{lstnumber.10.10}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.346 		//
+           CONSOLE and TXT reportingpdfTeX warning (ext4): destination with the
+ same identifier (name{lstnumber.10.11}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.347 		.u
+          seStoryReporterBuilder(new StoryReporterBuilder()pdfTeX warning (ext4
+): destination with the same identifier (name{lstnumber.10.12}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.348 			.w
+           ithDefaultFormats()pdfTeX warning (ext4): destination with the same 
+identifier (name{lstnumber.10.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.349 			.w
+           ithFormats(Format.CONSOLE, Format.TXT));pdfTeX warning (ext4): desti
+nation with the same identifier (name{lstnumber.10.14}) has been already used, 
+duplicate ignored
+<to be read again> 
+                   \relax 
+l.350 	}
+        pdfTeX warning (ext4): destination with the same identifier (name{lstnu
+mber.10.15}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.352 	//
+          Specify the steps classespdfTeX warning (ext4): destination with the 
+same identifier (name{lstnumber.10.16}) has been already used, duplicate ignore
+d
+<to be read again> 
+                   \relax 
+l.352 	//
+          Specify the steps classespdfTeX warning (ext4): destination with the 
+same identifier (name{lstnumber.10.17}) has been already used, duplicate ignore
+d
+<to be read again> 
+                   \relax 
+l.353 	@Override
+                pdfTeX warning (ext4): destination with the same identifier (na
+me{lstnumber.10.18}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.354 	public 
+              InjectableStepsFactory stepsFactory() {pdfTeX warning (ext4): des
+tination with the same identifier (name{lstnumber.10.19}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.355 	//
+          varargs, can have more than one step classpdfTeX warning (ext4): dest
+ination with the same identifier (name{lstnumber.10.20}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.356 		return 
+               new InstanceStepsFactory(configuration(),pdfTeX warning (ext4): 
+destination with the same identifier (name{lstnumber.10.21}) has been already u
+sed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.357 		new 
+            FilterTableSteps());pdfTeX warning (ext4): destination with the sam
+e identifier (name{lstnumber.10.22}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.358 	}
+        pdfTeX warning (ext4): destination with the same identifier (name{lstnu
+mber.10.23}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.359 }
+       )pdfTeX warning (ext4): destination with the same identifier (name{page.
+49}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.263   \include{appendixA}
+                            [49]
+\@input{appendixB.aux}
+\openout2 = `appendixB.aux'.
+
+(./appendixB.texpdfTeX warning (ext4): destination with the same identifier (na
+me{section.Alph0.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.3 \section{Appendix B}
+                        
+Overfull \hbox (17.96974pt too wide) in paragraph at lines 6--53
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 14.85672pt on input line 55.
+
+)pdfTeX warning (ext4): destination with the same identifier (name{page.50}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.264   \include{appendixB}
+                            [50
+
+
+]pdfTeX warning (ext4): destination with the same identifier (name{page.51}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.264   \include{appendixB}
+                            [51]
+! TeX capacity exceeded, sorry [input stack size=5000].
+\clearpage ...Call@BeforeClearDocument \clearpage 
+                                                  \Call@AfterLastShipout 
+l.265 \end{document}
+                    
+If you really absolutely need more capacity,
+you can ask a wizard to enlarge me.
+
+ 
+Here is how much of TeX's memory you used:
+ 12520 strings out of 493304
+ 182291 string characters out of 6139871
+ 312171 words of memory out of 5000000
+ 15018 multiletter control sequences out of 15000+600000
+ 22239 words of font info for 49 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 5000i,12n,96p,307b,2340s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

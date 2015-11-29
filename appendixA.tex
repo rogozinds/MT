@@ -3,6 +3,65 @@
 \section{Appendix A}
 \label{appendixA}
 
+\lstset{style=a1listing}
+\begin{lstlisting} [caption=Test Web Page class,label={lst:vaadintest}]
+public class TestWebPageClass {
+  static final String ASSERT_ELEM_ID="assertElementId";
+  static Map<AbstractElement,String> map = new HashMap();
+  static  {
+         map.put(new TextField(),"textField");
+         map.put(new ComboBox(), "combobox");
+  }
+  
+  TextField assertionElement=new TextField();
+  public void createTestWebPage () {
+    Iterator it = classToAssertValue.entrySet().iterator();
+    while (it.hasNext()) {
+     it.getKey().setId(it.getValue());
+     addElementToWebPage(it.getKey());
+     it.getKey().setValueChangeListener(event-> {
+       assertionElement.setValue(it.getValue());
+     });
+    }
+    
+    addAssertElement();
+  }  
+    
+    public static <AbstractElement,String> getMap() {
+      return map;
+    }
+}
+\end{lstlisting}
+
+\lstset{style=a1listing}      
+\begin{lstlisting} [caption=Test class,label={lst:vaadintest2}]
+public class ValueChangeListenerTestClass {
+  <AbstractElement,String> map=TestWebPageClass.getMap();
+  String assertElementId=TestWebPageClass.ASSERT_ELEM_ID;
+  UIElement assertElement=findElementById(assertElementId);
+       
+  @Test
+  public void testValueChangeListener() {
+    openWebPage();
+    Iterator it = map.entrySet().iterator();
+          
+    while (it.hasNext()) {
+      Map.Entry pair = (Map.Entry)it.next();
+      UIElement elem=findElementById(map.getValue());
+      elem.setValue(``foo'');
+      String assertMessage=``Element with id=''+pair.getValue()
+          + ``has wrong value'';
+        
+      Assert.assertEquals(assertMessage,assertElement.getValue(),
+          pair.getValue);
+      }
+    }
+}
+\end{lstlisting}
+
+
+
+
 \lstset{style=console}
 \begin{lstlisting} [caption=Generated C\&R test  example using Selenium IDE ,label={lst:capturereplay}]
 <tr> 
@@ -30,6 +89,31 @@
   <td>246</td>
 </tr>
 \end{lstlisting}
+	 
+  \lstset{style=a1listing}
+  \begin{lstlisting} [caption=Selenium test example,label={lst:starthub2},language=java]
+public  class TestExample throws MalformedURLException {
+  WebDriver driver;
+   String UIUrl,nodeURL;
+   @BeforeTest public void setUp() {
+    UIUrl="http://app.example.com/hellopage"; 
+    hubURL="http://192.168.1.2:5566/wd/hub";
+    DesiredCapabilities capability=DesiredCapabilities.firefox();
+    driver=new RemoteWebDriver(new URL(hubURL),capability);
+  }
+    
+  @Test
+  public void test1() {
+    driver.get(UIUrl);
+    Assert.assertEquals("Welcome",driver.getTitle());
+  }
+  
+  @AfterTest
+  public void afterTest() {
+    driver.quit();
+  }
+}
+  \end{lstlisting}	 
 	 
 \lstset{style=a1listing}
 \begin{lstlisting} [caption=Test UI class example,label={lst:appTestUI}]
