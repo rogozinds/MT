@@ -23,7 +23,7 @@
 \BOOKMARK [2][-]{subsection.6.3.3}{Git}{section.6.3}% 23
 \BOOKMARK [2][-]{subsection.6.3.4}{Teamcity}{section.6.3}% 24
 \BOOKMARK [2][-]{subsection.6.3.5}{Gerrit}{section.6.3}% 25
-\BOOKMARK [1][-]{section.6.4}{Testbench class diagram}{chapter.6}% 26
+\BOOKMARK [1][-]{section.6.4}{Architecture design}{chapter.6}% 26
 \BOOKMARK [1][-]{section.6.5}{Basic test case structure}{chapter.6}% 27
 \BOOKMARK [1][-]{section.6.6}{Results}{chapter.6}% 28
 \BOOKMARK [0][-]{chapter.7}{Testbench vs Selenium}{}% 29
@@ -40,45 +40,3 @@
 \BOOKMARK [2][-]{subsection.9.1.3}{Future work}{section.9.1}% 40
 \BOOKMARK [1][-]{section.Alph0.1}{Appendix A}{chapter.9}% 41
 \BOOKMARK [1][-]{section.Alph0.1}{Appendix B}{chapter.9}% 42
-\BOOKMARK [0][-]{appendix.A}{Introduction}{}% 43
-\BOOKMARK [0][-]{appendix.B}{Theoretical background}{}% 44
-\BOOKMARK [1][-]{section.B.1}{Web applications}{appendix.B}% 45
-\BOOKMARK [1][-]{section.B.2}{Vaadin}{appendix.B}% 46
-\BOOKMARK [1][-]{section.B.3}{Testing}{appendix.B}% 47
-\BOOKMARK [0][-]{appendix.C}{Web testing}{}% 48
-\BOOKMARK [1][-]{section.C.1}{Capture and Replay}{appendix.C}% 49
-\BOOKMARK [1][-]{section.C.2}{Programmable tests}{appendix.C}% 50
-\BOOKMARK [1][-]{section.C.3}{Capture and Replay vs Programmable tests}{appendix.C}% 51
-\BOOKMARK [1][-]{section.C.4}{Challenges}{appendix.C}% 52
-\BOOKMARK [2][-]{subsection.C.4.1}{Look and feel testing}{section.C.4}% 53
-\BOOKMARK [2][-]{subsection.C.4.2}{Complex DOM structure}{section.C.4}% 54
-\BOOKMARK [0][-]{appendix.D}{Selenium}{}% 55
-\BOOKMARK [0][-]{appendix.E}{Reason for developing Testbench}{}% 56
-\BOOKMARK [1][-]{section.E.1}{Client server communication}{appendix.E}% 57
-\BOOKMARK [1][-]{section.E.2}{Extra code}{appendix.E}% 58
-\BOOKMARK [0][-]{appendix.F}{Development of Testbench}{}% 59
-\BOOKMARK [1][-]{section.F.1}{Scrum}{appendix.F}% 60
-\BOOKMARK [1][-]{section.F.2}{Test Driven Development}{appendix.F}% 61
-\BOOKMARK [1][-]{section.F.3}{Tools used}{appendix.F}% 62
-\BOOKMARK [2][-]{subsection.F.3.1}{Maven}{section.F.3}% 63
-\BOOKMARK [2][-]{subsection.F.3.2}{Trac}{section.F.3}% 64
-\BOOKMARK [2][-]{subsection.F.3.3}{Git}{section.F.3}% 65
-\BOOKMARK [2][-]{subsection.F.3.4}{Teamcity}{section.F.3}% 66
-\BOOKMARK [2][-]{subsection.F.3.5}{Gerrit}{section.F.3}% 67
-\BOOKMARK [1][-]{section.F.4}{Testbench class diagram}{appendix.F}% 68
-\BOOKMARK [1][-]{section.F.5}{Basic test case structure}{appendix.F}% 69
-\BOOKMARK [1][-]{section.F.6}{Results}{appendix.F}% 70
-\BOOKMARK [0][-]{appendix.G}{Testbench vs Selenium}{}% 71
-\BOOKMARK [1][-]{section.G.1}{API built specifically for Vaadin components}{appendix.G}% 72
-\BOOKMARK [1][-]{section.G.2}{Client server communication}{appendix.G}% 73
-\BOOKMARK [1][-]{section.G.3}{Screenshot comparison}{appendix.G}% 74
-\BOOKMARK [1][-]{section.G.4}{Parallel testing}{appendix.G}% 75
-\BOOKMARK [0][-]{appendix.H}{Testbench use}{}% 76
-\BOOKMARK [1][-]{section.H.1}{Integrating with Behaviour-Driven Development frameworks}{appendix.H}% 77
-\BOOKMARK [0][-]{appendix.I}{Conclusion}{}% 78
-\BOOKMARK [1][-]{section.I.1}{Discussion and Conclussion}{appendix.I}% 79
-\BOOKMARK [2][-]{subsection.I.1.1}{Summary}{section.I.1}% 80
-\BOOKMARK [2][-]{subsection.I.1.2}{Advantages and disadvantages}{section.I.1}% 81
-\BOOKMARK [2][-]{subsection.I.1.3}{Future work}{section.I.1}% 82
-\BOOKMARK [1][-]{section.Alph0.1}{Appendix A}{appendix.I}% 83
-\BOOKMARK [1][-]{section.Alph0.1}{Appendix B}{appendix.I}% 84

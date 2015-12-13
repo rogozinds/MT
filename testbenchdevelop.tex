@@ -72,8 +72,8 @@
   can finish before the end of the sprint.
 
   In our case we were not developing a new product, but releasing a new version.
-  We did not find any arguments to change the tools were used in the previous
-  release we describe them in section \ref{sec:toolsused} .
+  We did not find any arguments to change the tools that were used in the
+  previous release we describe them in section \ref{sec:toolsused} .
 
   \section{Test Driven Development}
   TDD is a very popular methodology of a software development. The main idea is
@@ -91,7 +91,21 @@
           \item You may not write more of a unit test than is sufficient to fail.
           \item You may not write more production code than is sufficient to pass the currently failing test.
         \end{itemize}
-        
+    
+  During the project we implemented two different type of tests - unit tests and
+  integration tests. 
+  
+  Unit tests are used for testing individual parts of source
+  code, for example method which parses a regular expression or an utility
+  class, for comparing two screenshots.
+  
+  Integration tests combine severeal parts of the application and test 
+  interaction between them. In our case integration test consist of a Web page
+  running as a Vaadin application on a server and a Testbench test class. When
+  Testbench test starts it opens the Webpage in the browser and operates on the
+  elements on the Web page, by simulating user actions like clicking or typing
+  and compare actual and expected behaviour of the elements. 
+      
   \section {Tools used}
   \label{sec:toolsused}
   
@@ -312,8 +326,21 @@
    for all failing tests sent to the author of the patch. 
    As an overall code review helps to keep source code quality on a higher level.
 
-  \section{Testbench class diagram}
-
+  \section{Architecture design}
+  Testbench consist of two main modules: ``Testbench-api'' and
+  ``Testbench-core''. Testbench-api contains classes and methods for
+  simulating user actions on Vaadin components. Testbench-core
+  handles client-server communication, screenshot comparison and
+   provides mehthods for searching Vaadin components on the Web page.
+   
+   Testbench-api module is closely connected to Vaadin framework and changes 
+   in behaviour of Vaadin components, like Button or Textfield, may require changes
+   in the Testbench-api module. Testbench-api module version number matches the
+   compatable Vaadin framework version. As a development team we think that
+   having matching Testbench-api and framework versons will help to solve
+   compatability issues, showing the users which testbench and framework
+   versions they have to use.
+  
   The hierarchy of classes in Testbench consists of many tens of classes and each class has tens of methods.
   Here we will describe the most important classes and the basic principles see
   figure~\ref{fig:classdiagram}.
@@ -436,16 +463,21 @@ A complete example of test UI class \ref{lst:appTestUI}  and a TestBench test
 class \ref{lst:appTestClass} can be found in appendix A \ref{appendixA}.
 
 \section {Results}
-During Testbench4 development 41 tickets were closed the detailed information
-about these tickets can be found in table \ref{table:tickets} in
-appendix B \ref{appendixB}. 
+During Testbench4 development our team add new API to ease writing tests for
+Vaadin applications. We added helper methos for MenuBarElement,
+TreeTableElement, TwinColSelectElement,PopupDateFieldElement etc. Besides a
+ParallelTest class was introduced, which supports running tests concurrently in
+several threads. We have created Testbench-core and Testbench-api modules and
+added separate build configurations for these modules. Overall we have completed
+41 tickets and the detailed information about these tickets can be found in
+table \ref{table:tickets} in appendix B \ref{appendixB}.
 
 To improve User Experience (UX) we have tried to reduce an amount of
-configuration needed for using TestBench. We provide a complete working simple
-test example as a part of build-in configuration.
+configuration needed for using TestBench. We provide a simple test as a
+part of a build-in configuration.
 Developers can use it as an example and extend it for their own requirements. Users may create a sample
-Vaadin application via GUI using Vaadin Eclipse plugin or 
-to create a sample Test via console Maven user should use a Vaadin Maven
+Vaadin application via GUI using Vaadin Eclipse plugin or Maven build tool.
+To create a sample Test via Maven user should use a Vaadin Maven
 archetype see \ref{lst:mavenexample}.
 \lstset{style=console}
 \begin{lstlisting}[caption=Create Vaadin sample application command.,label={lst:mavenexample}]
@@ -462,9 +494,12 @@ run a simple ``button-click'' test in less that 15 minutes.
 Vaadin Testbench 4 is released with Commercial Vaadin Add-On License 
 (CVAL). But if you want to look results of our work and try it out you have two
 options:
-
 \begin{itemize}
   \item Free 30-days trial period.
   \item One year non-commercial license. All the details how to get it are at
   Vaadin blog \cite{vaadinBlog}.
 \end{itemize}
+
+Vaadin framework is using Testbench as a main testing tool for acceptance
+testing. Overall Vaadin framework has about six thousand Testbench tests which
+are run nightly and also before every Vaadin release.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.6)  29 NOV 2015 19:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.6)  14 DEC 2015 00:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -853,126 +853,126 @@ File: lstlang1.sty 2013/08/26 1.5b listings language file
 
 
 
-]
+] [18]
 \openout2 = `testbenchdevelop.aux'.
 
  (./testbenchdevelop.tex
  6.
-[18
+[19
 
 
 
-] [19]
+] [20]
 
-LaTeX Warning: Citation `cleancode' on page 20 undefined on input line 88.
+LaTeX Warning: Citation `cleancode' on page 21 undefined on input line 88.
 
-[20] [21]
-Overfull \hbox (1.45683pt too wide) in paragraph at lines 149--152
+[21] [22]
+Overfull \hbox (1.45683pt too wide) in paragraph at lines 163--166
 \T1/cmr/m/n/12 Trac is an en-hanced wiki and is-sue track-ing sys-tem for soft-
 ware de-vel-op-ment projects.
  []
 
-[22] [23] [24] <images/gerrit1.png, id=460, 963.6pt x 722.7pt>
+[23] [24] [25] [26] <images/gerrit1.png, id=465, 963.6pt x 722.7pt>
 File: images/gerrit1.png Graphic file (type png)
 
 <use images/gerrit1.png>
-Package pdftex.def Info: images/gerrit1.png used on input line 302.
+Package pdftex.def Info: images/gerrit1.png used on input line 316.
 (pdftex.def)             Requested size: 320.0935pt x 240.06866pt.
- [25]
-<images/umlDiagram.png, id=466, 694.595pt x 508.90125pt>
+ [27 <./images/gerrit1.png>]
+<images/umlDiagram.png, id=472, 812.03375pt x 567.11874pt>
 File: images/umlDiagram.png Graphic file (type png)
 
 <use images/umlDiagram.png>
-Package pdftex.def Info: images/umlDiagram.png used on input line 322.
-(pdftex.def)             Requested size: 320.0935pt x 234.5245pt.
- [26 <./images/gerrit1.png>] [27 <./images/umlDiagram.png>]
+Package pdftex.def Info: images/umlDiagram.png used on input line 349.
+(pdftex.def)             Requested size: 320.0935pt x 223.54648pt.
+ [28 <./images/umlDiagram.png>] [29]
 
-LaTeX Warning: Reference `sec:paralelTesting' on page 28 undefined on input lin
-e 383.
+LaTeX Warning: Reference `sec:paralelTesting' on page 30 undefined on input lin
+e 410.
 
 
-Overfull \hbox (5.98299pt too wide) in paragraph at lines 396--397
+Overfull \hbox (5.98299pt too wide) in paragraph at lines 423--424
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[28] [29]
+[30] [31]
 
-LaTeX Warning: Citation `vaadinBlog' on page 30 undefined on input line 469.
+LaTeX Warning: Citation `vaadinBlog' on page 32 undefined on input line 500.
 
-) [30]
+) [32]
 \openout2 = `testbenchcompareselenium.aux'.
 
  (./testbenchcompareselenium.tex
  7.
-<images/clientServerTestbench.png, id=534, 749.80125pt x 474.77374pt>
+[33
+
+
+
+] <images/clientServerTestbench.png, id=546, 749.80125pt x 474.77374pt>
 File: images/clientServerTestbench.png Graphic file (type png)
 
 <use images/clientServerTestbench.png>
-Package pdftex.def Info: images/clientServerTestbench.png used on input line 32
+Package pdftex.def Info: images/clientServerTestbench.png used on input line 44
 .
 (pdftex.def)             Requested size: 320.0935pt x 202.68535pt.
- [31
-
-
-
-] [32 <./images/clientServerTestbench.png>] <images/screen_fail.png, id=551, 91
-9.435pt x 571.13374pt>
+ [34 <./images/clientServerTestbench.png>] <images/screen_fail.png, id=554, 919
+.435pt x 571.13374pt>
 File: images/screen_fail.png Graphic file (type png)
 
 <use images/screen_fail.png>
-Package pdftex.def Info: images/screen_fail.png used on input line 69.
+Package pdftex.def Info: images/screen_fail.png used on input line 81.
 (pdftex.def)             Requested size: 320.0935pt x 198.8366pt.
 
-<images/screen_fail_marked_error.png, id=552, 918.43124pt x 571.13374pt>
+<images/screen_fail_marked_error.png, id=555, 918.43124pt x 571.13374pt>
 File: images/screen_fail_marked_error.png Graphic file (type png)
 
 <use images/screen_fail_marked_error.png>
 Package pdftex.def Info: images/screen_fail_marked_error.png used on input line
- 76.
+ 88.
 (pdftex.def)             Requested size: 320.0935pt x 199.05447pt.
- [33 <./images/screen_fail.png> <./images/screen_fail_marked_error.png>]
+ [35 <./images/screen_fail.png>]
 
-LaTeX Warning: Citation `sureFire' on page 34 undefined on input line 98.
+LaTeX Warning: Citation `sureFire' on page 36 undefined on input line 110.
 
 
-LaTeX Warning: Citation `junitParallelComputer' on page 34 undefined on input l
-ine 99.
+LaTeX Warning: Citation `junitParallelComputer' on page 36 undefined on input l
+ine 111.
 
-[34]) [35]
+[36 <./images/screen_fail_marked_error.png>]) [37]
 \openout2 = `testbenchuse.aux'.
 
  (./testbenchuse.tex
  8.
-[36
+[38
 
 
 
-] <images/filtertable.png, id=615, 963.6pt x 271.0125pt>
+] <images/filtertable.png, id=620, 963.6pt x 271.0125pt>
 File: images/filtertable.png Graphic file (type png)
 
 <use images/filtertable.png>
 Package pdftex.def Info: images/filtertable.png used on input line 62.
 (pdftex.def)             Requested size: 320.0935pt x 90.02574pt.
- [37 <./images/filtertable.png>] [38]) [39]
+ [39 <./images/filtertable.png>] [40]) [41]
 \openout2 = `conclusion.aux'.
 
 
 (./conclusion.tex
  9.
-) [40
+[42
 
 
 
-]
+]) [43]
 No file document.bbl.
-[41
+[44
 
 ]
 \openout2 = `appendixA.aux'.
 
- (./appendixA.tex [42
+ (./appendixA.tex [45
 
-] [43] [44] [45] [46] [47] [48]) [49]
+] [46] [47] [48] [49] [50] [51]) [52]
 \openout2 = `appendixB.aux'.
 
  (./appendixB.texpdfTeX warning (ext4): destination with the same identifier (n
@@ -988,10 +988,10 @@ Overfull \hbox (17.96974pt too wide) in paragraph at lines 6--53
 
 LaTeX Warning: Float too large for page by 14.85672pt on input line 55.
 
-) [50
+) [53
 
 
-] [51]
+] [54]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
  (./document.aux (./intro.aux) (./background.aux) (./webtesting.aux) (./seleniu
@@ -1001,7 +1001,7 @@ m.aux) (./reasondeveloptestbench.aux) (./testbenchdevelop.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 265.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 265.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 8BAC08C4C51D735B8222A5368151BD6B;2665.
+(rerunfilecheck)             Checksum: DAA7636309172E0ADCC94B35501D9C82;2661.
 
 
 LaTeX Warning: There were undefined references.
@@ -1009,8 +1009,8 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
  ) 
 Here is how much of TeX's memory you used:
- 12432 strings out of 493304
- 181109 string characters out of 6139871
+ 12435 strings out of 493304
+ 181130 string characters out of 6139871
  312171 words of memory out of 5000000
  15075 multiletter control sequences out of 15000+600000
  22239 words of font info for 49 fonts, out of 8000000 for 9000
@@ -1032,10 +1032,10 @@ fsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/sh
 are/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
 tt1200.pfb>
-Output written on document.pdf (59 pages, 1048849 bytes).
+Output written on document.pdf (62 pages, 1052665 bytes).
 PDF statistics:
- 1187 PDF objects out of 1200 (max. 8388607)
- 1074 compressed objects within 11 object streams
- 524 named destinations out of 1000 (max. 500000)
+ 1197 PDF objects out of 1200 (max. 8388607)
+ 1081 compressed objects within 11 object streams
+ 527 named destinations out of 1000 (max. 500000)
  397 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -4,16 +4,28 @@ In this chapter we will summarize advantages of using TestBench against
 Selenium.
 
 \section{API built specifically for Vaadin components}
-Selenium operates on the DOM of the Web page and provides only basic methods of
-Web elements like ``click'' or ``sendKeys''. TestBench provides a rich API for
-Vaadin components, which allows to operate on bigger parts of components, for
- example you can get a row or cell of the Table by index
+Selenium operates on the DOM of the Web page and provides basic methods of
+Web elements like ``click'' or ``sendKeys''. For example, to find a value in the Vaadin table
+ when using Selenium, a developer needs to understand how the Vaadin component
+ is built and prepare a selector to find a specific row and cell in it, which is often error prone even for advanced front-end developers.
+ 
+TestBench provides an alternative selector variant with a greater abstraction for Vaadin components.
+This makes it easier and faster to write tests and also protects test scripts
+from potential changes made to the client side implementation of Vaadin components.
+ Using the previous example to get a row or cell of the Table by index you need two lines of code
  see~\ref{lst:testbench1}.
-  	\lstset{style=a1listing}
-  	\begin{lstlisting}[caption=Get Vaadin Table cell Value,label={lst:testbench1}]
+    \lstset{style=a1listing}
+    \begin{lstlisting}[caption=Get Vaadin Table cell Value,label={lst:testbench1}]
 TableElement table = getTableElement();
 String value = table.getRow(0).getCell(1).getValue();
-	\end{lstlisting}
+  \end{lstlisting}
+
+Testbench is backward compatable with Selenium and ff a develper ends up in a
+situation where Testbench lacks helper methods, he can write the test or a helper method with plain Selenium.
+
+In Selenium tests, elements are picked from the page by identifiers.
+Adding identifiers to all elements complicates the source code. When using Testbench you can
+search elements by class or caption, which makes navigating on the page easier.
 	
 \section{Client server communication}
 As mentioned in section~\ref{ch:reasontestbenchdevelopment}
@@ -22,7 +34,7 @@ application. TestBench fixes this problem.
 
 Before calling any client side code, for example, setting a value of a
 text field, TestBench waits for server side code to finish. When event happens
-on the client happens, TestBench sets a boolean value ``hasRequestToServer'' to
+on the client side, TestBench sets a boolean value ``hasRequestToServer'' to
 true and sends a request to the server side. When the server side finishes its
 work, it returns a response and the client side sets the ``hasRequestToServer''
 flag back to false. While there is a request to a server executing all TestBench

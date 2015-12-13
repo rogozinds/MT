@@ -23,7 +23,7 @@
 \BOOKMARK [2][-]{subsection.6.3.3}{Git}{section.6.3}% 23
 \BOOKMARK [2][-]{subsection.6.3.4}{Teamcity}{section.6.3}% 24
 \BOOKMARK [2][-]{subsection.6.3.5}{Gerrit}{section.6.3}% 25
-\BOOKMARK [1][-]{section.6.4}{Testbench class diagram}{chapter.6}% 26
+\BOOKMARK [1][-]{section.6.4}{Architecture design}{chapter.6}% 26
 \BOOKMARK [1][-]{section.6.5}{Basic test case structure}{chapter.6}% 27
 \BOOKMARK [1][-]{section.6.6}{Results}{chapter.6}% 28
 \BOOKMARK [0][-]{chapter.7}{Testbench vs Selenium}{}% 29
