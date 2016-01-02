@@ -60,6 +60,21 @@ Maurizio Leotta, Diego Clerissi, Filippo Ricca, and Cristiano Spadaro.
 \bibitem{junitParallelComputer}
 2015.
 
+\bibitem{bddArticle}
+M.~Rahman.
+\newblock A reusable automated acceptance testing architecture for
+  microservices in behavior-driven development.
+\newblock pages 321--325, March 2005.
+
+\bibitem{bddSite}
+2015.
+
+\bibitem{jBehaveSite}
+2015.
+
+\bibitem{cucumberSite}
+2015.
+
 \bibitem{Zhongen2}
 Zhong sheng Qian, Huaikou Miao, and Hongwei Zeng.
 \newblock A practical web testing model for web application testing.

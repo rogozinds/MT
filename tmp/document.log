@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.6)  14 DEC 2015 00:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.6)  2 JAN 2016 19:27
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -734,7 +734,7 @@ File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 
  (./background.tex
  2.
-<images/client.png, id=298, 963.6pt x 722.7pt>
+<images/client.png, id=300, 963.6pt x 722.7pt>
 File: images/client.png Graphic file (type png)
  <use images/client.png>
 Package pdftex.def Info: images/client.png used on input line 20.
@@ -745,7 +745,7 @@ Package pdftex.def Info: images/client.png used on input line 20.
 
 ]
 [4 <./images/client.png>] [5]
-<images/vaadinClientCom.png, id=322, 663.47874pt x 581.17125pt>
+<images/vaadinClientCom.png, id=324, 663.47874pt x 581.17125pt>
 File: images/vaadinClientCom.png Graphic file (type png)
 
 <use images/vaadinClientCom.png>
@@ -761,7 +761,7 @@ Package pdftex.def Info: images/vaadinClientCom.png used on input line 122.
 
 
 
-] [10] <images/gmail_example.png, id=373, 963.6pt x 504.88625pt>
+] [10] <images/gmail_example.png, id=375, 963.6pt x 504.88625pt>
 File: images/gmail_example.png Graphic file (type png)
 
 <use images/gmail_example.png>
@@ -773,7 +773,7 @@ Package pdftex.def Info: images/gmail_example.png used on input line 108.
 
 (./selenium.tex
  4.
-<images/webdriver_structure.png, id=404, 501.875pt x 454.69875pt>
+<images/webdriver_structure.png, id=406, 501.875pt x 454.69875pt>
 File: images/webdriver_structure.png Graphic file (type png)
 
 <use images/webdriver_structure.png>
@@ -784,7 +784,7 @@ Package pdftex.def Info: images/webdriver_structure.png used on input line 25.
 
 
 ]
-<images/selenium_grid.png, id=413, 963.6pt x 722.7pt>
+<images/selenium_grid.png, id=415, 963.6pt x 722.7pt>
 File: images/selenium_grid.png Graphic file (type png)
 
 <use images/selenium_grid.png>
@@ -821,14 +821,14 @@ Overfull \hbox (1.45683pt too wide) in paragraph at lines 163--166
 t-ware de-vel-op-ment projects.
  []
 
-[23] [24] [25] [26] <images/gerrit1.png, id=494, 963.6pt x 722.7pt>
+[23] [24] [25] [26] <images/gerrit1.png, id=496, 963.6pt x 722.7pt>
 File: images/gerrit1.png Graphic file (type png)
 
 <use images/gerrit1.png>
 Package pdftex.def Info: images/gerrit1.png used on input line 316.
 (pdftex.def)             Requested size: 320.0935pt x 240.06866pt.
  [27 <./images/gerrit1.png>]
-<images/umlDiagram.png, id=501, 812.03375pt x 567.11874pt>
+<images/umlDiagram.png, id=503, 812.03375pt x 567.11874pt>
 File: images/umlDiagram.png Graphic file (type png)
 
 <use images/umlDiagram.png>
@@ -844,23 +844,30 @@ Overfull \hbox (5.98299pt too wide) in paragraph at lines 423--424
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[30] [31]) [32]
+[30] [31] <images/vaadinPlugin.png, id=558, 749.80125pt x 637.38126pt>
+File: images/vaadinPlugin.png Graphic file (type png)
+
+<use images/vaadinPlugin.png>
+Package pdftex.def Info: images/vaadinPlugin.png used on input line 490.
+(pdftex.def)             Requested size: 320.0935pt x 272.10402pt.
+ [32 <./images/vaadinPlugin.png (PNG copy)>])
+[33]
 \openout2 = `testbenchcompareselenium.aux'.
 
  (./testbenchcompareselenium.tex
  7.
-[33
+[34
 
 
 
-] <images/clientServerTestbench.png, id=578, 749.80125pt x 474.77374pt>
+] <images/clientServerTestbench.png, id=586, 749.80125pt x 474.77374pt>
 File: images/clientServerTestbench.png Graphic file (type png)
 
 <use images/clientServerTestbench.png>
 Package pdftex.def Info: images/clientServerTestbench.png used on input line 44
 .
 (pdftex.def)             Requested size: 320.0935pt x 202.68535pt.
- [34 <./images/clientServerTestbench.png>] <images/screen_fail.png, id=586, 919
+ [35 <./images/clientServerTestbench.png>] <images/screen_fail.png, id=595, 919
 .435pt x 571.13374pt>
 File: images/screen_fail.png Graphic file (type png)
 
@@ -868,53 +875,58 @@ File: images/screen_fail.png Graphic file (type png)
 Package pdftex.def Info: images/screen_fail.png used on input line 81.
 (pdftex.def)             Requested size: 320.0935pt x 198.8366pt.
 
-<images/screen_fail_marked_error.png, id=587, 918.43124pt x 571.13374pt>
+<images/screen_fail_marked_error.png, id=596, 918.43124pt x 571.13374pt>
 File: images/screen_fail_marked_error.png Graphic file (type png)
 
 <use images/screen_fail_marked_error.png>
 Package pdftex.def Info: images/screen_fail_marked_error.png used on input line
  88.
 (pdftex.def)             Requested size: 320.0935pt x 199.05447pt.
- [35 <./images/screen_fail.png>]
+ [36 <./images/screen_fail.png>]
 
-LaTeX Warning: Citation `sureFire' on page 36 undefined on input line 110.
+LaTeX Warning: Citation `sureFire' on page 37 undefined on input line 110.
 
-[36 <./images/screen_fail_marked_error.png>]) [37]
+[37 <./images/screen_fail_marked_error.png>]) [38]
 \openout2 = `testbenchuse.aux'.
 
  (./testbenchuse.tex
  8.
-[38
+[39
 
 
 
-] <images/filtertable.png, id=653, 963.6pt x 271.0125pt>
+] <images/filtertable.png, id=661, 963.6pt x 271.0125pt>
 File: images/filtertable.png Graphic file (type png)
 
 <use images/filtertable.png>
-Package pdftex.def Info: images/filtertable.png used on input line 62.
+Package pdftex.def Info: images/filtertable.png used on input line 57.
 (pdftex.def)             Requested size: 320.0935pt x 90.02574pt.
- [39 <./images/filtertable.png>] [40]) [41]
+ [40 <./images/filtertable.png>] [41]
+Overfull \hbox (24.58047pt too wide) in paragraph at lines 122--126
+[][]\T1/cmr/m/n/12 Testbench can be in-te-grated with such BDD frame-works as J
+Be-have [[]] or Cucumber[[]].
+ []
+
+) [42]
 \openout2 = `conclusion.aux'.
 
-
-(./conclusion.tex
+ (./conclusion.tex
  9.
-[42
+[43
 
 
 
-]) [43] (./document.bbl [44
+]) [44] (./document.bbl [45
 
-] [45
+] [46
 
-]) [46]
+] [47]) [48]
 \openout2 = `appendixA.aux'.
 
- (./appendixA.tex [47
+ (./appendixA.tex [49
 
-] [48] [49]
-[50] [51] [52] [53]) [54]
+] [50]
+[51] [52] [53] [54] [55]) [56]
 \openout2 = `appendixB.aux'.
 
  (./appendixB.texpdfTeX warning (ext4): destination with the same identifier (n
@@ -930,10 +942,10 @@ Overfull \hbox (17.96974pt too wide) in paragraph at lines 6--53
 
 LaTeX Warning: Float too large for page by 14.85672pt on input line 55.
 
-) [55
+) [57
 
 
-] [56]
+] [58]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
  (./document.aux (./intro.aux) (./background.aux) (./webtesting.aux) (./seleniu
@@ -951,10 +963,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
  ) 
 Here is how much of TeX's memory you used:
- 12478 strings out of 493304
- 181734 string characters out of 6139871
+ 12495 strings out of 493304
+ 182018 string characters out of 6139871
  312171 words of memory out of 5000000
- 15088 multiletter control sequences out of 15000+600000
+ 15097 multiletter control sequences out of 15000+600000
  22239 words of font info for 49 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,12n,95p,307b,1932s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -974,10 +986,10 @@ fsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/sh
 are/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
 tt1200.pfb>
-Output written on document.pdf (64 pages, 1070086 bytes).
+Output written on document.pdf (66 pages, 1139290 bytes).
 PDF statistics:
- 1256 PDF objects out of 1440 (max. 8388607)
- 1137 compressed objects within 12 object streams
- 555 named destinations out of 1000 (max. 500000)
- 397 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1277 PDF objects out of 1440 (max. 8388607)
+ 1155 compressed objects within 12 object streams
+ 562 named destinations out of 1000 (max. 500000)
+ 402 words of extra memory for PDF output out of 10000 (max. 10000000)
 

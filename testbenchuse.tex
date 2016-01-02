@@ -46,11 +46,6 @@ That might bring a false attitude that writing tests on early stages of the proj
  even if these tests have to be changed often.
  Usually a good rule is that every patch should add or edit at least one test suite, that
  also ease the reviewers job, because a test suite explains what is the reason of the patch. 
-
-In addition to having value throughout the development life cycle,
-Testbench tests are valuable artifacts to get end-users feedback.
-Because Testbench tests are executed in a browser, tests can be used 
-for demonstrating framework or application features to the end-user. 
   
 To demonstrate the usage of Testbench we will create a test for a Vaadin table
 component extension. Developing Vaadin components is outside the scope of
@@ -64,7 +59,7 @@ figure \ref{fig:filtertable}.
 	\label{fig:filtertable}
 	\end{figure}
 
-An essential  part of a Test for the filter feature is represented in listing
+An essential  part of a test for the filter feature is represented in listing
 \ref{lst:testbenchTest}. 
 
  \lstset{style=a1listing}
@@ -79,6 +74,41 @@ TableRowElement row=table.getRow(1);
 assertEquals(row.getCell(0).getValue(),"special");
   \end{lstlisting}
 
+In addition to having value throughout the development life cycle,
+Testbench tests are valuable artifacts to get end-users feedback.
+Because Testbench tests are executed in a browser, tests can be used 
+for demonstrating framework or application features to an end-user. The key
+downside of this approach, that you can not demonstrate the behaviour of the
+application till it is written already. In a worst case scenario, a developer
+may spend time on implementing features that do not fit user requirements and
+have to make tremendous changes after demonstrating the application to the end
+user. Using Behaviour Driven Development(BDD) tehnique helps to improve this
+situation.
+
+Behaviour Driven Development is a software development process which combines
+TDD and domain driven design. The key to success of BDD is the executable
+acceptance tests that describe the expected behavior of a feature and its
+acceptance criteria in the form of scenarios using simple and
+business people readable syntax\cite{bddArticle}. BDD uses a business readable
+language to describe software's behavior while hiding its implementation
+details.
+
+During a BDD process a business user works with a business analyst
+to identify business requirements. These requirements are expressed as a story
+using the following template:
+
+\begin{itemize}
+  \item \textbf{Given} an initial context.
+  \item \textbf{When} an event occurs,
+   \item \textbf{Then} get some outcomes. 
+\end{itemize}
+
+Business and technology should refer to the same system in the same way, that is
+why BDD relies on the use of a very specific and small vocabulary to minimise miscommunication \cite{bddSite}.
+Because a developer and an end-user are using same language, it is much easier
+to negotiate about application requirements and as a result make developing
+process faster and more agile.
+
 In the next section we will show how to improve this test by using
 Behaviour-Driven Development(BDD) framework.
 
@@ -89,7 +119,8 @@ In other words BDD frameworks allow  to write user-stories in
 common language, for example English, and associate them with automated
 acceptance tests.
 
-Testbench can be integrated with such BDD frameworks as JBehave or Cucumber.
+Testbench can be integrated with such BDD frameworks as JBehave
+\cite{jBehaveSite} or Cucumber\cite{cucumberSite}.
 Tests in JBehave are called scenarios see example of JBehave scenario
 \ref{lst:scenario}.
 

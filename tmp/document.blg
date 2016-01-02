@@ -14,46 +14,51 @@ The style file: unsrt.bst
 A level-1 auxiliary file: appendixA.aux
 A level-1 auxiliary file: appendixB.aux
 Database file #1: masterthesis.bib
+Repeated entry---line 257 of file masterthesis.bib
+ : @misc{bddArticle
+ :                 ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "sureFire"
-You've used 26 entries,
+Warning--empty journal in bddArticle
+You've used 30 entries,
             1791 wiz_defined-function locations,
-            569 strings with 6342 characters,
-and the built_in function-call counts, 4863 in all, are:
-= -- 431
-> -- 128
-< -- 7
-+ -- 57
-- -- 31
-* -- 218
-:= -- 601
-add.period$ -- 57
-call.type$ -- 26
-change.case$ -- 13
+            581 strings with 6607 characters,
+and the built_in function-call counts, 5435 in all, are:
+= -- 477
+> -- 135
+< -- 8
++ -- 62
+- -- 32
+* -- 234
+:= -- 658
+add.period$ -- 63
+call.type$ -- 30
+change.case$ -- 14
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 261
-empty$ -- 614
-format.name$ -- 31
-if$ -- 1209
+cite$ -- 31
+duplicate$ -- 294
+empty$ -- 697
+format.name$ -- 32
+if$ -- 1354
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 15
-newline$ -- 105
-num.names$ -- 14
-pop$ -- 159
+int.to.str$ -- 30
+missing$ -- 16
+newline$ -- 119
+num.names$ -- 15
+pop$ -- 188
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 194
+skip$ -- 227
 stack$ -- 0
-substring$ -- 257
-swap$ -- 89
-text.length$ -- 7
+substring$ -- 289
+swap$ -- 101
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 37
-width$ -- 28
-write$ -- 221
-(There was 1 warning)
+warning$ -- 1
+while$ -- 41
+width$ -- 32
+write$ -- 246
+(There was 1 error message)
