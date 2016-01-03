@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.6)  2 JAN 2016 22:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.6)  3 JAN 2016 23:00
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -765,7 +765,7 @@ Package pdftex.def Info: images/vaadinClientCom.png used on input line 122.
 File: images/gmail_example.png Graphic file (type png)
 
 <use images/gmail_example.png>
-Package pdftex.def Info: images/gmail_example.png used on input line 108.
+Package pdftex.def Info: images/gmail_example.png used on input line 106.
 (pdftex.def)             Requested size: 320.0935pt x 167.71463pt.
  [11] [12 <./images/gmail_example.png>]) [13]
 \openout2 = `selenium.aux'.
@@ -773,22 +773,22 @@ Package pdftex.def Info: images/gmail_example.png used on input line 108.
 
 (./selenium.tex
  4.
-<images/webdriver_structure.png, id=406, 501.875pt x 454.69875pt>
+<images/webdriver_structure.png, id=411, 501.875pt x 454.69875pt>
 File: images/webdriver_structure.png Graphic file (type png)
 
 <use images/webdriver_structure.png>
-Package pdftex.def Info: images/webdriver_structure.png used on input line 25.
+Package pdftex.def Info: images/webdriver_structure.png used on input line 27.
 (pdftex.def)             Requested size: 320.0935pt x 290.02098pt.
  [14
 
 
 
 ]
-<images/selenium_grid.png, id=415, 963.6pt x 722.7pt>
+<images/selenium_grid.png, id=420, 963.6pt x 722.7pt>
 File: images/selenium_grid.png Graphic file (type png)
 
 <use images/selenium_grid.png>
-Package pdftex.def Info: images/selenium_grid.png used on input line 49.
+Package pdftex.def Info: images/selenium_grid.png used on input line 51.
 (pdftex.def)             Requested size: 320.0935pt x 240.06866pt.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -821,14 +821,14 @@ Overfull \hbox (1.45683pt too wide) in paragraph at lines 163--166
 t-ware de-vel-op-ment projects.
  []
 
-[23] [24] [25] [26] <images/gerrit1.png, id=496, 963.6pt x 722.7pt>
+[23] [24] [25] [26] <images/gerrit1.png, id=499, 963.6pt x 722.7pt>
 File: images/gerrit1.png Graphic file (type png)
 
 <use images/gerrit1.png>
 Package pdftex.def Info: images/gerrit1.png used on input line 316.
 (pdftex.def)             Requested size: 320.0935pt x 240.06866pt.
  [27 <./images/gerrit1.png>]
-<images/umlDiagram.png, id=503, 812.03375pt x 567.11874pt>
+<images/umlDiagram.png, id=506, 812.03375pt x 567.11874pt>
 File: images/umlDiagram.png Graphic file (type png)
 
 <use images/umlDiagram.png>
@@ -844,30 +844,29 @@ Overfull \hbox (5.98299pt too wide) in paragraph at lines 423--424
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[30] [31] <images/vaadinPlugin.png, id=558, 749.80125pt x 637.38126pt>
+[30] [31] <images/vaadinPlugin.png, id=561, 749.80125pt x 637.38126pt>
 File: images/vaadinPlugin.png Graphic file (type png)
 
 <use images/vaadinPlugin.png>
-Package pdftex.def Info: images/vaadinPlugin.png used on input line 490.
+Package pdftex.def Info: images/vaadinPlugin.png used on input line 500.
 (pdftex.def)             Requested size: 320.0935pt x 272.10402pt.
- [32 <./images/vaadinPlugin.png (PNG copy)>])
-[33]
+ [32]) [33 <./images/vaadinPlugin.png (PNG copy)>]
 \openout2 = `testbenchcompareselenium.aux'.
 
- (./testbenchcompareselenium.tex
+(./testbenchcompareselenium.tex
  7.
 [34
 
 
 
-] <images/clientServerTestbench.png, id=586, 749.80125pt x 474.77374pt>
+] <images/clientServerTestbench.png, id=589, 749.80125pt x 474.77374pt>
 File: images/clientServerTestbench.png Graphic file (type png)
 
 <use images/clientServerTestbench.png>
 Package pdftex.def Info: images/clientServerTestbench.png used on input line 44
 .
 (pdftex.def)             Requested size: 320.0935pt x 202.68535pt.
- [35 <./images/clientServerTestbench.png>] <images/screen_fail.png, id=595, 919
+ [35 <./images/clientServerTestbench.png>] <images/screen_fail.png, id=598, 919
 .435pt x 571.13374pt>
 File: images/screen_fail.png Graphic file (type png)
 
@@ -875,7 +874,7 @@ File: images/screen_fail.png Graphic file (type png)
 Package pdftex.def Info: images/screen_fail.png used on input line 81.
 (pdftex.def)             Requested size: 320.0935pt x 198.8366pt.
 
-<images/screen_fail_marked_error.png, id=596, 918.43124pt x 571.13374pt>
+<images/screen_fail_marked_error.png, id=599, 918.43124pt x 571.13374pt>
 File: images/screen_fail_marked_error.png Graphic file (type png)
 
 <use images/screen_fail_marked_error.png>
@@ -895,7 +894,7 @@ LaTeX Warning: Citation `sureFire' on page 37 undefined on input line 110.
 
 
 
-] <images/filtertable.png, id=661, 963.6pt x 271.0125pt>
+] <images/filtertable.png, id=664, 963.6pt x 271.0125pt>
 File: images/filtertable.png Graphic file (type png)
 
 <use images/filtertable.png>
@@ -946,50 +945,48 @@ LaTeX Warning: Float too large for page by 14.85672pt on input line 55.
 
 
 ] [58]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
  (./document.aux (./intro.aux) (./background.aux) (./webtesting.aux) (./seleniu
 m.aux) (./reasondeveloptestbench.aux) (./testbenchdevelop.aux)
 (./testbenchcompareselenium.aux) (./testbenchuse.aux) (./conclusion.aux)
 (./appendixA.aux) (./appendixB.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 265.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 265.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
 Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: DAA7636309172E0ADCC94B35501D9C82;2661.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 266.
  ) 
 Here is how much of TeX's memory you used:
- 12497 strings out of 493304
- 182047 string characters out of 6139871
+ 12501 strings out of 493304
+ 182112 string characters out of 6139871
  312171 words of memory out of 5000000
- 15098 multiletter control sequences out of 15000+600000
- 22239 words of font info for 49 fonts, out of 8000000 for 9000
+ 15097 multiletter control sequences out of 15000+600000
+ 21246 words of font info for 47 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,12n,95p,307b,1932s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
-fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sfbi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr
-/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/t
-ype1/public/cm-super/sfit1000.pfb></usr/share/texmf/fonts/type1/public/cm-super
-/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/
-share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfsl1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-fsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-tt1200.pfb>
-Output written on document.pdf (66 pages, 1139839 bytes).
+fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf/fonts/type1/public/
+cm-super/sfbi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sfit1000.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sftt1200.pfb>
+Output written on document.pdf (66 pages, 1108144 bytes).
 PDF statistics:
- 1278 PDF objects out of 1440 (max. 8388607)
- 1156 compressed objects within 12 object streams
- 563 named destinations out of 1000 (max. 500000)
+ 1277 PDF objects out of 1440 (max. 8388607)
+ 1157 compressed objects within 12 object streams
+ 569 named destinations out of 1000 (max. 500000)
  402 words of extra memory for PDF output out of 10000 (max. 10000000)
 

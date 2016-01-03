@@ -21,45 +21,45 @@ I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "sureFire"
 Warning--empty journal in bddArticle
 Warning--empty journal in bddArticle2
-You've used 31 entries,
+You've used 32 entries,
             1791 wiz_defined-function locations,
-            585 strings with 6784 characters,
-and the built_in function-call counts, 5749 in all, are:
-= -- 511
-> -- 139
-< -- 9
-+ -- 64
-- -- 33
-* -- 250
-:= -- 697
-add.period$ -- 66
-call.type$ -- 31
-change.case$ -- 15
+            593 strings with 6985 characters,
+and the built_in function-call counts, 6124 in all, are:
+= -- 554
+> -- 147
+< -- 10
++ -- 67
+- -- 35
+* -- 270
+:= -- 745
+add.period$ -- 70
+call.type$ -- 32
+change.case$ -- 16
 chr.to.int$ -- 0
-cite$ -- 33
-duplicate$ -- 312
-empty$ -- 726
-format.name$ -- 33
-if$ -- 1430
+cite$ -- 34
+duplicate$ -- 333
+empty$ -- 762
+format.name$ -- 35
+if$ -- 1525
 int.to.chr$ -- 0
-int.to.str$ -- 31
-missing$ -- 17
-newline$ -- 124
-num.names$ -- 16
-pop$ -- 193
+int.to.str$ -- 32
+missing$ -- 18
+newline$ -- 129
+num.names$ -- 17
+pop$ -- 196
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 242
+skip$ -- 258
 stack$ -- 0
-substring$ -- 321
-swap$ -- 110
-text.length$ -- 9
+substring$ -- 353
+swap$ -- 120
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 45
-width$ -- 33
-write$ -- 256
+while$ -- 49
+width$ -- 34
+write$ -- 270
 (There was 1 error message)

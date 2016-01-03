@@ -137,4 +137,10 @@ S.D. Williams.
   testing with behaviour driven automation framework.
 \newblock pages 321--325, March 2005.
 
+\bibitem{Holmes:2006:AFT:1155439.1155481}
+Antawan Holmes and Marc Kellogg.
+\newblock Automating functional tests using selenium.
+\newblock In {\em Proceedings of the Conference on AGILE 2006}, AGILE '06,
+  pages 270--275, Washington, DC, USA, 2006. IEEE Computer Society.
+
 \end{thebibliography}

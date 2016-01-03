@@ -467,10 +467,20 @@ During Testbench4 development our team add new API to ease writing tests for
 Vaadin applications. We added helper methos for MenuBarElement,
 TreeTableElement, TwinColSelectElement,PopupDateFieldElement etc. Besides a
 ParallelTest class was introduced, which supports running tests concurrently in
-several threads. We have created Testbench-core and Testbench-api modules and
-added separate build configurations for these modules. Overall we have completed
-41 tickets and the detailed information about these tickets can be found in
-table \ref{table:tickets} in appendix B \ref{appendixB}.
+several threads.
+
+We have divided Testbench into two modules: Testbench core and Testbench API.
+Core module includes fundamental features, like client-server communication, finding
+elements on a Web page and test parallel execution. API module includes
+classes and methods for simulating Vaadin components features, like clicking a
+Vaadin button or navigating in a Vaadin menu component. Testbench core
+module is steady and should not be changed frequently. Testbench API
+module, on the contrary, would change often, because of adding new API. Having
+two modules and two separate build configurations for them, allows to build only
+API module and keep core module as it is. 
+
+Overall we have completed 41 tickets
+and the detailed information about these tickets can be found in table \ref{table:tickets} in appendix B \ref{appendixB}.
 
 To improve User Experience (UX) we have tried to reduce an amount of
 configuration needed for using TestBench. We provide a simple test as a
