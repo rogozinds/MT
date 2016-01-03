@@ -33,7 +33,7 @@
 \contentsline {section}{\numberline {7.3}Screenshot comparison}{35}{section.7.3}
 \contentsline {section}{\numberline {7.4}Parallel testing}{37}{section.7.4}
 \contentsline {chapter}{\numberline {8.}Testbench use}{39}{chapter.8}
-\contentsline {section}{\numberline {8.1}Integrating with Behaviour-Driven Development frameworks}{42}{section.8.1}
+\contentsline {section}{\numberline {8.1}Integrating with Behaviour-Driven Development frameworks}{41}{section.8.1}
 \contentsline {chapter}{\numberline {9.}Conclusion}{43}{chapter.9}
 \contentsline {section}{\numberline {9.1}Discussion and Conclussion}{45}{section.9.1}
 \contentsline {subsection}{\numberline {9.1.1}Summary}{45}{subsection.9.1.1}

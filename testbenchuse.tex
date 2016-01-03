@@ -22,7 +22,7 @@ breaking previous work. Developers may not know all the details of the framework
  to a project.  All patches to the framework are reviewed by Vaadin experts and
  running tests beforehand rejects fallible code.
 
- While automated tests have great value, there are circumstanceTs
+ While automated tests have great value, there are circumstances
  where a failing Testbench test gives a false alarm. One of the most fundamental
   problems of Web testing is that a developer can make a change that keeps
    the application completely correct, but breaks an automated test.   
@@ -34,19 +34,6 @@ a developer get an error ``can not find an element on the Web page'',
 but this element is presented on a screenshot, most likely the problem is in
 locating the element code.
 
-Especially in agile development when work is done in small iterations/cycles, 
-changes in code require changes in testing. This gives a fast feedback and
- an opportunity to find and fix problems early, but also brings frustration
-for developers that they have to fix problems both in code and tests. 
-That might bring a false attitude that writing tests on early stages of the project,
- when there is no clear picture of the final product,
- increases the amount of work for developers. 
- 
- We are sure that writing tests reduces an overall work,
- even if these tests have to be changed often.
- Usually a good rule is that every patch should add or edit at least one test suite, that
- also ease the reviewers job, because a test suite explains what is the reason of the patch. 
-  
 To demonstrate the usage of Testbench we will create a test for a Vaadin table
 component extension. Developing Vaadin components is outside the scope of
 this work, we assume someone extended a Table component by adding a filter field to
@@ -97,11 +84,11 @@ During a BDD process a business user works with a business analyst
 to identify business requirements. These requirements are expressed as a story
 using the following template:
 
-\begin{itemize}
-  \item \textbf{Given} an initial context.
-  \item \textbf{When} an event occurs,
-   \item \textbf{Then} get some outcomes. 
-\end{itemize}
+\begin{description}
+  \item[Given] an initial context.
+  \item[When] an event occurs,
+  \item[Then] get some outcomes. 
+\end{description}
 
 Business and technology should refer to the same system in the same way, that is
 why BDD relies on the use of a very specific and small vocabulary to minimise miscommunication \cite{bddSite}.
