@@ -1,8 +1,8 @@
 	\chapter {Selenium}
 	\label{ch:selenium}
       Selenium is a set of different software tools each with different
-      approaches to supporting test automation. The entire suite of tools allows
-      many options for locating UI elements and comparing expected test results
+      approaches for test automation. The entire suite of tools
+      allows many options for locating UI elements and comparing expected test results
        against actual application behavior \cite{seleniumSite}.
        Selenium provides implementation both of C\&R \ref{sec:captureReplay}
        \ref{sec:programTests} and programmable tests models.  
@@ -11,16 +11,18 @@
        interface for building test scripts.
 		Selenium IDE has a recording feature,  which records user actions as they are
 		performed and then exports them as a reusable script in one of many programming languages that can be later executed.
-		An example of recorded test \ref{lst:capturereplay} opens a URL type two
+		An example of recorded test \ref{lst:capturereplay} opens a URL, types two
 		numbers to fields with ``number1'' and ``number2'', then -
-		clicks and ``add'' button and verify the result see Appendix \ref{appendixA}.
+		clicks an ``add'' button and verifies the result see Appendix \ref{appendixA}.
 		
-       \textbf{Selenium  WebDriver} makes direct calls to the browser using
-       browser's native support for automation. WebDriver provides an
-       API for simulating user actions in a Web browser, for example
-       clicking a mouse button or typing on a keyboard.
-       WebDriver provides a multi-browser support and allows same tests to be executed in different
-       environments see figure~\ref{fig:webdriver}.
+\textbf{Selenium  WebDriver} makes direct calls to the browser using
+browser's native support for automation. Selenium WebDriver provides an
+API for simulating user actions in a Web browser, for example
+clicking a mouse button or typing on a keyboard. WebDriver has several
+implementations for different browsers like ChromeDriver, FirefoxDriver
+and IEDriver see figure~\ref{fig:webdriver}.
+Using an interface instead of specific implementations  allows same tests to be
+executed in different environments based on setup parameters.
        
 	  \begin{figure}
 	  \centering
@@ -36,30 +38,30 @@
        Selenium Grid is useful for projects with large amount of tests or test
        suites that must be run in multiple environments.
        
-		Grid allows to add several physical machines to a test cluster. Grid uses the
-		term ``hub'' for a central point where all tests are loaded. Hub is responsible
-		for distributing the tests across nodes. ``Node'' is  a remote machine with
-		specific configuration which is attached to the hub see
-		figure~\ref{fig:selnium_grid}. Nodes are totally separated from each other and
-		may have different operating systems and browsers. Hub ``decides''
-		for each test suite on which node it should be executed based on tests configuration.
-		By default every node starts eleven browsers : five Firefox, five Chrome and
-		one Internet Explorer.
+Grid allows to add several physical machines to a test cluster. Grid uses the
+term ``hub'' for a central point where all tests are loaded. Hub is responsible
+for distributing the tests across nodes. ``Node'' is  a remote machine with
+a specific configuration which is attached to the hub see
+figure~\ref{fig:selnium_grid}. Nodes are totally separated from each other and
+may have different operating systems and browsers. Hub ``decides''
+for each test suite on which node it should be executed based on tests configuration.
+By default every node starts eleven browsers : five Firefox, five Chrome and
+one Internet Explorer.
 		
-		\begin{figure}
-		\centering
-  		\includegraphics[width=0.75\textwidth, center]{selenium_grid}
-  		\caption{Selenium Grid structure}
-		\label{fig:selnium_grid}
-		\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth, center]{selenium_grid}
+\caption{Selenium Grid structure}
+\label{fig:selnium_grid}
+\end{figure}
+
+Selenium Grid is released as a separate jar file, so to setup a test hub you
+only need to have JRE(Java Runtime Envirenment) installed. For starting hub
+run selenium-server with hub parameter see \ref{lst:starthub}. For starting
+a new node specify a ``webdriver'' parameter and the URL of the hub running
+\ref{lst:startnode}.
 		
-		Selenium Grid is released as a separate jar file, so to setup a test hub you
-		only need to have JRE(Java Runtime Envirenment) installed. For starting hub
-		run selenium-server with hub parameter see \ref{lst:starthub}. For starting
-		a new node specify a ``webdriver'' parameter and the URL of the hub running
-		\ref{lst:startnode}.
-		
-		\lstset{style=console}
+\lstset{style=console}
 \begin{lstlisting} [ label={lst:starthub},language=bash, caption=Start hub ]
 java -jar	selenium-server-standalone-2.30.0.jar -role hub
 \end{lstlisting}
@@ -74,12 +76,12 @@ java -jar selenium-server-standalone-2.30.0.jar
 		
 
 	After you have set up the basic configuration of Selenium Grid you can open a
-	tested Web page ``driver.get(UIUrl)'' and use ``Find Element" or ``Find
-	Elements" to get Web elements on your Web page see example
+	tested Web page ``driver.get(UIUrl)'' and use ``Find
+	Elements" method to get Web elements on your Web page see example
 	\ref{lst:starthub2}in the Appendix A. 
 	 Selenium  supports searching elements by id, tag, class, Xpath.
-	 For example to find an element with a class ``profile'' you need to use
-	 By.className query object see example ~\ref{lst:classSearch}. There is no
+	 For example to find an element with a CSS class selector you need
+	 to use By.className query object see example ~\ref{lst:classSearch}. There is no
 	  ideal strategy for searching the required element, a developer
 	decides which one to choose based on requirements.
 	

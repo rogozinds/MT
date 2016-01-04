@@ -2,28 +2,28 @@
 	\label{ch:Webtesting}
 
 		There are several approaches for Web testing, the choice among them depends on
-		different factors such as life cycle of the project, technologies used, the
-		budget, the professional level of developers. Two main ideas are Capture and
-		Replay tests (C\&R) and programmable tests.
+		different factors such as a life cycle of the project, technologies used, the
+		budget and a professional level of developers. Two main ideas are Capture
+		and Replay tests (C\&R) and programmable tests.
 		
-		\section{Capture and Replay}
-		\label{sec:captureReplay}
-			C\&R tools have been developed for testing the applications against graphical user interfaces. 
-			The software tester works with the Web application modeling user behaviour,
-			the C\&R tool records the whole session and generates the
-			script, which can be executed later,	repeating same actions without humans participation.
-			  The main idea of C\&R
-			testing tools is to record a sequence of user actions, that can be
-			automatically replayed later and save them in a human readable format. Human
-			readable format is an important feature, because script editing might
-			 be useful to adjust failed scripts accordingly	to the changes of the Web page.
-			 Though if the Web page was changed	significantly, editing test script might be more expensive than recording a
-			new test\cite{CaptureReplay7}. 
+\section{Capture and Replay}
+\label{sec:captureReplay}
+C\&R tools have been developed for testing the applications against graphical user interfaces. 
+The software tester works with the Web application modeling user behaviour,
+the C\&R tool records the whole session and generates a
+script, which can be executed later,	repeating same actions without humans participation.
+The main idea of C\&R
+testing tools is to record a sequence of user actions, that can be
+automatically replayed later and save them in a human readable format. A human
+readable format is an important feature, because script editing might
+be useful to adjust failed scripts accordingly	to the changes of the Web page.
+Though if the Web page was changed	significantly, editing test script might be more expensive than recording a
+new test\cite{CaptureReplay7}. 
 			
 C\&R tools are usually Web browser plugins or Java applets, because they
 need to control a Web browser to navigate on a Web page. User actions are
 usually saved as a sequence of steps in HTML or XML, which is later used to
-generate a Javascript to reproduce user actions. An example of C\&R testing
+generate a Javascript code to reproduce user actions. An example of C\&R testing
 tool is Selenium IDE described in chapter\ref{ch:selenium}.
 
 The main advantage of C\&R, is that the tester does not
@@ -34,7 +34,7 @@ scripts is harder than editing scripts written by a software
 developer\cite{CaptureReplay7}. The test cases are strongly coupled with Web pages
  and contain hard-coded values. These factors lead to the
 problem, that very often the tester have to record a new test, instead of
-changing the existing ones.
+changing the existing one.
 
  When using C\&R tools the tester can
 not use loose-coupling, decomposition or other design techniques to make
@@ -67,9 +67,9 @@ artificial example of testing Vaadin framework.
 Vaadin has a set of UI element classes and we want to	test that changing 
 the value of the elements triggers a value change listener event.
 First, we create a Web page where we add elements we
-want to test such as text field, combo box, radio button. Second, we add a value
-change listener to all this elements that will change the value of a test field.
-So, when the radio button state changes, event listener method
+want to test such as a text field, a combo box and a radio button. Second, we
+add a value change listener to all this elements that will change the value of a test field.
+When the radio button state changes, event listener method
 will change the value of the test field to ``radio button event triggered''. In the test we
 iterate through all the elements, change their values and check the value
 of the test field see example of test UI \ref{lst:vaadintest} and test case
@@ -86,9 +86,10 @@ small changes to an existing test case.
 	    Both C\&R and programmable tests are focused on a DOM of the Web page.
 	    One disadvantage is they do not provide tools to test appearance of the Web
 	    page like colors, margins, fonts, etc. The client side page may have bugs in CSS
-	    or HTML, for example if all HTML elements had CSS rule display:none, they
-	    would not be shown for a user in the Web browser. Thought all user actions
-	    could be still emulated by a testing tool. This problem can be solved by adding screenshot
+	    or HTML, for example HTML elements with a ``display:none'' CSS rule would
+	    not be shown for a user in the Web browser.
+	    Though all user actions could be still emulated by a testing tool. 
+	    This problem can be solved by adding screenshot
       comparison see \ref{sec:screencompare}, when a screenshot of a tested Web
       page is compared with a reference screenshot. 
 	\subsection{Complex DOM structure}
@@ -120,7 +121,7 @@ small changes to an existing test case.
 		  path to an element in the DOM.
 		\end{enumerate}
 		
-		The efficiency between these strategies is a trade-off between efficiency of
+		The choice between these strategies is a trade-off between efficiency of
 		the test and its complexity for developer. An industrial case study shows that 
 		XPath methods for locating elements on a Web page take 
 		three times longer than same tests with searching
@@ -140,8 +141,8 @@ small changes to an existing test case.
 		criteria, for example get all elements with a specific tag or class selector
 		and process them in a loop. 
 		
-		As we can see there is no one solution for searching elements on a Web page,
-		which can be used in all cases. The developer should make a solution which
+		As we can see there is no ideal solution for searching elements on a Web page,
+		which can be used in all cases. The developer should decide which
 		searching algorithm to use based on requirements, but the testing framework
 		should provide the developer different tools to choose from. In chapter
 		\ref{ch:selenium} we will present Selenium - a software testing framework
