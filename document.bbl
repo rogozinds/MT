@@ -1,0 +1,197 @@
+\begin{thebibliography}{10}
+
+\bibitem{bookVaaidn}
+Marko Gr{\"o}nroos.
+\newblock {\em Book of Vaadin}.
+\newblock Vaadin Ltd, Ruukinkatu 2-4, 20540 Turku, Finland, 7 edition, 2015.
+
+\bibitem{tiobeIndex}
+Tiobe index for march 2015.
+\newblock
+  \url{http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html}, 2015.
+
+\bibitem{maven}
+Maven web site.
+\newblock http://maven.apache.org, 2014.
+
+\bibitem{ant}
+Ant building tool.
+\newblock \url{http://ant.apache.org}, 2014.
+
+\bibitem{junit}
+Junit testing framework.
+\newblock \url{http://junit.org}, 2014.
+
+\bibitem{akka}
+Akka framework web site.
+\newblock \url{http://akka.io/}, 2015.
+
+\bibitem{akkaUseCases}
+Akka use cases.
+\newblock \url{http://doc.akka.io/docs/akka/snapshot/intro/use-cases.html},
+  2015.
+
+\bibitem{yodatime}
+Yoda time library.
+\newblock \url{http://www.joda.org/joda-time/}, 2014.
+
+\bibitem{guava}
+Guava library.
+\newblock \url{https://code.google.com/p/guava-libraries/}, 2014.
+
+\bibitem{cleancode}
+Robert~C. Martin.
+\newblock {\em Clean Code: A Handbook of Agile Software Craftsmanship}.
+\newblock Prentice Hall PTR, Upper Saddle River, NJ, USA, 1 edition, 2008.
+
+\bibitem{Xu1}
+Lei Xu and Baowen Xu.
+\newblock A framework for web applications testing.
+\newblock In {\em Proceedings of the 2004 International Conference on
+  Cyberworlds}, CW '04, pages 300--305, Washington, DC, USA, 2004. IEEE
+  Computer Society.
+
+\bibitem{CaptureReplay7}
+Vinod Anupam, Juliana Freire, Bharat Kumar, and Daniel Lieuwen.
+\newblock Automating web navigation with the webvcr.
+\newblock {\em Comput. Netw.}, 33(1-6):503--517, June 2000.
+
+\bibitem{selenium4}
+Maurizio Leotta, Diego Clerissi, Filippo Ricca, and Cristiano Spadaro.
+\newblock Repairing selenium test cases: An industrial case study about web
+  page element localization.
+\newblock In {\em Proceedings of the 2013 IEEE Sixth International Conference
+  on Software Testing, Verification and Validation}, ICST '13, pages 487--488,
+  Washington, DC, USA, 2013. IEEE Computer Society.
+
+\bibitem{seleniumSite}
+Introduction to selenium.
+\newblock \url{http://www.seleniumhq.org/docs/01_introducing_selenium.jsp},
+  2014.
+
+\bibitem{gitDocs}
+Git documentation.
+\newblock \url{https://git-scm.com/book/en/v2/}, 2015.
+
+\bibitem{gitBasics}
+Git documentation.
+\newblock \url{https://git-scm.com/book/en/v2/Getting-Started-Git-Basics},
+  2015.
+
+\bibitem{phanotmSite}
+Phantomjs site.
+\newblock \url{http://phantomjs.org/}, 2015.
+
+\bibitem{vaadinBlog}
+2015.
+
+\bibitem{sureFireExample}
+Example of maven surefire plugin usage for test build phase.
+\newblock
+  \url{https://maven.apache.org/surefire/maven-surefire-plugin/examples/junit.html},
+  2014.
+
+\bibitem{junitParallelComputer}
+Junit paralel testing example.
+\newblock
+  \url{http://junit.org/apidocs/org/junit/experimental/ParallelComputer.html},
+  2015.
+
+\bibitem{bddArticle}
+M.~Rahman.
+\newblock A reusable automated acceptance testing architecture for
+  microservices in behavior-driven development.
+\newblock In {\em Service-Oriented System Engineering (SOSE), 2015 IEEE
+  Symposium on}, pages 321--325. IEEE, March 2005.
+
+\bibitem{bddWebSite}
+Behaviour driven development site.
+\newblock \url{http://behaviourdriven.org}, 2015.
+
+\bibitem{jBehaveSite}
+Jbehave framework.
+\newblock \url{http://jbehave.org}, 2015.
+
+\bibitem{cucumberSite}
+Cucumber framework.
+\newblock \url{http://https://cucumber.io/}, 2015.
+
+\bibitem{Zhongen2}
+Zhong sheng Qian, Huaikou Miao, and Hongwei Zeng.
+\newblock A practical web testing model for web application testing.
+\newblock In Kokou Yétongnon, Richard Chbeir, and Albert Dipanda, editors,
+  {\em SITIS}, pages 434--441. IEEE Computer Society, 2007.
+
+\bibitem{testGen3}
+Seung~Hak Kuk and Hyeon~Soo Kim.
+\newblock Automatic generation of testing environments for web applications.
+\newblock In {\em Proceedings of the 2008 International Conference on Computer
+  Science and Software Engineering - Volume 02}, CSSE '08, pages 694--697,
+  Washington, DC, USA, 2008. IEEE Computer Society.
+
+\bibitem{pageObject5}
+Maurizio Leotta, Diego Clerissi, Filippo Ricca, and Cristiano Spadaro.
+\newblock Improving test suites maintainability with the page object pattern:
+  An industrial case study.
+\newblock In {\em ICSTW 2013 - 6th IEEE International Conference on Software
+  Testing, Verification and Validation Workshops}, pages 108--113. IEEE, 2013.
+
+\bibitem{performance6}
+Sharma~M Angmo~R.
+\newblock Performance evaluation of web based automation testing tools.
+\newblock In {\em Confluence The Next Generation Information Technology Summit
+  (Confluence), 2014 5th International Conference}, pages 731--735. IEEE, 2014.
+
+\bibitem{webAppTesting8}
+Sebastian Elbaum, Gregg Rothermel, Srikanth Karre, and Marc Fisher~II.
+\newblock Leveraging user-session data to support web application testing.
+\newblock {\em IEEE Trans. Softw. Eng.}, 31(3):187--202, March 2005.
+
+\bibitem{vaadinCookBook}
+Ondrej~Kvasnovsky Jaroslav~Holan.
+\newblock {\em Vaadin 7 Cookbook}.
+\newblock Packt Publishing Ltd, Livery Place, 35 Livery Street, Birmingham, UK,
+  1 edition, 2013.
+
+\bibitem{vaadinTestbenchSite}
+Vaadin testbench web site.
+\newblock \url{https://vaadin.com/add-ons/testbench}, 2014.
+
+\bibitem{ux1}
+S.D. Williams.
+\newblock User experience design for technical communication: Expanding our
+  notions of quality information design.
+\newblock In {\em Professional Communication Conference, 2007. IPCC 2007. IEEE
+  International}, pages 1--13. IEEE, 2013.
+
+\bibitem{vaadinAkka}
+Akka vaadin integration.
+\newblock \url{https://github.com/rogozinds/VaadinWithAkka}, 2014.
+
+\bibitem{vaadinBlogCompare}
+Testbench and selenium comaparison.
+\newblock
+  \url{https://vaadin.com/blog/-/blogs/testing-vaadin-applications-with-selenium-vs-testbench},
+  2015.
+
+\bibitem{TheCleanCoder}
+Robert~C. Martin.
+\newblock {\em The clean coder: a code of conduct for professional
+  programmers}.
+\newblock Pearson Education, Inc., 501 Boylsotn Street, Boston, USA, 1 edition,
+  2011.
+
+\bibitem{bddArticle2}
+Yogeesha C.~B Sandeep~Sivanandan.
+\newblock Agile development cycle: Approach to design an effective model based
+  testing with behaviour driven automation framework.
+\newblock In {\em Service-Oriented System Engineering (SOSE), 2015 IEEE
+  Symposium on}, pages 321--325. IEEE, March 2005.
+
+\bibitem{Holmes:2006:AFT:1155439.1155481}
+Antawan Holmes and Marc Kellogg.
+\newblock Automating functional tests using selenium.
+\newblock In {\em Proceedings of the Conference on AGILE 2006}, AGILE '06,
+  pages 270--275, Washington, DC, USA, 2006. IEEE Computer Society.
+
+\end{thebibliography}
