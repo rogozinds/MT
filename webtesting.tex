@@ -2,7 +2,7 @@
 	\label{ch:Webtesting}
 
 		There are several approaches for Web testing, the choice among them depends on
-		different factors such as lifecycle of the project, technologies used, the
+		different factors such as life cycle of the project, technologies used, the
 		budget, the professional level of developers. Two main ideas are Capture and
 		Replay tests (C\&R) and programmable tests.
 		
@@ -31,7 +31,8 @@ require to have experience in coding. Building test cases with such tools
 is a simple task.
 The biggest downside of C\&R tests is that editing generated
 scripts is harder than editing scripts written by a software
-developer\cite{CaptureReplay7}. The test cases are strongly coupled with Web pages and contain hard-coded values. These factors lead to the
+developer\cite{CaptureReplay7}. The test cases are strongly coupled with Web pages
+ and contain hard-coded values. These factors lead to the
 problem, that very often the tester have to record a new test, instead of
 changing the existing ones.
 
@@ -53,7 +54,8 @@ parameterized tests - tests which can be executed multiple times with different 
 
 Thought writing programmable tests is harder than C\&R and requires more
  experience and skills, programmable tests provide more flexibility and scalability. The empirical study
-       of developing tests for four different frameworks shows that the development of programmable tests is more time
+       of developing tests for four different frameworks shows that the development of 
+       programmable tests is more time
       consuming (between 32\% and 112\%), but test maintenance requires less
       time (with a saving of 16\% and 51\%). As a result ``In general, programmable test cases are more
       expensive to write but easier to evolve than C\&R ones, with an advantage
@@ -118,13 +120,13 @@ small changes to an existing test case.
 		  path to an element in the DOM.
 		\end{enumerate}
 		
-		The efficiency between these strategies is a trade-off between effeciency of
+		The efficiency between these strategies is a trade-off between efficiency of
 		the test and its complexity for developer. An industrial case study shows that 
 		XPath methods for locating elements on a Web page take 
 		three times longer than same tests with searching
     elements by id\cite{selenium4}. 
 	   Id-based tests for static HTML Web pages with small amount of elements
-	   is an optimal solution. On the contarary, in case of dynamically
+	   is an optimal solution. On the contrary, in case of dynamically
 	   generated HTML with many elements as in example \ref{fig:gmailexample}
 	   searching elements by id is inappropriate.
 		

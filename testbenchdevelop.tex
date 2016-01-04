@@ -99,10 +99,10 @@
   code, for example method which parses a regular expression or an utility
   class, for comparing two screenshots.
   
-  Integration tests combine severeal parts of the application and test 
+  Integration tests combine several parts of the application and test 
   interaction between them. In our case integration test consist of a Web page
   running as a Vaadin application on a server and a Testbench test class. When
-  Testbench test starts it opens the Webpage in the browser and operates on the
+  Testbench test starts it opens the Web page in the browser and operates on the
   elements on the Web page, by simulating user actions like clicking or typing
   and compare actual and expected behaviour of the elements. 
       
@@ -112,7 +112,8 @@
   \subsection{Maven}
   Maven is a java-based software project management and comprehension tool.
   Maven is based around the central concept of a build life cycle. This means
-  that the process for building and distributing a particular project(artifact) is clearly defined. There are three built-in lifecycles:
+  that the process for building and distributing a particular project(artifact) is clearly defined.
+   There are three built-in life cycles:
   default, clean and site. Users can define their own life cycle. 
   
   Life cycles  consist of phases.  The default life cycle includes the following phases:
@@ -182,7 +183,8 @@
   and move them to the sprint backlog. As a sprint backlog we used a scrum
   board.
   
-  Scrum board is a white board, divided into several sections for example ``to be done'', ``in progress'', ``in review'',
+  Scrum board is a white board, divided into several sections for example ``to be done'', ``in progress'', 
+  ``in review'',
   ``closed''. Paper stickers represent tickets and the person who is working on
   the ticket.  
   The workflow is the following - a developer picks the
@@ -198,42 +200,41 @@
  \subsection{Git}
   As a version control system we used \textbf{Git} - distributed revision control system
   which focuses on speed, data integrity, and support for distributed,
-  non-linear workflows. There are two types of revision control systems :
+  non-linear workflows \cite{gitDocs}. There are two types of revision control
+  systems :
   
    \begin{itemize}
    \item Client-server - such version control systems as SVN and CVS, have a 
-    a centralised model, where there's a copy of the current code on a central
-    server, which users copy in order to work with locally. When a user makes
-    some changes, he updates from the central version (in case other people have
-    made changes in the meantime), solve conflicts (same part of code was
-    changed by different people at the same time) that might have arisen, and
-    then push their code back to the server. Afterwards other people can check
-    it out again.
-
+    a remote database, which stores the history of files. Systems like CVS,
+    Subversion, Perforce, Bazaar store information as  a list of file-based
+    changes \cite{gitBasics}. When working with such systems a developer copies
+    the latest snapshot of files to a local machine makes changes and then
+    pushes his changes to the remote database. All the information about
+    files history is available only from the remote database, locally only
+    snapshots of files are stored. Almost every SVN command requires a
+    connection to the remote database, this brings a network delay for
+    SVN commands.
+    
    \item Distributed revision control systems such as Git, are structured on a
     peer-to-peer basis: instead of one centralised repository. Every developer
-    has their own repository and there is no main repository as in client-server
-    control systems, all repositories are ``equal''. Though in practise developers
-    create a ``master'' repository, where everyone push their own changes and pull
+    has his own local repository with the history of all changes. There is no
+     main repository as in client-server control systems, all repositories are
+     ``equal''. Changes can be sent between any of these repositories, though
+     in practise developers create a ``master'' repository,
+      where everyone push their own changes and pull
     changes made by other developers.
   \end{itemize}
   
-  One of the biggest advantage of distributed systems is that repositories are
-  synchronised by exchanging change-sets in the form of patches, in other words
-  if you have changed two symbols, these two symbols plus some internal
-  information - author, time, etc. On the contrary, in systems like SVN every
-  time you pull changes from the central repository you are downloading 
-  the whole snapshot of your application sources.
-  
-  Also Git lets developers to have their local history of changes and commits,
-  but then when pushing changes to the master repository they can rebase these changes as one commit.
+  One of the biggest advantage of Git, that it lets developers to
+  have their local history of changes and commits, 
+  but then when pushing changes to the master repository they can merge these
+  changes as one commit.
   This helps on one hand keep a local history of intermediate steps for
   developer, but on the other hand have only commits for completed changes
-  or features in the main repository. 
+  or features in the master repository. 
   
-  Git has a powerful set of tools including
-  unix commands. For example to find all commits made by one person you can use
-  log command and pipeline it to a pattern matching command like ``grep''.
+  Git has a powerful set of tools including  Unix commands. For example to find
+  all commits made by one person you can use log command and pipeline it to a pattern matching command like ``grep''.
   
    Git-blame command allows you to see the history of every line of your source
    code. If you have questions about some particular few lines of code,
@@ -258,10 +259,10 @@
   \item Running tests on every git commit. This configuration is started when
   Gerrit \ref{sec:gerrit} patch is submitted.
    Running all tests for all browsers is very time consuming and may take several hours. 
-   That is why in this configuration includes only JUnit tests and PhantomJS
-   tests, which does not need to run the actual browser.
-   These tests show common errors for all browsers. Running those tests gives
-    a developer a fast feedback, if his changes caused some problems.
+   That is why this configuration includes only JUnit tests and PhantomJS
+   \cite{phanotmSite} tests. PhantomJS is a headless browser used for testing Web-based applications.
+   Headless browsers does not have GUI and can be controlled via command line
+   interface. Running those tests gives a developer a fast feedback, if his changes caused problems.
    
    \item Running all tests on latest commit every night. This build triggers at
     specific time every night, when servers load is lower than during the day.
@@ -327,21 +328,25 @@
    As an overall code review helps to keep source code quality on a higher level.
 
   \section{Architecture design}
+   
   Testbench consist of two main modules: ``Testbench-api'' and
   ``Testbench-core''. Testbench-api contains classes and methods for
-  simulating user actions on Vaadin components. Testbench-core
-  handles client-server communication, screenshot comparison and
-   provides mehthods for searching Vaadin components on the Web page.
+  simulating user actions on Vaadin components.
+  
+  Testbench-core handles client-server communication, screenshot comparison and
+   provides methods for searching Vaadin components on the Web page.
    
-   Testbench-api module is closely connected to Vaadin framework and changes 
-   in behaviour of Vaadin components, like Button or Textfield, may require changes
-   in the Testbench-api module. Testbench-api module version number matches the
-   compatable Vaadin framework version. As a development team we think that
-   having matching Testbench-api and framework versons will help to solve
-   compatability issues, showing the users which testbench and framework
+   Testbench-api module is closely connected to Vaadin framework. Changes 
+   in behaviour of Vaadin components, like button or text field, may require
+   changes in the Testbench-api module. Testbench-apimodule version number
+   matches the compatible Vaadin framework version. As a development team we think that
+   having matching Testbench-api and framework versions will help to solve
+   compatibility issues, showing the users which Testbench and framework
    versions they have to use.
   
-  The hierarchy of classes in Testbench consists of many tens of classes and each class has tens of methods.
+  Testbench is written in Java and uses inheritance for code reuse and
+  extensibility. The hierarchy of classes in Testbench consists of many tens of
+  classes and each class has tens of methods.
   Here we will describe the most important classes and the basic principles see
   figure~\ref{fig:classdiagram}.
 	\begin{figure}
@@ -414,7 +419,7 @@ Vaadin class features. The default naming conventions is Vaadin component name
 plus ``Element''. In other words ButtonElement accesses buttons methods,
 TableElement table methods and so on.
 
-The important aspect is that hierarchy of testbench elements is similar to Vaadin elements.
+The important aspect is that hierarchy of Testbench elements is similar to Vaadin elements.
 That gives more flexibility when writing tests. The  developer/tester can
 specify concrete class for getting access to specific methods of the element see example \ref{lst:specificExample}.
  
@@ -464,7 +469,7 @@ class \ref{lst:appTestClass} can be found in appendix A \ref{appendixA}.
 
 \section {Results}
 During Testbench4 development our team add new API to ease writing tests for
-Vaadin applications. We added helper methos for MenuBarElement,
+Vaadin applications. We added helper methods for MenuBarElement,
 TreeTableElement, TwinColSelectElement,PopupDateFieldElement etc. Besides a
 ParallelTest class was introduced, which supports running tests concurrently in
 several threads.

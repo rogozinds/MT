@@ -106,38 +106,22 @@ charts or tables in the abstract.(100-150 words)
 
 \makeatother % Make the @ a special symbol again, as \@author and \@title are not neded after this
 \chapter*{Preface}
-This document template conforms to Guide to Writing a Thesis at
-Tampere University of Technology (2014) and is based on the previous
-template. The main purpose is to show how the theses are formatted
-using LaTeX (or \LaTeX ~ to be extra fancy) .
+This work has been conducted at the Department of Pervasive Computing of Tampere 
+University of Technology.
 
-The thesis text is written into file \texttt{d\_tyo.tex}, whereas
-\texttt{tutthesis.cls} contains the formatting instructions. Both
-files include lots of comments (start with \%) that should help in
-using LaTeX. TUT specific formatting is done by additional settings on
-top of the original \texttt{report.cls} class file. This example needs
-few additional files: TUT logo, example figure, example code, as well
-as example bibliography and its formatting (\texttt{.bst}) An example
-makefile is provided for those preferring command line. You are
-encouraged to comment your work and to keep the length of lines
-moderate, e.g. <80 characters. In Emacs, you can use \texttt{Alt-Q} to
-break long lines in a paragraph and \texttt{Tab} to indent commands
-(e.g. inside figure and table environments). Moreover, tex files are
-well suited for versioning systems, such as Subversion or Git.  
-% \url{http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf}
+I would firstly thank my supervisor Kari Syst{\"a} for his help and guidance.
 
+I also thank everyone working in Vaadin Ltd, especially Jonatan Kronqvist,
+being my supervisor and also a tech lead during Testbench 4 development.
 
-Acknowledgements to those who contributed to the thesis are generally
-presented in the preface. It is not appropriate to criticize anyone in
-the preface, even though the preface will not affect your grade. The
-preface must fit on one page. Add the date, after which you have not
-made any revisions to the text, at the end of the preface.
+I appreciate help and support from my parents, who are always saying that
+the most profitable investment is education.
 
 ~ 
 % Tilde ~ makes an non-breakable spce in LaTeX. Here it is used to get
 % two consecutive paragraph breaks
 
-Tampere, 1.9.2015
+Tampere, 4.01.2016
 
 ~
 Dmitrii Rogozin
@@ -192,6 +176,7 @@ Dmitrii Rogozin
 \item [IDE] Integrated Development Environment
 \item [JRE] Java Runtime Environment
 \item [POM] Project Object Model
+\item [TDD] Test Driven Development
 \item [UI] User Interface
 \item [URL] Uniform Resource Locator
 
@@ -228,44 +213,10 @@ Dmitrii Rogozin
 \include {testbenchcompareselenium}
 \include {testbenchuse}  
 \include{conclusion}
-\iffalse
- \subsection {Comparing Testbench with other tools}
-    Here I will compare testbench to some other testing tools for example
-    Selenium, what are benefits of using Testbench. The main idea is to focus
-    that Vaadin is a client-server framework, so all Vaadin components have
-    client and server side code, and it's important to test both. I want to show
-    what problems may happen if using only Selenium and test only client side
-    code, so that server side isn't tested. 
-    
-    Also I would like to compare how complicated is to right Selenium and
-    Testbench tests. How much code is needed to test button click for example,
-    or sending text to a textField.
-    
-    Compare speed of running tests. In Vaadin we run tests every night, and
-    sometimes it takes too much time, so I would like to mention ,what are the
-    problems/challenges in having many tests.
 
-      
- \subsection {Vaadin integration}
-    Testbench using some features of Vaadin framework, for example searching
-    elements by vaadin selectors. So I want to describe how integration with
-    Vaadin is done. What are the challenges. For example what would happen when
-    using different versions of Testbench with different versions of Vaadin.
-\fi    
-
- \section {Discussion and Conclussion}
- 	Middle of April/ End of April
- 	\subsection {Summary}
- 	  What has been done. What were the challenges how they were solved.
- 	\subsection {Advantages and disadvantages}
- 	\subsection {Future work}
- 	\nocite{*}
- 	\bibliographystyle{unsrt}
-  \bibliography{masterthesis} 
-  \include{appendixA}
-  \include{appendixB}
+\nocite{*}
+\bibliographystyle{unsrt}
+\bibliography{masterthesis} 
+\include{appendixA}
+\include{appendixB}
 \end{document}
-
-//TODO
-{Other frameworks ideas} part give a name to all aprroaches or at least a link
-add picture of the framework tool
