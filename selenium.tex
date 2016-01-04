@@ -15,10 +15,12 @@
 		numbers to fields with ``number1'' and ``number2'', then -
 		clicks and ``add'' button and verify the result see Appendix \ref{appendixA}.
 		
-       \textbf{Selenium  WebDriver} makes direct calls to the browser using browser's native support for automation. WebDriver represents a web browser, hiding specific browser details, behind the interface see
-       figure~\ref{fig:webdriver}. Having a unified interface provides
-       multi-browser support and allows same tests to be executed in different
-       environments.
+       \textbf{Selenium  WebDriver} makes direct calls to the browser using
+       browser's native support for automation. WebDriver provides an
+       API for simulating user actions in a Web browser, for example
+       clicking a mouse button or typing on a keyboard.
+       WebDriver provides a multi-browser support and allows same tests to be executed in different
+       environments see figure~\ref{fig:webdriver}.
        
 	  \begin{figure}
 	  \centering
@@ -57,16 +59,18 @@
 		a new node specify a ``webdriver'' parameter and the URL of the hub running
 		\ref{lst:startnode}.
 		
-		\begin{lstlisting} [ label={lst:starthub},language=bash, caption=Start hub ]
-		 java -jar	selenium-server-standalone-2.30.0.jar -role hub
-		\end{lstlisting}
+		\lstset{style=console}
+\begin{lstlisting} [ label={lst:starthub},language=bash, caption=Start hub ]
+java -jar	selenium-server-standalone-2.30.0.jar -role hub
+\end{lstlisting}
 
-		\begin{lstlisting} [caption=Start node, label={lst:startnode},language=bash]
-		java -jar selenium-server-standalone-2.30.0.jar 
-		-role webdriver
-		-hub http://http://192.168.1.1:4444/grid/register
-		-port 5566
-		\end{lstlisting}
+    \lstset{style=console}
+\begin{lstlisting} [caption=Start node, label={lst:startnode},language=bash]
+java -jar selenium-server-standalone-2.30.0.jar 
+-role webdriver
+-hub http://http://192.168.1.1:4444/grid/register
+-port 5566
+\end{lstlisting}
 		
 
 	After you have set up the basic configuration of Selenium Grid you can open a

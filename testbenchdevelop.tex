@@ -467,16 +467,41 @@ During Testbench4 development our team add new API to ease writing tests for
 Vaadin applications. We added helper methos for MenuBarElement,
 TreeTableElement, TwinColSelectElement,PopupDateFieldElement etc. Besides a
 ParallelTest class was introduced, which supports running tests concurrently in
-several threads. We have created Testbench-core and Testbench-api modules and
-added separate build configurations for these modules. Overall we have completed
-41 tickets and the detailed information about these tickets can be found in
-table \ref{table:tickets} in appendix B \ref{appendixB}.
+several threads.
+
+We have divided Testbench into two modules: Testbench core and Testbench API.
+Core module includes fundamental features, like client-server communication, finding
+elements on a Web page and test parallel execution. API module includes
+classes and methods for simulating Vaadin components features, like clicking a
+Vaadin button or navigating in a Vaadin menu component. Testbench core
+module is steady and should not be changed frequently. Testbench API
+module, on the contrary, would change often, because of adding new API. Having
+two modules and two separate build configurations for them, allows to build only
+API module and keep core module as it is. 
+
+Overall we have completed 41 tickets
+and the detailed information about these tickets can be found in table \ref{table:tickets} in appendix B \ref{appendixB}.
 
 To improve User Experience (UX) we have tried to reduce an amount of
 configuration needed for using TestBench. We provide a simple test as a
 part of a build-in configuration.
 Developers can use it as an example and extend it for their own requirements. Users may create a sample
 Vaadin application via GUI using Vaadin Eclipse plugin or Maven build tool.
+
+Vaadin plugin provides a wizard for creating new Vaadin application. The wizard
+suggest default values for project settings, which user can change or just fill
+the project name and use default values for project folder structure, theme
+name, deploy configuration, etc \ref{fig:vaadinPlugin}. After finishing the
+wizard setup Vaadin plugin creates a Vaadin project which can be
+deployed and run on a Web server. Vaadin plugin also adds a simple button click
+Testbench test to the project which can be run as a JUnit test.
+  \begin{figure}
+  \centering
+  \includegraphics[width=0.75\textwidth]{vaadinPlugin}
+  \caption{Vaadin project wizard}
+  \label{fig:vaadinPlugin}
+  \end{figure}
+
 To create a sample Test via Maven user should use a Vaadin Maven
 archetype see \ref{lst:mavenexample}.
 \lstset{style=console}
