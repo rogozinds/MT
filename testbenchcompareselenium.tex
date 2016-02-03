@@ -1,4 +1,4 @@
-\chapter{Testbench vs Selenium}
+\chapter{TestBench vs Selenium}
 \label{ch:testbenchvsselenium}
 In this chapter we will summarize advantages of using TestBench against
 Selenium.
@@ -8,7 +8,7 @@ Selenium operates on the DOM of the Web page and provides basic methods of
 Web elements like ``click'' or ``sendKeys''. For example, to find a value in the Vaadin table
  when using Selenium, a developer needs to understand how the Vaadin component
  is built and prepare a selector to find a specific row and cell in it, which is often error prone even
- for advanced front-end developers.
+ for advanced front-end developers \cite{vaadinBlogCompare}.
  
 TestBench provides an alternative selector variant with a greater abstraction for Vaadin components.
 This makes it easier and faster to write tests and also protects test scripts
@@ -21,11 +21,12 @@ TableElement table = getTableElement();
 String value = table.getRow(0).getCell(1).getValue();
   \end{lstlisting}
 
-Testbench is backward compatible with Selenium and if a developer ends up in a
-situation where Testbench lacks helper methods, he can write the test or a helper method with plain Selenium.
+TestBench is backward compatible with Selenium and if a developer ends up in a
+situation where TestBench lacks helper methods, he can write the test or a
+helper method with plain Selenium.
 
 In Selenium tests, elements are picked from the page by identifiers.
-Adding identifiers to all elements complicates the source code. When using Testbench you can
+Adding identifiers to all elements complicates the source code. When using TestBench you can
 search elements by class or caption, which makes navigating on the page easier.
 	
 \section{Client server communication}

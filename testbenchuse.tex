@@ -23,7 +23,7 @@ breaking previous work. Developers may not know all the details of the framework
  running tests beforehand rejects fallible code.
 
  While automated tests have great value, there are circumstances
- where a failing Testbench test gives a false alarm. One of the most fundamental
+ where a failing TestBench test gives a false alarm. One of the most fundamental
   problems of Web testing is that a developer can make a change that keeps
    the application completely correct, but breaks an automated test.   
 That might be caused by changing DOM or CSS of the page, for example adding
@@ -34,7 +34,7 @@ a developer get an error ``can not find an element on the Web page'',
 but this element is presented on a screenshot, most likely the problem is in
 locating the element code.
 
-To demonstrate the usage of Testbench we will create a test for a Vaadin table
+To demonstrate the usage of TestBench we will create a test for a Vaadin table
 component extension. Developing Vaadin components is outside the scope of
 this work, we assume someone extended a Table component by adding a filter field to
 it. Typing value in the filter field filters values of the underlying table see
@@ -62,14 +62,14 @@ assertEquals(row.getCell(0).getValue(),"special");
   \end{lstlisting}
 
 In addition to having value throughout the development life cycle,
-Testbench tests are valuable artifacts to get end-users feedback.
-Because Testbench tests are executed in a browser, tests can be used 
+TestBench tests are valuable artifacts to get end-users feedback.
+Because TestBench tests are executed in a browser, tests can be used 
 for demonstrating framework or application features to an end-user. The key
 downside of this approach, that you can not demonstrate the behaviour of the
 application till it is written already. In a worst case scenario, a developer
 may spend time on implementing features that do not fit user requirements and
 have to make tremendous changes after demonstrating the application to the end
-user. Using Behaviour Driven Development(BDD) tehnique helps to improve this
+user. Using Behaviour Driven Development (BDD) tehnique helps to improve this
 situation.
 
 Behaviour Driven Development is a software development process which combines
@@ -97,7 +97,7 @@ to negotiate about application requirements and as a result make developing
 process faster and more agile.
 
 In the next section we will show how to improve this test by using
-Behaviour-Driven Development(BDD) framework.
+BDD framework.
 
 \section{Integrating with Behaviour-Driven Development frameworks}
 
@@ -106,7 +106,7 @@ In other words BDD frameworks allow  to write user-stories in
 common language, for example English, and associate them with automated
 acceptance tests.
 
-Testbench can be integrated with such BDD frameworks as JBehave
+TestBench can be integrated with such BDD frameworks as JBehave
 \cite{jBehaveSite} or Cucumber\cite{cucumberSite}.
 Tests in JBehave are called scenarios see example of JBehave scenario
 \ref{lst:scenario}.
@@ -135,8 +135,8 @@ The simplest configuration is a one-to-one mapping between a Java class and a te
 see example in appendix A \ref{lst:jbehaveConfig}. 
 
 So we can have both a user-story for our test explaining what should be done and a browser executed
-test showing the actual implementation. Picture with user story and browser implementation. We believe that user-stories 
-scenarios greatly ease communication between stakeholders, 
+test showing the actual implementation. We believe that user-stories 
+greatly ease communication between stakeholders, 
 especially if some of them do not have relevant technical background.
 So user-stories can be shared between stakeholders to show what is done and what
 is planning to be done, if there are questions 

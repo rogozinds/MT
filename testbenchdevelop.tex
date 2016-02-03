@@ -1,7 +1,8 @@
-\chapter{Development of Testbench}
+\chapter{Development of TestBench}
 \label{ch:testbenchdevelop}
   
-  The estimated time for developing Testbench4 was from two months to six weeks.
+  The estimated time for developing Testbench 4 was from two months to six
+  weeks.
   Our team had four members:
   \begin{itemize}
     \item Anthony Guerreiro - developer.
@@ -11,11 +12,11 @@
     
   \end{itemize}
   
-   This is a short period of time and to manage delivering a good-quality product you
-    have to minimize overhead costs. We believe that a team should choose tools
+   This is a short period of time and to manage delivering a good quality
+   product you have to minimize overhead costs. We believe that a team should choose tools
     and methodology which suits its purposes. 
-    Our team decided to use Scrum and Test Driven Development(TDD) for managing
-    product development and try to be agile and flexible. 
+    Our team decided to use Scrum and Test Driven Development (TDD) for managing
+    product development and try to be agile and flexible \cite{scrumSite}. 
     We decided to have two week sprints.
 
   \section{Scrum}
@@ -25,22 +26,22 @@
     incrementally and empirically. The Scrum Team consists of a Product Owner,
     the Development Team, and a Scrum Master.
     
-  \textbf{Product Owner}(PO) - decides what features should the product have to
+  \textbf{Product Owner} (PO) decides what features should the product have to
   maximally increase the satisfaction of the end user of the product and puts this features to the backlog.
   Backlog is a set of features in priority order.
   
-  \textbf{Development team} - is
+  \textbf{Development team} is
   a set of professionals that are working on implementing features of the product. 
   The team size should be from three to eight people. The team should work only on tasks from the backlog.
   
-  \textbf{Scrum master} - a person who should help the team to increase their
+  \textbf{Scrum master} is a person who should help the team to increase their
   productivity by enhancing the understanding of teams strengths and weaknesses.
 
   The main idea of scrum is that development is done in short-time periods
   called sprints. Each spring consists of several phases:
   \begin{itemize}
     \item  Sprint planning - when team decides what tasks should be done during the
-  sprint .
+  sprint.
   \item   Main phase - when actual development is done.
   \item Sprint review - when team shows the results to the product owner.
   \item Retrospective - when team discuss what can be improved.
@@ -53,19 +54,19 @@
   If the team thinks that the task can not be finished in one sprint this task
   should be divided into several subtasks. 
   
-  Having such one-sprint tasks helps the scrum team to keep track of the
+  Having such one sprint tasks helps the scrum team to keep track of the
   progress easily and gives an opportunity to receive feedback for each
   completed task at the end of the sprint. This helps to detect problems at the early stages, when
-  the errors does not have a tremendous feedback.
+  the errors does not have a tremendous impact.
   Even if a feature was misunderstood by the development team
-  and the team  has to redone it completely , the team wastes time equal to the
+  and the team  has to redone it completely, the team wastes time equal to the
   length of the spring at maximum. While in a classical waterfall model,
    a sequential design process in which progress is seen as flowing steadily through 
    the phases of all development stages, 
   the error might be found much more lately, which will have a bigger negative impact.
 
   Another feature of Scrum is self organization of the team. The team should
-  decide by itself which tool set to use. Tasks in scrum are not assigned to
+  decide by itself which toolset to use. Tasks in scrum are not assigned to
   developers by a manager, but instead developers take items from the backlog by themselves.
   This approach saves time and reduces stress, because a person can pick a task,
   which he likes and understands. Developers pick tasks that they
@@ -77,7 +78,8 @@
 
   \section{Test Driven Development}
   TDD is a very popular methodology of a software development. The main idea is
-  to write tests first and then code. The main benefits of such approach are:
+  to write tests first and then code. The main benefits of such approach are
+  the following:
       \begin{itemize}
         \item The developer is sure that his code works as intended, because all
         his code is tested.
@@ -96,21 +98,22 @@
   integration tests. 
   
   Unit tests are used for testing individual parts of source
-  code, for example method which parses a regular expression or an utility
+  code, for example a method which parses a regular expression or an utility
   class, for comparing two screenshots.
   
   Integration tests combine several parts of the application and test 
   interaction between them. In our case integration test consist of a Web page
-  running as a Vaadin application on a server and a Testbench test class. When
-  Testbench test starts it opens the Web page in the browser and operates on the
-  elements on the Web page, by simulating user actions like clicking or typing
+  running as a Vaadin application on a server and a TestBench test class. When
+  a TestBench test starts it opens the Web page in the browser and operates on
+  the elements on the Web page, by simulating user actions like clicking or typing
   and compare actual and expected behaviour of the elements. 
       
   \section {Tools used}
   \label{sec:toolsused}
   
   \subsection{Maven}
-  Maven is a java-based software project management and comprehension tool.
+  Maven is a java-based software project management and comprehension tool
+  \cite{maven}.
   Maven is based around the central concept of a build life cycle. This means
   that the process for building and distributing a particular project(artifact) is clearly defined.
    There are three built-in life cycles:
@@ -136,11 +139,11 @@
   
   The life cycle phases are executed sequentially. For  example 
   running maven deploy executes all the  previous phases (validate, compile,
-  test\ldots).
+  test).
   
   All maven configurations are specified in the Project Object Model (POM) file.
-  POM is an XML file that contains information about the project and configuration details used by Maven 
-  to build the project. 
+  POM is an XML file that contains information about the project and configuration
+   details used by Maven to build the project. 
 
   Maven reduces the complexity of developing and maintaining big projects.
   Nowadays applications may depend on dozens of third-party libraries and
@@ -148,9 +151,9 @@
   finds  and downloads the exact version of the library and adds it to the
   project.
   
-   Maven profiles allow to have different configurations of your
+   Maven profiles allow to have different configurations of the
   application for development and production or testing. All the maven
-  configuration are in the same POM file, that is why editing and sharing
+  configurations are in the same POM file, that is why editing and sharing
   configurations between members of the team is very easy. 
 
   Finally, you have a set of predefined configurations for your application
@@ -162,8 +165,8 @@
  
   \subsection{Trac}
   Trac is an enhanced wiki and issue tracking system for software development
-  projects. Trac may include several projects. Users or developers can
-  create tasks (also called tickets) for these projects. 
+  projects \cite{trac}. Trac may include several projects. Users or developers
+  can create tasks (also called tickets) for these projects. 
   
    Before development a new release a product owner goes through 
    the list of the tickets and add them to a new milestone.
@@ -178,7 +181,7 @@
   possible, preferable before coding starts. This gives a clear vision for all
   members of the team what should be done.
 
-  In the Testbench4 project we used the Trac milestone as a product backlog. On
+  In the TestBench 4 project we used the Trac milestone as a product backlog. On
   the sprint planning we estimate which tasks can be completed at the end of the sprint 
   and move them to the sprint backlog. As a sprint backlog we used a scrum
   board.
@@ -227,26 +230,28 @@
   
   One of the biggest advantage of Git, that it lets developers to
   have their local history of changes and commits, 
-  but then when pushing changes to the master repository they can merge these
+  but when pushing changes to the master repository they can merge these
   changes as one commit.
   This helps on one hand keep a local history of intermediate steps for
   developer, but on the other hand have only commits for completed changes
   or features in the master repository. 
   
   Git has a powerful set of tools including  Unix commands. For example to find
-  all commits made by one person you can use log command and pipeline it to a pattern matching command like ``grep''.
+  all commits made by one person you can use log command and pipeline it to a pattern
+  matching command like ``grep''.
   
    Git-blame command allows you to see the history of every line of your source
    code. If you have questions about some particular few lines of code,
-   you can find an author of those lines and ask him a question.
+   you can find an author of those lines and ask him directly.
    
    Git-bisect command - is a binary search against revision graph, which helps to find the commit which
    introduced a bug.
 
   \subsection{Teamcity}
-  Teamcity - is a Web-based build management and continuous integration tool.
+  Teamcity - is a Web-based build management and continuous integration tool
+  \cite{teamcity}.
   Teamcity allows running multiple builds and tests under different platforms and environments.
-  Teamcity build combines maven, ant builds, git command and bash scripts.
+  Teamcity build combines maven, ant builds, git commands and bash scripts.
   
   Teamcity builds may be started automatically or manually. One option is to create a configuration 
   to run all  tests every night or to setup running tests on every git commit. Teamcity
@@ -264,8 +269,8 @@
    Headless browsers does not have GUI and can be controlled via command line
    interface. Running those tests gives a developer a fast feedback, if his changes caused problems.
    
-   \item Running all tests on latest commit every night. This build triggers at
-    specific time every night, when servers load is lower than during the day.
+   \item Running all tests on the latest commit every night. This build triggers
+   at specific time every night, when servers load is lower than during the day.
     This configuration includes all the heavy tests for specific browsers. All
     the tests are run on Google Chrome, Mozilla Firefox and Internet Explorer 8, 9, 10 and 11. 
     For every test suite Teamcity will run the specific browser on a test
@@ -286,8 +291,9 @@
 
 \subsection{Gerrit}
 \label{sec:gerrit}
-  Gerrit is a Web-based code collaboration tool. Gerrit allows developers to
-  review patches made by other developers. Gerrit has a very easy system of evaluating patches:
+  Gerrit is a Web-based code collaboration tool \cite{gerrit}. Gerrit allows
+  developers to review patches made by other developers.
+   Gerrit has a very easy system of evaluating patches:
   \begin{itemize}
   \item -2 (veto) - patch has major problems.
   \item -1 (disapprove) - patch has minor problems.
@@ -296,11 +302,11 @@
   \end{itemize}
   
   The difference between +1 and +2 is that the patch can not be pushed to git
-  repository without having +2. The reviewer can give +1 if he is not sure about his level of competence
-  and want someone else to inspect the patch. 
+  repository without having +2. The reviewer can give +1 if he is not sure about 
+  his level of competence  and want someone else to inspect the patch. 
   There are might be several configurations of the review process,
   figure \ref{fig:gerritTestbench} shows the process used in the
-  Testbench4 project.
+  TestBench 4 project.
 
   Firstly, a developer submits his changes(patch) to Gerrit. Gerrit triggers the
   specific build in Teamcity. This build includes building the project and
@@ -310,7 +316,7 @@
   of waiting for review patches.
   Afterwards the reviewer evaluates the patch. Given the patch -1 or -2 means
   that the developer should fix the problems, and submit the next version of the patch. 
-  The process continues until someone  marks the patch as +2,
+  The process continues until the patch is marked as +2,
     meaning in can be pushed to git master repository.
     \begin{figure}
     \centering
@@ -320,7 +326,7 @@
     \end{figure}
     
   Code review helps team members to follow similar code conventions, 
-  keep code clean and readable and find bugs. Also code review helps developers to know more about 
+  keep code clean and find bugs. Also code review helps developers to know more about 
   the whole project they are working in. Integrating Gerrit with an automated build tool, 
   such as TeamCity, allows to run tests before publishing commit for review. 
   The patch with failing tests is rejected automatically and an email with report
@@ -329,23 +335,23 @@
 
   \section{Architecture design}
    
-  Testbench consist of two main modules: ``Testbench-api'' and
+  TestBench consist of two main modules: ``Testbench-api'' and
   ``Testbench-core''. Testbench-api contains classes and methods for
   simulating user actions on Vaadin components.
   
   Testbench-core handles client-server communication, screenshot comparison and
-   provides methods for searching Vaadin components on the Web page.
+   provides methods for searching Vaadin components on a Web page.
    
    Testbench-api module is closely connected to Vaadin framework. Changes 
    in behaviour of Vaadin components, like button or text field, may require
    changes in the Testbench-api module. Testbench-apimodule version number
    matches the compatible Vaadin framework version. As a development team we think that
    having matching Testbench-api and framework versions will help to solve
-   compatibility issues, showing the users which Testbench and framework
+   compatibility issues, showing the users which TestBench and framework
    versions they have to use.
   
-  Testbench is written in Java and uses inheritance for code reuse and
-  extensibility. The hierarchy of classes in Testbench consists of many tens of
+  TestBench is written in Java and uses inheritance for code reuse and
+  extensibility. The hierarchy of classes in TestBench consists of many tens of
   classes and each class has tens of methods.
   Here we will describe the most important classes and the basic principles see
   figure~\ref{fig:classdiagram}.
@@ -365,23 +371,23 @@ the given type.
  `\$' method builds a recursive search query and `\$\$' a non-recursive one.
  Non-recursive search query looks only for direct children of the element, while
  it is recursive analog looks through all children of the element. Children
- elements are inner HTML-elements. In example \ref{lst:domexample}
+ elements are inner HTML elements. In example \ref{lst:domexample}
    button and check box input elements are children elements of the div element
    with id id1.
  \lstset{style=console}
   \begin{lstlisting} [caption=Simple DOM example,label={lst:domexample}]
   <div id="id1">
 	  <input type="button">
-      <input type ="checkbox">
+    <input type ="checkbox">
   </div>
   \end{lstlisting}
   
   
-\textbf{ElementQuery<T>} used for locating Web elements(Vaadin buttons, text
-fields, labels, etc.) on the Web page. Generic parameter T specifies the type of a searched element. 
+\textbf{ElementQuery<T>} used for locating Web elements (Vaadin buttons, text
+fields, labels, etc.) on a Web page. Generic parameter T specifies the type of a searched element. 
  ElementQuery class provides methods for searching the element based on
- element's id,class, caption or other criteria. These methods can be considered
- as filters in the query. ElementQuery uses the Builder pattern, 
+ elements id, class, caption or other criteria. These methods can be considered
+ as filters in the query. ElementQuery uses the builder pattern, 
  which helps to add several filters to build a specific query and after
  the query is built execute it.
 
@@ -402,11 +408,11 @@ List<Button> allButtons=elem.$(ButtonElement.class)
 	.caption("ok").all();
   \end{lstlisting}
   
-\textbf{TestBenchElemenet} - is a base class for operating Vaadin components. It
-includes methods to access properties common to all Vaadin elements,
-such as "getSize()'', ``getLocation()'', ``getCssValue()'', etc.
+\textbf{TestBenchElemenet} - is a base class for operating on Vaadin components.
+It includes methods to access properties common to all Vaadin elements,
+such as getSize, getLocation, getCssValue, etc.
 TestbenchElement class uses Selenium WebElement class as a foundation and extend
-it's functionality by using JavascriptExecutor,
+its functionality by using JavascriptExecutor,
 which allows to execute JavaScript code, and change the default element behaviour.
 
 \textbf{TestBenchTestCase} - an abstract super class of a TestBench test.
@@ -419,8 +425,9 @@ Vaadin class features. The default naming conventions is Vaadin component name
 plus ``Element''. In other words ButtonElement accesses buttons methods,
 TableElement table methods and so on.
 
-The important aspect is that hierarchy of Testbench elements is similar to Vaadin elements.
-That gives more flexibility when writing tests. The  developer/tester can
+The important aspect is that hierarchy of TestBench elements is similar to
+Vaadin elements.
+That gives more flexibility when writing tests. The  developer can
 specify concrete class for getting access to specific methods of the element see example \ref{lst:specificExample}.
  
 \lstset{style=a1listing}
@@ -445,7 +452,7 @@ for(int i=0;i<elements.size();i++) {
 \section {Basic test case structure}
 To use TestBench, the test case class should extend the TestBenchTestCase class,
 which provides the WebDriver and ElementQuery APIs. A developer
-can configure Testbench test by using following annotations:
+can configure TestBench test by using following annotations:
 \begin{itemize}
   \item @Rule -defines certain TestBench parameters.
   \item @Before - the annotated method is executed before each test.
@@ -468,23 +475,23 @@ A complete example of test UI class \ref{lst:appTestUI}  and a TestBench test
 class \ref{lst:appTestClass} can be found in appendix A \ref{appendixA}.
 
 \section {Results}
-During Testbench4 development our team add new API to ease writing tests for
-Vaadin applications. We added helper methods for MenuBarElement,
+During the TestBench 4 development our team add new API to ease writing tests
+for Vaadin applications. We added helper methods for MenuBarElement,
 TreeTableElement, TwinColSelectElement,PopupDateFieldElement etc. Besides a
 ParallelTest class was introduced, which supports running tests concurrently in
 several threads.
 
-We have divided Testbench into two modules: Testbench core and Testbench API.
+We have divided TestBench into two modules: TestBench core and TestBench API.
 Core module includes fundamental features, like client-server communication, finding
 elements on a Web page and test parallel execution. API module includes
 classes and methods for simulating Vaadin components features, like clicking a
-Vaadin button or navigating in a Vaadin menu component. Testbench core
-module is steady and should not be changed frequently. Testbench API
+Vaadin button or navigating in a Vaadin menu component. TestBench core
+module is steady and should not be changed frequently. TestBench API
 module, on the contrary, would change often, because of adding new API. Having
 two modules and two separate build configurations for them, allows to build only
 API module and keep core module as it is. 
 
-Overall we have completed 41 tickets
+Overall we have completed 41 ticket
 and the detailed information about these tickets can be found in table \ref{table:tickets} in appendix B \ref{appendixB}.
 
 To improve User Experience (UX) we have tried to reduce an amount of
@@ -493,13 +500,13 @@ part of a build-in configuration.
 Developers can use it as an example and extend it for their own requirements. Users may create a sample
 Vaadin application via GUI using Vaadin Eclipse plugin or Maven build tool.
 
-Vaadin plugin provides a wizard for creating new Vaadin application. The wizard
-suggest default values for project settings, which user can change or just fill
+Vaadin plugin provides a wizard for creating a new Vaadin application. The
+wizard suggest default values for project settings, which user can change or just fill
 the project name and use default values for project folder structure, theme
 name, deploy configuration, etc \ref{fig:vaadinPlugin}. After finishing the
 wizard setup Vaadin plugin creates a Vaadin project which can be
 deployed and run on a Web server. Vaadin plugin also adds a simple button click
-Testbench test to the project which can be run as a JUnit test.
+TestBench test to the project which can be run as a JUnit test.
   \begin{figure}
   \centering
   \includegraphics[width=0.75\textwidth]{vaadinPlugin}
@@ -521,7 +528,7 @@ After beta release we made several usability tests.
 A Vaadin developer, without experience in using TestBench, manages to create and 
 run a simple ``button-click'' test in less that 15 minutes. 
 
-Vaadin Testbench 4 is released with Commercial Vaadin Add-On License 
+Vaadin TestBench 4 is released with Commercial Vaadin Add-On License 
 (CVAL). But if you want to look results of our work and try it out you have two
 options:
 \begin{itemize}
@@ -530,6 +537,6 @@ options:
   Vaadin blog \cite{vaadinBlog}.
 \end{itemize}
 
-Vaadin framework is using Testbench as a main testing tool for acceptance
-testing. Overall Vaadin framework has about six thousand Testbench tests which
+Vaadin framework is using TestBench as a main testing tool for acceptance
+testing. Overall Vaadin framework has about six thousand TestBench tests which
 are run nightly and also before every Vaadin release.
