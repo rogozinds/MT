@@ -1,10 +1,10 @@
 	\chapter{Web testing}
 	\label{ch:Webtesting}
 
-		There are several approaches for Web testing, the choice among them depends on
-		different factors such as a life cycle of the project, technologies used, the
-		budget and a professional level of developers. Two main ideas are Capture
-		and Replay tests (C\&R) and programmable tests.
+		There are two main approaches for Web testing: Capture
+		and Replay tests (C\&R) and programmable tests. The choice among them depends
+		on different factors such as a life cycle of the project, technologies used, the
+		budget and a professional level of developers.
 		
 \section{Capture and Replay}
 \label{sec:captureReplay}
@@ -14,27 +14,26 @@ the C\&R tool records the whole session and generates a
 script, which can be executed later,	repeating same actions without humans participation.
 The main idea of C\&R
 testing tools is to record a sequence of user actions, that can be
-automatically replayed later and save them in a human readable format. A human
-readable format is an important feature, because script editing might
-be useful to adjust failed scripts accordingly	to the changes of the Web page.
-Though if the Web page was changed	significantly, editing test script might be more expensive than recording a
-new test\cite{CaptureReplay7}. 
+automatically replayed later and save them in a human readable format. Generated
+scripts can be edited later to adjust failed scripts accordingly to the
+changes of the Web page.
+Though if the Web page was changed	significantly, editing the script might be
+more expensive than recording a new test \cite{CaptureReplay7}. 
 			
 C\&R tools are usually Web browser plugins or Java applets, because they
 need to control a Web browser to navigate on a Web page. User actions are
 usually saved as a sequence of steps in HTML or XML, which is later used to
 generate a Javascript code to reproduce user actions. An example of C\&R testing
-tool is Selenium IDE described in chapter\ref{ch:selenium}.
+tool is Selenium IDE described in chapter \ref{ch:selenium}.
 
 The main advantage of C\&R, is that the tester does not
 require to have experience in coding. Building test cases with such tools
 is a simple task.
 The biggest downside of C\&R tests is that editing generated
 scripts is harder than editing scripts written by a software
-developer\cite{CaptureReplay7}. The test cases are strongly coupled with Web pages
- and contain hard-coded values. These factors lead to the
-problem, that very often the tester have to record a new test, instead of
-changing the existing one.
+developer \cite{CaptureReplay7}. The test cases are strongly coupled with Web
+pages and contain hard-coded values, that is why the tester often have to record
+a new test, instead of changing the existing one.
 
  When using C\&R tools the tester can
 not use loose-coupling, decomposition or other design techniques to make
@@ -53,32 +52,16 @@ flexible and powerful than C\&R tests and provide an opportunity to create
 parameterized tests - tests which can be executed multiple times with different arguments. 
 
 Thought writing programmable tests is harder than C\&R and requires more
- experience and skills, programmable tests provide more flexibility and scalability. The empirical study
-       of developing tests for four different frameworks shows that the development of 
-       programmable tests is more time
-      consuming (between 32\% and 112\%), but test maintenance requires less
-      time (with a saving of 16\% and 51\%). As a result ``In general, programmable test cases are more
-      expensive to write but easier to evolve than C\&R ones, with an advantage
-      after two releases (in the median case)''.\cite{CaptureReplay7}
-
- \section{Capture and Replay vs Programmable tests}
- To show that programmable tests are more powerful than C\&R we provide an
-artificial example of testing Vaadin framework.	
-Vaadin has a set of UI element classes and we want to	test that changing 
-the value of the elements triggers a value change listener event.
-First, we create a Web page where we add elements we
-want to test such as a text field, a combo box and a radio button. Second, we
-add a value change listener to all this elements that will change the value of a test field.
-When the radio button state changes, event listener method
-will change the value of the test field to ``radio button event triggered''. In the test we
-iterate through all the elements, change their values and check the value
-of the test field see example of test UI \ref{lst:vaadintest} and test case
-classes \ref{lst:vaadintest2} in the Appendix A.
-
-The biggest advantage of programmable tests against C\&R is scalability and
-better maintainability. When using C\&R a tester should record same actions for
+ experience and skills, programmable tests provide more flexibility and
+ scalability. When using C\&R a tester should record same actions for
 each new element, while with  programmable tests, testing new elements requires
-small changes to an existing test case. 
+small changes to an existing test case.
+The empirical study of developing tests for four different frameworks shows that the development of 
+programmable tests is more time consuming (between 32\% and 112\%), but test
+maintenance requires less time (with a saving of 16\% and 51\%). 
+As a result, in general, programmable test cases are more
+expensive to write but easier to evolve than C\&R ones, with an advantage
+after two releases (in the median case) \cite{CaptureReplay7}.
 
 \section {Challenges}
 	\label {sec:challenges}
@@ -123,9 +106,9 @@ small changes to an existing test case.
 		
 		The choice between these strategies is a trade-off between efficiency of
 		the test and its complexity for developer. An industrial case study shows that 
-		XPath methods for locating elements on a Web page take 
+		XPath methods for locating elements on a Web page run 
 		three times longer than same tests with searching
-    elements by id\cite{selenium4}. 
+    elements by id \cite{selenium4}. 
 	   Id-based tests for static HTML Web pages with small amount of elements
 	   is an optimal solution. On the contrary, in case of dynamically
 	   generated HTML with many elements as in example \ref{fig:gmailexample}

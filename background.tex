@@ -13,8 +13,8 @@
 	 ``ability of a user to affect the state of the business logic on the
 	 server"[7]. In other words a user or a client makes a request to a server,
 	 the server performs some actions (calculate, fetch data from database or
-	 external Web-service) and sends the response back to the client, which is rendered in the browser see
-	  figure \ref{fig:pic1}.
+	 external Web-service) and sends the response back to the client, which is
+	 rendered in the browser as shown in Figure \ref{fig:pic1}.
 	  
 	  \begin{figure}
       	\includegraphics[width=0.75\textwidth]{client}
@@ -33,7 +33,7 @@
     	  \item A client, for example a Web browser, can be already created.
     	\end{itemize}
     		
-    	Client server model is closely related to a multi-tier architecture - the
+    	Client server model is extended by a multi-tier architecture - the
     	concept where the parts of the system are divided into separate tiers. Web applications
     	 are often use three-tier architecture:
     	 \begin{itemize}
@@ -65,15 +65,18 @@
    \emph{Client-side} Vaadin code is executed in the Web browser as JavaScript
    code.
    \emph{Server-side} code is executed on the server as Java code on the Java
-   Virtual machine(JVM).
+   Virtual Machine (JVM) \cite{jvmArticle}.
 
    The client-side code is originally written in Java and then
    compiled to JavaScript using a Vaadin client compiler. A Vaadin client
-   compiler is based on Google Web Toolkt (GWT). The client-side code is
-   responsible for rendering the user interface and sending user interaction to the server. Vaadin allows
-   developing client-side modules, which run in a browser without server
-   communication. Client-side modules are used when there is no stable
-   connection, for example mobile applications, or  highly responsive UI logic
+   compiler is based on Google Web Toolkt (GWT) \cite{gwtWebSite}. GWT is a
+   development toolkit that lets a developer to write client-side applications in Java and deploy
+   them as Javascript.
+   
+   The Vaadin client-side code is responsible for rendering the user interface and sending user
+    interaction to the server. Vaadin allows developing client-side modules, 
+    which run in a browser without server communication. Client-side modules are used when there is no stable
+   connection, for example mobile applications, or highly responsive UI logic
    is needed as in games. Client side module is compiled to Javascript and can be
    loaded to any web page.
    
@@ -87,11 +90,10 @@
    an opportunity to debug code in a browser.
   
    Nowadays there are many standards and recommendations for Web
-   developers published by World Wide Web Consortium (W3C) or  International
-   Organization for Standardization (ISO), including recommendations for
+   developers including guidelines for
    markup languages, Document Object Models (DOM) and standards
-   for JavaScript. In spite of all the standards the difference between browsers
-   and versions might be significant for a developer. The differences may vary
+   for JavaScript. In spite of all the standards the differences between
+   browsers and versions might be significant for a developer. The differences may vary
    from supporting different Cascading Style Sheets (CSS) tags
    and HTML5 features, differences in event handling and simply bugs. Vaadin
    client compiler and GWT provide a wide browser support, eliminating the difference between browsers,
@@ -149,7 +151,7 @@
     person may be involved in developing both a front-end and a back-end.
     This might be an important factor for small teams and speeds up the development
     process.
-   \item Vaadin brings the power of Java into the Web development. Due to
+   \item Vaadin brings the power of Java into the Web development. According to
     TIOBE index \cite{tiobeIndex} Java and C are the two most popular programming
     languages since 2002. This fact allows developer to use a great amount of
     already-made solutions such as building tools Maven \cite{maven} and Ant
@@ -174,7 +176,7 @@
 			code written, because the developers can not localize the place where the
 			error is actually happening.
 			\item Developing new features becomes harder, if they are based on the part
-			of the system which have errors.
+			of the system that have errors.
 		
 			\item Costs of the whole system increase.
 	 	 \end{itemize}

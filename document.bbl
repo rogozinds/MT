@@ -5,6 +5,18 @@ Marko Gr{\"o}nroos.
 \newblock {\em Book of Vaadin}.
 \newblock Vaadin Ltd, Ruukinkatu 2-4, 20540 Turku, Finland, 7 edition, 2015.
 
+\bibitem{jvmArticle}
+Chong~Kam Mun, G.S.V.R. KrishnaRao, Hai-Shuan Lam, C.~Eswaran, and
+  S.~Phon-Amnuaisuk.
+\newblock Performance optimization of java virtual machine on dual-core
+  technology for web services - a study.
+\newblock In {\em Advanced Communication Technology, The 9th International
+  Conference on}, volume~1, pages 567--570, Feb 2007.
+
+\bibitem{gwtWebSite}
+Google web toolkit site.
+\newblock \url{http://www.gwtproject.org/overview.html}, 2016.
+
 \bibitem{tiobeIndex}
 Tiobe index for march 2015.
 \newblock
@@ -12,32 +24,32 @@ Tiobe index for march 2015.
 
 \bibitem{maven}
 Maven web site.
-\newblock http://maven.apache.org, 2014.
+\newblock http://maven.apache.org, 2016.
 
 \bibitem{ant}
 Ant building tool.
-\newblock \url{http://ant.apache.org}, 2014.
+\newblock \url{http://ant.apache.org}, 2016.
 
 \bibitem{junit}
 Junit testing framework.
-\newblock \url{http://junit.org}, 2014.
+\newblock \url{http://junit.org}, 2016.
 
 \bibitem{akka}
 Akka framework web site.
-\newblock \url{http://akka.io/}, 2015.
+\newblock \url{http://akka.io/}, 2016.
 
 \bibitem{akkaUseCases}
 Akka use cases.
 \newblock \url{http://doc.akka.io/docs/akka/snapshot/intro/use-cases.html},
-  2015.
+  2016.
 
 \bibitem{yodatime}
 Yoda time library.
-\newblock \url{http://www.joda.org/joda-time/}, 2014.
+\newblock \url{http://www.joda.org/joda-time/}, 2016.
 
 \bibitem{guava}
 Guava library.
-\newblock \url{https://code.google.com/p/guava-libraries/}, 2014.
+\newblock \url{https://code.google.com/p/guava-libraries/}, 2016.
 
 \bibitem{cleancode}
 Robert~C. Martin.
@@ -67,51 +79,59 @@ Maurizio Leotta, Diego Clerissi, Filippo Ricca, and Cristiano Spadaro.
 \bibitem{seleniumSite}
 Introduction to selenium.
 \newblock \url{http://www.seleniumhq.org/docs/01_introducing_selenium.jsp},
-  2014.
+  2016.
+
+\bibitem{seleniumDef}
+A.~Holmes and M.~Kellogg.
+\newblock Automating functional tests using selenium.
+\newblock In {\em Agile Conference, 2006}, pages 6 pp.--275, July 2006.
 
 \bibitem{scrumSite}
 Scrum definition.
-\newblock \url{https://www.scrum.org/Resources/What-is-Scrum}, 2015.
+\newblock \url{https://www.scrum.org/Resources/What-is-Scrum}, 2016.
 
 \bibitem{trac}
 Trac web site.
-\newblock http://trac.edgewall.org/, 2014.
+\newblock http://trac.edgewall.org/, 2016.
 
 \bibitem{gitDocs}
 Git documentation.
-\newblock \url{https://git-scm.com/book/en/v2/}, 2015.
+\newblock \url{https://git-scm.com/book/en/v2/}, 2016.
 
 \bibitem{gitBasics}
 Git documentation.
 \newblock \url{https://git-scm.com/book/en/v2/Getting-Started-Git-Basics},
-  2015.
+  2016.
 
 \bibitem{teamcity}
 Teamcity web site.
-\newblock https://www.jetbrains.com/teamcity/features/, 2015.
+\newblock https://www.jetbrains.com/teamcity/features/, 2016.
 
 \bibitem{phanotmSite}
 Phantomjs site.
-\newblock \url{http://phantomjs.org/}, 2015.
+\newblock \url{http://phantomjs.org/}, 2016.
 
 \bibitem{gerrit}
 Gerrit code review web site.
-\newblock https://www.gerritcodereview.com/, 2015.
+\newblock https://www.gerritcodereview.com/, 2016.
 
 \bibitem{vaadinBlog}
-2015.
+Non-commerical pro tools license.
+\newblock
+  \url{https://vaadin.com/blog/-/blogs/non-commercial-licenses-for-pro-tools},
+  2015.
 
 \bibitem{vaadinBlogCompare}
 Testbench and selenium comaparison.
 \newblock
   \url{https://vaadin.com/blog/-/blogs/testing-vaadin-applications-with-selenium-vs-testbench},
-  2015.
+  2016.
 
 \bibitem{sureFireExample}
 Example of maven surefire plugin usage for test build phase.
 \newblock
   \url{https://maven.apache.org/surefire/maven-surefire-plugin/examples/junit.html},
-  2014.
+  2016.
 
 \bibitem{junitParallelComputer}
 Junit paralel testing example.
@@ -132,11 +152,11 @@ Behaviour driven development site.
 
 \bibitem{jBehaveSite}
 Jbehave framework.
-\newblock \url{http://jbehave.org}, 2015.
+\newblock \url{http://jbehave.org}, 2016.
 
 \bibitem{cucumberSite}
 Cucumber framework.
-\newblock \url{http://https://cucumber.io/}, 2015.
+\newblock \url{http://https://cucumber.io/}, 2016.
 
 \bibitem{Zhongen2}
 Zhong sheng Qian, Huaikou Miao, and Hongwei Zeng.
@@ -177,7 +197,7 @@ Ondrej~Kvasnovsky Jaroslav~Holan.
 
 \bibitem{vaadinTestbenchSite}
 Vaadin testbench web site.
-\newblock \url{https://vaadin.com/add-ons/testbench}, 2014.
+\newblock \url{https://vaadin.com/add-ons/testbench}, 2016.
 
 \bibitem{ux1}
 S.D. Williams.
@@ -188,7 +208,7 @@ S.D. Williams.
 
 \bibitem{vaadinAkka}
 Akka vaadin integration.
-\newblock \url{https://github.com/rogozinds/VaadinWithAkka}, 2014.
+\newblock \url{https://github.com/rogozinds/VaadinWithAkka}, 2016.
 
 \bibitem{TheCleanCoder}
 Robert~C. Martin.

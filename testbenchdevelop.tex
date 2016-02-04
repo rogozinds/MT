@@ -1,8 +1,7 @@
 \chapter{Development of TestBench}
 \label{ch:testbenchdevelop}
   
-  The estimated time for developing Testbench 4 was from two months to six
-  weeks.
+  The estimated time for developing Testbench 4 was from six to eight weeks.
   Our team had four members:
   \begin{itemize}
     \item Anthony Guerreiro - developer.
@@ -20,9 +19,9 @@
     We decided to have two week sprints.
 
   \section{Scrum}
-    Scrum is a management and control process that cuts through
-    complexity to focus on building software that meets business needs. Management and teams are able to get their
-    hands around the requirements and technologies, never let go, and deliver working software,
+    Scrum is a management and control process that helps developers to focus on building software 
+    that meets business needs. Management and teams are able to get their
+    hands around the requirements and technologies and deliver working software,
     incrementally and empirically. The Scrum Team consists of a Product Owner,
     the Development Team, and a Scrum Master.
     
@@ -335,26 +334,25 @@
 
   \section{Architecture design}
    
-  TestBench consist of two main modules: ``Testbench-api'' and
-  ``Testbench-core''. Testbench-api contains classes and methods for
-  simulating user actions on Vaadin components.
-  
-  Testbench-core handles client-server communication, screenshot comparison and
-   provides methods for searching Vaadin components on a Web page.
+   We have divided TestBench into two modules: TestBench core and TestBench API. Having
+two modules and two separate build configurations for them, allows to build only
+API module and keep core module as it is. Core module includes fundamental features,
+ like client-server communication, finding
+elements on a Web page and test parallel execution. API module includes
+classes and methods for simulating Vaadin components features, like clicking a
+Vaadin button or navigating in a Vaadin menu component. TestBench core
+module is steady and should not be changed frequently. TestBench API
+module, on the contrary, would change often, because of adding new API.
+
+Testbench-apimodule version number matches the compatible Vaadin framework version.
+As a development team we think that having matching Testbench-api and framework versions will help to solve
+ compatibility issues, showing the users which TestBench and framework versions they have to use. 
    
-   Testbench-api module is closely connected to Vaadin framework. Changes 
-   in behaviour of Vaadin components, like button or text field, may require
-   changes in the Testbench-api module. Testbench-apimodule version number
-   matches the compatible Vaadin framework version. As a development team we think that
-   having matching Testbench-api and framework versions will help to solve
-   compatibility issues, showing the users which TestBench and framework
-   versions they have to use.
-  
-  TestBench is written in Java and uses inheritance for code reuse and
+ TestBench is written in Java and uses inheritance for code reuse and
   extensibility. The hierarchy of classes in TestBench consists of many tens of
   classes and each class has tens of methods.
-  Here we will describe the most important classes and the basic principles see
-  figure~\ref{fig:classdiagram}.
+  Here we will describe the most important classes and the basic principles as
+  shown in Figure \ref{fig:classdiagram}.
 	\begin{figure}
 	\centering	
 	    \includegraphics[width=0.75\textwidth] {umlDiagram.png}
@@ -375,16 +373,17 @@ the given type.
    button and check box input elements are children elements of the div element
    with id id1.
  \lstset{style=console}
-  \begin{lstlisting} [caption=Simple DOM example,label={lst:domexample}]
-  <div id="id1">
-	  <input type="button">
-    <input type ="checkbox">
-  </div>
-  \end{lstlisting}
+\begin{lstlisting} [caption=Simple DOM example,label={lst:domexample}]
+<div id="id1">
+	<input type="button">
+	<input type ="checkbox">
+</div>
+\end{lstlisting}
   
   
-\textbf{ElementQuery<T>} used for locating Web elements (Vaadin buttons, text
-fields, labels, etc.) on a Web page. Generic parameter T specifies the type of a searched element. 
+\textbf{ElementQuery<T>} used for locating Web elements, such as Vaadin buttons,
+text fields, labels  on a Web page.
+Generic parameter T specifies the type of a searched element.
  ElementQuery class provides methods for searching the element based on
  elements id, class, caption or other criteria. These methods can be considered
  as filters in the query. ElementQuery uses the builder pattern, 
@@ -475,23 +474,11 @@ A complete example of test UI class \ref{lst:appTestUI}  and a TestBench test
 class \ref{lst:appTestClass} can be found in appendix A \ref{appendixA}.
 
 \section {Results}
-During the TestBench 4 development our team add new API to ease writing tests
+During the TestBench 4 development our team added new API to ease writing tests
 for Vaadin applications. We added helper methods for MenuBarElement,
 TreeTableElement, TwinColSelectElement,PopupDateFieldElement etc. Besides a
 ParallelTest class was introduced, which supports running tests concurrently in
-several threads.
-
-We have divided TestBench into two modules: TestBench core and TestBench API.
-Core module includes fundamental features, like client-server communication, finding
-elements on a Web page and test parallel execution. API module includes
-classes and methods for simulating Vaadin components features, like clicking a
-Vaadin button or navigating in a Vaadin menu component. TestBench core
-module is steady and should not be changed frequently. TestBench API
-module, on the contrary, would change often, because of adding new API. Having
-two modules and two separate build configurations for them, allows to build only
-API module and keep core module as it is. 
-
-Overall we have completed 41 ticket
+several threads. Overall we have completed 41 ticket
 and the detailed information about these tickets can be found in table \ref{table:tickets} in appendix B \ref{appendixB}.
 
 To improve User Experience (UX) we have tried to reduce an amount of
@@ -500,8 +487,8 @@ part of a build-in configuration.
 Developers can use it as an example and extend it for their own requirements. Users may create a sample
 Vaadin application via GUI using Vaadin Eclipse plugin or Maven build tool.
 
-Vaadin plugin provides a wizard for creating a new Vaadin application. The
-wizard suggest default values for project settings, which user can change or just fill
+Vaadin Eclipse plugin provides a wizard for creating a new Vaadin application.
+The wizard suggest default values for project settings, which user can change or just fill
 the project name and use default values for project folder structure, theme
 name, deploy configuration, etc \ref{fig:vaadinPlugin}. After finishing the
 wizard setup Vaadin plugin creates a Vaadin project which can be
